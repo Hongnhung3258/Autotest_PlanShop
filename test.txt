@@ -1,0 +1,1256 @@
+<body itemtype="https://schema.org/WebPage" itemscope="itemscope" class="home wp-singular page-template-default page page-id-219 wp-custom-logo wp-theme-astra theme-astra woocommerce-js ehf-footer ehf-template-astra ehf-stylesheet-astra yith-wcan-free ast-desktop ast-page-builder-template ast-no-sidebar astra-4.11.10 ast-single-post ast-replace-site-logo-transparent ast-inherit-site-logo-transparent ast-theme-transparent-header ast-hfb-header ast-normal-title-enabled elementor-default elementor-kit-214 elementor-page elementor-page-219 e--ua-blink e--ua-chrome e--ua-webkit xoo-el-popup-active" style="" data-elementor-device-mode="desktop">
+
+<a class="skip-link screen-reader-text" href="#content" title="Nhảy tới nội dung">
+		Nhảy tới nội dung</a>
+
+<div class="hfeed site" id="page">
+			<header class="site-header header-main-layout-1 ast-primary-menu-enabled ast-has-mobile-header-logo ast-logo-title-inline ast-hide-custom-menu-mobile ast-builder-menu-toggle-icon ast-mobile-header-inline" id="masthead" itemtype="https://schema.org/WPHeader" itemscope="itemscope" itemid="#masthead">
+			<div id="ast-desktop-header" data-toggle-type="dropdown">
+		<div class="ast-main-header-wrap main-header-bar-wrap ">
+		<div class="ast-primary-header-bar ast-primary-header main-header-bar site-header-focus-item" data-section="section-primary-header-builder">
+						<div class="site-primary-header-wrap ast-builder-grid-row-container site-header-focus-item ast-container" data-section="section-primary-header-builder">
+				<div class="ast-builder-grid-row ast-builder-grid-row-has-sides ast-builder-grid-row-no-center">
+											<div class="site-header-primary-section-left site-header-section ast-flex site-header-section-left">
+									<div class="ast-builder-layout-element ast-flex site-header-focus-item" data-section="title_tagline">
+							<div class="site-branding ast-site-identity" itemtype="https://schema.org/Organization" itemscope="itemscope">
+					<span class="site-logo-img"><a href="http://planshop.com/" class="custom-logo-link transparent-custom-logo" rel="home" itemprop="url" aria-label="Plant Shop"><img width="215" height="79" src="http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-1-215x79.png" class="custom-logo" alt="z6804033292612 cdbfe0ba5753c774d3f3b981cad83de2 photoroom" decoding="async" srcset="http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-1-215x79.png 215w, http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-1-300x111.png 300w, http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-1-1024x377.png 1024w, http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-1-768x283.png 768w, http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-1.png 1080w" sizes="(max-width: 215px) 100vw, 215px"></a><a href="http://planshop.com/" class="custom-mobile-logo-link" rel="home" itemprop="url"><img fetchpriority="high" width="512" height="512" src="http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-e1752792855227-1.png" class="ast-mobile-header-logo" alt="z6804033292612 cdbfe0ba5753c774d3f3b981cad83de2 photoroom e1752792855227" decoding="async" srcset="http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-e1752792855227-1.png 512w, http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-e1752792855227-1-300x300.png 300w, http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-e1752792855227-1-150x150.png 150w, http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-e1752792855227-1-100x100.png 100w, http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-e1752792855227-1-270x270.png 270w, http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-e1752792855227-1-192x192.png 192w, http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-e1752792855227-1-180x180.png 180w, http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-e1752792855227-1-32x32.png 32w" sizes="(max-width: 512px) 100vw, 512px"></a></span><div class="ast-site-title-wrap">
+						
+						<p class="site-description" itemprop="description">
+				Cây xanh cho mọi nhà
+			</p>
+				</div>				</div>
+			<!-- .site-branding -->
+					</div>
+								</div>
+																								<div class="site-header-primary-section-right site-header-section ast-flex ast-grid-right-section">
+										<div class="ast-builder-menu-1 ast-builder-menu ast-flex ast-builder-menu-1-focus-item ast-builder-layout-element site-header-focus-item" data-section="section-hb-menu-1">
+			<div class="ast-main-header-bar-alignment"><div class="main-header-bar-navigation"><nav class="site-navigation ast-flex-grow-1 navigation-accessibility site-header-focus-item" id="primary-site-navigation-desktop" aria-label="Primary Site Navigation" itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope"><div class="main-navigation ast-inline-flex"><ul id="ast-hf-menu-1" class="main-header-menu ast-menu-shadow ast-nav-menu ast-flex  submenu-with-border astra-menu-animation-slide-down  stack-on-mobile"><li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-219 current_page_item menu-item-21"><a href="http://planshop.com/" aria-current="page" class="menu-link">Trang chủ</a></li>
+<li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-22"><a aria-expanded="false" href="http://planshop.com/shop/" class="menu-link">Cửa hàng<span role="application" class="dropdown-menu-toggle ast-header-navigation-arrow" tabindex="0" aria-expanded="false" aria-label="Bật/tắt Menu" aria-haspopup="true"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+                <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
+                </svg></span></span></a><button class="ast-menu-toggle" aria-expanded="false" aria-label="Toggle menu"><span class="screen-reader-text">Bật/tắt Menu</span><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+                <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
+                </svg></span></button>
+<ul class="sub-menu">
+	<li id="menu-item-1004" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1004"><a href="http://planshop.com/product-category/all-potted-plants/" class="menu-link"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+                <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
+                </svg></span>Cây trồng trong chậu</a></li>
+	<li id="menu-item-1006" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1006"><a href="http://planshop.com/product-category/air-plants/" class="menu-link"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+                <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
+                </svg></span>Cây trồng trong không khí</a></li>
+	<li id="menu-item-1007" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1007"><a href="http://planshop.com/product-category/pots-planters/" class="menu-link"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+                <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
+                </svg></span>Chậu trồng cây</a></li>
+	<li id="menu-item-1005" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1005"><a href="http://planshop.com/product-category/care-tools/" class="menu-link"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+                <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
+                </svg></span>Dụng cụ chăm sóc</a></li>
+</ul>
+</li>
+<li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="http://planshop.com/plant-care-blog/" class="menu-link">Chăm sóc cây</a></li>
+<li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="http://planshop.com/introduce/" class="menu-link">Về chúng tôi</a></li>
+<li id="menu-item-1194" class="xoo-el-login-tgr menu-item menu-item-type-custom menu-item-object-custom menu-item-1194"><a class="menu-link">Đăng nhập</a></li>
+</ul></div></nav></div></div>		</div>
+					<div class="ast-builder-layout-element site-header-focus-item ast-header-woo-cart" data-section="section-header-woo-cart">
+							<div class="ast-site-header-cart ast-menu-cart-with-border  ast-menu-cart-fill">
+				<div class="ast-site-header-cart-li ">
+														<a href="http://planshop.com/cart-2/" class="cart-container ast-cart-desktop-position- ast-cart-mobile-position- ast-cart-tablet-position-" aria-label="View Shopping Cart, empty">
+
+						<div class="ast-addon-cart-wrap ast-desktop-cart-position- ast-cart-mobile-position- ast-cart-tablet-position- ">
+						
+						<i class="astra-icon ast-icon-shopping-cart " data-cart-total="0"><span class="ast-icon icon-cart"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="ast-cart-svg" x="0px" y="0px" width="20px" height="20px" viewBox="826 837.5 140 121" enable-background="new 826 837.5 140 121" xml:space="preserve">
+				<path d="M878.77,943.611c0,2.75-1.005,5.131-3.015,7.141c-2.009,2.01-4.389,3.014-7.139,3.014c-2.75,0-5.13-1.004-7.139-3.014  c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138c2.009-2.011,4.389-3.016,7.139-3.016  c2.75,0,5.13,1.005,7.139,3.016C877.765,938.482,878.77,940.862,878.77,943.611z M949.846,943.611c0,2.75-1.005,5.131-3.015,7.141  s-4.39,3.014-7.141,3.014c-2.748,0-5.129-1.004-7.138-3.014c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138  c2.009-2.011,4.39-3.016,7.138-3.016c2.751,0,5.131,1.005,7.141,3.016C948.841,938.482,949.846,940.862,949.846,943.611z   M960,857.306v40.615c0,1.27-0.438,2.393-1.311,3.371s-1.943,1.548-3.212,1.705l-82.815,9.678c0.687,3.174,1.031,5.024,1.031,5.554  c0,0.846-0.635,2.539-1.904,5.076h72.979c1.375,0,2.564,0.503,3.569,1.508c1.006,1.005,1.508,2.194,1.508,3.569  c0,1.376-0.502,2.564-1.508,3.569c-1.005,1.005-2.194,1.507-3.569,1.507H863.54c-1.375,0-2.565-0.502-3.57-1.507  s-1.507-2.193-1.507-3.569c0-0.581,0.212-1.415,0.634-2.498c0.424-1.085,0.847-2.036,1.27-2.855c0.423-0.82,0.992-1.878,1.706-3.174  s1.124-2.076,1.23-2.34l-14.041-65.285h-16.183c-1.375,0-2.564-0.502-3.569-1.507c-1.005-1.005-1.508-2.195-1.508-3.57  c0-1.375,0.502-2.565,1.508-3.57c1.004-1.004,2.194-1.507,3.569-1.507h20.308c0.846,0,1.6,0.172,2.261,0.516  s1.177,0.754,1.547,1.229c0.37,0.476,0.714,1.124,1.032,1.944c0.316,0.819,0.528,1.507,0.634,2.062  c0.106,0.556,0.252,1.336,0.437,2.34c0.185,1.005,0.304,1.692,0.357,2.063h95.271c1.375,0,2.563,0.502,3.57,1.507  C959.497,854.741,960,855.931,960,857.306z"></path>
+				</svg></span></i>
+				</div>			</a>
+			
+			
+							</div>
+				<div class="ast-site-header-cart-data">
+
+					<div class="widget woocommerce widget_shopping_cart"><div class="widget_shopping_cart_content">
+
+	<p class="woocommerce-mini-cart__empty-message">Chưa có sản phẩm trong giỏ hàng.</p>
+
+
+					<div class="ast-mini-cart-empty">
+						<div class="ast-mini-cart-message">
+							<p class="woocommerce-mini-cart__empty-message">Không có sản phẩm trong giỏ hàng.</p>
+						</div>
+												<div class="woocommerce-mini-cart__buttons">
+							<a href="http://planshop.com/shop/" class="button wc-forward ast-continue-shopping">Tiếp tục mua sắm</a> 						</div>
+					</div>
+				</div></div>
+				</div>
+			</div>
+						</div>
+					<aside class="header-widget-area widget-area site-header-focus-item header-widget-area-inner" data-section="sidebar-widgets-header-widget-2" aria-label="Header Widget 2" role="region">
+						<section id="block-37" class="widget widget_block"><div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-6c531013 wp-block-group-is-layout-flex"><div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-28f84493 wp-block-columns-is-layout-flex"><div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:100%"><div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-28f84493 wp-block-columns-is-layout-flex"><div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:100%"></div></div></div></div></div></section><section id="yith_woocommerce_ajax_search-3" class="widget woocommerce widget_product_search yith_woocommerce_ajax_search"><div data-block-name="yith/search-block" data-size="sm" class="wp-block-yith-search-block alignwide"><div class="ywcas-classic-search ywcas-small lapilliUI-Box__root css-0 e83suct0"><div class="lapilliUI-Box__root css-0 e83suct0"><div class="ywcas-block-components-search-field lapilliUI-Box__root css-r4o1is e83suct0"><div class="lapilliUI-Stack__root css-urdblb e83suct0"><div class="ywcas-input-field-wrapper lapilliUI-Stack__root css-of3d42 e83suct0"><div class="ywcas-input-field lapilliUI-Input__root lapilliUI-Input--outlined lapilliUI-Input--sizeSm lapilliUI-Input--hasEndAdornment css-1td25ez e83suct0"><input autocomplete="off" placeholder="Tìm kiếm sản phẩm..." type="text" class="lapilliUI-Input__field css-1riijus e83suct0" value=""><div class="lapilliUI-Input__endAdornment css-7ga5q0 e83suct0"><div class="ywcas-submit-wrapper lapilliUI-Box__root css-a5tl2p e83suct0"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="24" height="24" class="ywcas-submit-icon" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path></svg></div></div><div class="lapilliUI-Input__backdrop css-8b2uik e83suct0"></div></div></div></div></div></div></div></div></section>		</aside>
+									</div>
+												</div>
+					</div>
+								</div>
+			</div>
+	</div> <!-- Main Header Bar Wrap -->
+<div id="ast-mobile-header" class="ast-mobile-header-wrap " data-type="dropdown">
+		<div class="ast-main-header-wrap main-header-bar-wrap">
+		<div class="ast-primary-header-bar ast-primary-header main-header-bar site-primary-header-wrap site-header-focus-item ast-builder-grid-row-layout-default ast-builder-grid-row-tablet-layout-default ast-builder-grid-row-mobile-layout-default" data-section="section-transparent-header">
+									<div class="ast-builder-grid-row ast-builder-grid-row-has-sides ast-builder-grid-row-no-center">
+													<div class="site-header-primary-section-left site-header-section ast-flex site-header-section-left">
+										<div class="ast-builder-layout-element ast-flex site-header-focus-item" data-section="title_tagline">
+							<div class="site-branding ast-site-identity" itemtype="https://schema.org/Organization" itemscope="itemscope">
+					<span class="site-logo-img"><a href="http://planshop.com/" class="custom-logo-link transparent-custom-logo" rel="home" itemprop="url" aria-label="Plant Shop"><img width="215" height="79" src="http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-1-215x79.png" class="custom-logo" alt="z6804033292612 cdbfe0ba5753c774d3f3b981cad83de2 photoroom" decoding="async" srcset="http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-1-215x79.png 215w, http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-1-300x111.png 300w, http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-1-1024x377.png 1024w, http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-1-768x283.png 768w, http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-1.png 1080w" sizes="(max-width: 215px) 100vw, 215px"></a><a href="http://planshop.com/" class="custom-mobile-logo-link" rel="home" itemprop="url"><img fetchpriority="high" width="512" height="512" src="http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-e1752792855227-1.png" class="ast-mobile-header-logo" alt="z6804033292612 cdbfe0ba5753c774d3f3b981cad83de2 photoroom e1752792855227" decoding="async" srcset="http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-e1752792855227-1.png 512w, http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-e1752792855227-1-300x300.png 300w, http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-e1752792855227-1-150x150.png 150w, http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-e1752792855227-1-100x100.png 100w, http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-e1752792855227-1-270x270.png 270w, http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-e1752792855227-1-192x192.png 192w, http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-e1752792855227-1-180x180.png 180w, http://planshop.com/wp-content/uploads/2025/07/cropped-z6804033292612_cdbfe0ba5753c774d3f3b981cad83de2-Photoroom-e1752792855227-1-32x32.png 32w" sizes="(max-width: 512px) 100vw, 512px"></a></span><div class="ast-site-title-wrap">
+						
+						<p class="site-description" itemprop="description">
+				Cây xanh cho mọi nhà
+			</p>
+				</div>				</div>
+			<!-- .site-branding -->
+					</div>
+									</div>
+																									<div class="site-header-primary-section-right site-header-section ast-flex ast-grid-right-section">
+										<aside class="header-widget-area widget-area site-header-focus-item header-widget-area-inner" data-section="sidebar-widgets-header-widget-1" aria-label="Header Widget 1" role="region">
+						<section id="block-40" class="widget widget_block widget_search"><form role="search" method="get" action="http://planshop.com/" class="wp-block-search__no-button wp-block-search"><label class="wp-block-search__label screen-reader-text" for="wp-block-search__input-1">Tìm kiếm</label><div class="wp-block-search__inside-wrapper " style="width: 220px"><input class="wp-block-search__input" id="wp-block-search__input-1" placeholder="Tìm kiếm sản phẩm…" value="" type="search" name="s" required=""><input type="hidden" name="post_type" value="product"></div></form></section>		</aside>
+						<div class="ast-builder-layout-element site-header-focus-item ast-header-woo-cart" data-section="section-header-woo-cart">
+							<div class="ast-site-header-cart ast-menu-cart-with-border  ast-menu-cart-fill">
+				<div class="ast-site-header-cart-li ">
+														<a href="http://planshop.com/cart-2/" class="cart-container ast-cart-desktop-position- ast-cart-mobile-position- ast-cart-tablet-position-" aria-label="View Shopping Cart, empty">
+
+						<div class="ast-addon-cart-wrap ast-desktop-cart-position- ast-cart-mobile-position- ast-cart-tablet-position- ">
+						
+						<i class="astra-icon ast-icon-shopping-cart " data-cart-total="0"><span class="ast-icon icon-cart"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="ast-cart-svg" x="0px" y="0px" width="20px" height="20px" viewBox="826 837.5 140 121" enable-background="new 826 837.5 140 121" xml:space="preserve">
+				<path d="M878.77,943.611c0,2.75-1.005,5.131-3.015,7.141c-2.009,2.01-4.389,3.014-7.139,3.014c-2.75,0-5.13-1.004-7.139-3.014  c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138c2.009-2.011,4.389-3.016,7.139-3.016  c2.75,0,5.13,1.005,7.139,3.016C877.765,938.482,878.77,940.862,878.77,943.611z M949.846,943.611c0,2.75-1.005,5.131-3.015,7.141  s-4.39,3.014-7.141,3.014c-2.748,0-5.129-1.004-7.138-3.014c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138  c2.009-2.011,4.39-3.016,7.138-3.016c2.751,0,5.131,1.005,7.141,3.016C948.841,938.482,949.846,940.862,949.846,943.611z   M960,857.306v40.615c0,1.27-0.438,2.393-1.311,3.371s-1.943,1.548-3.212,1.705l-82.815,9.678c0.687,3.174,1.031,5.024,1.031,5.554  c0,0.846-0.635,2.539-1.904,5.076h72.979c1.375,0,2.564,0.503,3.569,1.508c1.006,1.005,1.508,2.194,1.508,3.569  c0,1.376-0.502,2.564-1.508,3.569c-1.005,1.005-2.194,1.507-3.569,1.507H863.54c-1.375,0-2.565-0.502-3.57-1.507  s-1.507-2.193-1.507-3.569c0-0.581,0.212-1.415,0.634-2.498c0.424-1.085,0.847-2.036,1.27-2.855c0.423-0.82,0.992-1.878,1.706-3.174  s1.124-2.076,1.23-2.34l-14.041-65.285h-16.183c-1.375,0-2.564-0.502-3.569-1.507c-1.005-1.005-1.508-2.195-1.508-3.57  c0-1.375,0.502-2.565,1.508-3.57c1.004-1.004,2.194-1.507,3.569-1.507h20.308c0.846,0,1.6,0.172,2.261,0.516  s1.177,0.754,1.547,1.229c0.37,0.476,0.714,1.124,1.032,1.944c0.316,0.819,0.528,1.507,0.634,2.062  c0.106,0.556,0.252,1.336,0.437,2.34c0.185,1.005,0.304,1.692,0.357,2.063h95.271c1.375,0,2.563,0.502,3.57,1.507  C959.497,854.741,960,855.931,960,857.306z"></path>
+				</svg></span></i>
+				</div>			</a>
+			
+			
+							</div>
+				<div class="ast-site-header-cart-data">
+
+					
+				</div>
+			</div>
+						</div>
+					<div class="ast-builder-layout-element ast-flex site-header-focus-item" data-section="section-header-mobile-trigger">
+						<div class="ast-button-wrap">
+				<button type="button" class="menu-toggle main-header-menu-toggle ast-mobile-menu-trigger-outline" aria-expanded="false" aria-label="Main menu toggle" data-index="0">
+					<span class="screen-reader-text">Main Menu</span>
+					<span class="mobile-menu-toggle-icon">
+						<span aria-hidden="true" class="ahfb-svg-iconset ast-inline-flex svg-baseline"><svg class="ast-mobile-svg ast-menu2-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28"><path d="M24 21v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 13v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1zM24 5v2c0 0.547-0.453 1-1 1h-22c-0.547 0-1-0.453-1-1v-2c0-0.547 0.453-1 1-1h22c0.547 0 1 0.453 1 1z"></path></svg></span><span aria-hidden="true" class="ahfb-svg-iconset ast-inline-flex svg-baseline"><svg class="ast-mobile-svg ast-close-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5.293 6.707l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l5.293-5.293 5.293 5.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"></path></svg></span>					</span>
+									</button>
+			</div>
+					</div>
+									</div>
+											</div>
+						</div>
+	</div>
+				<div class="ast-mobile-header-content content-align-flex-start ">
+						<div class="ast-builder-menu-mobile ast-builder-menu ast-builder-menu-mobile-focus-item ast-builder-layout-element site-header-focus-item" data-section="section-header-mobile-menu">
+			<div class="ast-main-header-bar-alignment"><div class="main-header-bar-navigation"><nav class="site-navigation ast-flex-grow-1 navigation-accessibility site-header-focus-item" id="ast-mobile-site-navigation" aria-label="Thanh điều hướng trang: Primary Menu" itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope"><div class="main-navigation"><ul id="ast-hf-mobile-menu" class="main-header-menu ast-nav-menu ast-flex  submenu-with-border astra-menu-animation-fade  stack-on-mobile"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-219 current_page_item menu-item-21"><a href="http://planshop.com/" aria-current="page" class="menu-link">Trang chủ</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-22"><a aria-expanded="false" href="http://planshop.com/shop/" class="menu-link">Cửa hàng<span role="application" class="dropdown-menu-toggle ast-header-navigation-arrow" tabindex="0" aria-expanded="false" aria-label="Bật/tắt Menu" aria-haspopup="true"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+                <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
+                </svg></span></span></a><button class="ast-menu-toggle" aria-expanded="false" aria-label="Toggle menu"><span class="screen-reader-text">Bật/tắt Menu</span><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+                <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
+                </svg></span></button>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1004"><a href="http://planshop.com/product-category/all-potted-plants/" class="menu-link"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+                <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
+                </svg></span>Cây trồng trong chậu</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1006"><a href="http://planshop.com/product-category/air-plants/" class="menu-link"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+                <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
+                </svg></span>Cây trồng trong không khí</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1007"><a href="http://planshop.com/product-category/pots-planters/" class="menu-link"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+                <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
+                </svg></span>Chậu trồng cây</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1005"><a href="http://planshop.com/product-category/care-tools/" class="menu-link"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+                <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
+                </svg></span>Dụng cụ chăm sóc</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="http://planshop.com/plant-care-blog/" class="menu-link">Chăm sóc cây</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="http://planshop.com/introduce/" class="menu-link">Về chúng tôi</a></li>
+<li class="xoo-el-login-tgr menu-item menu-item-type-custom menu-item-object-custom menu-item-1194"><a class="menu-link">Đăng nhập</a></li>
+</ul></div></nav></div></div>		</div>
+					</div>
+			</div>
+		</header><!-- #masthead -->
+			<div id="content" class="site-content">
+		<div class="ast-container">
+		
+
+	<div id="primary" class="content-area primary">
+
+		
+					<main id="main" class="site-main">
+				<article class="post-219 page type-page status-publish ast-article-single" id="post-219" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
+	
+				<header class="entry-header ast-no-thumbnail ast-header-without-markup">
+				<h1 class="entry-title" itemprop="headline">Trang chủ</h1>			</header> <!-- .entry-header -->
+		
+<div class="entry-content clear" itemprop="text">
+
+	
+			<div data-elementor-type="wp-page" data-elementor-id="219" class="elementor elementor-219">
+				<div class="elementor-element elementor-element-e2b531f e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="e2b531f" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-86551da elementor-widget elementor-widget-text-editor" data-id="86551da" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="vertical-align: inherit;">Chào mừng đến với </span>Plan Shop</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-c3c1a4a elementor-widget elementor-widget-heading animated slideInDown" data-id="c3c1a4a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;slideInDown&quot;,&quot;_animation_delay&quot;:100}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h1 class="elementor-heading-title elementor-size-default">Khám phá vẻ đẹp của thiên nhiên trong tầm tay bạn</h1>				</div>
+				</div>
+				<div class="elementor-element elementor-element-06cde6f elementor-align-center elementor-widget elementor-widget-button" data-id="06cde6f" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="http://planshop.com/shop/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Mua ngay</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-a819a65 e-flex e-con-boxed e-con e-parent e-lazyloaded" data-id="a819a65" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-6981008 e-con-full e-grid e-con e-child" data-id="6981008" data-element_type="container">
+				<div class="elementor-element elementor-element-d7b1d02 elementor-view-stacked elementor-shape-circle elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="d7b1d02" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-credit-card" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 432c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V256H0v176zm192-68c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-40zm-128 0c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM576 80v48H0V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h4 class="elementor-icon-box-title">
+						<span>
+							Bảo mật khi thanh toán						</span>
+					</h4>
+				
+									<p class="elementor-icon-box-description">
+						Thanh toán an toàn bảo mật tuyệt đối					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-c6777bd elementor-view-stacked elementor-shape-circle elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="c6777bd" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-truck" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="M624 352h-16V243.9c0-12.7-5.1-24.9-14.1-33.9L494 110.1c-9-9-21.2-14.1-33.9-14.1H416V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h16c0 53 43 96 96 96s96-43 96-96h128c0 53 43 96 96 96s96-43 96-96h48c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zM160 464c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm320 0c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm80-208H416V144h44.1l99.9 99.9V256z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h4 class="elementor-icon-box-title">
+						<span>
+							Vận chuyển miễn phí						</span>
+					</h4>
+				
+									<p class="elementor-icon-box-description">
+						Đối với đơn hàng trên 300.000					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-e9d6dbb elementor-view-stacked elementor-shape-circle elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="e9d6dbb" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-cube" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M239.1 6.3l-208 78c-18.7 7-31.1 25-31.1 45v225.1c0 18.2 10.3 34.8 26.5 42.9l208 104c13.5 6.8 29.4 6.8 42.9 0l208-104c16.3-8.1 26.5-24.8 26.5-42.9V129.3c0-20-12.4-37.9-31.1-44.9l-208-78C262 2.2 250 2.2 239.1 6.3zM256 68.4l192 72v1.1l-192 78-192-78v-1.1l192-72zm32 356V275.5l160-65v133.9l-160 80z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h4 class="elementor-icon-box-title">
+						<span>
+							Giao hàng tận nơi						</span>
+					</h4>
+				
+									<p class="elementor-icon-box-description">
+						Giao hàng nhanh chóng đúng địa chỉ					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-263c5ea elementor-view-stacked elementor-shape-circle elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="263c5ea" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-far-heart" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h4 class="elementor-icon-box-title">
+						<span>
+							Hỗ trợ khách hàng						</span>
+					</h4>
+				
+									<p class="elementor-icon-box-description">
+						Phục vụ tận tình hỗ trợ mọi lúc					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-5212c1d e-flex e-con-boxed e-con e-parent" data-id="5212c1d" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-9175c34 elementor-widget elementor-widget-heading" data-id="9175c34" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Sản phẩm xu hướng</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-33a1748 elementor-widget elementor-widget-shortcode" data-id="33a1748" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-shortcode"><div class="woocommerce columns-3 "><ul class="products columns-3">
+<li class="ast-article-single desktop-align-left tablet-align-left mobile-align-left product type-product post-844 status-publish first instock product_cat-care-tools product_cat-bags-apparel product_tag-tap-de has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<div class="astra-shop-thumbnail-wrap"><a href="http://planshop.com/product/tap-de-lam-vuon/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img decoding="async" width="300" height="300" src="http://planshop.com/wp-content/uploads/2025/07/Supplies_Apron_807x807-300x300.webp" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="tạp dề làm vườn" srcset="http://planshop.com/wp-content/uploads/2025/07/Supplies_Apron_807x807-300x300.webp 300w, http://planshop.com/wp-content/uploads/2025/07/Supplies_Apron_807x807-150x150.webp 150w, http://planshop.com/wp-content/uploads/2025/07/Supplies_Apron_807x807-768x768.webp 768w, http://planshop.com/wp-content/uploads/2025/07/Supplies_Apron_807x807-100x100.webp 100w, http://planshop.com/wp-content/uploads/2025/07/Supplies_Apron_807x807.webp 807w" sizes="(max-width: 300px) 100vw, 300px"></a><a href="/?add-to-cart=844" data-quantity="1" class="ast-on-card-button ast-select-options-trigger product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="844" data-product_sku="" aria-label="Thêm vào giỏ hàng: “Tạp dề làm vườn”" rel="nofollow"> <span class="ast-card-action-tooltip"> Thêm vào giỏ hàng </span> <span class="ahfb-svg-iconset"> <span class="ast-icon icon-cart"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="ast-cart-svg" x="0px" y="0px" width="20px" height="20px" viewBox="826 837.5 140 121" enable-background="new 826 837.5 140 121" xml:space="preserve">
+				<path d="M878.77,943.611c0,2.75-1.005,5.131-3.015,7.141c-2.009,2.01-4.389,3.014-7.139,3.014c-2.75,0-5.13-1.004-7.139-3.014  c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138c2.009-2.011,4.389-3.016,7.139-3.016  c2.75,0,5.13,1.005,7.139,3.016C877.765,938.482,878.77,940.862,878.77,943.611z M949.846,943.611c0,2.75-1.005,5.131-3.015,7.141  s-4.39,3.014-7.141,3.014c-2.748,0-5.129-1.004-7.138-3.014c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138  c2.009-2.011,4.39-3.016,7.138-3.016c2.751,0,5.131,1.005,7.141,3.016C948.841,938.482,949.846,940.862,949.846,943.611z   M960,857.306v40.615c0,1.27-0.438,2.393-1.311,3.371s-1.943,1.548-3.212,1.705l-82.815,9.678c0.687,3.174,1.031,5.024,1.031,5.554  c0,0.846-0.635,2.539-1.904,5.076h72.979c1.375,0,2.564,0.503,3.569,1.508c1.006,1.005,1.508,2.194,1.508,3.569  c0,1.376-0.502,2.564-1.508,3.569c-1.005,1.005-2.194,1.507-3.569,1.507H863.54c-1.375,0-2.565-0.502-3.57-1.507  s-1.507-2.193-1.507-3.569c0-0.581,0.212-1.415,0.634-2.498c0.424-1.085,0.847-2.036,1.27-2.855c0.423-0.82,0.992-1.878,1.706-3.174  s1.124-2.076,1.23-2.34l-14.041-65.285h-16.183c-1.375,0-2.564-0.502-3.569-1.507c-1.005-1.005-1.508-2.195-1.508-3.57  c0-1.375,0.502-2.565,1.508-3.57c1.004-1.004,2.194-1.507,3.569-1.507h20.308c0.846,0,1.6,0.172,2.261,0.516  s1.177,0.754,1.547,1.229c0.37,0.476,0.714,1.124,1.032,1.944c0.316,0.819,0.528,1.507,0.634,2.062  c0.106,0.556,0.252,1.336,0.437,2.34c0.185,1.005,0.304,1.692,0.357,2.063h95.271c1.375,0,2.563,0.502,3.57,1.507  C959.497,854.741,960,855.931,960,857.306z"></path>
+				</svg></span> </span> </a></div><div class="astra-shop-summary-wrap"><a href="http://planshop.com/product/tap-de-lam-vuon/" class="ast-loop-product__link"><h2 class="woocommerce-loop-product__title">Tạp dề làm vườn</h2></a>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>391.875&nbsp;<span class="woocommerce-Price-currencySymbol">VND</span></bdi></span></span>
+			<span class="ast-woo-product-category">
+				Dụng cụ chăm sóc			</span>
+			<a href="/?add-to-cart=844" aria-describedby="woocommerce_loop_add_to_cart_link_describedby_844" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="844" data-product_sku="" aria-label="Thêm vào giỏ hàng: “Tạp dề làm vườn”" rel="nofollow" data-success_message="“Tạp dề làm vườn” đã được thêm vào giỏ hàng của bạn" role="button">Thêm vào giỏ hàng</a>	<span id="woocommerce_loop_add_to_cart_link_describedby_844" class="screen-reader-text">
+			</span>
+</div></li>
+<li class="ast-article-single desktop-align-left tablet-align-left mobile-align-left product type-product post-1342 status-publish instock product_cat-care-tools product_cat-decoration-accessories product_tag-buom-chua has-post-thumbnail sale shipping-taxable purchasable product-type-simple">
+	<div class="astra-shop-thumbnail-wrap">
+	
+	<a href="http://planshop.com/product/buom-chua-om-chau/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" decoding="async" width="300" height="300" src="http://planshop.com/wp-content/uploads/2025/08/Screenshot-2025-06-23-at-11.54.13-AM-300x300.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="bướm chúa ôm chậu" srcset="http://planshop.com/wp-content/uploads/2025/08/Screenshot-2025-06-23-at-11.54.13-AM-300x300.png 300w, http://planshop.com/wp-content/uploads/2025/08/Screenshot-2025-06-23-at-11.54.13-AM-150x150.png 150w, http://planshop.com/wp-content/uploads/2025/08/Screenshot-2025-06-23-at-11.54.13-AM-100x100.png 100w" sizes="(max-width: 300px) 100vw, 300px"></a><span class="ast-on-card-button ast-onsale-card" data-notification="default">Giảm giá!</span><a href="/?add-to-cart=1342" data-quantity="1" class="ast-on-card-button ast-select-options-trigger product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1342" data-product_sku="" aria-label="Thêm vào giỏ hàng: “Bướm chúa ôm chậu”" rel="nofollow"> <span class="ast-card-action-tooltip"> Thêm vào giỏ hàng </span> <span class="ahfb-svg-iconset"> <span class="ast-icon icon-cart"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="ast-cart-svg" x="0px" y="0px" width="20px" height="20px" viewBox="826 837.5 140 121" enable-background="new 826 837.5 140 121" xml:space="preserve">
+				<path d="M878.77,943.611c0,2.75-1.005,5.131-3.015,7.141c-2.009,2.01-4.389,3.014-7.139,3.014c-2.75,0-5.13-1.004-7.139-3.014  c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138c2.009-2.011,4.389-3.016,7.139-3.016  c2.75,0,5.13,1.005,7.139,3.016C877.765,938.482,878.77,940.862,878.77,943.611z M949.846,943.611c0,2.75-1.005,5.131-3.015,7.141  s-4.39,3.014-7.141,3.014c-2.748,0-5.129-1.004-7.138-3.014c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138  c2.009-2.011,4.39-3.016,7.138-3.016c2.751,0,5.131,1.005,7.141,3.016C948.841,938.482,949.846,940.862,949.846,943.611z   M960,857.306v40.615c0,1.27-0.438,2.393-1.311,3.371s-1.943,1.548-3.212,1.705l-82.815,9.678c0.687,3.174,1.031,5.024,1.031,5.554  c0,0.846-0.635,2.539-1.904,5.076h72.979c1.375,0,2.564,0.503,3.569,1.508c1.006,1.005,1.508,2.194,1.508,3.569  c0,1.376-0.502,2.564-1.508,3.569c-1.005,1.005-2.194,1.507-3.569,1.507H863.54c-1.375,0-2.565-0.502-3.57-1.507  s-1.507-2.193-1.507-3.569c0-0.581,0.212-1.415,0.634-2.498c0.424-1.085,0.847-2.036,1.27-2.855c0.423-0.82,0.992-1.878,1.706-3.174  s1.124-2.076,1.23-2.34l-14.041-65.285h-16.183c-1.375,0-2.564-0.502-3.569-1.507c-1.005-1.005-1.508-2.195-1.508-3.57  c0-1.375,0.502-2.565,1.508-3.57c1.004-1.004,2.194-1.507,3.569-1.507h20.308c0.846,0,1.6,0.172,2.261,0.516  s1.177,0.754,1.547,1.229c0.37,0.476,0.714,1.124,1.032,1.944c0.316,0.819,0.528,1.507,0.634,2.062  c0.106,0.556,0.252,1.336,0.437,2.34c0.185,1.005,0.304,1.692,0.357,2.063h95.271c1.375,0,2.563,0.502,3.57,1.507  C959.497,854.741,960,855.931,960,857.306z"></path>
+				</svg></span> </span> </a></div><div class="astra-shop-summary-wrap"><a href="http://planshop.com/product/buom-chua-om-chau/" class="ast-loop-product__link"><h2 class="woocommerce-loop-product__title">Bướm chúa ôm chậu</h2></a>
+	<span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi>980.000&nbsp;<span class="woocommerce-Price-currencySymbol">VND</span></bdi></span></del> <span class="screen-reader-text">Giá gốc là: 980.000&nbsp;VND.</span><ins aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi>919.999&nbsp;<span class="woocommerce-Price-currencySymbol">VND</span></bdi></span></ins><span class="screen-reader-text">Giá hiện tại là: 919.999&nbsp;VND.</span></span>
+			<span class="ast-woo-product-category">
+				Dụng cụ chăm sóc			</span>
+			<a href="/?add-to-cart=1342" aria-describedby="woocommerce_loop_add_to_cart_link_describedby_1342" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1342" data-product_sku="" aria-label="Thêm vào giỏ hàng: “Bướm chúa ôm chậu”" rel="nofollow" data-success_message="“Bướm chúa ôm chậu” đã được thêm vào giỏ hàng của bạn" role="button">Thêm vào giỏ hàng</a>	<span id="woocommerce_loop_add_to_cart_link_describedby_1342" class="screen-reader-text">
+			</span>
+</div></li>
+<li class="ast-article-single desktop-align-left tablet-align-left mobile-align-left product type-product post-1338 status-publish last instock product_cat-care-tools product_cat-decoration-accessories product_tag-buom product_tag-om-chau has-post-thumbnail sale shipping-taxable purchasable product-type-simple">
+	<div class="astra-shop-thumbnail-wrap">
+	
+	<a href="http://planshop.com/product/buom-xanh-om-chau/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" decoding="async" width="300" height="300" src="http://planshop.com/wp-content/uploads/2025/08/Blue-Butterfly-Pot-Hugger-on-Windowsill-300x300.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="bướm xanh ôm chậu" srcset="http://planshop.com/wp-content/uploads/2025/08/Blue-Butterfly-Pot-Hugger-on-Windowsill-300x300.png 300w, http://planshop.com/wp-content/uploads/2025/08/Blue-Butterfly-Pot-Hugger-on-Windowsill-150x150.png 150w, http://planshop.com/wp-content/uploads/2025/08/Blue-Butterfly-Pot-Hugger-on-Windowsill-100x100.png 100w" sizes="(max-width: 300px) 100vw, 300px"></a><span class="ast-on-card-button ast-onsale-card" data-notification="default">Giảm giá!</span><a href="/?add-to-cart=1338" data-quantity="1" class="ast-on-card-button ast-select-options-trigger product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1338" data-product_sku="" aria-label="Thêm vào giỏ hàng: “Bướm xanh ôm chậu”" rel="nofollow"> <span class="ast-card-action-tooltip"> Thêm vào giỏ hàng </span> <span class="ahfb-svg-iconset"> <span class="ast-icon icon-cart"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="ast-cart-svg" x="0px" y="0px" width="20px" height="20px" viewBox="826 837.5 140 121" enable-background="new 826 837.5 140 121" xml:space="preserve">
+				<path d="M878.77,943.611c0,2.75-1.005,5.131-3.015,7.141c-2.009,2.01-4.389,3.014-7.139,3.014c-2.75,0-5.13-1.004-7.139-3.014  c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138c2.009-2.011,4.389-3.016,7.139-3.016  c2.75,0,5.13,1.005,7.139,3.016C877.765,938.482,878.77,940.862,878.77,943.611z M949.846,943.611c0,2.75-1.005,5.131-3.015,7.141  s-4.39,3.014-7.141,3.014c-2.748,0-5.129-1.004-7.138-3.014c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138  c2.009-2.011,4.39-3.016,7.138-3.016c2.751,0,5.131,1.005,7.141,3.016C948.841,938.482,949.846,940.862,949.846,943.611z   M960,857.306v40.615c0,1.27-0.438,2.393-1.311,3.371s-1.943,1.548-3.212,1.705l-82.815,9.678c0.687,3.174,1.031,5.024,1.031,5.554  c0,0.846-0.635,2.539-1.904,5.076h72.979c1.375,0,2.564,0.503,3.569,1.508c1.006,1.005,1.508,2.194,1.508,3.569  c0,1.376-0.502,2.564-1.508,3.569c-1.005,1.005-2.194,1.507-3.569,1.507H863.54c-1.375,0-2.565-0.502-3.57-1.507  s-1.507-2.193-1.507-3.569c0-0.581,0.212-1.415,0.634-2.498c0.424-1.085,0.847-2.036,1.27-2.855c0.423-0.82,0.992-1.878,1.706-3.174  s1.124-2.076,1.23-2.34l-14.041-65.285h-16.183c-1.375,0-2.564-0.502-3.569-1.507c-1.005-1.005-1.508-2.195-1.508-3.57  c0-1.375,0.502-2.565,1.508-3.57c1.004-1.004,2.194-1.507,3.569-1.507h20.308c0.846,0,1.6,0.172,2.261,0.516  s1.177,0.754,1.547,1.229c0.37,0.476,0.714,1.124,1.032,1.944c0.316,0.819,0.528,1.507,0.634,2.062  c0.106,0.556,0.252,1.336,0.437,2.34c0.185,1.005,0.304,1.692,0.357,2.063h95.271c1.375,0,2.563,0.502,3.57,1.507  C959.497,854.741,960,855.931,960,857.306z"></path>
+				</svg></span> </span> </a></div><div class="astra-shop-summary-wrap"><a href="http://planshop.com/product/buom-xanh-om-chau/" class="ast-loop-product__link"><h2 class="woocommerce-loop-product__title">Bướm xanh ôm chậu</h2></a>
+	<span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi>950.000&nbsp;<span class="woocommerce-Price-currencySymbol">VND</span></bdi></span></del> <span class="screen-reader-text">Giá gốc là: 950.000&nbsp;VND.</span><ins aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi>899.999&nbsp;<span class="woocommerce-Price-currencySymbol">VND</span></bdi></span></ins><span class="screen-reader-text">Giá hiện tại là: 899.999&nbsp;VND.</span></span>
+			<span class="ast-woo-product-category">
+				Dụng cụ chăm sóc			</span>
+			<a href="/?add-to-cart=1338" aria-describedby="woocommerce_loop_add_to_cart_link_describedby_1338" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1338" data-product_sku="" aria-label="Thêm vào giỏ hàng: “Bướm xanh ôm chậu”" rel="nofollow" data-success_message="“Bướm xanh ôm chậu” đã được thêm vào giỏ hàng của bạn" role="button">Thêm vào giỏ hàng</a>	<span id="woocommerce_loop_add_to_cart_link_describedby_1338" class="screen-reader-text">
+			</span>
+</div></li>
+</ul>
+</div>
+</div>
+						</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-5d4f8ef e-flex e-con-boxed e-con e-parent" data-id="5d4f8ef" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-846ff3d elementor-widget elementor-widget-heading" data-id="846ff3d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Hành trình chăm cây trở nên dễ dàng hơn bao giờ hết!</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e7eb5f3 elementor-widget elementor-widget-text-editor" data-id="e7eb5f3" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Xem ngay blog và tin tức của chúng tôi để học cách chăm sóc và yêu thương từng chiếc lá</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-b9e0c3b elementor-align-center elementor-widget elementor-widget-button" data-id="b9e0c3b" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="http://planshop.com/plant-care-blog/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Xem ngay</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-92668e7 e-flex e-con-boxed e-con e-parent" data-id="92668e7" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-a2bf3c1 elementor-widget elementor-widget-heading" data-id="a2bf3c1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Danh mục của chúng tôi</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-e1b576b e-grid e-con-full e-con e-child" data-id="e1b576b" data-element_type="container">
+				<div class="elementor-element elementor-element-9a64fd5 elementor-position-top elementor-widget elementor-widget-image-box" data-id="9a64fd5" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="http://planshop.com/product-category/all-potted-plants/" tabindex="-1"><img loading="lazy" decoding="async" width="455" height="479" src="http://planshop.com/wp-content/uploads/2025/03/house-plant.jpg" class="attachment-full size-full wp-image-213" alt="house plant" srcset="http://planshop.com/wp-content/uploads/2025/03/house-plant.jpg 455w, http://planshop.com/wp-content/uploads/2025/03/house-plant-300x316.jpg 300w, http://planshop.com/wp-content/uploads/2025/03/house-plant-285x300.jpg 285w" sizes="(max-width: 455px) 100vw, 455px"></a></figure><div class="elementor-image-box-content"><h4 class="elementor-image-box-title"><a href="http://planshop.com/product-category/all-potted-plants/">Cây trong chậu</a></h4></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-8d71001 elementor-position-top elementor-widget elementor-widget-image-box" data-id="8d71001" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="http://planshop.com/product-category/air-plants/" tabindex="-1"><img decoding="async" src="http://planshop.com/wp-content/uploads/elementor/thumbs/z6811243303104_50020c07ea2a7aa620c85c98f815f9e6-removebg-preview-r8ud35lvt0ws4herkneaeazb5auwr9mrq30v3n8xms.png" title="z6811243303104 50020c07ea2a7aa620c85c98f815f9e6 removebg preview" alt="z6811243303104 50020c07ea2a7aa620c85c98f815f9e6 removebg preview" loading="lazy"></a></figure><div class="elementor-image-box-content"><h4 class="elementor-image-box-title"><a href="http://planshop.com/product-category/air-plants/">Cây không khí</a></h4></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e29532a elementor-position-top elementor-widget elementor-widget-image-box" data-id="e29532a" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="http://planshop.com/product-category/pots-planters/" tabindex="-1"><img loading="lazy" decoding="async" width="500" height="500" src="http://planshop.com/wp-content/uploads/2025/07/XLF-01KNOBPLANTER_869x869-removebg-preview.png" class="attachment-full size-full wp-image-970" alt="xlf 01knobplanter 869x869 removebg preview" srcset="http://planshop.com/wp-content/uploads/2025/07/XLF-01KNOBPLANTER_869x869-removebg-preview.png 500w, http://planshop.com/wp-content/uploads/2025/07/XLF-01KNOBPLANTER_869x869-removebg-preview-300x300.png 300w, http://planshop.com/wp-content/uploads/2025/07/XLF-01KNOBPLANTER_869x869-removebg-preview-150x150.png 150w, http://planshop.com/wp-content/uploads/2025/07/XLF-01KNOBPLANTER_869x869-removebg-preview-100x100.png 100w" sizes="(max-width: 500px) 100vw, 500px"></a></figure><div class="elementor-image-box-content"><h4 class="elementor-image-box-title"><a href="http://planshop.com/product-category/pots-planters/">Chậu cây</a></h4></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-69fe698 elementor-position-top elementor-widget elementor-widget-image-box" data-id="69fe698" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="http://planshop.com/product-category/plant-accessories/" tabindex="-1"><img loading="lazy" decoding="async" width="300" height="300" src="http://planshop.com/wp-content/uploads/2025/07/bloomscape_complete-gardening-tool-set-scaled-removebg-preview-300x300.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-image-974" alt="bloomscape complete gardening tool set scaled removebg preview" srcset="http://planshop.com/wp-content/uploads/2025/07/bloomscape_complete-gardening-tool-set-scaled-removebg-preview-300x300.png 300w, http://planshop.com/wp-content/uploads/2025/07/bloomscape_complete-gardening-tool-set-scaled-removebg-preview-150x150.png 150w, http://planshop.com/wp-content/uploads/2025/07/bloomscape_complete-gardening-tool-set-scaled-removebg-preview-100x100.png 100w" sizes="(max-width: 300px) 100vw, 300px"></a></figure><div class="elementor-image-box-content"><h4 class="elementor-image-box-title"><a href="http://planshop.com/product-category/plant-accessories/">Dụng cụ làm vườn</a></h4></div></div>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-17f4816 e-flex e-con-boxed e-con e-parent" data-id="17f4816" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-e80ce08 e-con-full e-flex e-con e-child" data-id="e80ce08" data-element_type="container">
+				<div class="elementor-element elementor-element-7d26fa8 elementor-widget elementor-widget-image" data-id="7d26fa8" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="590" height="610" src="http://planshop.com/wp-content/uploads/2025/03/stats-count.jpg" class="attachment-full size-full wp-image-225" alt="stats count" srcset="http://planshop.com/wp-content/uploads/2025/03/stats-count.jpg 590w, http://planshop.com/wp-content/uploads/2025/03/stats-count-300x310.jpg 300w, http://planshop.com/wp-content/uploads/2025/03/stats-count-290x300.jpg 290w" sizes="(max-width: 590px) 100vw, 590px">															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-d238a85 e-con-full e-flex e-con e-child" data-id="d238a85" data-element_type="container">
+				<div class="elementor-element elementor-element-88662d8 elementor-widget elementor-widget-heading" data-id="88662d8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Điểm đến hàng đầu của bạn cho cuộc sống xanh.</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-1e999b0 elementor-widget elementor-widget-text-editor" data-id="1e999b0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Tại Plant Shop, chúng tôi tin vào sức mạnh biến đổi của cây xanh. Dù bạn là người làm vườn lão luyện hay chỉ mới bắt đầu hành trình xanh, bộ sưu tập cây xanh được tuyển chọn kỹ lưỡng của chúng tôi sẽ truyền cảm hứng và làm phong phú thêm không gian sống của bạn.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-8a430c3 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="8a430c3" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-3206774 e-grid e-con-full e-con e-child" data-id="3206774" data-element_type="container">
+				<div class="elementor-element elementor-element-2525077 elementor-widget elementor-widget-icon-box" data-id="2525077" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							98%						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Sự hài lòng của khách hàng					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-602bb96 elementor-widget elementor-widget-icon-box" data-id="602bb96" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span>
+							103K						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Cây đã bán					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-fd2e2db e-flex e-con-boxed e-con e-parent" data-id="fd2e2db" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-fae5f62 elementor-widget elementor-widget-heading" data-id="fae5f62" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Sản phẩm phổ biến</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-552b8ea elementor-widget elementor-widget-shortcode" data-id="552b8ea" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-shortcode"><div class="woocommerce columns-4 "><ul class="products columns-4">
+<li class="ast-article-single desktop-align-left tablet-align-left mobile-align-left product type-product post-810 status-publish first instock product_cat-nutrients-care product_cat-care-tools product_tag-dat-trong-cay has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<div class="astra-shop-thumbnail-wrap"><a href="http://planshop.com/product/dat-trong-cay/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" decoding="async" width="300" height="300" src="http://planshop.com/wp-content/uploads/2025/07/bloomscape_potting-soil2-2-scaled-e1625258029862-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Đất trồng cây" srcset="http://planshop.com/wp-content/uploads/2025/07/bloomscape_potting-soil2-2-scaled-e1625258029862-300x300.jpg 300w, http://planshop.com/wp-content/uploads/2025/07/bloomscape_potting-soil2-2-scaled-e1625258029862-150x150.jpg 150w, http://planshop.com/wp-content/uploads/2025/07/bloomscape_potting-soil2-2-scaled-e1625258029862-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px"></a><a href="/?add-to-cart=810" data-quantity="1" class="ast-on-card-button ast-select-options-trigger product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="810" data-product_sku="" aria-label="Thêm vào giỏ hàng: “Đất trồng cây”" rel="nofollow"> <span class="ast-card-action-tooltip"> Thêm vào giỏ hàng </span> <span class="ahfb-svg-iconset"> <span class="ast-icon icon-cart"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="ast-cart-svg" x="0px" y="0px" width="20px" height="20px" viewBox="826 837.5 140 121" enable-background="new 826 837.5 140 121" xml:space="preserve">
+				<path d="M878.77,943.611c0,2.75-1.005,5.131-3.015,7.141c-2.009,2.01-4.389,3.014-7.139,3.014c-2.75,0-5.13-1.004-7.139-3.014  c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138c2.009-2.011,4.389-3.016,7.139-3.016  c2.75,0,5.13,1.005,7.139,3.016C877.765,938.482,878.77,940.862,878.77,943.611z M949.846,943.611c0,2.75-1.005,5.131-3.015,7.141  s-4.39,3.014-7.141,3.014c-2.748,0-5.129-1.004-7.138-3.014c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138  c2.009-2.011,4.39-3.016,7.138-3.016c2.751,0,5.131,1.005,7.141,3.016C948.841,938.482,949.846,940.862,949.846,943.611z   M960,857.306v40.615c0,1.27-0.438,2.393-1.311,3.371s-1.943,1.548-3.212,1.705l-82.815,9.678c0.687,3.174,1.031,5.024,1.031,5.554  c0,0.846-0.635,2.539-1.904,5.076h72.979c1.375,0,2.564,0.503,3.569,1.508c1.006,1.005,1.508,2.194,1.508,3.569  c0,1.376-0.502,2.564-1.508,3.569c-1.005,1.005-2.194,1.507-3.569,1.507H863.54c-1.375,0-2.565-0.502-3.57-1.507  s-1.507-2.193-1.507-3.569c0-0.581,0.212-1.415,0.634-2.498c0.424-1.085,0.847-2.036,1.27-2.855c0.423-0.82,0.992-1.878,1.706-3.174  s1.124-2.076,1.23-2.34l-14.041-65.285h-16.183c-1.375,0-2.564-0.502-3.569-1.507c-1.005-1.005-1.508-2.195-1.508-3.57  c0-1.375,0.502-2.565,1.508-3.57c1.004-1.004,2.194-1.507,3.569-1.507h20.308c0.846,0,1.6,0.172,2.261,0.516  s1.177,0.754,1.547,1.229c0.37,0.476,0.714,1.124,1.032,1.944c0.316,0.819,0.528,1.507,0.634,2.062  c0.106,0.556,0.252,1.336,0.437,2.34c0.185,1.005,0.304,1.692,0.357,2.063h95.271c1.375,0,2.563,0.502,3.57,1.507  C959.497,854.741,960,855.931,960,857.306z"></path>
+				</svg></span> </span> </a></div><div class="astra-shop-summary-wrap"><a href="http://planshop.com/product/dat-trong-cay/" class="ast-loop-product__link"><h2 class="woocommerce-loop-product__title">Đất trồng cây</h2></a>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>522.500&nbsp;<span class="woocommerce-Price-currencySymbol">VND</span></bdi></span></span>
+			<span class="ast-woo-product-category">
+				Chất dinh dưỡng &amp; Chăm sóc			</span>
+			<a href="/?add-to-cart=810" aria-describedby="woocommerce_loop_add_to_cart_link_describedby_810" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="810" data-product_sku="" aria-label="Thêm vào giỏ hàng: “Đất trồng cây”" rel="nofollow" data-success_message="“Đất trồng cây” đã được thêm vào giỏ hàng của bạn" role="button">Thêm vào giỏ hàng</a>	<span id="woocommerce_loop_add_to_cart_link_describedby_810" class="screen-reader-text">
+			</span>
+</div></li>
+<li class="ast-article-single desktop-align-left tablet-align-left mobile-align-left product type-product post-774 status-publish instock product_cat-small-air-plants product_cat-air-plants product_tag-bo-3-cay product_tag-tillandsia-ionantha has-post-thumbnail shipping-taxable purchasable product-type-variable">
+	<div class="astra-shop-thumbnail-wrap"><a href="http://planshop.com/product/bo-3-cay-khong-khi-tillandsia-ionantha/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" decoding="async" width="300" height="300" src="http://planshop.com/wp-content/uploads/2025/07/HPS-standardplant_IonanthaGuatemala_807x807-300x300.webp" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="bộ ba cây không khí lonantha guatemala" srcset="http://planshop.com/wp-content/uploads/2025/07/HPS-standardplant_IonanthaGuatemala_807x807-300x300.webp 300w, http://planshop.com/wp-content/uploads/2025/07/HPS-standardplant_IonanthaGuatemala_807x807-150x150.webp 150w, http://planshop.com/wp-content/uploads/2025/07/HPS-standardplant_IonanthaGuatemala_807x807-768x768.webp 768w, http://planshop.com/wp-content/uploads/2025/07/HPS-standardplant_IonanthaGuatemala_807x807-100x100.webp 100w, http://planshop.com/wp-content/uploads/2025/07/HPS-standardplant_IonanthaGuatemala_807x807.webp 807w" sizes="(max-width: 300px) 100vw, 300px"></a><a href="http://planshop.com/product/bo-3-cay-khong-khi-tillandsia-ionantha/" data-quantity="1" class="ast-on-card-button ast-select-options-trigger product_type_variable add_to_cart_button" data-product_id="774" data-product_sku="" aria-label="Lựa chọn cho “Bộ 3 cây không khí Tillandsia Ionantha”" rel="nofollow"> <span class="ast-card-action-tooltip"> Lựa chọn tùy chọn </span> <span class="ahfb-svg-iconset"> <span class="ast-icon icon-cart"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="ast-cart-svg" x="0px" y="0px" width="20px" height="20px" viewBox="826 837.5 140 121" enable-background="new 826 837.5 140 121" xml:space="preserve">
+				<path d="M878.77,943.611c0,2.75-1.005,5.131-3.015,7.141c-2.009,2.01-4.389,3.014-7.139,3.014c-2.75,0-5.13-1.004-7.139-3.014  c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138c2.009-2.011,4.389-3.016,7.139-3.016  c2.75,0,5.13,1.005,7.139,3.016C877.765,938.482,878.77,940.862,878.77,943.611z M949.846,943.611c0,2.75-1.005,5.131-3.015,7.141  s-4.39,3.014-7.141,3.014c-2.748,0-5.129-1.004-7.138-3.014c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138  c2.009-2.011,4.39-3.016,7.138-3.016c2.751,0,5.131,1.005,7.141,3.016C948.841,938.482,949.846,940.862,949.846,943.611z   M960,857.306v40.615c0,1.27-0.438,2.393-1.311,3.371s-1.943,1.548-3.212,1.705l-82.815,9.678c0.687,3.174,1.031,5.024,1.031,5.554  c0,0.846-0.635,2.539-1.904,5.076h72.979c1.375,0,2.564,0.503,3.569,1.508c1.006,1.005,1.508,2.194,1.508,3.569  c0,1.376-0.502,2.564-1.508,3.569c-1.005,1.005-2.194,1.507-3.569,1.507H863.54c-1.375,0-2.565-0.502-3.57-1.507  s-1.507-2.193-1.507-3.569c0-0.581,0.212-1.415,0.634-2.498c0.424-1.085,0.847-2.036,1.27-2.855c0.423-0.82,0.992-1.878,1.706-3.174  s1.124-2.076,1.23-2.34l-14.041-65.285h-16.183c-1.375,0-2.564-0.502-3.569-1.507c-1.005-1.005-1.508-2.195-1.508-3.57  c0-1.375,0.502-2.565,1.508-3.57c1.004-1.004,2.194-1.507,3.569-1.507h20.308c0.846,0,1.6,0.172,2.261,0.516  s1.177,0.754,1.547,1.229c0.37,0.476,0.714,1.124,1.032,1.944c0.316,0.819,0.528,1.507,0.634,2.062  c0.106,0.556,0.252,1.336,0.437,2.34c0.185,1.005,0.304,1.692,0.357,2.063h95.271c1.375,0,2.563,0.502,3.57,1.507  C959.497,854.741,960,855.931,960,857.306z"></path>
+				</svg></span> </span> </a></div><div class="astra-shop-summary-wrap"><a href="http://planshop.com/product/bo-3-cay-khong-khi-tillandsia-ionantha/" class="ast-loop-product__link"><h2 class="woocommerce-loop-product__title">Bộ 3 cây không khí Tillandsia Ionantha</h2></a>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>287.114&nbsp;<span class="woocommerce-Price-currencySymbol">VND</span></bdi></span></span>
+			<span class="ast-woo-product-category">
+				Cây không khí nhỏ			</span>
+			<a href="http://planshop.com/product/bo-3-cay-khong-khi-tillandsia-ionantha/" aria-describedby="woocommerce_loop_add_to_cart_link_describedby_774" data-quantity="1" class="button product_type_variable add_to_cart_button" data-product_id="774" data-product_sku="" aria-label="Lựa chọn cho “Bộ 3 cây không khí Tillandsia Ionantha”" rel="nofollow">Lựa chọn tùy chọn</a>	<span id="woocommerce_loop_add_to_cart_link_describedby_774" class="screen-reader-text">
+		Sản phẩm này có nhiều biến thể. Các tùy chọn có thể được chọn trên trang sản phẩm	</span>
+</div></li>
+<li class="ast-article-single desktop-align-left tablet-align-left mobile-align-left product type-product post-768 status-publish instock product_cat-large-air-plants product_cat-air-plants product_tag-nu-hoang-cay-khong-khi product_tag-tillandsia-xerographica has-post-thumbnail shipping-taxable purchasable product-type-variable">
+	<div class="astra-shop-thumbnail-wrap"><a href="http://planshop.com/product/nu-hoang-cay-khong-khi-tillandsia-xerographica/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" decoding="async" width="300" height="300" src="http://planshop.com/wp-content/uploads/2025/07/HPS-standardplant_Xerographica_a1032049-b030-45de-9f2c-92c56858bcb9_869x869-300x300.webp" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="gói cây không khí lớn" srcset="http://planshop.com/wp-content/uploads/2025/07/HPS-standardplant_Xerographica_a1032049-b030-45de-9f2c-92c56858bcb9_869x869-300x300.webp 300w, http://planshop.com/wp-content/uploads/2025/07/HPS-standardplant_Xerographica_a1032049-b030-45de-9f2c-92c56858bcb9_869x869-150x150.webp 150w, http://planshop.com/wp-content/uploads/2025/07/HPS-standardplant_Xerographica_a1032049-b030-45de-9f2c-92c56858bcb9_869x869-768x768.webp 768w, http://planshop.com/wp-content/uploads/2025/07/HPS-standardplant_Xerographica_a1032049-b030-45de-9f2c-92c56858bcb9_869x869-100x100.webp 100w, http://planshop.com/wp-content/uploads/2025/07/HPS-standardplant_Xerographica_a1032049-b030-45de-9f2c-92c56858bcb9_869x869.webp 869w" sizes="(max-width: 300px) 100vw, 300px"></a><a href="http://planshop.com/product/nu-hoang-cay-khong-khi-tillandsia-xerographica/" data-quantity="1" class="ast-on-card-button ast-select-options-trigger product_type_variable add_to_cart_button" data-product_id="768" data-product_sku="" aria-label="Lựa chọn cho “Nữ hoàng cây không khí - Tillandsia Xerographica”" rel="nofollow"> <span class="ast-card-action-tooltip"> Lựa chọn tùy chọn </span> <span class="ahfb-svg-iconset"> <span class="ast-icon icon-cart"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="ast-cart-svg" x="0px" y="0px" width="20px" height="20px" viewBox="826 837.5 140 121" enable-background="new 826 837.5 140 121" xml:space="preserve">
+				<path d="M878.77,943.611c0,2.75-1.005,5.131-3.015,7.141c-2.009,2.01-4.389,3.014-7.139,3.014c-2.75,0-5.13-1.004-7.139-3.014  c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138c2.009-2.011,4.389-3.016,7.139-3.016  c2.75,0,5.13,1.005,7.139,3.016C877.765,938.482,878.77,940.862,878.77,943.611z M949.846,943.611c0,2.75-1.005,5.131-3.015,7.141  s-4.39,3.014-7.141,3.014c-2.748,0-5.129-1.004-7.138-3.014c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138  c2.009-2.011,4.39-3.016,7.138-3.016c2.751,0,5.131,1.005,7.141,3.016C948.841,938.482,949.846,940.862,949.846,943.611z   M960,857.306v40.615c0,1.27-0.438,2.393-1.311,3.371s-1.943,1.548-3.212,1.705l-82.815,9.678c0.687,3.174,1.031,5.024,1.031,5.554  c0,0.846-0.635,2.539-1.904,5.076h72.979c1.375,0,2.564,0.503,3.569,1.508c1.006,1.005,1.508,2.194,1.508,3.569  c0,1.376-0.502,2.564-1.508,3.569c-1.005,1.005-2.194,1.507-3.569,1.507H863.54c-1.375,0-2.565-0.502-3.57-1.507  s-1.507-2.193-1.507-3.569c0-0.581,0.212-1.415,0.634-2.498c0.424-1.085,0.847-2.036,1.27-2.855c0.423-0.82,0.992-1.878,1.706-3.174  s1.124-2.076,1.23-2.34l-14.041-65.285h-16.183c-1.375,0-2.564-0.502-3.569-1.507c-1.005-1.005-1.508-2.195-1.508-3.57  c0-1.375,0.502-2.565,1.508-3.57c1.004-1.004,2.194-1.507,3.569-1.507h20.308c0.846,0,1.6,0.172,2.261,0.516  s1.177,0.754,1.547,1.229c0.37,0.476,0.714,1.124,1.032,1.944c0.316,0.819,0.528,1.507,0.634,2.062  c0.106,0.556,0.252,1.336,0.437,2.34c0.185,1.005,0.304,1.692,0.357,2.063h95.271c1.375,0,2.563,0.502,3.57,1.507  C959.497,854.741,960,855.931,960,857.306z"></path>
+				</svg></span> </span> </a></div><div class="astra-shop-summary-wrap"><a href="http://planshop.com/product/nu-hoang-cay-khong-khi-tillandsia-xerographica/" class="ast-loop-product__link"><h2 class="woocommerce-loop-product__title">Nữ hoàng cây không khí – Tillandsia Xerographica</h2></a>
+	<span class="price"><span class="woocommerce-Price-amount amount" aria-hidden="true"><bdi>652.864&nbsp;<span class="woocommerce-Price-currencySymbol">VND</span></bdi></span> <span aria-hidden="true">–</span> <span class="woocommerce-Price-amount amount" aria-hidden="true"><bdi>3.395.989&nbsp;<span class="woocommerce-Price-currencySymbol">VND</span></bdi></span><span class="screen-reader-text">Khoảng giá: từ 652.864&nbsp;VND đến 3.395.989&nbsp;VND</span></span>
+			<span class="ast-woo-product-category">
+				Cây không khí lớn			</span>
+			<a href="http://planshop.com/product/nu-hoang-cay-khong-khi-tillandsia-xerographica/" aria-describedby="woocommerce_loop_add_to_cart_link_describedby_768" data-quantity="1" class="button product_type_variable add_to_cart_button" data-product_id="768" data-product_sku="" aria-label="Lựa chọn cho “Nữ hoàng cây không khí - Tillandsia Xerographica”" rel="nofollow">Lựa chọn tùy chọn</a>	<span id="woocommerce_loop_add_to_cart_link_describedby_768" class="screen-reader-text">
+		Sản phẩm này có nhiều biến thể. Các tùy chọn có thể được chọn trên trang sản phẩm	</span>
+</div></li>
+<li class="ast-article-single desktop-align-left tablet-align-left mobile-align-left product type-product post-759 status-publish last instock product_cat-large-air-plants product_cat-air-plants product_tag-cay-khong-khi-lon product_tag-goi-cay has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<div class="astra-shop-thumbnail-wrap"><a href="http://planshop.com/product/goi-cay-khong-khi-lon/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" decoding="async" width="300" height="300" src="http://planshop.com/wp-content/uploads/2025/07/MothersDay-Airplants_869x869-300x300.webp" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="gói cây không khí lớn" srcset="http://planshop.com/wp-content/uploads/2025/07/MothersDay-Airplants_869x869-300x300.webp 300w, http://planshop.com/wp-content/uploads/2025/07/MothersDay-Airplants_869x869-150x150.webp 150w, http://planshop.com/wp-content/uploads/2025/07/MothersDay-Airplants_869x869-768x768.webp 768w, http://planshop.com/wp-content/uploads/2025/07/MothersDay-Airplants_869x869-100x100.webp 100w, http://planshop.com/wp-content/uploads/2025/07/MothersDay-Airplants_869x869.webp 869w" sizes="(max-width: 300px) 100vw, 300px"></a><a href="/?add-to-cart=759" data-quantity="1" class="ast-on-card-button ast-select-options-trigger product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="759" data-product_sku="" aria-label="Thêm vào giỏ hàng: “Gói cây không khí lớn”" rel="nofollow"> <span class="ast-card-action-tooltip"> Thêm vào giỏ hàng </span> <span class="ahfb-svg-iconset"> <span class="ast-icon icon-cart"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="ast-cart-svg" x="0px" y="0px" width="20px" height="20px" viewBox="826 837.5 140 121" enable-background="new 826 837.5 140 121" xml:space="preserve">
+				<path d="M878.77,943.611c0,2.75-1.005,5.131-3.015,7.141c-2.009,2.01-4.389,3.014-7.139,3.014c-2.75,0-5.13-1.004-7.139-3.014  c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138c2.009-2.011,4.389-3.016,7.139-3.016  c2.75,0,5.13,1.005,7.139,3.016C877.765,938.482,878.77,940.862,878.77,943.611z M949.846,943.611c0,2.75-1.005,5.131-3.015,7.141  s-4.39,3.014-7.141,3.014c-2.748,0-5.129-1.004-7.138-3.014c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138  c2.009-2.011,4.39-3.016,7.138-3.016c2.751,0,5.131,1.005,7.141,3.016C948.841,938.482,949.846,940.862,949.846,943.611z   M960,857.306v40.615c0,1.27-0.438,2.393-1.311,3.371s-1.943,1.548-3.212,1.705l-82.815,9.678c0.687,3.174,1.031,5.024,1.031,5.554  c0,0.846-0.635,2.539-1.904,5.076h72.979c1.375,0,2.564,0.503,3.569,1.508c1.006,1.005,1.508,2.194,1.508,3.569  c0,1.376-0.502,2.564-1.508,3.569c-1.005,1.005-2.194,1.507-3.569,1.507H863.54c-1.375,0-2.565-0.502-3.57-1.507  s-1.507-2.193-1.507-3.569c0-0.581,0.212-1.415,0.634-2.498c0.424-1.085,0.847-2.036,1.27-2.855c0.423-0.82,0.992-1.878,1.706-3.174  s1.124-2.076,1.23-2.34l-14.041-65.285h-16.183c-1.375,0-2.564-0.502-3.569-1.507c-1.005-1.005-1.508-2.195-1.508-3.57  c0-1.375,0.502-2.565,1.508-3.57c1.004-1.004,2.194-1.507,3.569-1.507h20.308c0.846,0,1.6,0.172,2.261,0.516  s1.177,0.754,1.547,1.229c0.37,0.476,0.714,1.124,1.032,1.944c0.316,0.819,0.528,1.507,0.634,2.062  c0.106,0.556,0.252,1.336,0.437,2.34c0.185,1.005,0.304,1.692,0.357,2.063h95.271c1.375,0,2.563,0.502,3.57,1.507  C959.497,854.741,960,855.931,960,857.306z"></path>
+				</svg></span> </span> </a></div><div class="astra-shop-summary-wrap"><a href="http://planshop.com/product/goi-cay-khong-khi-lon/" class="ast-loop-product__link"><h2 class="woocommerce-loop-product__title">Gói cây không khí lớn</h2></a>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>574.488&nbsp;<span class="woocommerce-Price-currencySymbol">VND</span></bdi></span></span>
+			<span class="ast-woo-product-category">
+				Cây không khí lớn			</span>
+			<a href="/?add-to-cart=759" aria-describedby="woocommerce_loop_add_to_cart_link_describedby_759" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="759" data-product_sku="" aria-label="Thêm vào giỏ hàng: “Gói cây không khí lớn”" rel="nofollow" data-success_message="“Gói cây không khí lớn” đã được thêm vào giỏ hàng của bạn" role="button">Thêm vào giỏ hàng</a>	<span id="woocommerce_loop_add_to_cart_link_describedby_759" class="screen-reader-text">
+			</span>
+</div></li>
+<li class="ast-article-single desktop-align-left tablet-align-left mobile-align-left product type-product post-698 status-publish first instock product_cat-succulents-cacti product_cat-all-potted-plants product_tag-cay-ngoc-bich product_tag-succulent-crassula-jade has-post-thumbnail sale shipping-taxable purchasable product-type-variable">
+	<div class="astra-shop-thumbnail-wrap">
+	
+	<a href="http://planshop.com/product/cay-ngoc-bich-succulent-crassula-jade/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" decoding="async" width="300" height="300" src="http://planshop.com/wp-content/uploads/2025/07/1-Succulent-JadeCrassula-4_991b62c2-5979-4a25-811d-9ef6a96e2559_804x804-300x300.webp" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="cây ngọc bích succulent crassula 'jade'" srcset="http://planshop.com/wp-content/uploads/2025/07/1-Succulent-JadeCrassula-4_991b62c2-5979-4a25-811d-9ef6a96e2559_804x804-300x300.webp 300w, http://planshop.com/wp-content/uploads/2025/07/1-Succulent-JadeCrassula-4_991b62c2-5979-4a25-811d-9ef6a96e2559_804x804-150x150.webp 150w, http://planshop.com/wp-content/uploads/2025/07/1-Succulent-JadeCrassula-4_991b62c2-5979-4a25-811d-9ef6a96e2559_804x804-768x768.webp 768w, http://planshop.com/wp-content/uploads/2025/07/1-Succulent-JadeCrassula-4_991b62c2-5979-4a25-811d-9ef6a96e2559_804x804-100x100.webp 100w, http://planshop.com/wp-content/uploads/2025/07/1-Succulent-JadeCrassula-4_991b62c2-5979-4a25-811d-9ef6a96e2559_804x804.webp 804w" sizes="(max-width: 300px) 100vw, 300px"></a><span class="ast-on-card-button ast-onsale-card" data-notification="default">Giảm giá!</span><a href="http://planshop.com/product/cay-ngoc-bich-succulent-crassula-jade/" data-quantity="1" class="ast-on-card-button ast-select-options-trigger product_type_variable add_to_cart_button" data-product_id="698" data-product_sku="" aria-label="Lựa chọn cho “Cây Ngọc Bích - Succulent Crassula 'Jade'”" rel="nofollow"> <span class="ast-card-action-tooltip"> Lựa chọn tùy chọn </span> <span class="ahfb-svg-iconset"> <span class="ast-icon icon-cart"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="ast-cart-svg" x="0px" y="0px" width="20px" height="20px" viewBox="826 837.5 140 121" enable-background="new 826 837.5 140 121" xml:space="preserve">
+				<path d="M878.77,943.611c0,2.75-1.005,5.131-3.015,7.141c-2.009,2.01-4.389,3.014-7.139,3.014c-2.75,0-5.13-1.004-7.139-3.014  c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138c2.009-2.011,4.389-3.016,7.139-3.016  c2.75,0,5.13,1.005,7.139,3.016C877.765,938.482,878.77,940.862,878.77,943.611z M949.846,943.611c0,2.75-1.005,5.131-3.015,7.141  s-4.39,3.014-7.141,3.014c-2.748,0-5.129-1.004-7.138-3.014c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138  c2.009-2.011,4.39-3.016,7.138-3.016c2.751,0,5.131,1.005,7.141,3.016C948.841,938.482,949.846,940.862,949.846,943.611z   M960,857.306v40.615c0,1.27-0.438,2.393-1.311,3.371s-1.943,1.548-3.212,1.705l-82.815,9.678c0.687,3.174,1.031,5.024,1.031,5.554  c0,0.846-0.635,2.539-1.904,5.076h72.979c1.375,0,2.564,0.503,3.569,1.508c1.006,1.005,1.508,2.194,1.508,3.569  c0,1.376-0.502,2.564-1.508,3.569c-1.005,1.005-2.194,1.507-3.569,1.507H863.54c-1.375,0-2.565-0.502-3.57-1.507  s-1.507-2.193-1.507-3.569c0-0.581,0.212-1.415,0.634-2.498c0.424-1.085,0.847-2.036,1.27-2.855c0.423-0.82,0.992-1.878,1.706-3.174  s1.124-2.076,1.23-2.34l-14.041-65.285h-16.183c-1.375,0-2.564-0.502-3.569-1.507c-1.005-1.005-1.508-2.195-1.508-3.57  c0-1.375,0.502-2.565,1.508-3.57c1.004-1.004,2.194-1.507,3.569-1.507h20.308c0.846,0,1.6,0.172,2.261,0.516  s1.177,0.754,1.547,1.229c0.37,0.476,0.714,1.124,1.032,1.944c0.316,0.819,0.528,1.507,0.634,2.062  c0.106,0.556,0.252,1.336,0.437,2.34c0.185,1.005,0.304,1.692,0.357,2.063h95.271c1.375,0,2.563,0.502,3.57,1.507  C959.497,854.741,960,855.931,960,857.306z"></path>
+				</svg></span> </span> </a></div><div class="astra-shop-summary-wrap"><a href="http://planshop.com/product/cay-ngoc-bich-succulent-crassula-jade/" class="ast-loop-product__link"><h2 class="woocommerce-loop-product__title">Cây Ngọc Bích – Succulent Crassula ‘Jade’</h2></a>
+	<span class="price"><span class="woocommerce-Price-amount amount" aria-hidden="true"><bdi>391.614&nbsp;<span class="woocommerce-Price-currencySymbol">VND</span></bdi></span> <span aria-hidden="true">–</span> <span class="woocommerce-Price-amount amount" aria-hidden="true"><bdi>1.044.739&nbsp;<span class="woocommerce-Price-currencySymbol">VND</span></bdi></span><span class="screen-reader-text">Khoảng giá: từ 391.614&nbsp;VND đến 1.044.739&nbsp;VND</span></span>
+			<span class="ast-woo-product-category">
+				Cây mọng nước và xương rồng			</span>
+			<a href="http://planshop.com/product/cay-ngoc-bich-succulent-crassula-jade/" aria-describedby="woocommerce_loop_add_to_cart_link_describedby_698" data-quantity="1" class="button product_type_variable add_to_cart_button" data-product_id="698" data-product_sku="" aria-label="Lựa chọn cho “Cây Ngọc Bích - Succulent Crassula 'Jade'”" rel="nofollow">Lựa chọn tùy chọn</a>	<span id="woocommerce_loop_add_to_cart_link_describedby_698" class="screen-reader-text">
+		Sản phẩm này có nhiều biến thể. Các tùy chọn có thể được chọn trên trang sản phẩm	</span>
+</div></li>
+<li class="ast-article-single desktop-align-left tablet-align-left mobile-align-left product type-product post-687 status-publish instock product_cat-all-potted-plants product_cat-pre-potted product_tag-cay-luoi-ho product_tag-sayuri product_tag-snake-plant has-post-thumbnail shipping-taxable purchasable product-type-variable">
+	<div class="astra-shop-thumbnail-wrap"><a href="http://planshop.com/product/cay-luoi-ho-sayuri-snake-plant-sayuri/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" decoding="async" width="300" height="300" src="http://planshop.com/wp-content/uploads/2025/07/4_SNAKE_SAYURI_1_869x869-300x300.webp" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="auto draft" srcset="http://planshop.com/wp-content/uploads/2025/07/4_SNAKE_SAYURI_1_869x869-300x300.webp 300w, http://planshop.com/wp-content/uploads/2025/07/4_SNAKE_SAYURI_1_869x869-150x150.webp 150w, http://planshop.com/wp-content/uploads/2025/07/4_SNAKE_SAYURI_1_869x869-768x768.webp 768w, http://planshop.com/wp-content/uploads/2025/07/4_SNAKE_SAYURI_1_869x869-100x100.webp 100w, http://planshop.com/wp-content/uploads/2025/07/4_SNAKE_SAYURI_1_869x869.webp 869w" sizes="(max-width: 300px) 100vw, 300px"></a><a href="http://planshop.com/product/cay-luoi-ho-sayuri-snake-plant-sayuri/" data-quantity="1" class="ast-on-card-button ast-select-options-trigger product_type_variable add_to_cart_button" data-product_id="687" data-product_sku="" aria-label="Lựa chọn cho “Cây lưỡi hổ Sayuri - Snake Plant 'Sayuri'”" rel="nofollow"> <span class="ast-card-action-tooltip"> Lựa chọn tùy chọn </span> <span class="ahfb-svg-iconset"> <span class="ast-icon icon-cart"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="ast-cart-svg" x="0px" y="0px" width="20px" height="20px" viewBox="826 837.5 140 121" enable-background="new 826 837.5 140 121" xml:space="preserve">
+				<path d="M878.77,943.611c0,2.75-1.005,5.131-3.015,7.141c-2.009,2.01-4.389,3.014-7.139,3.014c-2.75,0-5.13-1.004-7.139-3.014  c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138c2.009-2.011,4.389-3.016,7.139-3.016  c2.75,0,5.13,1.005,7.139,3.016C877.765,938.482,878.77,940.862,878.77,943.611z M949.846,943.611c0,2.75-1.005,5.131-3.015,7.141  s-4.39,3.014-7.141,3.014c-2.748,0-5.129-1.004-7.138-3.014c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138  c2.009-2.011,4.39-3.016,7.138-3.016c2.751,0,5.131,1.005,7.141,3.016C948.841,938.482,949.846,940.862,949.846,943.611z   M960,857.306v40.615c0,1.27-0.438,2.393-1.311,3.371s-1.943,1.548-3.212,1.705l-82.815,9.678c0.687,3.174,1.031,5.024,1.031,5.554  c0,0.846-0.635,2.539-1.904,5.076h72.979c1.375,0,2.564,0.503,3.569,1.508c1.006,1.005,1.508,2.194,1.508,3.569  c0,1.376-0.502,2.564-1.508,3.569c-1.005,1.005-2.194,1.507-3.569,1.507H863.54c-1.375,0-2.565-0.502-3.57-1.507  s-1.507-2.193-1.507-3.569c0-0.581,0.212-1.415,0.634-2.498c0.424-1.085,0.847-2.036,1.27-2.855c0.423-0.82,0.992-1.878,1.706-3.174  s1.124-2.076,1.23-2.34l-14.041-65.285h-16.183c-1.375,0-2.564-0.502-3.569-1.507c-1.005-1.005-1.508-2.195-1.508-3.57  c0-1.375,0.502-2.565,1.508-3.57c1.004-1.004,2.194-1.507,3.569-1.507h20.308c0.846,0,1.6,0.172,2.261,0.516  s1.177,0.754,1.547,1.229c0.37,0.476,0.714,1.124,1.032,1.944c0.316,0.819,0.528,1.507,0.634,2.062  c0.106,0.556,0.252,1.336,0.437,2.34c0.185,1.005,0.304,1.692,0.357,2.063h95.271c1.375,0,2.563,0.502,3.57,1.507  C959.497,854.741,960,855.931,960,857.306z"></path>
+				</svg></span> </span> </a></div><div class="astra-shop-summary-wrap"><a href="http://planshop.com/product/cay-luoi-ho-sayuri-snake-plant-sayuri/" class="ast-loop-product__link"><h2 class="woocommerce-loop-product__title">Cây lưỡi hổ Sayuri – Snake Plant ‘Sayuri’</h2></a>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>2.350.989&nbsp;<span class="woocommerce-Price-currencySymbol">VND</span></bdi></span></span>
+			<span class="ast-woo-product-category">
+				Cây trồng trong chậu			</span>
+			<a href="http://planshop.com/product/cay-luoi-ho-sayuri-snake-plant-sayuri/" aria-describedby="woocommerce_loop_add_to_cart_link_describedby_687" data-quantity="1" class="button product_type_variable add_to_cart_button" data-product_id="687" data-product_sku="" aria-label="Lựa chọn cho “Cây lưỡi hổ Sayuri - Snake Plant 'Sayuri'”" rel="nofollow">Lựa chọn tùy chọn</a>	<span id="woocommerce_loop_add_to_cart_link_describedby_687" class="screen-reader-text">
+		Sản phẩm này có nhiều biến thể. Các tùy chọn có thể được chọn trên trang sản phẩm	</span>
+</div></li>
+<li class="ast-article-single desktop-align-left tablet-align-left mobile-align-left product type-product post-644 status-publish instock product_cat-trailing-plants product_cat-all-potted-plants product_tag-cay-cau-nguyen product_tag-cay-leo product_tag-la-do product_tag-maranta product_tag-red-prayer has-post-thumbnail shipping-taxable purchasable product-type-variable">
+	<div class="astra-shop-thumbnail-wrap"><a href="http://planshop.com/product/maranta-red-prayer/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" decoding="async" width="300" height="300" src="http://planshop.com/wp-content/uploads/2025/07/1-Maranta-RedPrayer-6_869x869-300x300.webp" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="maranta 'red prayer'" srcset="http://planshop.com/wp-content/uploads/2025/07/1-Maranta-RedPrayer-6_869x869-300x300.webp 300w, http://planshop.com/wp-content/uploads/2025/07/1-Maranta-RedPrayer-6_869x869-150x150.webp 150w, http://planshop.com/wp-content/uploads/2025/07/1-Maranta-RedPrayer-6_869x869-768x768.webp 768w, http://planshop.com/wp-content/uploads/2025/07/1-Maranta-RedPrayer-6_869x869-100x100.webp 100w, http://planshop.com/wp-content/uploads/2025/07/1-Maranta-RedPrayer-6_869x869.webp 869w" sizes="(max-width: 300px) 100vw, 300px"></a><a href="http://planshop.com/product/maranta-red-prayer/" data-quantity="1" class="ast-on-card-button ast-select-options-trigger product_type_variable add_to_cart_button" data-product_id="644" data-product_sku="" aria-label="Lựa chọn cho “Cây Cầu Nguyện Lá Đỏ - Maranta Red Prayer”" rel="nofollow"> <span class="ast-card-action-tooltip"> Lựa chọn tùy chọn </span> <span class="ahfb-svg-iconset"> <span class="ast-icon icon-cart"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="ast-cart-svg" x="0px" y="0px" width="20px" height="20px" viewBox="826 837.5 140 121" enable-background="new 826 837.5 140 121" xml:space="preserve">
+				<path d="M878.77,943.611c0,2.75-1.005,5.131-3.015,7.141c-2.009,2.01-4.389,3.014-7.139,3.014c-2.75,0-5.13-1.004-7.139-3.014  c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138c2.009-2.011,4.389-3.016,7.139-3.016  c2.75,0,5.13,1.005,7.139,3.016C877.765,938.482,878.77,940.862,878.77,943.611z M949.846,943.611c0,2.75-1.005,5.131-3.015,7.141  s-4.39,3.014-7.141,3.014c-2.748,0-5.129-1.004-7.138-3.014c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138  c2.009-2.011,4.39-3.016,7.138-3.016c2.751,0,5.131,1.005,7.141,3.016C948.841,938.482,949.846,940.862,949.846,943.611z   M960,857.306v40.615c0,1.27-0.438,2.393-1.311,3.371s-1.943,1.548-3.212,1.705l-82.815,9.678c0.687,3.174,1.031,5.024,1.031,5.554  c0,0.846-0.635,2.539-1.904,5.076h72.979c1.375,0,2.564,0.503,3.569,1.508c1.006,1.005,1.508,2.194,1.508,3.569  c0,1.376-0.502,2.564-1.508,3.569c-1.005,1.005-2.194,1.507-3.569,1.507H863.54c-1.375,0-2.565-0.502-3.57-1.507  s-1.507-2.193-1.507-3.569c0-0.581,0.212-1.415,0.634-2.498c0.424-1.085,0.847-2.036,1.27-2.855c0.423-0.82,0.992-1.878,1.706-3.174  s1.124-2.076,1.23-2.34l-14.041-65.285h-16.183c-1.375,0-2.564-0.502-3.569-1.507c-1.005-1.005-1.508-2.195-1.508-3.57  c0-1.375,0.502-2.565,1.508-3.57c1.004-1.004,2.194-1.507,3.569-1.507h20.308c0.846,0,1.6,0.172,2.261,0.516  s1.177,0.754,1.547,1.229c0.37,0.476,0.714,1.124,1.032,1.944c0.316,0.819,0.528,1.507,0.634,2.062  c0.106,0.556,0.252,1.336,0.437,2.34c0.185,1.005,0.304,1.692,0.357,2.063h95.271c1.375,0,2.563,0.502,3.57,1.507  C959.497,854.741,960,855.931,960,857.306z"></path>
+				</svg></span> </span> </a></div><div class="astra-shop-summary-wrap"><a href="http://planshop.com/product/maranta-red-prayer/" class="ast-loop-product__link"><h2 class="woocommerce-loop-product__title">Cây Cầu Nguyện Lá Đỏ – Maranta Red Prayer</h2></a>
+	<span class="price"><span class="woocommerce-Price-amount amount" aria-hidden="true"><bdi>391.614&nbsp;<span class="woocommerce-Price-currencySymbol">VND</span></bdi></span> <span aria-hidden="true">–</span> <span class="woocommerce-Price-amount amount" aria-hidden="true"><bdi>1.201.489&nbsp;<span class="woocommerce-Price-currencySymbol">VND</span></bdi></span><span class="screen-reader-text">Khoảng giá: từ 391.614&nbsp;VND đến 1.201.489&nbsp;VND</span></span>
+			<span class="ast-woo-product-category">
+				Cây leo			</span>
+			<a href="http://planshop.com/product/maranta-red-prayer/" aria-describedby="woocommerce_loop_add_to_cart_link_describedby_644" data-quantity="1" class="button product_type_variable add_to_cart_button" data-product_id="644" data-product_sku="" aria-label="Lựa chọn cho “Cây Cầu Nguyện Lá Đỏ - Maranta Red Prayer”" rel="nofollow">Lựa chọn tùy chọn</a>	<span id="woocommerce_loop_add_to_cart_link_describedby_644" class="screen-reader-text">
+		Sản phẩm này có nhiều biến thể. Các tùy chọn có thể được chọn trên trang sản phẩm	</span>
+</div></li>
+<li class="ast-article-single desktop-align-left tablet-align-left mobile-align-left product type-product post-585 status-publish last instock product_cat-tropical-indoor-plants product_cat-trailing-plants product_cat-all-potted-plants product_tag-cay-trau-ba product_tag-monstera product_tag-split-leaf product_tag-trau-ba-la-xei has-post-thumbnail shipping-taxable purchasable product-type-variable">
+	<div class="astra-shop-thumbnail-wrap"><a href="http://planshop.com/product/monstera-split-leaf/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img loading="lazy" decoding="async" width="300" height="300" src="http://planshop.com/wp-content/uploads/2025/07/1-Philodendron-Monstera-6_869x869-300x300.webp" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="monstera 'split leaf'" srcset="http://planshop.com/wp-content/uploads/2025/07/1-Philodendron-Monstera-6_869x869-300x300.webp 300w, http://planshop.com/wp-content/uploads/2025/07/1-Philodendron-Monstera-6_869x869-150x150.webp 150w, http://planshop.com/wp-content/uploads/2025/07/1-Philodendron-Monstera-6_869x869-768x768.webp 768w, http://planshop.com/wp-content/uploads/2025/07/1-Philodendron-Monstera-6_869x869-100x100.webp 100w, http://planshop.com/wp-content/uploads/2025/07/1-Philodendron-Monstera-6_869x869.webp 869w" sizes="(max-width: 300px) 100vw, 300px"></a><a href="http://planshop.com/product/monstera-split-leaf/" data-quantity="1" class="ast-on-card-button ast-select-options-trigger product_type_variable add_to_cart_button" data-product_id="585" data-product_sku="" aria-label="Lựa chọn cho “Trầu Bà Lá Xẻ - Monstera Split-Leaf”" rel="nofollow"> <span class="ast-card-action-tooltip"> Lựa chọn tùy chọn </span> <span class="ahfb-svg-iconset"> <span class="ast-icon icon-cart"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="ast-cart-svg" x="0px" y="0px" width="20px" height="20px" viewBox="826 837.5 140 121" enable-background="new 826 837.5 140 121" xml:space="preserve">
+				<path d="M878.77,943.611c0,2.75-1.005,5.131-3.015,7.141c-2.009,2.01-4.389,3.014-7.139,3.014c-2.75,0-5.13-1.004-7.139-3.014  c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138c2.009-2.011,4.389-3.016,7.139-3.016  c2.75,0,5.13,1.005,7.139,3.016C877.765,938.482,878.77,940.862,878.77,943.611z M949.846,943.611c0,2.75-1.005,5.131-3.015,7.141  s-4.39,3.014-7.141,3.014c-2.748,0-5.129-1.004-7.138-3.014c-2.01-2.01-3.015-4.391-3.015-7.141c0-2.749,1.005-5.129,3.015-7.138  c2.009-2.011,4.39-3.016,7.138-3.016c2.751,0,5.131,1.005,7.141,3.016C948.841,938.482,949.846,940.862,949.846,943.611z   M960,857.306v40.615c0,1.27-0.438,2.393-1.311,3.371s-1.943,1.548-3.212,1.705l-82.815,9.678c0.687,3.174,1.031,5.024,1.031,5.554  c0,0.846-0.635,2.539-1.904,5.076h72.979c1.375,0,2.564,0.503,3.569,1.508c1.006,1.005,1.508,2.194,1.508,3.569  c0,1.376-0.502,2.564-1.508,3.569c-1.005,1.005-2.194,1.507-3.569,1.507H863.54c-1.375,0-2.565-0.502-3.57-1.507  s-1.507-2.193-1.507-3.569c0-0.581,0.212-1.415,0.634-2.498c0.424-1.085,0.847-2.036,1.27-2.855c0.423-0.82,0.992-1.878,1.706-3.174  s1.124-2.076,1.23-2.34l-14.041-65.285h-16.183c-1.375,0-2.564-0.502-3.569-1.507c-1.005-1.005-1.508-2.195-1.508-3.57  c0-1.375,0.502-2.565,1.508-3.57c1.004-1.004,2.194-1.507,3.569-1.507h20.308c0.846,0,1.6,0.172,2.261,0.516  s1.177,0.754,1.547,1.229c0.37,0.476,0.714,1.124,1.032,1.944c0.316,0.819,0.528,1.507,0.634,2.062  c0.106,0.556,0.252,1.336,0.437,2.34c0.185,1.005,0.304,1.692,0.357,2.063h95.271c1.375,0,2.563,0.502,3.57,1.507  C959.497,854.741,960,855.931,960,857.306z"></path>
+				</svg></span> </span> </a></div><div class="astra-shop-summary-wrap"><a href="http://planshop.com/product/monstera-split-leaf/" class="ast-loop-product__link"><h2 class="woocommerce-loop-product__title">Trầu Bà Lá Xẻ – Monstera Split-Leaf</h2></a>
+	<span class="price"><span class="woocommerce-Price-amount amount" aria-hidden="true"><bdi>417.739&nbsp;<span class="woocommerce-Price-currencySymbol">VND</span></bdi></span> <span aria-hidden="true">–</span> <span class="woocommerce-Price-amount amount" aria-hidden="true"><bdi>3.657.239&nbsp;<span class="woocommerce-Price-currencySymbol">VND</span></bdi></span><span class="screen-reader-text">Khoảng giá: từ 417.739&nbsp;VND đến 3.657.239&nbsp;VND</span></span>
+			<span class="ast-woo-product-category">
+				Cây cảnh nhiệt đới trong nhà			</span>
+			<a href="http://planshop.com/product/monstera-split-leaf/" aria-describedby="woocommerce_loop_add_to_cart_link_describedby_585" data-quantity="1" class="button product_type_variable add_to_cart_button" data-product_id="585" data-product_sku="" aria-label="Lựa chọn cho “Trầu Bà Lá Xẻ - Monstera Split-Leaf”" rel="nofollow">Lựa chọn tùy chọn</a>	<span id="woocommerce_loop_add_to_cart_link_describedby_585" class="screen-reader-text">
+		Sản phẩm này có nhiều biến thể. Các tùy chọn có thể được chọn trên trang sản phẩm	</span>
+</div></li>
+</ul>
+</div>
+</div>
+						</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-37b786e e-flex e-con-boxed e-con e-parent" data-id="37b786e" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-d7e0a3b e-con-full e-flex e-con e-child" data-id="d7e0a3b" data-element_type="container">
+				<div class="elementor-element elementor-element-e9134d3 elementor-widget elementor-widget-icon-box" data-id="e9134d3" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+			
+						<div class="elementor-icon-box-content">
+
+									<h2 class="elementor-icon-box-title">
+						<span>
+							Khách hàng của chúng tôi nói gì						</span>
+					</h2>
+				
+									<p class="elementor-icon-box-description">
+						Khám phá lý do tại sao mọi người yêu thích chúng tôi và trở thành đối tác đáng tin cậy của bạn.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-01250b8 e-con-full e-flex e-con e-child" data-id="01250b8" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-bc88278 elementor-view-default elementor-widget elementor-widget-icon" data-id="bc88278" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg aria-hidden="true" class="e-font-icon-svg e-fas-quote-left" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path></svg>			</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-8da8955 elementor-widget elementor-widget-testimonial" data-id="8da8955" data-element_type="widget" data-widget_type="testimonial.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-testimonial-wrapper">
+							<div class="elementor-testimonial-content">Tôi thực sự hài lòng với dịch vụ mà công ty họ cung cấp! Họ rất chu đáo, nhiệt tình và thực sự quan tâm đến nhu cầu của tôi. Tôi thực sự muốn giới thiệu họ.</div>
+			
+						<div class="elementor-testimonial-meta elementor-has-image elementor-testimonial-image-position-aside">
+				<div class="elementor-testimonial-meta-inner">
+											<div class="elementor-testimonial-image">
+							<img loading="lazy" decoding="async" width="101" height="102" src="http://planshop.com/wp-content/uploads/2025/03/team-01.jpg" class="attachment-full size-full wp-image-236" alt="team 01" srcset="http://planshop.com/wp-content/uploads/2025/03/team-01.jpg 101w, http://planshop.com/wp-content/uploads/2025/03/team-01-100x100.jpg 100w" sizes="(max-width: 101px) 100vw, 101px">						</div>
+					
+										<div class="elementor-testimonial-details">
+														<div class="elementor-testimonial-name">N. Hoàng Anh</div>
+																			</div>
+									</div>
+			</div>
+					</div>
+						</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-a549068 e-con-full e-flex e-con e-child" data-id="a549068" data-element_type="container">
+		<div class="elementor-element elementor-element-77e5074 e-con-full e-flex e-con e-child" data-id="77e5074" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-b503b5c elementor-view-default elementor-widget elementor-widget-icon" data-id="b503b5c" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg aria-hidden="true" class="e-font-icon-svg e-fas-quote-left" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path></svg>			</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-f3d0a46 elementor-widget elementor-widget-testimonial" data-id="f3d0a46" data-element_type="widget" data-widget_type="testimonial.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-testimonial-wrapper">
+							<div class="elementor-testimonial-content">Tôi thực sự hài lòng với dịch vụ mà công ty họ cung cấp! Họ rất chu đáo, nhiệt tình và thực sự quan tâm đến nhu cầu của tôi. Tôi thực sự muốn giới thiệu họ.</div>
+			
+						<div class="elementor-testimonial-meta elementor-has-image elementor-testimonial-image-position-aside">
+				<div class="elementor-testimonial-meta-inner">
+											<div class="elementor-testimonial-image">
+							<img loading="lazy" decoding="async" width="100" height="100" src="http://planshop.com/wp-content/uploads/2025/03/team-02.jpg" class="attachment-full size-full wp-image-240" alt="team 02">						</div>
+					
+										<div class="elementor-testimonial-details">
+														<div class="elementor-testimonial-name">V. Hoàng Việt</div>
+																			</div>
+									</div>
+			</div>
+					</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-98ffd76 e-con-full e-flex e-con e-child" data-id="98ffd76" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-ce73a01 elementor-view-default elementor-widget elementor-widget-icon" data-id="ce73a01" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg aria-hidden="true" class="e-font-icon-svg e-fas-quote-left" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"></path></svg>			</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-2ad414f elementor-widget elementor-widget-testimonial" data-id="2ad414f" data-element_type="widget" data-widget_type="testimonial.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-testimonial-wrapper">
+							<div class="elementor-testimonial-content">Đội ngũ của họ đã vượt quá mong đợi của chúng tôi. Cách tiếp cận sáng tạo và sự tỉ mỉ đến từng chi tiết của họ đã biến tầm nhìn của chúng tôi thành hiện thực. Rất đáng để giới thiệu!</div>
+			
+						<div class="elementor-testimonial-meta elementor-has-image elementor-testimonial-image-position-aside">
+				<div class="elementor-testimonial-meta-inner">
+											<div class="elementor-testimonial-image">
+							<img loading="lazy" decoding="async" width="100" height="100" src="http://planshop.com/wp-content/uploads/2025/03/team-03.jpg" class="attachment-full size-full wp-image-241" alt="team 03">						</div>
+					
+										<div class="elementor-testimonial-details">
+														<div class="elementor-testimonial-name">Cindy Hồng</div>
+																			</div>
+									</div>
+			</div>
+					</div>
+						</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		
+	
+	
+</div><!-- .entry-content .clear -->
+
+	
+	
+</article><!-- #post-## -->
+
+			</main><!-- #main -->
+			
+		
+	</div><!-- #primary -->
+
+
+	</div> <!-- ast-container -->
+	</div><!-- #content -->
+			<div class="astra-mobile-cart-overlay"></div>
+			<div id="astra-mobile-cart-drawer" class="astra-cart-drawer">
+				<div class="astra-cart-drawer-header">
+					<button tabindex="0" type="button" class="astra-cart-drawer-close" aria-label="Đóng ngăn giỏ hàng">
+							<span aria-hidden="true" class="ahfb-svg-iconset ast-inline-flex svg-baseline"><svg class="ast-mobile-svg ast-close-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5.293 6.707l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l5.293-5.293 5.293 5.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"></path></svg></span>					</button>
+					<div class="astra-cart-drawer-title">
+					Giỏ hàng					</div>
+				</div>
+				<div class="astra-cart-drawer-content ast-large-view">
+					<div class="widget woocommerce widget_shopping_cart"><div class="widget_shopping_cart_content">
+
+	<p class="woocommerce-mini-cart__empty-message">Chưa có sản phẩm trong giỏ hàng.</p>
+
+
+					<div class="ast-mini-cart-empty">
+						<div class="ast-mini-cart-message">
+							<p class="woocommerce-mini-cart__empty-message">Không có sản phẩm trong giỏ hàng.</p>
+						</div>
+												<div class="woocommerce-mini-cart__buttons">
+							<a href="http://planshop.com/shop/" class="button wc-forward ast-continue-shopping">Tiếp tục mua sắm</a> 						</div>
+					</div>
+				</div></div>				</div>
+			</div>
+					<footer itemtype="https://schema.org/WPFooter" itemscope="itemscope" id="colophon" role="contentinfo">
+			<div class="footer-width-fixer">		<div data-elementor-type="wp-post" data-elementor-id="31" class="elementor elementor-31">
+				<div class="elementor-element elementor-element-e09dacf e-con-full e-flex e-con e-parent" data-id="e09dacf" data-element_type="container">
+				<div class="elementor-element elementor-element-d20822b elementor-widget elementor-widget-google_maps" data-id="d20822b" data-element_type="widget" data-widget_type="google_maps.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-custom-embed">
+			<iframe loading="lazy" src="https://maps.google.com/maps?q=Phenikaa-%20H%C3%A0%20%C4%90%C3%B4ng%20-H%C3%A0%20N%E1%BB%99i%20-%20Vi%E1%BB%87t%20Nam&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" title="Phenikaa- Hà Đông -Hà Nội - Việt Nam" aria-label="Phenikaa- Hà Đông -Hà Nội - Việt Nam"></iframe>
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-5136ba9 e-flex e-con-boxed e-con e-parent" data-id="5136ba9" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-a9cb407 e-con-full e-flex e-con e-child" data-id="a9cb407" data-element_type="container">
+				<div class="elementor-element elementor-element-da579b9 elementor-widget elementor-widget-heading" data-id="da579b9" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">Plant Shop – Tất cả những gì bạn cần cho không gian xanh trong nhà</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-f7399a7 elementor-widget elementor-widget-text-editor" data-id="f7399a7" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Chúng tôi là điểm đến trực tuyến lý tưởng cho những người yêu cây và muốn mang thiên nhiên vào không gian sống. Tại Plant Shop, bạn sẽ tìm thấy đa dạng các loại cây trồng trong nhà, từ cây để bàn, cây lọc không khí đến cây trang trí nội thất, cùng với các phụ kiện chăm sóc cây như chậu trồng, đất, phân bón và dụng cụ làm vườn.</p><p>Tất cả sản phẩm đều được giao trực tiếp từ nhà vườn của chúng tôi đến tận cửa nhà bạn, đảm bảo tươi mới và chất lượng.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-cd667b9 elementor-widget elementor-widget-text-editor" data-id="cd667b9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><strong>Địa chỉ cửa hàng:</strong>&nbsp;Yên Nghĩa – Hà Đông – Hà Nội – Việt Nam</p>								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-f6c0321 e-con-full e-flex e-con e-child" data-id="f6c0321" data-element_type="container">
+				<div class="elementor-element elementor-element-ff9c645 elementor-widget elementor-widget-heading" data-id="ff9c645" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">Theo dõi chúng tôi<br></h4>				</div>
+				</div>
+		<div class="elementor-element elementor-element-86a1738 e-con-full e-grid e-con e-child" data-id="86a1738" data-element_type="container">
+				<div class="elementor-element elementor-element-7d8b726 elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="7d8b726" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-animation-pulse-grow elementor-repeater-item-901d245" href="http://facebook.com" target="_blank">
+						<span class="elementor-screen-only">Facebook</span>
+						<svg class="e-font-icon-svg e-fab-facebook" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>					</a>
+				</span>
+					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-bb1e13c elementor-widget elementor-widget-heading" data-id="bb1e13c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default"><a href="http://facebook.com">Facebook</a></h6>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-2814b61 e-con-full e-grid e-con e-child" data-id="2814b61" data-element_type="container">
+				<div class="elementor-element elementor-element-1b1a4a3 elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="1b1a4a3" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-animation-pulse-grow elementor-repeater-item-901d245" href="http://instagram.com" target="_blank">
+						<span class="elementor-screen-only">Instagram</span>
+						<svg class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>					</a>
+				</span>
+					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-bb12691 elementor-widget elementor-widget-heading" data-id="bb12691" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default"><a href="http://instagram.com">Instagram</a></h6>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-cd22cd7 e-con-full e-grid e-con e-child" data-id="cd22cd7" data-element_type="container">
+				<div class="elementor-element elementor-element-40f7452 elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="40f7452" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-animation-pulse-grow elementor-repeater-item-901d245" href="http://youtube.com" target="_blank">
+						<span class="elementor-screen-only">Youtube</span>
+						<svg class="e-font-icon-svg e-fab-youtube" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>					</a>
+				</span>
+					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-c412249 elementor-widget elementor-widget-heading" data-id="c412249" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h6 class="elementor-heading-title elementor-size-default"><a href="http://youtube.com">Youtube</a></h6>				</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-46a55c3 e-con-full e-flex e-con e-child" data-id="46a55c3" data-element_type="container">
+				<div class="elementor-element elementor-element-a9c33f2 elementor-widget elementor-widget-heading" data-id="a9c33f2" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">Dịch vụ khách hàng</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-10c9603 elementor-widget elementor-widget-heading" data-id="10c9603" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default"><a href="http://planshop.com/contact/">Liên hệ Palnt Shop</a></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5f6aa34 elementor-widget elementor-widget-heading" data-id="5f6aa34" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default"><a href="http://planshop.com/plant-care-blog/">Chăm sóc cây</a></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-9324176 elementor-widget elementor-widget-heading" data-id="9324176" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">Hướng dẫn Mua hàng/Đặt hàng</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-733073b elementor-widget elementor-widget-heading" data-id="733073b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default"><a href="http://planshop.com/refund_returns/">Chính sách trả hàng/hoàn tiền</a></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-156c61c elementor-widget elementor-widget-heading" data-id="156c61c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default"><a href="http://planshop.com/privacy-policy/">Chính sách bảo mật</a></div>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-55db6bc e-con-full e-flex e-con e-child" data-id="55db6bc" data-element_type="container">
+				<div class="elementor-element elementor-element-76505a4 elementor-widget elementor-widget-heading" data-id="76505a4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h4 class="elementor-heading-title elementor-size-default">Thanh toán</h4>				</div>
+				</div>
+				<div class="elementor-element elementor-element-b52b4ea elementor-widget elementor-widget-image" data-id="b52b4ea" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="100" height="100" src="http://planshop.com/wp-content/uploads/2025/07/unnamed-100x100.png" class="attachment-woocommerce_gallery_thumbnail size-woocommerce_gallery_thumbnail wp-image-521" alt="unnamed" srcset="http://planshop.com/wp-content/uploads/2025/07/unnamed-100x100.png 100w, http://planshop.com/wp-content/uploads/2025/07/unnamed-300x300.png 300w, http://planshop.com/wp-content/uploads/2025/07/unnamed-150x150.png 150w, http://planshop.com/wp-content/uploads/2025/07/elementor/thumbs/unnamed-r8rdp0lm3819cj30j5yfirw6e009d4ohdrsl78gcqw.png 500w, http://planshop.com/wp-content/uploads/2025/07/unnamed.png 512w" sizes="(max-width: 100px) 100vw, 100px">															</div>
+				</div>
+				<div class="elementor-element elementor-element-153e898 elementor-widget elementor-widget-image" data-id="153e898" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="100" height="100" src="http://planshop.com/wp-content/uploads/2025/07/unnamed-1-100x100.png" class="attachment-woocommerce_gallery_thumbnail size-woocommerce_gallery_thumbnail wp-image-520" alt="unnamed (1)" srcset="http://planshop.com/wp-content/uploads/2025/07/unnamed-1-100x100.png 100w, http://planshop.com/wp-content/uploads/2025/07/unnamed-1-300x300.png 300w, http://planshop.com/wp-content/uploads/2025/07/unnamed-1-150x150.png 150w, http://planshop.com/wp-content/uploads/2025/07/unnamed-1.png 512w" sizes="(max-width: 100px) 100vw, 100px">															</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		</div>		</footer>
+		</div><!-- #page -->
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/astra\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+
+<div class="xoo-el-container xoo-el-style-popup xoo-el-popup-active" style="visibility: hidden;">
+    <div class="xoo-el-opac"></div>
+    <div class="xoo-el-modal">
+        <div class="xoo-el-inmodal">
+            <span class="xoo-el-close xoo-el-icon-cross"></span>
+            <div class="xoo-el-wrap">
+                <div class="xoo-el-sidebar"></div>
+                <div class="xoo-el-srcont">
+                    <div class="xoo-el-main">
+<div class="xoo-el-form-container xoo-el-form-popup" data-active="register">
+
+	
+	
+	
+<div class="xoo-el-header">
+	<ul class="xoo-el-tabs">
+		
+        		  <li data-tab="login" class="xoo-el-login-tgr" style="order: 1 ">Đăng nhập tài khoản</li>
+        
+		 
+			<li data-tab="register" class="xoo-el-reg-tgr xoo-el-active" style="order: 2">Đăng ký tải khoản</li>
+		
+	</ul>
+</div>
+	
+	
+		
+			
+		<div data-section="login" class="xoo-el-section">
+
+			<div class="xoo-el-fields">
+
+				<div class="xoo-el-notice" style="display: none;"></div>
+				<form class="xoo-el-action-form xoo-el-form-login">
+
+					
+					<div class="xoo-el-fields-cont"><div class="xoo-aff-group xoo-aff-cont-text one xoo-aff-cont-required xoo-el-username_cont"><div class="xoo-aff-input-group"><span class="xoo-aff-input-icon fas fa-user-plus"></span><input type="text" class="xoo-aff-required xoo-aff-text" name="xoo-el-username" placeholder="Username / Email" value="" required="	" autocomplete="username"></div></div><div class="xoo-aff-group xoo-aff-cont-password one xoo-aff-cont-required xoo-el-password_cont"><div class="xoo-aff-input-group"><span class="xoo-aff-input-icon fas fa-key"></span><input type="password" class="xoo-aff-required xoo-aff-password" name="xoo-el-password" placeholder="Password" value="" required="	" autocomplete="current-password"><div class="xoo-aff-pw-toggle">
+					<span class="xoo-aff-pwtog-show"><i class="far fa-eye"></i></span>
+					<span class="xoo-aff-pwtog-hide"><i class="far fa-eye-slash"></i></span>
+					</div></div></div></div>
+<div class="xoo-aff-group xoo-el-login-btm-fields">
+	<label class="xoo-el-form-label">
+		<input type="checkbox" name="xoo-el-rememberme" value="forever">
+		<span>Nhớ mật khẩu</span>
+	</label>
+	<a class="xoo-el-lostpw-tgr" rel="nofollow" href="#">Quên mật khẩu?</a>
+</div>
+
+
+<input type="hidden" name="_xoo_el_form" value="login">
+
+<button type="submit" class="button btn xoo-el-action-btn xoo-el-login-btn">Đăng nhập</button>
+
+<input type="hidden" name="xoo_el_redirect" value="/shop">
+					
+				</form>
+
+				
+	
+	
+
+	
+	
+			</div>
+
+		</div>
+
+	
+			
+		<div data-section="register" class="xoo-el-section xoo-el-active">
+
+			<div class="xoo-el-fields">
+
+				<div class="xoo-el-notice" style="display: none;"></div>
+				<form class="xoo-el-action-form xoo-el-form-register">
+
+					
+					<div class="xoo-el-fields-cont"><div class="xoo-aff-group xoo-aff-cont-email one xoo-aff-cont-required xoo_el_reg_email_cont"><div class="xoo-aff-input-group"><span class="xoo-aff-input-icon fas fa-at"></span><input type="email" class="xoo-aff-required xoo-aff-email" name="xoo_el_reg_email" placeholder="Email" value="" required="	" autocomplete="email"></div></div><div class="xoo-aff-group xoo-aff-cont-text onehalf xoo-aff-cont-required xoo_el_reg_fname_cont"><div class="xoo-aff-input-group"><span class="xoo-aff-input-icon far fa-user"></span><input type="text" class="xoo-aff-required xoo-aff-text" name="xoo_el_reg_fname" placeholder="First Name" value="" required="	"></div></div><div class="xoo-aff-group xoo-aff-cont-text onehalf xoo-aff-cont-required xoo_el_reg_lname_cont"><div class="xoo-aff-input-group"><span class="xoo-aff-input-icon far fa-user"></span><input type="text" class="xoo-aff-required xoo-aff-text" name="xoo_el_reg_lname" placeholder="Last Name" value="" required="	"></div></div><div class="xoo-aff-group xoo-aff-cont-password one xoo-aff-cont-required xoo_el_reg_pass_cont"><div class="xoo-aff-input-group"><span class="xoo-aff-input-icon fas fa-key"></span><input type="password" class="xoo-aff-required xoo-aff-password" name="xoo_el_reg_pass" placeholder="Password" value="" maxlength="20" minlength="6" required="	" autocomplete="new-password"><div class="xoo-aff-pw-toggle">
+					<span class="xoo-aff-pwtog-show"><i class="far fa-eye"></i></span>
+					<span class="xoo-aff-pwtog-hide"><i class="far fa-eye-slash"></i></span>
+					</div></div></div><div class="xoo-aff-group xoo-aff-cont-password one xoo-aff-cont-required xoo_el_reg_pass_again_cont"><div class="xoo-aff-input-group"><span class="xoo-aff-input-icon fas fa-key"></span><input type="password" class="xoo-aff-required xoo-aff-password" name="xoo_el_reg_pass_again" placeholder="Confirm Password" value="" required="	" autocomplete="new-password"><div class="xoo-aff-pw-toggle">
+					<span class="xoo-aff-pwtog-show"><i class="far fa-eye"></i></span>
+					<span class="xoo-aff-pwtog-hide"><i class="far fa-eye-slash"></i></span>
+					</div></div></div><div class="xoo-aff-group xoo-aff-cont-checkbox_single one xoo-aff-cont-required xoo_el_reg_terms_cont"><div class="xoo-aff-required xoo-aff-checkbox_single"><label><input type="checkbox" name="xoo_el_reg_terms" class="xoo-aff-required xoo-aff-checkbox_single" value="yes">I accept the <a href="http://planshop.com/?page_id=3" target="_blank"> Terms of Service and Privacy Policy </a></label></div></div></div>
+<input type="hidden" name="_xoo_el_form" value="register">
+
+
+<button type="submit" class="button btn xoo-el-action-btn xoo-el-register-btn">Đăng ký</button>
+
+<input type="hidden" name="xoo_el_redirect" value="/">
+					
+				</form>
+
+				
+	
+	
+
+	
+	
+			</div>
+
+		</div>
+
+	
+			
+		<div data-section="lostpw" class="xoo-el-section">
+
+			<div class="xoo-el-fields">
+
+				<div class="xoo-el-notice"></div>
+				<form class="xoo-el-action-form xoo-el-form-lostpw">
+
+					
+					
+
+<span class="xoo-el-form-txt">Quên mật khẩu? Vui lòng nhập tên người dùng hoặc địa chỉ email của bạn. Bạn sẽ nhận được liên kết tạo mật khẩu mới qua email.</span>
+
+<div class="xoo-el-fields-cont"><div class="xoo-aff-group xoo-aff-cont-text one xoo-aff-cont-required user_login_cont"><div class="xoo-aff-input-group"><span class="xoo-aff-input-icon fas fa-user-plus"></span><input type="text" class="xoo-aff-required xoo-aff-text" name="user_login" placeholder="Username / Email" value="" required="	"></div></div></div>
+
+<input type="hidden" name="_xoo_el_form" value="lostPassword">
+
+<input type="hidden" name="_wp_http_referer" value="/">
+<button type="submit" class="button btn xoo-el-action-btn xoo-el-lostpw-btn">Liên kết đặt lại email</button>
+					
+				</form>
+
+				
+	
+	
+
+	
+	
+			</div>
+
+		</div>
+
+	
+	
+<div style="display: none!important;"><span class="xoo-el-sing-tgr"></span><span class="xoo-el-login-tgr"></span><span class="xoo-el-reg-tgr"></span><span class="xoo-el-lostpw-tgr"></span><span class="xoo-el-resetpw-tgr"></span><span class="xoo-el-forcereg-tgr"></span><span class="xoo-el-forcelogin-tgr"></span></div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="xoo-el-popup-notice" style="visibility: hidden;">
+    <div class="xoo-el-notice-opac"></div>
+    <div class="xoo-el-notice-modal">
+        <div class="xoo-el-notice-inmodal">
+            <span class="xoo-el-notice-close xoo-el-icon-cross"></span>
+            <div class="xoo-el-notice-wrap">
+               <iframe></iframe>
+               <div class="xoo-el-notice-iframestyle" style="display: none;">
+                   body::-webkit-scrollbar {
+                        width: 7px;
+                    }
+
+                    body::-webkit-scrollbar-track {
+                        border-radius: 10px;
+                        background: #f0f0f0;
+                    }
+
+                    body::-webkit-scrollbar-thumb {
+                        border-radius: 50px;
+                        background: #dfdbdb
+                    }
+               </div>
+            </div>
+        </div>
+    </div>
+</div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="ast-img-color-filter-2"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.058823529411765 0.058823529411765"></feFuncR><feFuncG type="table" tableValues="0.090196078431373 0.090196078431373"></feFuncG><feFuncB type="table" tableValues="0.16470588235294 0.16470588235294"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg>
+<div id="ast-scroll-top" tabindex="0" class="ast-scroll-top-icon ast-scroll-to-top-right" data-on-devices="both" style="display: none;">
+	<span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+                <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
+                </svg></span>	<span class="screen-reader-text">Lên đầu trang</span>
+</div>
+			<script>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+				<script>
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<link rel="stylesheet" id="vietqr-custome-styles-css" href="http://planshop.com/wp-content/plugins/vietqr/classes/../assets/css/custom.css?ver=6.8.2" media="all">
+<link rel="stylesheet" id="wc-blocks-style-css" href="http://planshop.com/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=wc-10.1.1" media="all">
+<link rel="stylesheet" id="wc-blocks-style-all-products-css" href="http://planshop.com/wp-content/plugins/woocommerce/assets/client/blocks/all-products.css?ver=wc-10.1.1" media="all">
+<link rel="stylesheet" id="ywcas-blocks-style-frontend-css" href="http://planshop.com/wp-content/plugins/yith-woocommerce-ajax-search/assets/css/frontend.css?ver=2.17.0" media="all">
+<link rel="stylesheet" id="widget-google_maps-css" href="http://planshop.com/wp-content/plugins/elementor/assets/css/widget-google_maps.min.css?ver=3.31.2" media="all">
+<link rel="stylesheet" id="e-animation-pulse-grow-css" href="http://planshop.com/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-pulse-grow.min.css?ver=3.31.2" media="all">
+<link rel="stylesheet" id="widget-social-icons-css" href="http://planshop.com/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.31.2" media="all">
+<link rel="stylesheet" id="e-apple-webkit-css" href="http://planshop.com/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=3.31.2" media="all">
+<style id="core-block-supports-inline-css">
+.wp-container-core-columns-is-layout-28f84493{flex-wrap:nowrap;}.wp-container-core-group-is-layout-6c531013{flex-wrap:nowrap;}
+</style>
+<script id="astra-theme-js-js-extra">
+var astra = {"break_point":"921","isRtl":"","is_scroll_to_id":"1","is_scroll_to_top":"1","is_header_footer_builder_active":"1","responsive_cart_click":"flyout","is_dark_palette":""};
+</script>
+<script src="http://planshop.com/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.11.10" id="astra-theme-js-js"></script>
+<script id="astra-mobile-cart-js-extra">
+var astra_cart = {"desktop_layout":"default","responsive_cart_click":"flyout"};
+</script>
+<script src="http://planshop.com/wp-content/themes/astra/assets/js/minified/mobile-cart.min.js?ver=4.11.10" id="astra-mobile-cart-js"></script>
+<script id="astra-add-to-cart-quantity-btn-js-extra">
+var astra_qty_btn = {"plus_qty":"Th\u00eam s\u1ed1 l\u01b0\u1ee3ng","minus_qty":"Gi\u1ea3m s\u1ed1 l\u01b0\u1ee3ng","style_type":"normal"};
+</script>
+<script src="http://planshop.com/wp-content/themes/astra/assets/js/minified/add-to-cart-quantity-btn.min.js?ver=4.11.10" id="astra-add-to-cart-quantity-btn-js"></script>
+<script id="astra-sticky-sidebar-js-extra">
+var astra_sticky_sidebar = {"sticky_sidebar_on":"1","header_above_height":{"desktop":50,"tablet":"","mobile":""},"header_height":{"desktop":80,"tablet":70,"mobile":""},"header_below_height":{"desktop":60,"tablet":"","mobile":""},"header_above_stick":"","header_main_stick":"","header_below_stick":"","sticky_header_addon":"","desktop_breakpoint":"922"};
+</script>
+<script src="http://planshop.com/wp-content/themes/astra/assets/js/minified/sticky-sidebar.min.js?ver=4.11.10" id="astra-sticky-sidebar-js"></script>
+<script id="xoo-el-js-js-extra">
+var xoo_el_localize = {"adminurl":"http:\/\/planshop.com\/wp-admin\/admin-ajax.php","redirectDelay":"300","html":{"spinner":"<i class=\"xoo-el-icon-spinner8 xoo-el-spinner\"><\/i>","editField":"<span class=\"xoo-el-edit-em\">Change?<\/span>","notice":{"error":"<div class=\"xoo-el-notice-error \">%s<\/div>","success":"<div class=\"xoo-el-notice-success \">%s<\/div>"}},"autoOpenPopup":"no","autoOpenPopupOnce":"no","aoDelay":"500","loginClass":"","registerClass":"","errorLog":"no","checkout":{"loginEnabled":"yes","loginRedirect":"\/"}};
+</script>
+<script src="http://planshop.com/wp-content/plugins/easy-login-woocommerce/assets/js/xoo-el-js.js?ver=2.9.6" id="xoo-el-js-js"></script>
+<script src="http://planshop.com/wp-content/plugins/woocommerce/assets/js/accounting/accounting.min.js?ver=0.4.2" id="accounting-js"></script>
+<script src="http://planshop.com/wp-content/plugins/woocommerce/assets/js/selectWoo/selectWoo.full.min.js?ver=1.0.9-wc.10.1.1" id="selectWoo-js" data-wp-strategy="defer"></script>
+<script id="yith-wcan-shortcodes-js-extra">
+var yith_wcan_shortcodes = {"query_param":"yith_wcan","query_vars":[],"supported_taxonomies":["product_cat","product_tag","pa_kich-thuoc-chau","pa_loai-chau","pa_mau-sac","pa_phu-kien","pa_so-luong"],"content":"#content","change_browser_url":"1","instant_filters":"1","ajax_filters":"1","reload_on_back":"1","show_clear_filter":"","scroll_top":"","scroll_target":"","modal_on_mobile":"","session_param":"","show_current_children":"","loader":"","toggles_open_on_modal":"","mobile_media_query":"991","base_url":"http:\/\/planshop.com\/","terms_per_page":"10","currency_format":{"symbol":"VND","decimal":",","thousand":".","precision":0,"format":"%v&nbsp;%s"},"labels":{"empty_option":"All","search_placeholder":"Search...","no_items":"No item found","show_more":"Hi\u1ec3n th\u1ecb th\u00eam","close":"Close","save":"Save","show_results":"Show results","clear_selection":"Clear","clear_all_selections":"Clear All"},"urls":{"render_filter":"\/?wc-ajax=yith_wcan_render_filter"},"nonces":{"render_filter":"6e46cc4247","render_remaining_terms":"b52ff7e3e0","get_filter_terms":"560fcaa487"}};
+</script>
+<script src="http://planshop.com/wp-content/plugins/yith-woocommerce-ajax-navigation/assets/js/yith-wcan-shortcodes.min.js?ver=5.13.0" id="yith-wcan-shortcodes-js"></script>
+<script src="http://planshop.com/wp-includes/js/dist/vendor/lodash.min.js?ver=4.17.21" id="lodash-js"></script>
+<script id="lodash-js-after">
+window.lodash = _.noConflict();
+</script>
+<script src="http://planshop.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script src="http://planshop.com/wp-includes/js/dist/vendor/moment.min.js?ver=2.30.1" id="moment-js"></script>
+<script id="moment-js-after">
+moment.updateLocale( 'vi', {"months":["Th\u00e1ng 1","Th\u00e1ng 2","Th\u00e1ng 3","Th\u00e1ng 4","Th\u00e1ng 5","Th\u00e1ng 6","Th\u00e1ng 7","Th\u00e1ng 8","Th\u00e1ng 9","Th\u00e1ng 10","Th\u00e1ng m\u01b0\u1eddi m\u1ed9t","Th\u00e1ng 12"],"monthsShort":["Th1","Th2","Th3","Th4","Th5","Th6","Th7","Th8","Th9","Th10","Th11","Th12"],"weekdays":["Ch\u1ee7 Nh\u1eadt","Th\u1ee9 Hai","Th\u1ee9 Ba","Th\u1ee9 T\u01b0","Th\u1ee9 N\u0103m","Th\u1ee9 S\u00e1u","Th\u1ee9 B\u1ea3y"],"weekdaysShort":["CN","T2","T3","T4","T5","T6","T7"],"week":{"dow":1},"longDateFormat":{"LT":"g:i a","LTS":null,"L":null,"LL":"m\/d\/Y","LLL":"j F, Y g:i a","LLLL":null}} );
+</script>
+<script src="http://planshop.com/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script src="http://planshop.com/wp-includes/js/dist/deprecated.min.js?ver=e1f84915c5e8ae38964c" id="wp-deprecated-js"></script>
+<script src="http://planshop.com/wp-includes/js/dist/date.min.js?ver=85ff222add187a4e358f" id="wp-date-js"></script>
+<script id="wp-date-js-after">
+wp.date.setSettings( {"l10n":{"locale":"vi","months":["Th\u00e1ng 1","Th\u00e1ng 2","Th\u00e1ng 3","Th\u00e1ng 4","Th\u00e1ng 5","Th\u00e1ng 6","Th\u00e1ng 7","Th\u00e1ng 8","Th\u00e1ng 9","Th\u00e1ng 10","Th\u00e1ng m\u01b0\u1eddi m\u1ed9t","Th\u00e1ng 12"],"monthsShort":["Th1","Th2","Th3","Th4","Th5","Th6","Th7","Th8","Th9","Th10","Th11","Th12"],"weekdays":["Ch\u1ee7 Nh\u1eadt","Th\u1ee9 Hai","Th\u1ee9 Ba","Th\u1ee9 T\u01b0","Th\u1ee9 N\u0103m","Th\u1ee9 S\u00e1u","Th\u1ee9 B\u1ea3y"],"weekdaysShort":["CN","T2","T3","T4","T5","T6","T7"],"meridiem":{"am":"s\u00e1ng","pm":"chi\u1ec1u","AM":"S\u00e1ng","PM":"Chi\u1ec1u"},"relative":{"future":"%s t\u1eeb b\u00e2y gi\u1edd","past":"%s tr\u01b0\u1edbc","s":"m\u1ed9t gi\u00e2y","ss":"%d gi\u00e2y","m":"m\u1ed9t ph\u00fat","mm":"%d ph\u00fat","h":"m\u1ed9t gi\u1edd","hh":"%d gi\u1edd","d":"m\u1ed9t ng\u00e0y","dd":"%d ng\u00e0y","M":"m\u1ed9t th\u00e1ng","MM":"%d th\u00e1ng","y":"m\u1ed9t n\u0103m","yy":"%d n\u0103m"},"startOfWeek":1},"formats":{"time":"g:i a","date":"m\/d\/Y","datetime":"j F, Y g:i a","datetimeAbbreviated":"M j, Y g:i a"},"timezone":{"offset":7,"offsetFormatted":"7","string":"","abbr":""}} );
+</script>
+<script src="http://planshop.com/wp-content/plugins/yith-woocommerce-ajax-navigation/plugin-fw/dist/lapilli-ui/date/index.js?ver=a688abdf8f9c4a18e904" id="lapilli-ui-date-js"></script>
+<script id="lapilli-ui-date-js-after">
+lapilliUI.date.setLocale( {"options":{"weekStartsOn":1}} );
+				lapilliUI.date.setDateFormats( {"year":"Y","month":"F","dayOfMonth":"j","monthShort":"M","weekday":"l","weekdayShort":"D","fullDate":"m\/d\/Y","inputDate":"Y-m-d","monthAndDate":"F j","monthAndYear":"F Y"} );
+				lapilliUI.date.setFormatDate( wp.date.format );
+</script>
+<script src="http://planshop.com/wp-includes/js/dist/vendor/react.min.js?ver=18.3.1.1" id="react-js"></script>
+<script src="http://planshop.com/wp-content/plugins/yith-woocommerce-ajax-navigation/plugin-fw/dist/lapilli-ui/styles/index.js?ver=05a5b5e59191f74ac904" id="lapilli-ui-styles-js"></script>
+<script src="http://planshop.com/wp-includes/js/dist/vendor/react-dom.min.js?ver=18.3.1.1" id="react-dom-js"></script>
+<script src="http://planshop.com/wp-content/plugins/yith-woocommerce-ajax-navigation/plugin-fw/dist/lapilli-ui/components/index.js?ver=fe5275fad0fd47db7c63" id="lapilli-ui-components-js"></script>
+<script src="http://planshop.com/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script src="http://planshop.com/wp-includes/js/dist/url.min.js?ver=c2964167dfe2477c14ea" id="wp-url-js"></script>
+<script id="wp-api-fetch-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2025-07-19 02:17:53+0000","generator":"GlotPress\/4.0.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"vi_VN"},"You are probably offline.":["C\u00f3 th\u1ec3 b\u1ea1n \u0111ang ngo\u1ea1i tuy\u1ebfn."],"Media upload failed. If this is a photo or a large image, please scale it down and try again.":["T\u1ea3i l\u00ean media kh\u00f4ng th\u00e0nh c\u00f4ng. N\u1ebfu \u0111\u00e2y l\u00e0 h\u00ecnh \u1ea3nh c\u00f3 k\u00edch th\u01b0\u1edbc l\u1edbn, vui l\u00f2ng thu nh\u1ecf n\u00f3 xu\u1ed1ng v\u00e0 th\u1eed l\u1ea1i."],"The response is not a valid JSON response.":["Ph\u1ea3n h\u1ed3i kh\u00f4ng ph\u1ea3i l\u00e0 m\u1ed9t JSON h\u1ee3p l\u1ec7."],"An unknown error occurred.":["C\u00f3 l\u1ed7i n\u00e0o \u0111\u00f3 \u0111\u00e3 x\u1ea3y ra."]}},"comment":{"reference":"wp-includes\/js\/dist\/api-fetch.js"}} );
+</script>
+<script src="http://planshop.com/wp-includes/js/dist/api-fetch.min.js?ver=3623a576c78df404ff20" id="wp-api-fetch-js"></script>
+<script id="wp-api-fetch-js-after">
+wp.apiFetch.use( wp.apiFetch.createRootURLMiddleware( "http://planshop.com/wp-json/" ) );
+wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware( "ccebb98028" );
+wp.apiFetch.use( wp.apiFetch.nonceMiddleware );
+wp.apiFetch.use( wp.apiFetch.mediaUploadMiddleware );
+wp.apiFetch.nonceEndpoint = "http://planshop.com/wp-admin/admin-ajax.php?action=rest-nonce";
+</script>
+<script id="yith-wcwl-add-to-wishlist-js-extra">
+var yithWcwlAddToWishlist = {"isUserLoggedIn":"","globalOptions":{"wishlist_disabled_for_unauthenticated_users":"no","loop_position":"after_add_to_cart","ajax_loading":"no","icon_type":"default","icon":"heart-outline","custom_icon":"","added_icon_type":"default","added_icon":"heart","custom_added_icon":"","custom_icon_alt":"","custom_icon_width":"25","behaviour":"remove","style":"link","popup_title":"Select a wishlist","move_popup_title":"Move to another wishlist","add_label":"Th\u00eam v\u00e0o danh s\u00e1ch y\u00eau th\u00edch","added_label":"\u0110\u00e3 th\u00eam s\u1ea3n ph\u1ea9m!","remove_label":"X\u00f3a kh\u1ecfi danh s\u00e1ch","browse_label":"Xem danh s\u00e1ch y\u00eau th\u00edch","already_in_label":"S\u1ea3n ph\u1ea9m \u0111\u00e3 c\u00f3 trong danh s\u00e1ch y\u00eau th\u00edch c\u1ee7a b\u1ea1n!","default_wishlist_name":"Danh s\u00e1ch y\u00eau th\u00edch"},"buttonClasses":"","feedback_duration":"3000","wishlist_url":"http:\/\/planshop.com\/my-account\/wishlist\/","containerSelectors":{"productContainer":[".wc-block-grid__product",".wp-block-post.product",".wc-block-product",".add-to-wishlist-before_image"],"thumbnailContainer":["div[data-block-name=\"woocommerce\/product-image\"]","div.wc-block-grid__product-image",".woocommerce-loop-product__link [class*=\"image\"]",".astra-shop-thumbnail-wrap",".product-inner .image-wrap","a.woocommerce-loop-product__link","div.t-entry-visual","div.box-image","div.product-image","a.product-image-link"]},"login_wishlist_url":"http:\/\/planshop.com\/my-account\/?wishlist_notice=true&add_to_wishlist=%product_id%","i18n":{"feedbacks":{"added":"{{product_name}} has been added to your {{wishlist_name}} list!","removed":"{{product_name}} has been removed from your {{wishlist_name}} list!"}}};
+</script>
+<script src="http://planshop.com/wp-content/plugins/yith-woocommerce-wishlist/assets/js/dist/components/add-to-wishlist/index.js?ver=74f63692d5dd73780ee4" id="yith-wcwl-add-to-wishlist-js"></script>
+<script src="http://planshop.com/wp-content/plugins/yith-woocommerce-wishlist/assets/js/add-to-wishlist-gutenberg.min.js?ver=4.8.0" id="yith-wcwl-add-to-wishlist-gutenberg-js"></script>
+<script src="http://planshop.com/wp-content/plugins/yith-woocommerce-wishlist/assets/js/jquery.selectBox.min.js?ver=1.2.0" id="jquery-selectBox-js"></script>
+<script src="//planshop.com/wp-content/plugins/woocommerce/assets/js/prettyPhoto/jquery.prettyPhoto.min.js?ver=3.1.6" id="prettyPhoto-js" data-wp-strategy="defer"></script>
+<script id="jquery-yith-wcwl-js-extra">
+var yith_wcwl_l10n = {"ajax_url":"\/wp-admin\/admin-ajax.php","redirect_to_cart":"no","yith_wcwl_button_position":"add-to-cart","multi_wishlist":"","hide_add_button":"1","enable_ajax_loading":"","ajax_loader_url":"http:\/\/planshop.com\/wp-content\/plugins\/yith-woocommerce-wishlist\/assets\/images\/ajax-loader-alt.svg","remove_from_wishlist_after_add_to_cart":"1","is_wishlist_responsive":"1","time_to_close_prettyphoto":"3000","fragments_index_glue":".","reload_on_found_variation":"1","mobile_media_query":"768","labels":{"cookie_disabled":"We are sorry, but this feature is available only if cookies on your browser are enabled.","added_to_cart_message":"<div class=\"woocommerce-notices-wrapper\"><div class=\"woocommerce-message\" role=\"alert\">Product added to cart successfully<\/div><\/div>"},"actions":{"add_to_wishlist_action":"add_to_wishlist","remove_from_wishlist_action":"remove_from_wishlist","reload_wishlist_and_adding_elem_action":"reload_wishlist_and_adding_elem","load_mobile_action":"load_mobile","delete_item_action":"delete_item","save_title_action":"save_title","save_privacy_action":"save_privacy","load_fragments":"load_fragments"},"nonce":{"add_to_wishlist_nonce":"0ed8f8782d","remove_from_wishlist_nonce":"b14cfde896","reload_wishlist_and_adding_elem_nonce":"59d2eab05c","load_mobile_nonce":"c3fc1c1825","delete_item_nonce":"476d1872ad","save_title_nonce":"d4791eb45a","save_privacy_nonce":"9be0511f65","load_fragments_nonce":"1ad0bd4ef6"},"redirect_after_ask_estimate":"","ask_estimate_redirect_url":"http:\/\/planshop.com"};
+</script>
+<script src="http://planshop.com/wp-content/plugins/yith-woocommerce-wishlist/assets/js/jquery.yith-wcwl.min.js?ver=4.8.0" id="jquery-yith-wcwl-js"></script>
+<script src="http://planshop.com/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381" id="wp-dom-ready-js"></script>
+<script id="starter-templates-zip-preview-js-extra">
+var starter_templates_zip_preview = {"AstColorPaletteVarPrefix":"--ast-global-color-","AstEleColorPaletteVarPrefix":["ast-global-color-0","ast-global-color-1","ast-global-color-2","ast-global-color-3","ast-global-color-4","ast-global-color-5","ast-global-color-6","ast-global-color-7","ast-global-color-8"]};
+</script>
+<script src="http://planshop.com/wp-content/plugins/astra-sites/inc/lib/onboarding/assets/dist/template-preview/main.js?ver=06758d4d807d9d22c6ea" id="starter-templates-zip-preview-js"></script>
+<script src="http://planshop.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.31.2" id="elementor-webpack-runtime-js"></script>
+<script src="http://planshop.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.31.2" id="elementor-frontend-modules-js"></script>
+<script src="http://planshop.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Chia s\u1ebb tr\u00ean Facebook","shareOnTwitter":"Chia s\u1ebb tr\u00ean Twitter","pinIt":"Ghim n\u00f3","download":"T\u1ea3i xu\u1ed1ng","downloadImage":"T\u1ea3i h\u00ecnh \u1ea3nh","fullscreen":"To\u00e0n m\u00e0n h\u00ecnh","zoom":"Thu ph\u00f3ng","share":"Chia s\u1ebb","playVideo":"Ph\u00e1t video","previous":"Quay v\u1ec1","next":"Ti\u1ebfp theo","close":"\u0110\u00f3ng","a11yCarouselPrevSlideMessage":"Slide tr\u01b0\u1edbc","a11yCarouselNextSlideMessage":"Slide ti\u1ebfp theo","a11yCarouselFirstSlideMessage":"\u0110\u00e2y l\u00e0 slide \u0111\u1ea7u ti\u00ean","a11yCarouselLastSlideMessage":"\u0110\u00e2y l\u00e0 slide cu\u1ed1i c\u00f9ng","a11yCarouselPaginationBulletMessage":"\u0110i \u0111\u1ebfn slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Di \u0111\u1ed9ng d\u1ecdc","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Ch\u1ebf \u0111\u1ed9 ngang di \u0111\u1ed9ng","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"M\u00e1y t\u00ednh b\u1ea3ng d\u1ecdc","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"M\u00e1y t\u00ednh b\u1ea3ng ngang","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Trang r\u1ed9ng","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.31.2","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"nested-elements":true,"e_element_cache":true,"home_screen":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"cloud-library":true,"e_opt_in_v4_page":true},"urls":{"assets":"http:\/\/planshop.com\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"http:\/\/planshop.com\/wp-admin\/admin-ajax.php","uploadUrl":"http:\/\/planshop.com\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"a032ab7912"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":219,"title":"Plant%20Shop%20%E2%80%93%20C%C3%A2y%20xanh%20cho%20m%E1%BB%8Di%20nh%C3%A0","excerpt":"","featuredImage":false}};
+</script>
+<script src="http://planshop.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.31.2" id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span>
+<script src="http://planshop.com/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=10.1.1" id="sourcebuster-js-js"></script>
+<script id="wc-order-attribution-js-extra">
+var wc_order_attribution = {"params":{"lifetime":1.0000000000000001e-5,"session":30,"base64":false,"ajaxurl":"http:\/\/planshop.com\/wp-admin\/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","utm_source_platform":"current.plt","utm_creative_format":"current.fmt","utm_marketing_tactic":"current.tct","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
+</script>
+<script src="http://planshop.com/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=10.1.1" id="wc-order-attribution-js"></script>
+<script id="wc-cart-fragments-js-extra">
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_651f15593f5c15997b081e26d60b23a9","fragment_name":"wc_fragments_651f15593f5c15997b081e26d60b23a9","request_timeout":"5000"};
+</script>
+<script src="http://planshop.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=10.1.1" id="wc-cart-fragments-js" defer="" data-wp-strategy="defer"></script>
+<script src="http://planshop.com/wp-includes/js/dist/vendor/react-jsx-runtime.min.js?ver=18.3.1" id="react-jsx-runtime-js"></script>
+<script id="wp-a11y-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2025-07-19 02:17:53+0000","generator":"GlotPress\/4.0.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"vi_VN"},"Notifications":["Th\u00f4ng b\u00e1o"]}},"comment":{"reference":"wp-includes\/js\/dist\/a11y.js"}} );
+</script>
+<script src="http://planshop.com/wp-includes/js/dist/a11y.min.js?ver=3156534cc54473497e14" id="wp-a11y-js"></script>
+<script src="http://planshop.com/wp-includes/js/dist/dom.min.js?ver=80bd57c84b45cf04f4ce" id="wp-dom-js"></script>
+<script src="http://planshop.com/wp-includes/js/dist/escape-html.min.js?ver=6561a406d2d232a6fbd2" id="wp-escape-html-js"></script>
+<script src="http://planshop.com/wp-includes/js/dist/element.min.js?ver=a4eeeadd23c0d7ab1d2d" id="wp-element-js"></script>
+<script src="http://planshop.com/wp-includes/js/dist/is-shallow-equal.min.js?ver=e0f9f1d78d83f5196979" id="wp-is-shallow-equal-js"></script>
+<script id="wp-keycodes-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2025-07-19 02:17:53+0000","generator":"GlotPress\/4.0.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"vi_VN"},"Tilde":["D\u1ea5u ng\u00e3"],"Backtick":["D\u1ea5u huy\u1ec1n"],"Period":["Giai \u0111o\u1ea1n"],"Comma":["D\u1ea5u ph\u1ea9y"]}},"comment":{"reference":"wp-includes\/js\/dist\/keycodes.js"}} );
+</script>
+<script src="http://planshop.com/wp-includes/js/dist/keycodes.min.js?ver=034ff647a54b018581d3" id="wp-keycodes-js"></script>
+<script src="http://planshop.com/wp-includes/js/dist/priority-queue.min.js?ver=9c21c957c7e50ffdbf48" id="wp-priority-queue-js"></script>
+<script src="http://planshop.com/wp-includes/js/dist/compose.min.js?ver=84bcf832a5c99203f3db" id="wp-compose-js"></script>
+<script src="http://planshop.com/wp-includes/js/dist/html-entities.min.js?ver=2cd3358363e0675638fb" id="wp-html-entities-js"></script>
+<script src="http://planshop.com/wp-includes/js/dist/primitives.min.js?ver=aef2543ab60c8c9bb609" id="wp-primitives-js"></script>
+<script src="http://planshop.com/wp-includes/js/dist/private-apis.min.js?ver=0f8478f1ba7e0eea562b" id="wp-private-apis-js"></script>
+<script src="http://planshop.com/wp-includes/js/dist/redux-routine.min.js?ver=8bb92d45458b29590f53" id="wp-redux-routine-js"></script>
+<script src="http://planshop.com/wp-includes/js/dist/data.min.js?ver=fe6c4835cd00e12493c3" id="wp-data-js"></script>
+<script id="wp-data-js-after">
+( function() {
+	var userId = 0;
+	var storageKey = "WP_DATA_USER_" + userId;
+	wp.data
+		.use( wp.data.plugins.persistence, { storageKey: storageKey } );
+} )();
+</script>
+<script id="wp-rich-text-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2025-07-19 02:17:53+0000","generator":"GlotPress\/4.0.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"vi_VN"},"%s applied.":["%s \u0111\u00e3 \u0111\u01b0\u1ee3c \u00e1p d\u1ee5ng."],"%s removed.":["\u0110\u00e3 x\u00f3a %s."]}},"comment":{"reference":"wp-includes\/js\/dist\/rich-text.js"}} );
+</script>
+<script src="http://planshop.com/wp-includes/js/dist/rich-text.min.js?ver=74178fc8c4d67d66f1a8" id="wp-rich-text-js"></script>
+<script src="http://planshop.com/wp-includes/js/dist/warning.min.js?ver=ed7c8b0940914f4fe44b" id="wp-warning-js"></script>
+<script id="wp-components-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2025-07-19 02:17:53+0000","generator":"GlotPress\/4.0.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"vi_VN"},"December":["Th\u00e1ng 12"],"November":["Th\u00e1ng m\u01b0\u1eddi m\u1ed9t"],"October":["Th\u00e1ng 10"],"September":["Th\u00e1ng 9"],"August":["Th\u00e1ng 8"],"July":["Th\u00e1ng 7"],"June":["Th\u00e1ng 6"],"May":["Th\u00e1ng 5"],"April":["Th\u00e1ng 4"],"March":["Th\u00e1ng 3"],"February":["Th\u00e1ng 2"],"January":["Th\u00e1ng 1"],"input control\u0004Show %s":["Hi\u1ec3n th\u1ecb %s"],"Border color picker. The currently selected color has a value of \"%s\".":["B\u1ed9 ch\u1ecdn m\u00e0u \u0111\u01b0\u1eddng vi\u1ec1n. M\u00e0u hi\u1ec7n \u0111ang \u0111\u01b0\u1ee3c ch\u1ecdn c\u00f3 gi\u00e1 tr\u1ecb l\u00e0 \"%s\"."],"Border color picker. The currently selected color is called \"%1$s\" and has a value of \"%2$s\".":["B\u1ed9 ch\u1ecdn m\u00e0u \u0111\u01b0\u1eddng vi\u1ec1n. M\u00e0u hi\u1ec7n \u0111ang \u0111\u01b0\u1ee3c ch\u1ecdn c\u00f3 t\u00ean l\u00e0 \"%1$s\" v\u00e0 c\u00f3 gi\u00e1 tr\u1ecb l\u00e0 \"%2$s\"."],"Border color and style picker. The currently selected color has a value of \"%s\".":["B\u1ed9 ch\u1ecdn m\u00e0u v\u00e0 ki\u1ec3u \u0111\u01b0\u1eddng vi\u1ec1n. M\u00e0u hi\u1ec7n \u0111ang \u0111\u01b0\u1ee3c ch\u1ecdn c\u00f3 gi\u00e1 tr\u1ecb l\u00e0 \"%s\"."],"Border color and style picker. The currently selected color has a value of \"%1$s\". The currently selected style is \"%2$s\".":["B\u1ed9 ch\u1ecdn m\u00e0u v\u00e0 ki\u1ec3u vi\u1ec1n. M\u00e0u hi\u1ec7n \u0111ang \u0111\u01b0\u1ee3c ch\u1ecdn c\u00f3 gi\u00e1 tr\u1ecb l\u00e0 \"%1$s\". Ki\u1ec3u hi\u1ec7n \u0111ang \u0111\u01b0\u1ee3c ch\u1ecdn l\u00e0 \"%2$s\"."],"Border color and style picker. The currently selected color is called \"%1$s\" and has a value of \"%2$s\".":["B\u1ed9 ch\u1ecdn m\u00e0u v\u00e0 ki\u1ec3u vi\u1ec1n. M\u00e0u hi\u1ec7n \u0111ang \u0111\u01b0\u1ee3c ch\u1ecdn c\u00f3 t\u00ean l\u00e0 \"%1$s\" v\u00e0 c\u00f3 gi\u00e1 tr\u1ecb l\u00e0 \"%2$s\"."],"Border color and style picker. The currently selected color is called \"%1$s\" and has a value of \"%2$s\". The currently selected style is \"%3$s\".":["B\u1ed9 ch\u1ecdn m\u00e0u v\u00e0 ki\u1ec3u vi\u1ec1n. M\u00e0u hi\u1ec7n \u0111ang \u0111\u01b0\u1ee3c ch\u1ecdn c\u00f3 t\u00ean l\u00e0 \"%1$s\" v\u00e0 c\u00f3 gi\u00e1 tr\u1ecb l\u00e0 \"%2$s\". Ki\u1ec3u hi\u1ec7n \u0111ang \u0111\u01b0\u1ee3c ch\u1ecdn l\u00e0 \"%3$s\"."],"%s items selected":["\u0110\u00e3 ch\u1ecdn %s m\u1ee5c"],"Select AM or PM":["Ch\u1ecdn AM ho\u1eb7c PM"],"Select an item":["Ch\u1ecdn m\u1ed9t m\u1ee5c"],"No items found":["Kh\u00f4ng t\u00ecm th\u1ea5y m\u1ee5c n\u00e0o"],"Remove color: %s":["G\u1ee1 b\u1ecf m\u00e0u: %s"],"authors\u0004All":["T\u1ea5t c\u1ea3"],"categories\u0004All":["T\u1ea5t c\u1ea3"],"Edit: %s":["Ch\u1ec9nh s\u1eeda: %s"],"Left and right sides":["B\u00ean tr\u00e1i v\u00e0 b\u00ean ph\u1ea3i"],"Top and bottom sides":["M\u1eb7t tr\u00ean v\u00e0 m\u1eb7t d\u01b0\u1edbi"],"Right side":["B\u00ean ph\u1ea3i"],"Left side":["B\u00ean tr\u00e1i"],"Bottom side":["Ph\u00eda d\u01b0\u1edbi c\u00f9ng"],"Top side":["M\u1eb7t tr\u00ean"],"Large viewport largest dimension (lvmax)":["K\u00edch th\u01b0\u1edbc l\u1edbn nh\u1ea5t c\u1ee7a khung nh\u00ecn l\u1edbn (lvmax)"],"Small viewport largest dimension (svmax)":["K\u00edch th\u01b0\u1edbc l\u1edbn nh\u1ea5t c\u1ee7a khung nh\u00ecn nh\u1ecf (svmax)"],"Dynamic viewport largest dimension (dvmax)":["K\u00edch th\u01b0\u1edbc l\u1edbn nh\u1ea5t c\u1ee7a khung nh\u00ecn \u0111\u1ed9ng (dvmax)"],"Dynamic viewport smallest dimension (dvmin)":["K\u00edch th\u01b0\u1edbc nh\u1ecf nh\u1ea5t c\u1ee7a khung nh\u00ecn \u0111\u1ed9ng (dvmin)"],"Dynamic viewport width or height (dvb)":["Chi\u1ec1u r\u1ed9ng ho\u1eb7c chi\u1ec1u cao c\u1ee7a khung nh\u00ecn \u0111\u1ed9ng (dvb)"],"Dynamic viewport width or height (dvi)":["Chi\u1ec1u r\u1ed9ng ho\u1eb7c chi\u1ec1u cao c\u1ee7a khung nh\u00ecn \u0111\u1ed9ng (dvi)"],"Dynamic viewport height (dvh)":["Chi\u1ec1u cao khung nh\u00ecn \u0111\u1ed9ng (dvh)"],"Dynamic viewport width (dvw)":["Chi\u1ec1u r\u1ed9ng khung nh\u00ecn \u0111\u1ed9ng (dvw)"],"Large viewport smallest dimension (lvmin)":["K\u00edch th\u01b0\u1edbc nh\u1ecf nh\u1ea5t c\u1ee7a khung nh\u00ecn l\u1edbn (lvmin)"],"Large viewport width or height (lvb)":["Chi\u1ec1u r\u1ed9ng ho\u1eb7c chi\u1ec1u cao c\u1ee7a khung nh\u00ecn l\u1edbn (lvb)"],"Large viewport width or height (lvi)":["Chi\u1ec1u r\u1ed9ng ho\u1eb7c chi\u1ec1u cao c\u1ee7a khung nh\u00ecn l\u1edbn (lvi)"],"Large viewport height (lvh)":["Chi\u1ec1u cao khung nh\u00ecn l\u1edbn (lvh)"],"Large viewport width (lvw)":["Chi\u1ec1u r\u1ed9ng khung nh\u00ecn l\u1edbn (lvw)"],"Small viewport smallest dimension (svmin)":["K\u00edch th\u01b0\u1edbc nh\u1ecf nh\u1ea5t c\u1ee7a khung nh\u00ecn nh\u1ecf (svmin)"],"Small viewport width or height (svb)":["Chi\u1ec1u r\u1ed9ng ho\u1eb7c chi\u1ec1u cao c\u1ee7a khung nh\u00ecn nh\u1ecf (svb)"],"Viewport smallest size in the block direction (svb)":["K\u00edch th\u01b0\u1edbc khung m\u00e0n h\u00ecnh nh\u1ecf nh\u1ea5t trong h\u01b0\u1edbng kh\u1ed1i (svb)"],"Small viewport width or height (svi)":["Chi\u1ec1u r\u1ed9ng ho\u1eb7c chi\u1ec1u cao c\u1ee7a khung nh\u00ecn nh\u1ecf (svi)"],"Viewport smallest size in the inline direction (svi)":["K\u00edch th\u01b0\u1edbc khung nh\u00ecn nh\u1ecf nh\u1ea5t theo h\u01b0\u1edbng n\u1ed9i tuy\u1ebfn (svi)"],"Small viewport height (svh)":["Chi\u1ec1u cao khung nh\u00ecn nh\u1ecf (svh)"],"Small viewport width (svw)":["Chi\u1ec1u r\u1ed9ng khung nh\u00ecn nh\u1ecf (svw)"],"No color selected":["Kh\u00f4ng c\u00f3 m\u00e0u n\u00e0o \u0111\u01b0\u1ee3c ch\u1ecdn"],"Notice":["Ch\u00fa \u00fd"],"Error notice":["Th\u00f4ng b\u00e1o l\u1ed7i"],"Information notice":["Th\u00f4ng tin ch\u00fa \u00fd"],"Warning notice":["L\u01b0u \u00fd c\u1ea3nh b\u00e1o"],"Focal point top position":["V\u1ecb tr\u00ed tr\u00ean c\u00f9ng c\u1ee7a ti\u00eau \u0111i\u1ec3m"],"Focal point left position":["V\u1ecb tr\u00ed ti\u00eau \u0111i\u1ec3m b\u00ean tr\u00e1i"],"Scrollable section":["Ph\u1ea7n c\u00f3 th\u1ec3 cu\u1ed9n"],"Initial %d result loaded. Type to filter all available results. Use up and down arrow keys to navigate.":["\u0110\u00e3 t\u1ea3i k\u1ebft qu\u1ea3 %d ban \u0111\u1ea7u. Nh\u1eadp \u0111\u1ec3 l\u1ecdc t\u1ea5t c\u1ea3 c\u00e1c k\u1ebft qu\u1ea3 c\u00f3 s\u1eb5n. S\u1eed d\u1ee5ng ph\u00edm m\u0169i t\u00ean l\u00ean v\u00e0 xu\u1ed1ng \u0111\u1ec3 \u0111i\u1ec1u h\u01b0\u1edbng."],"Extra Extra Large":["C\u1ef1c c\u1ef1c l\u1edbn"],"Show details":["Chi ti\u1ebft"],"Decrement":["Gi\u1ea3m"],"Increment":["T\u0103ng"],"All options reset":["\u0110\u1eb7t l\u1ea1i t\u1ea5t c\u1ea3 c\u00e1c t\u00f9y ch\u1ecdn"],"All options are currently hidden":["T\u1ea5t c\u1ea3 c\u00e1c t\u00f9y ch\u1ecdn hi\u1ec7n \u0111ang b\u1ecb \u1ea9n"],"%s is now visible":["%s hi\u1ec7n c\u00f3 th\u1ec3 nh\u00ecn th\u1ea5y"],"%s hidden and reset to default":["%s b\u1ecb \u1ea9n v\u00e0 \u0111\u1eb7t l\u1ea1i v\u1ec1 m\u1eb7c \u0111\u1ecbnh"],"%s reset to default":["\u0110\u1eb7t l\u1ea1i %s v\u1ec1 m\u1eb7c \u0111\u1ecbnh"],"XXL":["XXL"],"XL":["XL"],"L":["L"],"M":["M"],"S":["S"],"Unset":["B\u1ecf \u0111\u1eb7t"],"%1$s. Selected":["%1$s. \u0110\u01b0\u1ee3c ch\u1ecdn"],"%1$s. Selected. There is %2$d event":["%1$s. \u0110\u00e3 ch\u1ecdn. C\u00f3 %2$d s\u1ef1 ki\u1ec7n"],"View next month":["Xem th\u00e1ng ti\u1ebfp theo"],"View previous month":["Xem th\u00e1ng tr\u01b0\u1edbc"],"Border color and style picker":["B\u1ed9 ch\u1ecdn m\u00e0u v\u00e0 ki\u1ec3u \u0111\u01b0\u1eddng vi\u1ec1n"],"Loading \u2026":["\u0110ang t\u1ea3i ..."],"All sides":["T\u1ea5t c\u1ea3 c\u00e1c m\u1eb7t"],"Bottom border":["Vi\u1ec1n d\u01b0\u1edbi"],"Right border":["Vi\u1ec1n ph\u1ea3i"],"Left border":["Vi\u1ec1n tr\u00e1i"],"Top border":["Vi\u1ec1n tr\u00ean"],"Border color picker.":["Ch\u1ecdn m\u00e0u vi\u1ec1n."],"Border color and style picker.":["Ch\u1ecdn m\u00e0u vi\u1ec1n v\u00e0 ki\u1ec3u d\u00e1ng."],"Custom color picker. The currently selected color is called \"%1$s\" and has a value of \"%2$s\".":["Ch\u1ecdn m\u00e0u. M\u00e0u g\u1ea7n \u0111\u00e2y \u0111\u00e3 ch\u1ecdn l\u00e0 \"%1$s\" v\u00e0 c\u00f3 gi\u00e1 tr\u1ecb l\u00e0 \"%2$s\"."],"Link sides":["Li\u00ean k\u1ebft sides"],"Unlink sides":["B\u1ecf li\u00ean k\u1ebft sides"],"Reset all":["\u0110\u1eb7t l\u1ea1i t\u1ea5t c\u1ea3"],"Button label to reveal tool panel options\u0004%s options":["%s t\u00f9y ch\u1ecdn"],"Hide and reset %s":["\u1ea8n v\u00e0 x\u00f3a b\u1ecf %s"],"Reset %s":["X\u00f3a b\u1ecf %s"],"Search %s":["T\u00ecm %s"],"Set custom size":["\u0110\u1eb7t c\u1ee1 ri\u00eang"],"Use size preset":["S\u1eed d\u1ee5ng c\u1ee1 c\u00f3 s\u1eb5n"],"Currently selected font size: %s":["Hi\u1ec7n t\u1ea1i c\u1ee1 ch\u1eef \u0111\u01b0\u1ee3c ch\u1ecdn: %s"],"Highlights":["L\u00e0m n\u1ed5i b\u1eadt"],"Size of a UI element\u0004Extra Large":["R\u1ea5t l\u1edbn"],"Size of a UI element\u0004Large":["L\u1edbn"],"Size of a UI element\u0004Medium":["Trung b\u00ecnh"],"Size of a UI element\u0004Small":["Nh\u1ecf"],"Size of a UI element\u0004None":["Kh\u00f4ng"],"Currently selected: %s":["Hi\u1ec7n \u0111ang ch\u1ecdn: %s"],"Reset colors":["\u0110\u1eb7t l\u1ea1i m\u00e0u"],"Reset gradient":["\u0110\u1eb7t l\u1ea1i m\u00e0u gradient"],"Remove all colors":["X\u00f3a t\u1ea5t c\u1ea3 m\u00e0u"],"Remove all gradients":["X\u00f3a t\u1ea5t c\u1ea3 m\u00e0u gradient"],"Color options":["Tu\u1ef3 ch\u1ec9nh m\u00e0u s\u1eafc"],"Gradient options":["T\u00f9y ch\u1ec9nh m\u00e0u gradient"],"Add color":["Th\u00eam m\u00e0u s\u1eafc"],"Add gradient":["Th\u00eam m\u00e0u gradient"],"Gradient name":["T\u00ean m\u00e0u gradient"],"Color %s":["M\u00e0u %s "],"Color format":["\u0110\u1ecbnh d\u1ea1ng m\u00e0u"],"Hex color":["M\u00e0u hex"],"Invalid item":["M\u1ee5c kh\u00f4ng h\u1ee3p l\u1ec7"],"Shadows":["Hi\u1ec7u \u1ee9ng b\u00f3ng"],"Duotone: %s":["Hai t\u00f4ng m\u00e0u: %s"],"Duotone code: %s":["M\u00e3 hai m\u00e0u: %s"],"%1$s. There is %2$d event":["%1$s. Hi\u1ec7n c\u00f3 %2$d s\u1ef1 ki\u1ec7n"],"Relative to root font size (rem)\u0004rems":["rem"],"Relative to parent font size (em)\u0004ems":["ems"],"Points (pt)":["Points (pt)"],"Picas (pc)":["Picas (pc)"],"Inches (in)":["Inches (in)"],"Millimeters (mm)":["Mi-li-m\u00e9t (mm)"],"Centimeters (cm)":["Cen-ti-m\u00e9t (cm)"],"x-height of the font (ex)":["chi\u1ec1u cao x c\u1ee7a ph\u00f4ng ch\u1eef (ex)"],"Width of the zero (0) character (ch)":["Chi\u1ec1u r\u1ed9ng c\u1ee7a k\u00fd t\u1ef1 kh\u00f4ng (0) (ch)"],"Viewport largest dimension (vmax)":["K\u00edch th\u01b0\u1edbc l\u1edbn nh\u1ea5t c\u1ee7a khung h\u00ecnh (vmax)"],"Viewport smallest dimension (vmin)":["K\u00edch th\u01b0\u1edbc nh\u1ecf nh\u1ea5t c\u1ee7a khung h\u00ecnh (vmin)"],"Percent (%)":["Ph\u1ea7n tr\u0103m (%)"],"Border width":["\u0110\u1ed9 r\u1ed9ng c\u1ee7a vi\u1ec1n"],"Dotted":["Nhi\u1ec1u d\u1ea5u ch\u1ea5m"],"Dashed":["V\u1ea1ch li\u1ec1n"],"Viewport height (vh)":["Chi\u1ec1u cao m\u00e0n h\u00ecnh (vh)"],"Viewport width (vw)":["Chi\u1ec1u r\u1ed9ng m\u00e0n h\u00ecnh (vw)"],"Relative to root font size (rem)":["T\u01b0\u01a1ng quan \u0111\u1ebfn k\u00edch th\u01b0\u1edbc ph\u00f4ng ch\u1eef g\u1ed1c (rem)"],"Relative to parent font size (em)":["T\u01b0\u01a1ng quan \u0111\u1ebfn k\u00edch th\u01b0\u1edbc ph\u00f4ng ch\u1eef cha (rem)"],"Pixels (px)":["Pixel (px)"],"Percentage (%)":["Ph\u1ea7n tr\u0103m (%)"],"Close search":["\u0110\u00f3ng t\u00ecm ki\u1ebfm"],"Search in %s":["T\u00ecm trong %s"],"Select unit":["Ch\u1ecdn \u0111\u01a1n v\u1ecb"],"Radial":["D\u1ea1ng tr\u00f2n"],"Linear":["Tuy\u1ebfn t\u00ednh"],"Media preview":["Xem th\u1eed media"],"Coordinated Universal Time":["Gi\u1edd Ph\u1ed1i h\u1ee3p Qu\u1ed1c t\u1ebf"],"Color name":["T\u00ean m\u00e0u"],"Reset search":["T\u00ecm ki\u1ebfm l\u1ea1i"],"Box Control":["H\u1ed9p \u0111i\u1ec1u khi\u1ec3n"],"Alignment Matrix Control":["\u0110i\u1ec1u khi\u1ec3n ma tr\u1eadn c\u0103n ch\u1ec9nh"],"Bottom Center":["Ph\u00eda d\u01b0\u1edbi \u1edf gi\u1eefa"],"Center Right":["\u1ede gi\u1eefa b\u00ean ph\u1ea3i"],"Center Left":["\u1ede gi\u1eefa b\u00ean tr\u00e1i"],"Top Center":["Ph\u00eda tr\u00ean \u1edf gi\u1eefa"],"Solid":["\u0110\u01a1n s\u1eafc"],"Finish":["K\u1ebft th\u00fac"],"Page %1$d of %2$d":["Trang %1$d of %2$d"],"Guide controls":["H\u01b0\u1edbng d\u1eabn t\u00f9y ch\u1ecdn"],"Gradient: %s":["M\u00e0u gradient: %s"],"Gradient code: %s":["M\u00e3 m\u00e0u gradient: %s"],"Remove Control Point":["X\u00f3a b\u1ecf Control Point"],"Use your left or right arrow keys or drag and drop with the mouse to change the gradient position. Press the button to change the color or remove the control point.":["S\u1eed d\u1ee5ng c\u00e1c ph\u00edm m\u0169i t\u00ean tr\u00e1i ho\u1eb7c ph\u1ea3i c\u1ee7a b\u1ea1n ho\u1eb7c k\u00e9o th\u1ea3 b\u1eb1ng chu\u1ed9t \u0111\u1ec3 thay \u0111\u1ed5i v\u1ecb tr\u00ed m\u00e0u gradient.  Nh\u1ea5n n\u00fat \u0111\u1ec3 thay \u0111\u1ed5i m\u00e0u s\u1eafc ho\u1eb7c x\u00f3a \u0111i\u1ec3m \u0111i\u1ec1u khi\u1ec3n."],"Gradient control point at position %1$s%% with color code %2$s.":["\u0110i\u1ec3m ki\u1ec3m so\u00e1t m\u00e0u gradient t\u1ea1i v\u1ecb tr\u00ed %1$s%% v\u1edbi m\u00e3 m\u00e0u %2$s."],"Extra Large":["C\u1ef1c l\u1edbn"],"Small":["Nh\u1ecf"],"Angle":["G\u00f3c"],"Separate with commas or the Enter key.":["Ph\u00e2n c\u00e1ch b\u1eb1ng d\u1ea5u ph\u1ea9y ho\u1eb7c Enter."],"Separate with commas, spaces, or the Enter key.":["Ph\u00e2n c\u00e1ch b\u1edfi d\u1ea5u ph\u1ea9y, d\u1ea5u c\u00e1ch ho\u1eb7c ph\u00edm Enter."],"Copied!":["\u0110\u00e3 sao ch\u00e9p!"],"%d result found.":["T\u00ecm th\u1ea5y %d k\u1ebft qu\u1ea3."],"Number of items":["S\u1ed1 \u0111\u1ed1i t\u01b0\u1ee3ng"],"Category":["Danh m\u1ee5c"],"Z \u2192 A":["Z \u2192 A"],"A \u2192 Z":["A \u2192 Z"],"Oldest to newest":["C\u0169 nh\u1ea5t \u0111\u1ebfn m\u1edbi nh\u1ea5t"],"Newest to oldest":["M\u1edbi nh\u1ea5t \u0111\u1ebfn c\u0169 nh\u1ea5t"],"Order by":["S\u1eafp x\u1ebfp theo"],"Dismiss this notice":["T\u1eaft th\u00f4ng b\u00e1o"],"%1$s (%2$s of %3$s)":["%1$s (%2$s c\u1ee7a %3$s)"],"Remove item":["Lo\u1ea1i b\u1ecf m\u1ee5c"],"Item removed.":["\u0110\u00e3 x\u00f3a item."],"Item added.":["\u0110\u00e3 th\u00eam item."],"Add item":["Th\u00eam item"],"Reset":["\u0110\u1eb7t l\u1ea1i"],"(opens in a new tab)":["(m\u1edf trong c\u1eeda s\u1ed5 m\u1edbi)"],"Minutes":["Ph\u00fat"],"Color code: %s":["M\u00e3 m\u00e0u: %s"],"Custom color picker":["B\u1ed9 ch\u1ecdn m\u00e0u t\u00f9y ch\u1ec9nh"],"No results.":["Kh\u00f4ng c\u00f3 k\u1ebft qu\u1ea3."],"%d result found, use up and down arrow keys to navigate.":["%d k\u1ebft qu\u1ea3 \u0111\u01b0\u1ee3c t\u00ecm th\u1ea5y, s\u1eed d\u1ee5ng ph\u00edm l\u00ean v\u00e0 xu\u1ed1ng \u0111\u1ec3 chuy\u1ec3n \u0111\u1ed5i k\u1ebft qu\u1ea3."],"Time":["Th\u1eddi gian"],"Day":["Ban ng\u00e0y"],"Month":["Th\u00e1ng"],"Date":["Th\u1eddi gian"],"Hours":["Gi\u1edd"],"Item selected.":["M\u1ee5c \u0111\u01b0\u1ee3c ch\u1ecdn."],"Previous":["Quay l\u1ea1i"],"Year":["N\u0103m"],"Custom Size":["T\u00f9y ch\u1ec9nh k\u00edch th\u01b0\u1edbc"],"Back":["Quay l\u1ea1i"],"Style":["Ki\u1ec3u"],"Large":["L\u1edbn"],"Drop files to upload":["Th\u1ea3 c\u00e1c t\u1ec7p tin \u0111\u1ec3 t\u1ea3i l\u00ean"],"Clear":["X\u00f3a"],"Mixed":["H\u1ed7n h\u1ee3p"],"Custom":["T\u00f9y ch\u1ec9nh"],"Next":["Ti\u1ebfp theo"],"PM":["Chi\u1ec1u"],"AM":["S\u00e1ng"],"Bottom Right":["D\u01b0\u1edbi b\u00ean ph\u1ea3i"],"Bottom Left":["D\u01b0\u1edbi b\u00ean tr\u00e1i"],"Top Right":["Tr\u00ean b\u00ean ph\u1ea3i"],"Top Left":["Tr\u00ean b\u00ean tr\u00e1i"],"Type":["\u0110\u1ecbnh d\u1ea1ng"],"Top":["Tr\u00ean"],"Copy":["Sao ch\u00e9p"],"Font size":["C\u1ee1 ch\u1eef"],"Calendar":["L\u1ecbch"],"No results found.":["Kh\u00f4ng t\u00ecm th\u1ea5y k\u1ebft qu\u1ea3."],"Default":["M\u1eb7c \u0111\u1ecbnh"],"Close":["\u0110\u00f3ng"],"Search":["T\u00ecm ki\u1ebfm"],"OK":["\u0110\u1ed3ng \u00fd"],"Size":["K\u00edch th\u01b0\u1edbc"],"Medium":["Trung b\u00ecnh"],"Center":["Ch\u00ednh gi\u1eefa"],"Left":["Tr\u00e1i"],"Cancel":["H\u1ee7y"],"Done":["Ho\u00e0n th\u00e0nh"],"None":["Kh\u00f4ng c\u00f3"],"Categories":["Danh m\u1ee5c"],"Author":["T\u00e1c gi\u1ea3"]}},"comment":{"reference":"wp-includes\/js\/dist\/components.js"}} );
+</script>
+<script src="http://planshop.com/wp-includes/js/dist/components.min.js?ver=865f2ec3b5f5195705e0" id="wp-components-js"></script>
+<script id="ywcas-block-settings-js-before">
+var ywcasSettings = ywcasSettings || JSON.parse( decodeURIComponent( '%7B%22ajaxURL%22%3A%22%5C%2F%3Fwc-ajax%3D%25%25endpoint%25%25%22%2C%22ajaxNonce%22%3A%22585509e3c9%22%2C%22wcData%22%3A%7B%22currency%22%3A%7B%22code%22%3A%22VND%22%2C%22decimals%22%3A0%2C%22symbol%22%3A%22VND%22%2C%22decimal_sep%22%3A%22%2C%22%2C%22thousand_sep%22%3A%22.%22%2C%22format%22%3A%22%25v%5Cu00a0%25s%22%7D%2C%22placeholderImageSrc%22%3A%22http%3A%5C%2F%5C%2Fplanshop.com%5C%2Fwp-content%5C%2Fuploads%5C%2Fwoocommerce-placeholder.webp%22%2C%22discountRoundingMode%22%3A%22half-down%22%7D%2C%22ywcasBuildBlockURL%22%3A%22http%3A%5C%2F%5C%2Fplanshop.com%5C%2Fwp-content%5C%2Fplugins%5C%2Fyith-woocommerce-ajax-search%5C%2Fassets%5C%2Fjs%5C%2Fblocks%5C%2Fbuild%5C%2F%22%2C%22siteURL%22%3A%22http%3A%5C%2F%5C%2Fplanshop.com%22%2C%22lang%22%3A%22vi%22%2C%22addToCartLabel%22%3A%22Th%5Cu00eam%20v%5Cu00e0o%20gi%5Cu1ecf%20h%5Cu00e0ng%22%2C%22readMoreLabel%22%3A%22Read%20more%22%2C%22selectOptionsLabel%22%3A%22L%5Cu1ef1a%20ch%5Cu1ecdn%20t%5Cu00f9y%20ch%5Cu1ecdn%22%2C%22inStockLabel%22%3A%22C%5Cu00f2n%20h%5Cu00e0ng%22%2C%22outOfStockLabel%22%3A%22H%5Cu1ebft%20h%5Cu00e0ng%22%2C%22skuLabel%22%3A%22SKU%3A%20%22%2C%22showAutoComplete%22%3A%22yes%22%2C%22minChars%22%3A%223%22%2C%22classicDefaultSettings%22%3A%7B%22placeholder%22%3A%22T%5Cu00ecm%20ki%5Cu1ebfm%20s%5Cu1ea3n%20ph%5Cu1ea9m...%22%2C%22submitLabel%22%3A%22Search%22%2C%22showName%22%3Atrue%2C%22showThumb%22%3Atrue%2C%22showPrice%22%3Atrue%2C%22showStock%22%3Afalse%2C%22showSku%22%3Afalse%2C%22showExcerpt%22%3Afalse%2C%22showAddToCart%22%3Afalse%2C%22showCategory%22%3Afalse%2C%22nameColor%22%3A%22rgb%2829%2C%2029%2C%2029%29%22%2C%22thumbPosition%22%3A%22left%22%2C%22thumbSize%22%3A170%2C%22priceLabel%22%3A%22Gi%5Cu00e1%3A%22%2C%22limitSummary%22%3Afalse%2C%22excerptNumWords%22%3A10%2C%22layout%22%3A%22list%22%2C%22maxResults%22%3A5%2C%22showViewAll%22%3Afalse%2C%22viewAllLabel%22%3A%22Xem%20t%5Cu1ea5t%20c%5Cu1ea3%20s%5Cu1ea3n%20ph%5Cu1ea9m%20%28%7Btotal%7D%29%22%2C%22saleBadgeLabel%22%3A%22On%20Sale%22%2C%22showSaleBadge%22%3Atrue%2C%22saleBadgeColors%22%3A%7B%22bgcolor%22%3A%22%237eb742%22%2C%22color%22%3A%22%23ffffff%22%7D%2C%22saleOutOfStockLabel%22%3A%22H%5Cu1ebft%20h%5Cu00e0ng%22%2C%22showOutOfStockBadge%22%3Atrue%2C%22outOfStockBadgeColors%22%3A%7B%22bgcolor%22%3A%22%237a7a7a%22%2C%22color%22%3A%22%23ffffff%22%7D%2C%22saleFeaturedLabel%22%3A%22Featured%22%2C%22showFeaturedBadge%22%3Atrue%2C%22featuredBadgeColors%22%3A%7B%22bgcolor%22%3A%22%23c0392b%22%2C%22color%22%3A%22%23ffffff%22%7D%2C%22hideFeaturedIfOnSale%22%3Atrue%2C%22searchFormColors%22%3A%7B%22placeholder%22%3A%22rgb%2887%2C%2087%2C%2087%29%22%2C%22text%22%3A%22rgb%28136%2C%20136%2C%20136%29%22%2C%22background%22%3A%22%23fff%22%2C%22backgroundFocus%22%3A%22%23fff%22%2C%22border%22%3A%22rgb%28216%2C%20216%2C%20216%29%22%2C%22borderFocus%22%3A%22rgb%28124%2C%20124%2C%20124%29%22%7D%2C%22searchFormBorderRadius%22%3A20%2C%22searchSubmitStyle%22%3A%22icon%22%2C%22searchSubmitColors%22%3A%7B%22icon%22%3A%22%23DCDCDC%22%2C%22icon-hover%22%3A%22rgb%28136%2C%20136%2C%20136%29%22%2C%22background%22%3A%22%23fff%22%2C%22background-hover%22%3A%22%23fff%22%2C%22border%22%3A%22%23fff%22%2C%22border-hover%22%3A%22%23fff%22%7D%2C%22showHistory%22%3Atrue%2C%22maxHistoryResults%22%3A3%2C%22historyLabel%22%3A%22Latest%20searches%22%2C%22showPopular%22%3Atrue%2C%22maxPopularResults%22%3A3%2C%22popularLabel%22%3A%22Trending%22%2C%22noResultsLabel%22%3A%22Kh%5Cu00f4ng%20c%5Cu00f3%20k%5Cu1ebft%20qu%5Cu1ea3.%20H%5Cu00e3y%20th%5Cu1eed%20v%5Cu1edbi%20t%5Cu1eeb%20kh%5Cu00f3a%20kh%5Cu00e1c%21%22%2C%22relatedLabel%22%3A%22Related%20content%22%2C%22relatedPostType%22%3A%5B%5D%2C%22maxRelatedResults%22%3A3%2C%22relateBgColor%22%3A%22%23f1f1f1%22%7D%2C%22popularSearches%22%3A%5B%5D%2C%22historySearches%22%3A%5B%5D%2C%22singleResultLabel%22%3A%22%251%24s%20result%20for%20%5C%22%252%24s%5C%22%22%2C%22pluralResultLabel%22%3A%22%251%24s%20results%20for%20%5C%22%252%24s%5C%22%22%2C%22fuzzyResults%22%3A%22Results%20for%20%5C%22%25s%5C%22%22%2C%22deleteAll%22%3A%22Delete%20all%22%2C%22inCategoryString%22%3A%22in%22%2C%22mobileBreakPoint%22%3A%22600px%22%7D' ) );
+</script>
+<script src="http://planshop.com/wp-content/plugins/yith-woocommerce-ajax-search/assets/js/blocks/build/ywcas-settings.js?ver=562a482b9135b145c3d7" id="ywcas-block-settings-js"></script>
+<script src="http://planshop.com/wp-content/plugins/yith-woocommerce-ajax-search/assets/js/blocks/build/ywcas-blocks-data.js?ver=2671156d40919bf57f17" id="ywcas-blocks-data-store-js"></script>
+<script src="http://planshop.com/wp-content/plugins/yith-woocommerce-ajax-search/assets/js/blocks/build/ywcas-blocks-registry.js?ver=d1abe57f0352bfd9ee68" id="ywcas-blocks-registry-js"></script>
+<script src="http://planshop.com/wp-content/plugins/yith-woocommerce-ajax-search/assets/js/blocks/build/search-block-frontend.js?ver=e9afcb9e212162d1061f" id="ywcas-search-block-block-frontend-js"></script>
+			<script>
+			/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+			</script>
+				
+
+<p id="a11y-speak-intro-text" class="a11y-speak-intro-text" style="position: absolute;margin: -1px;padding: 0;height: 1px;width: 1px;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);-webkit-clip-path: inset(50%);clip-path: inset(50%);border: 0;word-wrap: normal !important;" hidden="hidden">Thông báo</p><div id="a11y-speak-assertive" class="a11y-speak-region" style="position: absolute;margin: -1px;padding: 0;height: 1px;width: 1px;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);-webkit-clip-path: inset(50%);clip-path: inset(50%);border: 0;word-wrap: normal !important;" aria-live="assertive" aria-relevant="additions text" aria-atomic="true"></div><div id="a11y-speak-polite" class="a11y-speak-region" style="position: absolute;margin: -1px;padding: 0;height: 1px;width: 1px;overflow: hidden;clip: rect(1px, 1px, 1px, 1px);-webkit-clip-path: inset(50%);clip-path: inset(50%);border: 0;word-wrap: normal !important;" aria-live="polite" aria-relevant="additions text" aria-atomic="true"></div><div class="widget_shopping_cart_live_region screen-reader-text" role="status"></div><div id="bbai-shadow-wrapper"></div><div id="chrome-extension-boilerplate-react-vite-content-view-root"></div><div id="extension-mmplj"></div></body>

@@ -1,0 +1,30 @@
+{
+  "newUser": {
+    "email": "newuser@gmail.com",
+    "firstName": "New",
+    "lastName": "User",
+    "password": "password123",
+    "confirmPassword": "password123"
+  },
+  "invalidEmailUser": {
+    "email": "linh.pththgmail.com",
+    "firstName": "Invalid",
+    "lastName": "User",
+    "password": "password123",
+    "confirmPassword": "password123"
+  },
+  "existingEmailUser": {
+    "email": "vietvu08202@gmail.com",
+    "firstName": "Existing",
+    "lastName": "User",
+    "password": "password123",
+    "confirmPassword": "password123"
+  },
+  "emptyUser": {
+    "email": "",
+    "firstName": "",
+    "lastName": "",
+    "password": "",
+    "confirmPassword": ""
+  }
+}

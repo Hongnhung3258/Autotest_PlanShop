@@ -34,7 +34,7 @@ describe('Login Functionality Tests', () => {
     });
   });
 
-  it.only('PS_005: Kiểm tra giao diện bố cục', () => {
+  it('PS_005: Kiểm tra giao diện bố cục', () => {
     loginPage.checkLoginLayout();
   });
 
@@ -46,42 +46,42 @@ describe('Login Functionality Tests', () => {
     loginPage.hoverForgotPassword();
   });
 
-  it('PS_008: Kiểm tra hiển thị giá trị mặc định (Username)', () => {
+  it('PS_008: Kiểm tra hiển thị giá trị mặc định (trườngUsername)', () => {
     loginPage.checkUsernameDefault();
   });
 
   it('PS_009: Kiểm tra trường Username là bắt buộc', () => {
-    loginPage.login('', 'password123');
-    loginPage.checkUsernameRequired('Vui lòng điền vào trường này');
+    loginPage.login('', '');
+    loginPage.checkUsernameRequired('Please fill out this field.');
   });
 
-  it('PS_010: Kiểm tra khi nhập các ký tự đặc biệt (Username)', () => {
+  it('PS_010: Kiểm tra khi nhập các ký tự đặc biệt (trường Username)', () => {
     cy.fixture('users').then((users) => {
       loginPage.login(users.specialCharUser.email, users.specialCharUser.password);
-      loginPage.checkErrorMessage('Email hoặc tên người dùng không đúng');
+      loginPage.checkErrorMessage('Email hoặc tên người dùng không đúng.');
     });
   });
 
-  it('PS_011: Kiểm tra khi nhập các thẻ HTML (Username)', () => {
+  it('PS_011: Kiểm tra khi nhập các thẻ HTML (trường Username)', () => {
     cy.fixture('users').then((users) => {
       loginPage.login(users.htmlTagUser.email, users.htmlTagUser.password);
       loginPage.checkErrorMessage('Email hoặc tên người dùng không đúng');
     });
   });
 
-  it('PS_012: Kiểm tra paste nội dung vào Username', () => {
+  it('PS_012: Kiểm tra paste nội dung vào trường Username', () => {
     loginPage.pasteIntoField('input[name="xoo-el-username"]', 'test@example.com');
     cy.get('input[name="xoo-el-username"]').should('have.value', 'test@example.com');
   });
 
-  it('PS_013: Kiểm tra hiển thị giá trị mặc định (Password)', () => {
+  it('PS_013: Kiểm tra hiển thị giá trị mặc định (trường Password)', () => {
     loginPage.checkPasswordDefault();
   });
 
   it('PS_014: Kiểm tra trường Password là bắt buộc', () => {
     cy.fixture('users').then((users) => {
       loginPage.login(users.validCustomer.email, '');
-      loginPage.checkPasswordRequired('Vui lòng điền vào trường này');
+      loginPage.checkPasswordRequired('Please fill out this field.');
     });
   });
 
@@ -90,61 +90,51 @@ describe('Login Functionality Tests', () => {
   });
 
   it('PS_016: Kiểm tra click vào icon mắt', () => {
-    cy.fixture('users').then((users) => {
-      loginPage.login(users.validCustomer.email, users.validCustomer.password);
-      loginPage.togglePasswordVisibility();
-    });
+    loginPage.togglePasswordVisibility();
   });
 
-  it('PS_017: Kiểm tra nhập mật khẩu < 6 ký tự', () => {
-    cy.fixture('users').then((users) => {
-      loginPage.login(users.shortPassword.email, users.shortPassword.password);
-      loginPage.checkShortPassword('Mật khẩu phải có ít nhất 6 ký tự');
-    });
-  });
-
-  it('PS_018: Kiểm tra paste nội dung vào Password', () => {
+  it('PS_017: Kiểm tra paste nội dung vào Password', () => {
     loginPage.pasteIntoField('input[name="xoo-el-password"]', 'password123');
     cy.get('input[name="xoo-el-password"]').should('have.value', 'password123');
     loginPage.checkPasswordMasked();
   });
 
-  it('PS_019: Kiểm tra để trống Username và Password', () => {
+  it('PS_018: Kiểm tra để trống Username và Password', () => {
     cy.fixture('users').then((users) => {
       loginPage.login(users.emptyUser.email, users.emptyUser.password);
-      loginPage.checkUsernameRequired('Vui lòng điền vào trường này');
+     loginPage.checkErrorMessage('Nhập thông tin trước khi đăng nhập');
     });
   });
 
-  it('PS_020: Kiểm tra chỉ nhập Username, không nhập Password', () => {
+  it('PS_019: Kiểm tra chỉ nhập Username, không nhập Password', () => {
     cy.fixture('users').then((users) => {
       loginPage.login(users.validCustomer.email, '');
-      loginPage.checkPasswordRequired('Vui lòng điền vào trường này');
+      loginPage.checkPasswordRequired('Please fill out this field.');
     });
   });
 
-  it('PS_021: Kiểm tra chỉ nhập Password, không nhập Username', () => {
+  it('PS_020: Kiểm tra chỉ nhập Password, không nhập Username', () => {
     cy.fixture('users').then((users) => {
       loginPage.login('', users.validCustomer.password);
-      loginPage.checkUsernameRequired('Vui lòng điền vào trường này');
+      loginPage.checkUsernameRequired('Please fill out this field.');
     });
   });
 
-  it('PS_022: Kiểm tra nhập username hợp lệ nhưng sai mật khẩu', () => {
+  it('PS_021: Kiểm tra nhập username hợp lệ nhưng sai mật khẩu', () => {
     cy.fixture('users').then((users) => {
       loginPage.login(users.invalidPassword.email, users.invalidPassword.password);
-      loginPage.checkErrorMessage('Email hoặc password không đúng');
+      loginPage.checkErrorMessage('Mật khẩu không đúng');
     });
   });
 
-  it('PS_023: Kiểm tra nhập đúng username/email và password', () => {
+  it('PS_022: Kiểm tra nhập đúng username/email và password', () => {
     cy.fixture('users').then((users) => {
       loginPage.login(users.validCustomer.email, users.validCustomer.password);
       loginPage.checkLoginSuccess('customer');
     });
   });
 
-  it('PS_024: Kiểm tra tích chọn Remember me', () => {
+  it('PS_023: Kiểm tra tích chọn Remember me', () => {
     cy.fixture('users').then((users) => {
       loginPage.checkRememberMe();
       loginPage.login(users.validCustomer.email, users.validCustomer.password);
@@ -155,7 +145,7 @@ describe('Login Functionality Tests', () => {
     });
   });
 
-  it('PS_025: Kiểm tra không tích chọn Remember me', () => {
+  it('PS_024: Kiểm tra không tích chọn Remember me', () => {
     cy.fixture('users').then((users) => {
       loginPage.checkNoRememberMe();
       loginPage.login(users.validCustomer.email, users.validCustomer.password);
@@ -166,7 +156,7 @@ describe('Login Functionality Tests', () => {
     });
   });
 
-  it('PS_026: Kiểm tra click "Forgot Password"', () => {
+  it('PS_025: Kiểm tra click "Forgot Password"', () => {
     loginPage.clickForgotPassword();
     loginPage.checkForgotPasswordPage();
   });

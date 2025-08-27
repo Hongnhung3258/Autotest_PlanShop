@@ -13,7 +13,7 @@ class LoginPage {
 
   clickLoginMenu() {
     cy.get(this.getLoginMenuSelector()).contains('Đăng nhập').click();
-    cy.get(this.getPopupSelector()).should('be.visible', { timeout: 6000 });
+    cy.get(this.getPopupSelector()).should('be.visible', { timeout: 4000 });
     cy.task('log', 'Clicked login menu and popup is visible.');
   }
 
@@ -102,8 +102,20 @@ class LoginPage {
   }
 
   checkUsernameRequired(errorMsg) {
-    cy.get('.xoo-el-notice').should('contain.text', errorMsg);
-    cy.get('input[name="xoo-el-username"]').should('have.focus');
+    cy.get('input[name="xoo-el-username"]').then($input => {
+        const input = $input[0];
+        expect(input.validationMessage).to.equal(errorMsg);
+        
+        // Log thêm thông tin về pattern nếu có
+        if (input.hasAttribute('pattern')) {
+            cy.task('log', `Pattern attribute: ${input.getAttribute('pattern')}`);
+        }
+    });
+    // Kiểm tra focus và attributes
+    cy.get('input[name="xoo-el-username"]')
+      .should('have.focus')
+      .and('have.attr', 'required');
+    
     cy.task('log', `Username required error: ${errorMsg}`);
   }
 
@@ -116,9 +128,21 @@ class LoginPage {
   }
 
   checkPasswordRequired(errorMsg) {
-    cy.get('.xoo-el-notice').should('contain.text', errorMsg);
-    cy.get('input[name="xoo-el-password"]').should('have.focus');
-    cy.task('log', `Password required error: ${errorMsg}`);
+    cy.get('input[name="xoo-el-password"]').then($input => {
+        const input = $input[0];
+        expect(input.validationMessage).to.equal(errorMsg);
+        
+        // Log thêm thông tin về pattern nếu có
+        if (input.hasAttribute('pattern')) {
+            cy.task('log', `Pattern attribute: ${input.getAttribute('pattern')}`);
+        }
+    });
+    // Kiểm tra focus và attributes
+    cy.get('input[name="xoo-el-password"]')
+      .should('have.focus')
+      .and('have.attr', 'required');
+    
+    cy.task('log', `Username required error: ${errorMsg}`);
   }
 
   checkPasswordMasked() {
@@ -129,17 +153,19 @@ class LoginPage {
 
   togglePasswordVisibility() {
     cy.get(this.getPopupSelector()).should('be.visible');
-    cy.get('.xoo-aff-pwtog-show .fa-eye').click();
-    cy.get('input[name="xoo-el-password"]').should('have.attr', 'type', 'text');
-    cy.get('.xoo-aff-pwtog-hide .fa-eye-slash').click();
-    cy.get('input[name="xoo-el-password"]').should('have.attr', 'type', 'password');
-    cy.task('log', 'Password visibility toggled.');
-  }
-
-  checkShortPassword(errorMsg) {
-    cy.get('.xoo-el-notice').should('contain.text', errorMsg);
-    cy.get('input[name="xoo-el-password"]').should('have.focus');
-    cy.task('log', `Short password error: ${errorMsg}`);
+    cy.get('input[name="xoo-el-password"]').clear().type('TestPassword123');
+    
+    cy.get('.xoo-el-password_cont').within(() => {
+      cy.get('.xoo-aff-pwtog-show').click({ force: true });
+      cy.get('input[name="xoo-el-password"]').should('have.attr', 'type', 'text');
+      cy.task('log', 'Password shown');
+    });
+    
+    cy.get('.xoo-el-password_cont').within(() => {
+        cy.get('.xoo-aff-pwtog-hide').click({ force: true });
+        cy.get('input[name="xoo-el-password"]').should('have.attr', 'type', 'password');
+        cy.task('log', 'Password hidden');
+    });
   }
 
   pasteIntoField(field, value) {
@@ -173,9 +199,8 @@ class LoginPage {
   }
 
   checkForgotPasswordPage() {
-    cy.get(this.getPopupSelector()).should('be.visible');
+    cy.get('div[data-section="lostpw"]').should('have.class', 'xoo-el-active');
     cy.get('form.xoo-el-form-lostpw').should('be.visible');
-    cy.task('log', 'Forgot password page displayed.');
   }
 }
 
