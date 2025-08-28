@@ -1,0 +1,14 @@
+{
+  "emptyEmail": {
+    "email": ""
+  },
+  "invalidEmail": {
+    "email": "invalidemail"
+  },
+  "nonRegisteredEmail": {
+    "email": "nonregistered@gmail.com"
+  },
+  "registeredEmail": {
+    "email": "vietvu0820@gmail.com"
+  }
+}

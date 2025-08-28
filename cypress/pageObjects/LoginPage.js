@@ -1,206 +1,161 @@
 class LoginPage {
   getPopupSelector() {
-    return '.xoo-el-form-login'; 
+    return '.xoo-el-inmodal';
   }
 
-  getLoginMenuSelector() {
-    return '.xoo-el-login-tgr .menu-link'; 
+  getLoginSelector() {
+    return '.xoo-el-form-container.xoo-el-form-popup';
   }
 
-  visit() {
-    cy.visit('/');
+  getLoginHeaderSelector() {
+    return '.xoo-el-login-tgr .menu-link';
+  }
+  
+  getForgotPasswordSelector() {
+    return 'div[data-section="lostpw"]';
   }
 
-  clickLoginMenu() {
-    cy.get(this.getLoginMenuSelector()).contains('Đăng nhập').click();
+  clickLoginMenu(){
+    cy.get(this.getLoginHeaderSelector()).contains('Đăng nhập').click();
     cy.get(this.getPopupSelector()).should('be.visible', { timeout: 4000 });
     cy.task('log', 'Clicked login menu and popup is visible.');
   }
 
-  closePopup() {
-    cy.get('body').then(($body) => {
-      const popup = $body.find(this.getPopupSelector());
-      const closeButton = $body.find('.xoo-el-close.xoo-el-icon-cross');
-      if (popup.length > 0 && popup.is(':visible')) {
-        if (closeButton.length > 0) {
-          cy.get('span.xoo-el-close.xoo-el-icon-cross').click({ force: true });
-          cy.get(this.getPopupSelector()).should('not.be.visible', { timeout: 6000 });
-          cy.task('log', 'Popup closed successfully.');
-        } else {
-          cy.task('log', 'Close button not found, skipping close.');
-        }
-      } else {
-        cy.task('log', 'Popup not found or already hidden, skipping close.');
-      }
-    });
-  }
-
   checkLoginPopup() {
     cy.get(this.getPopupSelector()).should('be.visible');
-    cy.task('log', 'Login popup is visible.');
   }
 
   checkMenuHighlight() {
-    cy.get(this.getLoginMenuSelector()).contains('Đăng nhập').should('have.class', 'current-menu-item');
-    cy.task('log', 'Login menu item is highlighted.');
+    cy.get(this.getLoginHeaderSelector()).contains('Đăng nhập').should('have.class', 'current-menu-item');
   }
 
   login(email, password) {
-    cy.get(this.getPopupSelector()).should('be.visible');
+    cy.get(this.getLoginHeaderSelector()).should('be.visible');
     if (email) cy.get('input[name="xoo-el-username"]').type(email);
     if (password) cy.get('input[name="xoo-el-password"]').type(password);
     cy.get('.xoo-el-login-btn').click();
-    cy.task('log', `Login attempted with email: ${email}`);
   }
 
   checkLoginSuccess(role) {
     if (role === 'customer') {
       cy.url().should('include', '/shop');
-      cy.task('log', 'Customer login successful, redirected to /shop.');
     } else if (role === 'admin') {
       cy.url().should('include', '/shop');
       cy.get('#wpadminbar').should('be.visible');
-      cy.task('log', 'Admin login successful, redirected to /shop with admin bar visible.');
     }
   }
 
-   checkLoginLayout() {
-    cy.get(this.getPopupSelector()).should('be.visible');
+  checkLoginLayout() {
+    cy.get(this.getLoginSelector()).should('be.visible');
     cy.get('.xoo-el-header li').contains('Đăng nhập tài khoản').should('be.visible');
     cy.get('input[name="xoo-el-username"]').should('be.visible');
     cy.get('input[name="xoo-el-password"]').should('be.visible');
     cy.get('input[name="xoo-el-rememberme"]').should('be.visible');
-    cy.get('label.xoo-el-form-label').should('be.visible').within(() => {
-      cy.get('input[name="xoo-el-rememberme"]').should('have.attr', 'type', 'checkbox').and('have.attr', 'value', 'forever');
-      cy.get('span').contains('Nhớ mật khẩu').should('be.visible');
-    });
-    cy.get('.xoo-el-lostpw-tgr').contains('Quên mật khẩu?').should('be.visible');
+    cy.get('input[name="xoo-el-rememberme"]')
+      .should('be.visible')
+      .and('have.attr', 'type', 'checkbox')
+      .and('have.attr', 'value', 'forever');
+    cy.get('label.xoo-el-form-label span')
+      .should('be.visible')
+      .and('contain.text', 'Nhớ mật khẩu');
+    cy.get('a.xoo-el-lostpw-tgr')
+      .should('be.visible')
+      .and('contain.text', 'Quên mật khẩu?')
+      .and('have.attr', 'href', '#');
     cy.get('.xoo-el-login-btn').should('be.visible');
-    
-    cy.task('log', 'Login layout verified, including remember me checkbox.');
   }
 
   hoverLoginButton() {
-    cy.get(this.getPopupSelector()).should('be.visible');
+    cy.get(this.getLoginSelector()).should('be.visible');
     cy.get('.xoo-el-login-btn').trigger('mouseover');
-    cy.get('.xoo-el-login-btn').should('have.css', 'background-color');
-    cy.task('log', 'Hovered over login button.');
+    cy.get('.xoo-el-login-btn').should('have.css', 'background-color', 'rgb(0, 0, 0)');
   }
 
   hoverForgotPassword() {
-    cy.get(this.getPopupSelector()).should('be.visible');
+    cy.get(this.getLoginSelector()).should('be.visible');
     cy.get('.xoo-el-lostpw-tgr').trigger('mouseover');
-    cy.get('.xoo-el-lostpw-tgr').should('have.css', 'color');
-    cy.task('log', 'Hovered over forgot password link.');
+    cy.get('.xoo-el-lostpw-tgr').should('have.css', 'color', 'rgb(0, 0, 255)');
   }
 
   checkUsernameDefault() {
-    cy.get(this.getPopupSelector()).should('be.visible');
+    cy.get(this.getLoginSelector()).should('be.visible');
     cy.get('input[name="xoo-el-username"]').should('have.value', '');
     cy.get('input[name="xoo-el-username"]').should('have.attr', 'placeholder', 'Username / Email');
-    cy.task('log', 'Username field default state verified.');
   }
 
-  checkUsernameRequired(errorMsg) {
-    cy.get('input[name="xoo-el-username"]').then($input => {
-        const input = $input[0];
-        expect(input.validationMessage).to.equal(errorMsg);
-        
-        // Log thêm thông tin về pattern nếu có
-        if (input.hasAttribute('pattern')) {
-            cy.task('log', `Pattern attribute: ${input.getAttribute('pattern')}`);
-        }
-    });
-    // Kiểm tra focus và attributes
-    cy.get('input[name="xoo-el-username"]')
-      .should('have.focus')
-      .and('have.attr', 'required');
-    
-    cy.task('log', `Username required error: ${errorMsg}`);
+  checkInvalidFieldUsername(errorMsg){
+    cy.checkInvalidField('input[name="xoo-el-username"]', errorMsg);
   }
 
   checkPasswordDefault() {
-    cy.get(this.getPopupSelector()).should('be.visible');
+    cy.get(this.getLoginSelector()).should('be.visible');
     cy.get('input[name="xoo-el-password"]').should('have.value', '');
     cy.get('input[name="xoo-el-password"]').should('have.attr', 'placeholder', 'Password');
     cy.get('.xoo-aff-pwtog-show .fa-eye').should('be.visible');
-    cy.task('log', 'Password field default state verified.');
   }
 
-  checkPasswordRequired(errorMsg) {
-    cy.get('input[name="xoo-el-password"]').then($input => {
-        const input = $input[0];
-        expect(input.validationMessage).to.equal(errorMsg);
-        
-        // Log thêm thông tin về pattern nếu có
-        if (input.hasAttribute('pattern')) {
-            cy.task('log', `Pattern attribute: ${input.getAttribute('pattern')}`);
-        }
-    });
-    // Kiểm tra focus và attributes
-    cy.get('input[name="xoo-el-password"]')
-      .should('have.focus')
-      .and('have.attr', 'required');
-    
-    cy.task('log', `Username required error: ${errorMsg}`);
+  checkInvalidFieldPassword(errorMsg){
+    cy.checkInvalidField('input[name="xoo-el-password"]', errorMsg);
   }
 
   checkPasswordMasked() {
-    cy.get(this.getPopupSelector()).should('be.visible');
+    cy.get(this.getLoginSelector()).should('be.visible');
     cy.get('input[name="xoo-el-password"]').should('have.attr', 'type', 'password');
     cy.task('log', 'Password field is masked.');
   }
 
   togglePasswordVisibility() {
-    cy.get(this.getPopupSelector()).should('be.visible');
+    cy.get(this.getLoginSelector()).should('be.visible');
     cy.get('input[name="xoo-el-password"]').clear().type('TestPassword123');
-    
     cy.get('.xoo-el-password_cont').within(() => {
       cy.get('.xoo-aff-pwtog-show').click({ force: true });
       cy.get('input[name="xoo-el-password"]').should('have.attr', 'type', 'text');
       cy.task('log', 'Password shown');
     });
-    
     cy.get('.xoo-el-password_cont').within(() => {
-        cy.get('.xoo-aff-pwtog-hide').click({ force: true });
-        cy.get('input[name="xoo-el-password"]').should('have.attr', 'type', 'password');
-        cy.task('log', 'Password hidden');
+      cy.get('.xoo-aff-pwtog-hide').click({ force: true });
+      cy.get('input[name="xoo-el-password"]').should('have.attr', 'type', 'password');
+      cy.task('log', 'Password hidden');
     });
   }
 
-  pasteIntoField(field, value) {
-    cy.get(this.getPopupSelector()).should('be.visible');
-    cy.get(field).invoke('val', value).trigger('input');
-    cy.task('log', `Pasted value ${value} into field ${field}`);
+  pasteIntoFieldUsername(value) {
+    cy.get(this.getLoginSelector()).should('be.visible');
+    cy.pasteIntoField('input[name="xoo-el-username"]', value);
   }
 
-  checkErrorMessage(msg) {
-    cy.get('.xoo-el-notice').should('contain.text', msg);
-    cy.task('log', `Error message verified: ${msg}`);
+  pasteIntoFieldPassword(value) {
+    cy.get(this.getLoginSelector()).should('be.visible');
+    cy.pasteIntoField('input[name="xoo-el-password"]', value);
+  }
+
+  checkNoticeError(errorMsg){
+    cy.checkNotice('.xoo-el-notice .xoo-el-notice-error', errorMsg);
+  }
+
+  checkNoticeSucc(errorMsg){
+    cy.checkNotice('.xoo-el-notice .xoo-el-notice-success', errorMsg);
   }
 
   checkRememberMe() {
-    cy.get(this.getPopupSelector()).should('be.visible');
+    cy.get(this.getLoginSelector()).should('be.visible');
     cy.get('input[name="xoo-el-rememberme"]').check();
     cy.get('input[name="xoo-el-rememberme"]').should('be.checked');
-    cy.task('log', 'Remember me checkbox checked.');
+    
   }
 
   checkNoRememberMe() {
-    cy.get(this.getPopupSelector()).should('be.visible');
+    cy.get(this.getLoginSelector()).should('be.visible');
     cy.get('input[name="xoo-el-rememberme"]').should('not.be.checked');
-    cy.task('log', 'Remember me checkbox not checked.');
   }
 
   clickForgotPassword() {
-    cy.get(this.getPopupSelector()).should('be.visible');
+    cy.get(this.getLoginSelector()).should('be.visible');
     cy.get('.xoo-el-lostpw-tgr').contains('Quên mật khẩu?').click();
-    cy.task('log', 'Clicked forgot password link.');
   }
 
   checkForgotPasswordPage() {
-    cy.get('div[data-section="lostpw"]').should('have.class', 'xoo-el-active');
-    cy.get('form.xoo-el-form-lostpw').should('be.visible');
+    cy.get(this.getForgotPasswordSelector()).should('be.visible');
   }
 }
 

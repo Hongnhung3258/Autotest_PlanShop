@@ -1,8 +1,8 @@
 {
   "newUser": {
-    "email": "newuser@gmail.com",
-    "firstName": "New",
-    "lastName": "User",
+    "email": "newu123@gmail.com",
+    "firstName": "usernew",
+    "lastName": "nhunfi",
     "password": "password123",
     "confirmPassword": "password123"
   },
@@ -14,7 +14,7 @@
     "confirmPassword": "password123"
   },
   "existingEmailUser": {
-    "email": "vietvu08202@gmail.com",
+    "email": "vietvu0820@gmail.com",
     "firstName": "Existing",
     "lastName": "User",
     "password": "password123",
@@ -26,5 +26,22 @@
     "lastName": "",
     "password": "",
     "confirmPassword": ""
+  },
+  "invalidEmail1User": {
+    "email": "nhung3258@"
+  },
+  "shortPasswordUser": {
+    "email": "shortpass@gmail.com",
+    "firstName": "Short",
+    "lastName": "User",
+    "password": "12345",
+    "confirmPassword": "12345"
+  },
+  "mismatchPasswordUser": {
+    "email": "mismatch@gmail.com",
+    "firstName": "Mismatch",
+    "lastName": "User",
+    "password": "password123",
+    "confirmPassword": "different123"
   }
 }
