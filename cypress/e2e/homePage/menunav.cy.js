@@ -1,26 +1,26 @@
-import MenuNavPage from '../../pageObjects/MenuNavPage';
+import MenuNav from '../../pageObjects/MenuNav';
 
 describe('Menu Navigation Functionality Tests', () => {
-  const menuNavPage = new MenuNavPage();
+  const menuNav = new MenuNav();
 
   beforeEach(() => {
     cy.visitPage();
   });
 
-  it('PS_043: Kiểm tra điều hướng từ menu "Trang chủ"', () => {
-    menuNavPage.verifyHome();
+  it('PS_042: Kiểm tra điều hướng từ menu "Trang chủ"', () => {
+    menuNav.verifyHome();
   });
 
-  it('PS_044: Kiểm tra điều hướng từ menu "Cửa hàng"', () => {
-    menuNavPage.verifyShop();
+  it('PS_043: Kiểm tra điều hướng từ menu "Cửa hàng"', () => {
+    menuNav.verifyShop();
   });
 
-  it('PS_045: Kiểm tra điều hướng từ menu "Chăm sóc cây"', () => {
-    menuNavPage.verifyPlantCare();
+  it('PS_044: Kiểm tra điều hướng từ menu "Chăm sóc cây"', () => {
+    menuNav.verifyPlantCare();
   });
 
-  it('PS_046: Kiểm tra điều hướng từ menu "Liên hệ"', () => {
-    menuNavPage.verifyContact();
+  it('PS_045: Kiểm tra điều hướng từ menu "Liên hệ"', () => {
+    menuNav.verifyContact();
   });
  
 });

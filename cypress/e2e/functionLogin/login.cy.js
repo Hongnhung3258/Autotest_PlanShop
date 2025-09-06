@@ -1,6 +1,7 @@
 import LoginPage from '../../pageObjects/LoginPage';
 
 describe('Login Functionality Tests', () => {
+  const USERNAME_TXT_BX_SEL = 'input[name="xoo-el-username"]';
   const loginPage = new LoginPage();
 
   beforeEach(() => {
@@ -88,7 +89,7 @@ describe('Login Functionality Tests', () => {
     loginPage.checkPasswordMasked();
   });
 
-  it('PS_016: Kiểm tra click vào icon mắt', () => {
+  it.only('PS_016: Kiểm tra click vào icon mắt', () => {
     loginPage.togglePasswordVisibility();
   });
 
@@ -139,7 +140,7 @@ describe('Login Functionality Tests', () => {
       cy.closePopup();
       cy.visitPage();
       loginPage.clickLoginMenu();
-      cy.get('input[name="xoo-el-username"]').should('have.value', users.validCustomer.email);
+      cy.get(USERNAME_TXT_BX_SEL).should('have.value', users.validCustomer.email);
     });
   });
 
@@ -150,11 +151,11 @@ describe('Login Functionality Tests', () => {
       cy.closePopup();
       cy.visitPage();
       loginPage.clickLoginMenu();
-      cy.get('input[name="xoo-el-username"]').should('have.value', '');
+      cy.get(USERNAME_TXT_BX_SEL).should('have.value', '');
     });
   });
 
-  it.only('PS_025: Kiểm tra click "Forgot Password"', () => {
+  it('PS_025: Kiểm tra click "Forgot Password"', () => {
     loginPage.clickForgotPassword();
     loginPage.checkForgotPasswordPage();
   });

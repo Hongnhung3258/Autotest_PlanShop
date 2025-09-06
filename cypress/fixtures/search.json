@@ -1,0 +1,17 @@
+{
+  "validKeyword": {
+    "keyword": "Tạp dề làm vườn"
+  },
+  "invalidKeyword": {
+    "keyword": "màu"
+  },
+  "spaceKeyword": {
+    "keyword": "        "
+  },
+  "exactlyPartKeyword": {
+    "keyword": "cây"
+  },
+  "htmlTagKeyword": {
+    "keyword": "Maranta"
+  }
+}

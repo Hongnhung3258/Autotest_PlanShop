@@ -1,3 +1,5 @@
+const USERNAME_TXT_BX_SEL =  'input[name="user_login"]';
+const FORGOT_PASSWORD_BTN_SEL =  '.xoo-el-lostpw-btn';
 class ForgotPasswordPage {
   getPopupSelector() {
     return '.xoo-el-inmodal';
@@ -31,15 +33,15 @@ class ForgotPasswordPage {
     cy.get('.xoo-el-form-txt')
       .should('be.visible')
       .and('contain.text', 'Quên mật khẩu? Vui lòng nhập tên người dùng hoặc địa chỉ email của bạn');
-    cy.get('input[name="user_login"]').should('be.visible');
-    cy.get('.xoo-el-lostpw-btn')
+    cy.get(USERNAME_TXT_BX_SEL).should('be.visible');
+    cy.get(FORGOT_PASSWORD_BTN_SEL)
       .should('be.visible')
       .and('contain.text', 'Liên kết đặt lại email');
   }
 
   checkInvalidFieldEmail(errorMsg) {
     cy.get(this.getForgotPasswordSelector()).should('be.visible');
-    cy.checkInvalidField('input[name="user_login"]', errorMsg);
+    cy.checkInvalidField(USERNAME_TXT_BX_SEL, errorMsg);
   }
 
   checkNoticeError(errorMsg) {
@@ -53,9 +55,9 @@ class ForgotPasswordPage {
   resetPassword(email) {
     cy.get(this.getForgotPasswordSelector()).should('be.visible');
     if (email) {
-      cy.get('input[name="user_login"]').clear().type(email);
+      cy.get(USERNAME_TXT_BX_SEL).clear().type(email);
     }
-    cy.get('.xoo-el-lostpw-btn').click();
+    cy.get(FORGOT_PASSWORD_BTN_SEL).click();
   }
 
   

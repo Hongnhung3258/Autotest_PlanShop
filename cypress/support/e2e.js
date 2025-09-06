@@ -1,4 +1,5 @@
 import './commands';
+import "cypress-real-events/support";
 
 // afterEach(function () {
 //   if (this.currentTest.state === 'passed') {

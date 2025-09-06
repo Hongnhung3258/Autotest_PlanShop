@@ -5,6 +5,8 @@ module.exports = {
     screenshotsFolder: 'cypress/screenshots',
     videosFolder: 'cypress/videos',
     video: true,
+    viewportWidth: 1600,
+    viewportHeight: 1080,
     trashAssetsBeforeRuns: true,
     defaultCommandTimeout: 6000,
     screenshotOnRunFailure: true, // Bật screenshot cho mọi lỗi

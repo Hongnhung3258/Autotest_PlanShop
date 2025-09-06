@@ -1,9 +1,16 @@
+const EMAIL_TXT_BX_SEL =  'input[name="xoo_el_reg_email"]';
+const FIRST_NAME_TXT_BX_SEL =  'input[name="xoo_el_reg_fname"]';
+const LAST_NAME_TXT_BX_SEL =  'input[name="xoo_el_reg_lname"]';
+const PASSWORD_TXT_BX_SEL =  'input[name="xoo_el_reg_pass"]';
+const CONFIRM_PASSWORD_TXT_BX_SEL =  'input[name="xoo_el_reg_pass_again"]';
+const TERMS_CHK_BOX_SEL =  'input[name="xoo_el_reg_terms"]';
+const REGISTER_BTN_SEL =  '.xoo-el-register-btn';
 class RegisterPage {
   getPopupSelector() {
     return '.xoo-el-inmodal';
   }
 
-  getRegisterSelector() {
+  getFormSelector() {
     return '.xoo-el-form-container.xoo-el-form-popup';
   }
 
@@ -20,11 +27,11 @@ class RegisterPage {
 
   switchToRegister() {
     cy.get('li.xoo-el-reg-tgr').click();
-    cy.get(this.getRegisterSelector()).should('be.visible', { timeout: 4000 });
+    cy.get(this.getFormSelector()).should('be.visible', { timeout: 4000 });
   }
 
   checkRegisterPopup() {
-    cy.get(this.getRegisterSelector()).should('be.visible');
+    cy.get(this.getFormSelector()).should('be.visible');
     cy.task('log', 'Register popup is visible.');
   }
 
@@ -42,34 +49,34 @@ class RegisterPage {
   }
 
   checkRegisterLayout() {
-    cy.get(this.getRegisterSelector()).should('be.visible');
+    cy.get(this.getFormSelector()).should('be.visible');
     cy.get('.xoo-el-header li').contains('Đăng ký tài khoản').should('be.visible');
-    cy.get('input[name="xoo_el_reg_email"]').should('be.visible');
-    cy.get('input[name="xoo_el_reg_fname"]').should('be.visible');
-    cy.get('input[name="xoo_el_reg_lname"]').should('be.visible');
-    cy.get('input[name="xoo_el_reg_pass"]').should('be.visible');
-    cy.get('input[name="xoo_el_reg_pass_again"]').should('be.visible');
-    cy.get('input[name="xoo_el_reg_terms"]')
+    cy.get(EMAIL_TXT_BX_SEL).should('be.visible');
+    cy.get(FIRST_NAME_TXT_BX_SEL).should('be.visible');
+    cy.get(LAST_NAME_TXT_BX_SEL).should('be.visible');
+    cy.get(PASSWORD_TXT_BX_SEL).should('be.visible');
+    cy.get(CONFIRM_PASSWORD_TXT_BX_SEL).should('be.visible');
+    cy.get(TERMS_CHK_BOX_SEL)
       .should('be.visible')
       .and('have.attr', 'type', 'checkbox')
       .and('have.value', 'yes')
       .and('not.be.checked');
-    cy.get('input[name="xoo_el_reg_terms"]')
+    cy.get(TERMS_CHK_BOX_SEL)
       .parent('label')
       .should(($label) => {
         const text = $label.text().replace(/\s+/g, ' ').trim();
         expect(text).to.include('I accept the Terms of Service and Privacy Policy');
       });
-    cy.get('.xoo-el-register-btn').should('be.visible');
+    cy.get(REGISTER_BTN_SEL).should('be.visible');
   }
 
   checkRequiredFields(errorMsg) {
     const selectors = [
-      'input[name="xoo_el_reg_email"]',
-      'input[name="xoo_el_reg_fname"]',
-      'input[name="xoo_el_reg_lname"]',
-      'input[name="xoo_el_reg_pass"]',
-      'input[name="xoo_el_reg_pass_again"]'
+      EMAIL_TXT_BX_SEL,
+      FIRST_NAME_TXT_BX_SEL,
+      LAST_NAME_TXT_BX_SEL,
+      PASSWORD_TXT_BX_SEL,
+      CONFIRM_PASSWORD_TXT_BX_SEL
     ];
 
     selectors.forEach(selector => {
@@ -86,7 +93,7 @@ class RegisterPage {
   }
 
   checkInvalidFieldEmail(errorMsg) {
-    cy.checkInvalidField('input[name="xoo_el_reg_email"]', errorMsg);
+    cy.checkInvalidField(EMAIL_TXT_BX_SEL, errorMsg);
   }
 
   checkNoticeError(errorMgs){
@@ -94,7 +101,7 @@ class RegisterPage {
   }
 
   openPrivacyPolicy() {
-    cy.get('input[name="xoo_el_reg_terms"]')
+    cy.get(TERMS_CHK_BOX_SEL)
       .parent('label')
       .find('a')
       .contains('Terms of Service and Privacy Policy ')
@@ -117,14 +124,14 @@ class RegisterPage {
   }
 
   register(email, firstName, lastName, password, confirmPassword, acceptTerms = true) {
-    cy.get(this.getRegisterSelector()).should('be.visible');
-    if (email) cy.get('input[name="xoo_el_reg_email"]').type(email);
-    if (firstName) cy.get('input[name="xoo_el_reg_fname"]').type(firstName);
-    if (lastName) cy.get('input[name="xoo_el_reg_lname"]').type(lastName);
-    if (password) cy.get('input[name="xoo_el_reg_pass"]').type(password);
-    if (confirmPassword) cy.get('input[name="xoo_el_reg_pass_again"]').type(confirmPassword);
-    if (acceptTerms) cy.get('input[name="xoo_el_reg_terms"]').check();
-    cy.get('.xoo-el-register-btn').click();
+    cy.get(this.getFormSelector()).should('be.visible');
+    if (email) cy.get(EMAIL_TXT_BX_SEL).type(email);
+    if (firstName) cy.get(FIRST_NAME_TXT_BX_SEL).type(firstName);
+    if (lastName) cy.get(LAST_NAME_TXT_BX_SEL).type(lastName);
+    if (password) cy.get(PASSWORD_TXT_BX_SEL).type(password);
+    if (confirmPassword) cy.get(CONFIRM_PASSWORD_TXT_BX_SEL).type(confirmPassword);
+    if (acceptTerms) cy.get(TERMS_CHK_BOX_SEL).check();
+    cy.get(REGISTER_BTN_SEL).click();
     cy.task('log', `Register attempted with email: ${email}`);
   }
 }

@@ -3,6 +3,16 @@ Cypress.Commands.add('visitPage', () => {
   cy.task('log', 'Visited home page.');
 });
 
+Cypress.Commands.add('visitCartPage', () => {
+  cy.visit('/cart');
+  cy.task('log', 'Visited cart page.');
+});
+
+Cypress.Commands.add('visitShopPage', () => {
+  cy.visit('/shop');
+  cy.task('log', 'Visited shop page.');
+});
+
 
 Cypress.Commands.add('closePopup', () => {
   cy.get('body').then(($body) => {
@@ -51,9 +61,8 @@ Cypress.Commands.add('checkNotice', (fieldSelector, errorMsg) => {
         return msg
           .trim()
           .replace(/\s+/g, ' ')
-          .replace(/['"]/g, '')
-          .replace(/\*\*/g, '')
-          .replace(/[.,!?]/g, '');
+          .replace(/(^\s|\s$)/g, '')
+          .replace(/\*\*/g, '');
       };
       const normalizedActual = normalizeMessage($element.text());
       const normalizedExpected = normalizeMessage(errorMsg);
@@ -76,11 +85,9 @@ Cypress.Commands.add('checkLinkColorAfterClick', (selector, linkText) => {
     return `#${r}${g}${b}`.toLowerCase();
   };
 
-  // Click menu và wait trang load
   cy.get(selector).contains(linkText).click();
   cy.wait(1000);
   
-  // Kiểm tra màu của menu item hiện tại (current-menu-item)
   cy.get(selector).contains(linkText).parent('li').should('have.class', 'current-menu-item')
     .find('.menu-link').then($link => {
       const color = $link.css('color');
@@ -88,3 +95,14 @@ Cypress.Commands.add('checkLinkColorAfterClick', (selector, linkText) => {
       expect(hexColor).to.equal('#54b435');
     });
 });
+
+Cypress.Commands.add('selectVariationByIndex',(selector, indexToSelect) => {
+    cy.get(selector).should('be.visible').then(($select) => {
+        const $options = $select.find('option');
+        if (indexToSelect < $options.length) {
+          cy.wrap($select).select($options.eq(indexToSelect).val());
+        } else {
+          throw new Error(`Index ${indexToSelect} vượt quá số option có sẵn (${ $options.length })`);
+        }
+    });
+})

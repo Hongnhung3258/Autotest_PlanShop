@@ -1,0 +1,11 @@
+{
+"invalidCoupon": {
+    "coupon": "invalidCoupon"
+},
+"validCoupon": {
+    "coupon": "NGUOIMOIPLANSHOP"
+},
+"emptyCoupon": {
+    "coupon": " "
+}
+}

@@ -9,6 +9,8 @@
   },
   "invalidPassword": {
     "email": "vietvu0820@gmail.com",
+    "firstName": "Vũ Văn",
+    "lastName": "Việt",
     "password": "wrongpass"
   },
   "invalidUser": {
