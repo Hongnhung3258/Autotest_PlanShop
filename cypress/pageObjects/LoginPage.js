@@ -5,39 +5,28 @@ const HIDE_PASSWORD_BTN_SEL =  '.xoo-aff-pwtog-hide';
 const REMEMBER_ME_CHK_BOX_SEL =  'input[name="xoo-el-rememberme"]';
 const FORGOT_PASSWORD_LINK_SEL =  '.xoo-el-lostpw-tgr';
 const LOGIN_BTN_SEL =  '.xoo-el-login-btn';
+const LOGIN_HEADER_SEL = '#menu-item-1194'; 
+const POPUP_SEL = '.xoo-el-form-container.xoo-el-form-popup';
 class LoginPage {
-  getPopupSelector() {
-    return '.xoo-el-inmodal';
-  }
-
-  getLoginSelector() {
-    return '.xoo-el-form-container.xoo-el-form-popup';
-  }
-
-  getLoginHeaderSelector() {
-    return '.xoo-el-login-tgr .menu-link';
-  }
-  
   getForgotPasswordSelector() {
     return 'div[data-section="lostpw"]';
   }
 
   clickLoginMenu(){
-    cy.get(this.getLoginHeaderSelector()).contains('Đăng nhập').click();
-    cy.get(this.getPopupSelector()).should('be.visible', { timeout: 4000 });
-    cy.task('log', 'Clicked login menu and popup is visible.');
+    cy.get(LOGIN_HEADER_SEL).click();
+    cy.get(POPUP_SEL).should('be.visible');
   }
 
   checkLoginPopup() {
-    cy.get(this.getPopupSelector()).should('be.visible');
+    cy.get(POPUP_SEL).should('be.visible');
   }
 
   checkMenuHighlight() {
-    cy.get(this.getLoginHeaderSelector()).contains('Đăng nhập').should('have.class', 'current-menu-item');
+    cy.get(LOGIN_HEADER_SEL).should('have.class', 'current-menu-item');
   }
 
   login(email, password) {
-    cy.get(this.getLoginHeaderSelector()).should('be.visible');
+    cy.get(POPUP_SEL).should('be.visible');
     if (email) cy.get(USERNAME_TXT_BX_SEL).type(email);
     if (password) cy.get(PASSWORD_TXT_BX_SEL).type(password);
     cy.get(LOGIN_BTN_SEL).click();
@@ -53,7 +42,7 @@ class LoginPage {
   }
 
   checkLoginLayout() {
-    cy.get(this.getLoginSelector()).should('be.visible');
+    cy.get(POPUP_SEL).should('be.visible');
     cy.get('.xoo-el-header li').contains('Đăng nhập tài khoản').should('be.visible');
     cy.get(USERNAME_TXT_BX_SEL).should('be.visible');
     cy.get(PASSWORD_TXT_BX_SEL).should('be.visible');
@@ -74,19 +63,19 @@ class LoginPage {
   }
 
   hoverLoginButton() {
-    cy.get(this.getLoginSelector()).should('be.visible');
-    cy.get(LOGIN_BTN_SEL).trigger('mouseover');
+    cy.get(POPUP_SEL).should('be.visible');
+    cy.get(LOGIN_BTN_SEL).realHover({timeout:150});
     cy.get(LOGIN_BTN_SEL).should('have.css', 'background-color', 'rgb(0, 0, 0)');
   }
 
   hoverForgotPassword() {
-    cy.get(this.getLoginSelector()).should('be.visible');
-    cy.get(REMEMBER_ME_CHK_BOX_SEL).trigger('mouseover');
-    cy.get(FORGOT_PASSWORD_LINK_SEL).should('have.css', 'color', 'rgb(0, 0, 255)');
+    cy.get(POPUP_SEL).should('be.visible');
+    cy.get(REMEMBER_ME_CHK_BOX_SEL).realHover({timeout: 150});
+    cy.get(FORGOT_PASSWORD_LINK_SEL).should('have.css', 'color', 'rgb(55,146,55');
   }
 
   checkUsernameDefault() {
-    cy.get(this.getLoginSelector()).should('be.visible');
+    cy.get(POPUP_SEL).should('be.visible');
     cy.get(USERNAME_TXT_BX_SEL).should('have.value', '');
     cy.get(USERNAME_TXT_BX_SEL).should('have.attr', 'placeholder', 'Username / Email');
   }
@@ -96,7 +85,7 @@ class LoginPage {
   }
 
   checkPasswordDefault() {
-    cy.get(this.getLoginSelector()).should('be.visible');
+    cy.get(POPUP_SEL).should('be.visible');
     cy.get(PASSWORD_TXT_BX_SEL).should('have.value', '');
     cy.get(PASSWORD_TXT_BX_SEL).should('have.attr', 'placeholder', 'Password');
     cy.get('.xoo-aff-pwtog-show .fa-eye').should('be.visible');
@@ -107,13 +96,13 @@ class LoginPage {
   }
 
   checkPasswordMasked() {
-    cy.get(this.getLoginSelector()).should('be.visible');
+    cy.get(POPUP_SEL).should('be.visible');
     cy.get(PASSWORD_TXT_BX_SEL).should('have.attr', 'type', 'password');
     cy.task('log', 'Password field is masked.');
   }
 
   togglePasswordVisibility() {
-    cy.get(this.getLoginSelector()).should('be.visible');
+    cy.get(POPUP_SEL).should('be.visible');
     cy.get(PASSWORD_TXT_BX_SEL).clear().type('TestPassword123');
     cy.get('.xoo-el-password_cont').within(() => {
       cy.get(SHOW_PASSWORD_BTN_SEL).click({ force: true });
@@ -128,12 +117,12 @@ class LoginPage {
   }
 
   pasteIntoFieldUsername(value) {
-    cy.get(this.getLoginSelector()).should('be.visible');
+    cy.get(POPUP_SEL).should('be.visible');
     cy.pasteIntoField(USERNAME_TXT_BX_SEL, value);
   }
 
   pasteIntoFieldPassword(value) {
-    cy.get(this.getLoginSelector()).should('be.visible');
+    cy.get(POPUP_SEL).should('be.visible');
     cy.pasteIntoField(PASSWORD_TXT_BX_SEL, value);
   }
 
@@ -146,19 +135,19 @@ class LoginPage {
   }
 
   checkRememberMe() {
-    cy.get(this.getLoginSelector()).should('be.visible');
+    cy.get(POPUP_SEL).should('be.visible');
     cy.get(REMEMBER_ME_CHK_BOX_SEL).check();
     cy.get(REMEMBER_ME_CHK_BOX_SEL).should('be.checked');
     
   }
 
   checkNoRememberMe() {
-    cy.get(this.getLoginSelector()).should('be.visible');
+    cy.get(POPUP_SEL).should('be.visible');
     cy.get(REMEMBER_ME_CHK_BOX_SEL).should('not.be.checked');
   }
 
   clickForgotPassword() {
-    cy.get(this.getLoginSelector()).should('be.visible');
+    cy.get(POPUP_SEL).should('be.visible');
     cy.get(FORGOT_PASSWORD_LINK_SEL).contains('Quên mật khẩu?').click();
   }
 

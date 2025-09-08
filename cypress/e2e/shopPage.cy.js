@@ -7,7 +7,7 @@ describe('Shop Page Tests', () => {
         cy.visitShopPage();
     });
 
-    describe('Add Product Tests', () => {
+    describe('Add Product tests', () => {
         it('PS_083: Kiểm tra thêm sản phẩm không có lựa chọn vào giỏ hàng', () => {
             shopPage.addProductToCart();
         });
@@ -25,7 +25,7 @@ describe('Shop Page Tests', () => {
         });
     });
 
-    describe('Navigation Tests', () => {
+    describe('Navigation tests', () => {
         it('PS_087: Kiểm tra click vào xem sản phẩm bất kỳ', () => {
             shopPage.viewProduct();
         });
@@ -45,11 +45,9 @@ describe('Shop Page Tests', () => {
         it('PS_091: Điều hướng khi click "Dụng cụ chăm sóc"', () => {
             shopPage.navigateToCareTools();
         });
-
-        
     });
     
-    describe('Filter Tests', () => {
+    describe('Filter tests', () => {
         it('PS_092: Kiểm tra sắp xếp theo độ phổ biến', () => {
             shopPage.sortByPopularity();
         });
@@ -62,12 +60,41 @@ describe('Shop Page Tests', () => {
             shopPage.sortByNewest();
         });
 
-        it.only('PS_095: Kiểm tra sắp xếp theo giá: thấp đến cao', () => {
+        it('PS_095: Kiểm tra sắp xếp theo giá: thấp đến cao', () => {
             shopPage.sortByPriceLowToHigh();
         });
 
         it('PS_096: Kiểm tra sắp xếp theo giá: cao đến thấp', () => {
             shopPage.sortByPriceHighToLow();
+        });
+    });
+
+    describe('Pagination tests', () => {
+         it('PS_097: Kiểm tra trường hợp ở trang đầu tiên', () => {
+            shopPage.checkPaginationDisplay();
+            shopPage.checkFirstPagePagination();
+        });
+
+        it('PS_098: Kiểm tra trường hợp ở trang cuối cùng', () => {
+            shopPage.checkPaginationDisplay();
+            shopPage.checkLastPagePagination();
+        });
+
+        it('PS_099: Kiểm tra click trang bất kỳ không phải là page 1 hoặc cuối', () => {
+            shopPage.checkPaginationDisplay();
+            shopPage.clickMiddlePage();
+        });
+
+         it.only('PS_100: Kiểm tra click nút [→]', () => {
+            shopPage.checkPaginationDisplay();
+            cy.visitShopPage2();
+            shopPage.goToNextPage();
+        });
+
+        it('PS_101: Kiểm tra click nút [←]', () => { 
+            shopPage.checkPaginationDisplay();
+            cy.visitShopPage2();
+            shopPage.goToPreviousPage();
         });
     });
 });

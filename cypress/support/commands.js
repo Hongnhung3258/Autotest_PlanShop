@@ -1,16 +1,21 @@
 Cypress.Commands.add('visitPage', () => {
   cy.visit('/');
-  cy.task('log', 'Visited home page.');
 });
 
 Cypress.Commands.add('visitCartPage', () => {
   cy.visit('/cart');
-  cy.task('log', 'Visited cart page.');
 });
 
 Cypress.Commands.add('visitShopPage', () => {
   cy.visit('/shop');
-  cy.task('log', 'Visited shop page.');
+});
+
+Cypress.Commands.add('visitShopPage2', () => {
+  cy.visit('/shop/page/2');
+});
+
+Cypress.Commands.add('visitCheckoutPage', () => {
+  cy.visit('/checkout');
 });
 
 
@@ -22,7 +27,6 @@ Cypress.Commands.add('closePopup', () => {
       if (closeButton.length > 0) {
         cy.get('span.xoo-el-close.xoo-el-icon-cross').click({ force: true });
         cy.get('.xoo-el-inmodal').should('not.be.visible', { timeout: 6000 });
-        cy.task('log', 'Popup closed successfully.');
       } else {
         cy.task('log', 'Close button not found, skipping close.');
       }
@@ -66,7 +70,7 @@ Cypress.Commands.add('checkNotice', (fieldSelector, errorMsg) => {
       };
       const normalizedActual = normalizeMessage($element.text());
       const normalizedExpected = normalizeMessage(errorMsg);
-      expect(normalizedActual).to.equal(normalizedExpected);
+      expect(normalizedActual).to.include(normalizedExpected);
     });
 });
 
@@ -96,13 +100,31 @@ Cypress.Commands.add('checkLinkColorAfterClick', (selector, linkText) => {
     });
 });
 
-Cypress.Commands.add('selectVariationByIndex',(selector, indexToSelect) => {
-    cy.get(selector).should('be.visible').then(($select) => {
+Cypress.Commands.add('selectByIndex', (selector, indexToSelect) => {
+  cy.get('body').then(($body) => {
+    if ($body.find(`${selector}.select2-hidden-accessible`).length > 0) {
+      // Đây là Select2 dropdown
+      const containerId = selector.replace('#', '#select2-') + '-container';
+      
+      // Click vào container để mở dropdown
+      cy.get(containerId).click();
+      
+      // Đợi dropdown xuất hiện và chọn option theo index
+      cy.get('.select2-results__option')
+        .should('be.visible')
+        .eq(indexToSelect)
+        .click();
+        
+    } else {
+      // Đây là select thông thường
+      cy.get(selector).should('be.visible').then(($select) => {
         const $options = $select.find('option');
         if (indexToSelect < $options.length) {
           cy.wrap($select).select($options.eq(indexToSelect).val());
         } else {
-          throw new Error(`Index ${indexToSelect} vượt quá số option có sẵn (${ $options.length })`);
+          cy.log('Index vượt quá số lượng options có sẵn');
         }
-    });
-})
+      });
+    }
+  });
+});

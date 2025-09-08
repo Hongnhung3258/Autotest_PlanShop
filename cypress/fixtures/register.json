@@ -3,7 +3,7 @@
     "email": "newu123@gmail.com",
     "firstName": "usernew",
     "lastName": "nhunfi",
-    "password": "password123",
+    "password": "password123", 
     "confirmPassword": "password123"
   },
   "invalidEmailUser": {

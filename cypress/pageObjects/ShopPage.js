@@ -6,7 +6,7 @@ const DATA_PRODUCTS3_SEL = '.astra-shop-summary-wrap [data-product_id="1322"]';
 const DATA_PRODUCTS4_SEL = '.astra-shop-summary-wrap [data-product_id="1501"]';
 const DATA_PRODUCTS5_SEL = '.astra-shop-summary-wrap [data-product_id="1505"]';
 const VIEW_PRODUCT_SEL = '.astra-shop-thumbnail-wrap a';
-
+const DATA_PRODUCTS_SEL = '.astra-shop-summary-wrap [data-product_id="1338"]';
 // Product detail page selectors
 const PRODUCT_TITLE_SEL = 'h1.product_title.entry-title';
 const VARIATION_SELECT_SEL = '.variations select';
@@ -23,20 +23,37 @@ const SHOP_MENU_SEL = '#menu-item-22';
 // Filter selectors
 const SORT_SELECT_SEL = '.woocommerce-ordering select[name="orderby"]';
 const PRICE_SEL = '.price .woocommerce-Price-amount';
+const ITEM_PRODUCT_SEL = '.products.columns-3 li'
+
+const PAGINATION_NAV_SEL = '.woocommerce-pagination';
+const PAGE_NUMBERS_SEL = '.page-numbers';
+const CURRENT_PAGE_SEL = '.page-numbers.current';
+const NEXT_PAGE_SEL = '.next.page-numbers';
+const PREV_PAGE_SEL = '.prev.page-numbers';
+const PAGE_NUMBER_LINK_SEL = 'a.page-numbers:not(.prev):not(.next)';
 
 class ShopPage {
     addProductToCart() {
-        cy.get(DATA_PRODUCTS1_SEL).click();
+        cy.get(DATA_PRODUCTS1_SEL).scrollIntoView().click();
         cy.get(DATA_PRODUCTS1_SEL).should('have.class', 'added');
         cy.get(CART_COUNT_SEL).invoke('attr', 'data-cart-total').then((count) => {
             expect(parseInt(count)).to.be.greaterThan(0);
         });
     }
 
+    addProductToCart2() {
+        cy.get(DATA_PRODUCTS_SEL).scrollIntoView().click();
+        cy.get(DATA_PRODUCTS_SEL).should('have.class', 'added');
+        cy.get(CART_COUNT_SEL).invoke('attr', 'data-cart-total').then((count) => {
+            expect(parseInt(count)).to.be.greaterThan(0);
+        
+        });
+    }
+
     addMultipleProductsToCart() {
-        cy.get(DATA_PRODUCTS1_SEL).click();
+        cy.get(DATA_PRODUCTS1_SEL).scrollIntoView().click();
         cy.get(DATA_PRODUCTS1_SEL).should('have.class', 'added');
-        cy.get(DATA_PRODUCTS2_SEL).click();
+        cy.get(DATA_PRODUCTS2_SEL).scrollIntoView().click();
         cy.get(DATA_PRODUCTS2_SEL).should('have.class', 'added');
         cy.get(CART_COUNT_SEL).invoke('attr', 'data-cart-total').then((count) => {
             expect(parseInt(count)).to.be.greaterThan(0);
@@ -44,7 +61,7 @@ class ShopPage {
     }
 
     addSelectedProductToCart() {
-        cy.get(DATA_PRODUCTS3_SEL).click();
+        cy.get(DATA_PRODUCTS3_SEL).scrollIntoView().click();
         cy.url().should('include', '/product/');
         
         cy.get(PRODUCT_TITLE_SEL).invoke('text').then((name) => {
@@ -71,7 +88,7 @@ class ShopPage {
     }
 
     addProductSoldOut() {
-        cy.get(DATA_PRODUCTS4_SEL)
+        cy.get(DATA_PRODUCTS4_SEL).scrollIntoView()
           .should('contain.text', 'Đọc tiếp')
           .and('not.have.class', 'add_to_cart_button')
           .and('have.class', 'product_type_simple');
@@ -80,7 +97,7 @@ class ShopPage {
     }
 
     addSelectedProductSoldOut() {
-        cy.get(DATA_PRODUCTS5_SEL).click();
+        cy.get(DATA_PRODUCTS5_SEL).scrollIntoView().click();
         cy.url().should('include', '/product/');
         
         cy.get(ADD_TO_CART_VARIATION_BTN_SEL)
@@ -132,7 +149,7 @@ class ShopPage {
     sortByPopularity() {
     cy.url().then((currentUrl) => {
         if (currentUrl.includes('/shop') && !currentUrl.includes('orderby=')) {
-            cy.selectVariationByIndex(SORT_SELECT_SEL,0);
+            cy.selectByIndex(SORT_SELECT_SEL,0);
             cy.url().should('include', '/');
         } else {
         cy.selectVariationByIndex(SORT_SELECT_SEL, 0);
@@ -142,44 +159,135 @@ class ShopPage {
     }
 
     sortByRating() {
-        cy.selectVariationByIndex(SORT_SELECT_SEL,1);
+        cy.selectByIndex(SORT_SELECT_SEL,1);
         cy.url().should('include', 'orderby=rating');
     }
 
     sortByNewest() {
-        cy.selectVariationByIndex(SORT_SELECT_SEL,2);
+        cy.selectByIndex(SORT_SELECT_SEL,2);
         cy.url().should('include', 'orderby=date');
     }
 
     sortByPriceLowToHigh() {
-        cy.selectVariationByIndex(SORT_SELECT_SEL,3);
+        cy.selectByIndex(SORT_SELECT_SEL,3);
         cy.url().should('include', 'orderby=price');
-        cy.get(PRICE_SEL).then(($prices) => {
-            const prices = [];
-            $prices.each((index, element) => {
-                const priceText = Cypress.$(element).text();
-                const price = parseInt(priceText.replace(/[^\d]/g, ''));
-                prices.push(price);
+        cy.get(ITEM_PRODUCT_SEL).then(($products) => {
+            const productPrices = [];
+            $products.each((index, product) => {
+                const $priceElements = Cypress.$(product).find(PRICE_SEL);
+                let maxPrice = 0;
+                
+                $priceElements.each((priceIndex, priceElement) => {
+                    const priceText = Cypress.$(priceElement).text();
+                    const price = parseInt(priceText.replace(/[^\d]/g, ''));
+                    if (price > maxPrice) {
+                        maxPrice = price;
+                    }
+                });
+                
+                if (maxPrice > 0) {
+                    productPrices.push(maxPrice);
+                }
             });
-            for (let i = 1; i < Math.min(4, prices.length); i++) {
-                expect(prices[i]).to.be.at.least(prices[i-1]);
+            
+            for (let i = 1; i < Math.min(4, productPrices.length); i++) {
+                expect(productPrices[i]).to.be.at.least(productPrices[i-1]);
             }
         });
     }
 
     sortByPriceHighToLow() {
-        cy.get(SORT_SELECT_SEL).select('price-desc');
+        cy.selectByIndex(SORT_SELECT_SEL, 4);
         cy.url().should('include', 'orderby=price-desc');
-        cy.get(PRICE_SEL).then(($prices) => {
-            const prices = [];
-            $prices.each((index, element) => {
-                const priceText = Cypress.$(element).text();
-                const price = parseInt(priceText.replace(/[^\d]/g, ''));
-                prices.push(price);
+        cy.get(ITEM_PRODUCT_SEL).then(($products) => {
+            const productPrices = [];
+            $products.each((index, product) => {
+                const $priceElements = Cypress.$(product).find(PRICE_SEL);
+                let maxPrice = 0;
+                
+                $priceElements.each((priceIndex, priceElement) => {
+                    const priceText = Cypress.$(priceElement).text();
+                    const price = parseInt(priceText.replace(/[^\d]/g, ''));
+                    if (price > maxPrice) {
+                        maxPrice = price;
+                    }
+                });
+                
+                if (maxPrice > 0) {
+                    productPrices.push(maxPrice);
+                }
             });
-            for (let i = 1; i < Math.min(4, prices.length); i++) {
-                expect(prices[i]).to.be.at.most(prices[i-1]);
+            
+            for (let i = 1; i < Math.min(4, productPrices.length); i++) {
+                expect(productPrices[i]).to.be.at.most(productPrices[i-1]);
             }
+        });
+    }
+
+    checkPaginationDisplay() {
+        cy.get(PAGINATION_NAV_SEL).should('be.visible').scrollIntoView();
+        cy.get(PAGE_NUMBERS_SEL).should('have.length.at.least', 2);
+        cy.get(PAGE_NUMBER_LINK_SEL).then(($pages) => {
+            const pageCount = $pages.length;
+            expect(pageCount).to.be.at.least(2);
+        });
+        cy.get(CURRENT_PAGE_SEL).should('be.visible').and('have.css', 'background-color', 'rgb(84, 180, 53)');
+    }
+           
+
+    checkFirstPagePagination() {
+        cy.get(PAGINATION_NAV_SEL).should('be.visible').scrollIntoView();
+        cy.get(CURRENT_PAGE_SEL).should('be.visible')
+            .and('have.css', 'background-color', 'rgb(84, 180, 53)');
+        cy.get(PREV_PAGE_SEL).should('not.exist'); 
+        cy.get(NEXT_PAGE_SEL).should('be.visible'); 
+    }
+
+    checkLastPagePagination() {
+        cy.get(PAGINATION_NAV_SEL).should('be.visible').scrollIntoView();
+        cy.get(PAGE_NUMBER_LINK_SEL).last().click();
+        cy.get(CURRENT_PAGE_SEL).should('be.visible')
+            .and('have.css', 'background-color', 'rgb(84, 180, 53)');
+        cy.get(NEXT_PAGE_SEL).should('not.exist');
+        cy.get(PREV_PAGE_SEL).should('be.visible');
+    }
+
+    clickMiddlePage() {
+        cy.get(PAGE_NUMBER_LINK_SEL).then(($pages) => {
+            const middlePageIndex = 1; 
+            const $targetPage = $pages.eq(middlePageIndex);
+            cy.wrap($targetPage).invoke('text').then((pageText) => {
+                const targetPageNum = parseInt(pageText.trim());
+                cy.wrap($targetPage).click();
+                cy.url().should('include', `/page/${targetPageNum}`);
+                cy.get(PREV_PAGE_SEL).should('be.visible');
+                cy.get(NEXT_PAGE_SEL).should('be.visible');
+                cy.get(CURRENT_PAGE_SEL).should('be.visible')
+                    .and('have.css', 'background-color', 'rgb(84, 180, 53)')
+                    .and('contain.text', targetPageNum.toString());
+            });
+        });
+    }
+
+    goToNextPage() {
+        cy.get(PAGINATION_NAV_SEL).should('be.visible');
+        cy.get(CURRENT_PAGE_SEL).invoke('text').then((currentPage) => {
+            const currentPageNum = parseInt(currentPage.trim())
+            cy.get(NEXT_PAGE_SEL).click();
+            cy.url().should('include', `/page/${currentPageNum + 1}`);
+            cy.get(CURRENT_PAGE_SEL).should('contain.text', (currentPageNum + 1).toString())
+              .and('have.css', 'background-color', 'rgb(84, 180, 53)');
+        });
+    }
+
+    goToPreviousPage() {
+        cy.get(PAGINATION_NAV_SEL).should('be.visible');
+        cy.get(CURRENT_PAGE_SEL).invoke('text').then((currentPage) => {
+            const currentPageNum = parseInt(currentPage.trim());
+            cy.get(PREV_PAGE_SEL).click();
+            cy.url().should('include', `/page/${currentPageNum - 1}`);
+            cy.get(CURRENT_PAGE_SEL).should('contain.text', (currentPageNum - 1).toString())
+              .and('have.css', 'background-color', 'rgb(84, 180, 53)');
         });
     }
 }

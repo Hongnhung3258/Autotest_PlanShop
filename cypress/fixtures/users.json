@@ -27,6 +27,20 @@
   },
   "emptyUser": {
     "email": "",
-    "password": ""
+    "password": "",
+    "name": "",
+    "phone": "",
+    "address": ""
+  },
+  "checkoutUser": {
+    "email": "newuser@gmail.com",
+    "password": "password123",
+    "name": "Trịnh Hồng Nhung",
+    "phone": "0386849210",
+    "address": "Số xx, ngõ xx, tổ 16 Yên Nghĩa"
+  },
+  "cartUser": {
+    "email": "linh2411@gmail.com",
+    "password": "12345678"
   }
 }

@@ -31,7 +31,7 @@ class CartMenu {
     cy.get(EMPTY_CART_MESSAGE_SEL)
       .should('be.visible')
       .and('contain.text', 'Không có sản phẩm trong giỏ hàng');
-    cy.get(CONTINUE_SHOPPING_BTN_SEL)
+    cy.get(BTN_SEL)
       .should('be.visible')
       .and('contain.text', 'Tiếp tục mua sắm');
   }

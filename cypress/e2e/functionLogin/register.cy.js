@@ -1,20 +1,21 @@
 import RegisterPage from '../../pageObjects/RegisterPage';
+import LoginPage from '../../pageObjects/LoginPage';
 
 describe('Register Functionality Tests', () => {
   const registerPage = new RegisterPage();
+  const loginPage = new LoginPage();
 
   beforeEach(() => {
     cy.visitPage();
-    registerPage.clickLoginMenu();
-    registerPage.switchToRegister();
+    loginPage.clickLoginMenu();
   });
 
   afterEach(() => {
     cy.closePopup();
   });
 
-  it.only('PS_026: Kiểm tra điều hướng đến màn Đăng ký', () => {
-    registerPage.checkRegisterPopup();
+  it('PS_026: Kiểm tra điều hướng đến màn Đăng ký', () => {
+    registerPage.switchToRegister();
   });
 
   it('PS_027: Kiểm tra trạng thái menu', () => {
@@ -93,9 +94,8 @@ describe('Register Functionality Tests', () => {
     });
   });
 
-  it('PS_036: Kiểm tra click vào "Chính sách bảo mật"', () => {
+  it.only('PS_036: Kiểm tra click vào "Chính sách bảo mật"', () => {
     registerPage.openPrivacyPolicy();
-    cy.task('log', 'Privacy Policy link click verified.');
   });
 
   it('PS_037: Kiểm tra đăng ký thành công', () => {

@@ -3,9 +3,25 @@
     "coupon": "invalidCoupon"
 },
 "validCoupon": {
-    "coupon": "NGUOIMOIPLANSHOP"
+    "coupon": "Freeship"
 },
 "emptyCoupon": {
     "coupon": " "
+},
+"giam100k": {
+    "comment": "don_toi_thieu_2tr",
+    "coupon": "giam100k"
+},
+"dentrongcaynho": {
+    "comment": "chi_dung_cho_sp",
+    "coupon": "dentrongcaynho"
+},
+"sale6": {
+    "comment":"don_toi_thieu_5tr",
+    "coupon": "sale6"
+},
+"sale10": {
+    "comment":"don_toi_thieu_1tr",
+    "coupon": "sale10"
 }
 }

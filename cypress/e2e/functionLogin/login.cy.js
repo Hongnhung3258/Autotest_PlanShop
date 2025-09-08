@@ -89,11 +89,11 @@ describe('Login Functionality Tests', () => {
     loginPage.checkPasswordMasked();
   });
 
-  it.only('PS_016: Kiểm tra click vào icon mắt', () => {
+  it('PS_016: Kiểm tra click vào icon mắt', () => {
     loginPage.togglePasswordVisibility();
   });
 
-  it('PS_017: Kiểm tra paste nội dung vào Password', () => {
+  it.only('PS_017: Kiểm tra paste nội dung vào Password', () => {
     loginPage.pasteIntoFieldPassword('password123');
     loginPage.checkPasswordMasked();
   });
