@@ -33,11 +33,16 @@
     "address": ""
   },
   "checkoutUser": {
+    "email": "nhimyanho@gmail.com",
+    "password": "GD9K@fD$xrUHSp44)yDBGA)B"
+  },
+
+  "checkoutUserNoProduct": {
     "email": "newuser@gmail.com",
     "password": "password123",
     "name": "Trịnh Hồng Nhung",
     "phone": "0386849210",
-    "address": "Số xx, ngõ xx, tổ 16 Yên Nghĩa"
+    "address": "Số 21, ngõ xx, tổ 16 Yên Nghĩa"
   },
   "cartUser": {
     "email": "linh2411@gmail.com",

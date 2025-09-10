@@ -67,7 +67,7 @@ class ShopPage {
         cy.get(PRODUCT_TITLE_SEL).invoke('text').then((name) => {
             const nameProduct = name.replace(/\s+/g, ' ').replace(/(^\s|\s$)/g, '');
             
-            cy.selectVariationByIndex(VARIATION_SELECT_SEL,1);
+            cy.selectByIndex(VARIATION_SELECT_SEL,1);
                             
             cy.get(ADD_TO_CART_VARIATION_BTN_SEL)
             .should('not.have.class', 'disabled')

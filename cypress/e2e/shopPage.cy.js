@@ -12,7 +12,7 @@ describe('Shop Page Tests', () => {
             shopPage.addProductToCart();
         });
 
-        it('PS_084: Kiểm tra thêm sản phẩm có lựa chọn vào giỏ hàng', () => {
+        it.only('PS_084: Kiểm tra thêm sản phẩm có lựa chọn vào giỏ hàng', () => {
             shopPage.addSelectedProductToCart();
         });
 
@@ -85,7 +85,7 @@ describe('Shop Page Tests', () => {
             shopPage.clickMiddlePage();
         });
 
-         it.only('PS_100: Kiểm tra click nút [→]', () => {
+         it('PS_100: Kiểm tra click nút [→]', () => {
             shopPage.checkPaginationDisplay();
             cy.visitShopPage2();
             shopPage.goToNextPage();
