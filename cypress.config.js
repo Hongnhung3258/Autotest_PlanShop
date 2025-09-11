@@ -1,33 +1,33 @@
-const { defineConfig } = require('cypress');
-
-module.exports = defineConfig({
+module.exports = {
+  projectId: "573x12", // Your Cypress Dashboard Project ID
   e2e: {
     // Base configuration
     baseUrl: 'http://planshop.com/',
     specPattern: 'cypress/e2e/**/*.cy.js',
     
+    // Asset folders
     screenshotsFolder: 'cypress/screenshots',
     videosFolder: 'cypress/videos',
-    downloadsFolder: 'cypress/downloads',
-    fixturesFolder: 'cypress/fixtures',
     
+    // Video and screenshot settings
     video: true,
-    videoCompression: 32, 
+    videoCompression: 32, // Optimize video size for CI/CD
     screenshotOnRunFailure: true,
     trashAssetsBeforeRuns: true,
     
+    // Viewport settings
     viewportWidth: 1600,
     viewportHeight: 1080,
     
+    // Timeout settings
     defaultCommandTimeout: 6000,
     requestTimeout: 10000,
     responseTimeout: 30000,
     pageLoadTimeout: 30000,
     
-    // Test settings
-    watchForFileChanges: false, // Disable for CI
+    // Test settings for CI
+    watchForFileChanges: false,
     chromeWebSecurity: false,
-    modifyObstructiveCode: false,
     
     // Retry settings for CI stability
     retries: {
@@ -41,10 +41,6 @@ module.exports = defineConfig({
       SHORT_TIMEOUT: 3000,
       MEDIUM_TIMEOUT: 10000,
       LONG_TIMEOUT: 30000,
-      
-      // Test data
-      VALID_EMAIL: 'test@planshop.com',
-      VALID_PASSWORD: 'password123',
       
       // Feature flags
       RECORD_VIDEO: true,
@@ -62,35 +58,35 @@ module.exports = defineConfig({
         logTable(data) {
           console.table(data);
           return null;
-        },
-        
-        cleanupDatabase() {
-          console.log('Database cleanup completed');
-          return null;
         }
       });
 
+      // Screenshot event handler
       on('after:screenshot', (details) => {
-        console.log(`📸 Screenshot saved: ${details.path}`);
+        console.log(`Screenshot saved: ${details.path}`);
         return null;
       });
 
+      // Video event handler  
       on('after:spec', (spec, results) => {
         if (results && results.video) {
-          console.log(`🎥 Video saved: ${results.video}`);
+          console.log(`Video saved: ${results.video}`);
         }
         
+        // Log test results summary
         const { stats } = results;
         console.log(`Test Results for ${spec.name}:`);
-        console.log(`Passed: ${stats.passes}`);
-        console.log(`Failed: ${stats.failures}`);
-        console.log(`Pending: ${stats.pending}`);
-        console.log(`Duration: ${stats.duration}ms`);
+        console.log(`   Passed: ${stats.passes}`);
+        console.log(`   Failed: ${stats.failures}`);
+        console.log(`   Pending: ${stats.pending}`);
+        console.log(`   Duration: ${stats.duration}ms`);
         
         return null;
       });
 
+      // Browser launch options for CI
       on('before:browser:launch', (browser, launchOptions) => {
+        // Chrome/Chromium options
         if (browser.family === 'chromium' && browser.name !== 'electron') {
           launchOptions.args.push('--disable-dev-shm-usage');
           launchOptions.args.push('--no-sandbox');
@@ -98,6 +94,7 @@ module.exports = defineConfig({
           launchOptions.args.push('--disable-web-security');
           launchOptions.args.push('--allow-running-insecure-content');
           
+          // Headless mode optimizations for CI
           if (process.env.CI) {
             launchOptions.args.push('--headless');
             launchOptions.args.push('--disable-background-timer-throttling');
@@ -106,31 +103,8 @@ module.exports = defineConfig({
           }
         }
         
-        if (browser.family === 'firefox') {
-          launchOptions.preferences['media.navigator.permission.disabled'] = true;
-        }
-        
         return launchOptions;
       });
-
-      // Environment-specific configuration
-      const environmentName = config.env.ENVIRONMENT || 'development';
-      
-      switch (environmentName) {
-        case 'production':
-          config.baseUrl = 'https://planshop.com/';
-          config.defaultCommandTimeout = 10000;
-          break;
-        case 'staging':
-          config.baseUrl = 'https://staging.planshop.com/';
-          config.defaultCommandTimeout = 8000;
-          break;
-        case 'development':
-        default:
-          config.baseUrl = 'http://planshop.com/';
-          config.defaultCommandTimeout = 6000;
-          break;
-      }
 
       // CI-specific optimizations
       if (process.env.CI) {
@@ -144,14 +118,5 @@ module.exports = defineConfig({
 
       return config;
     }
-  },
-
-  // Component testing (if needed in future)
-  component: {
-    devServer: {
-      framework: 'create-react-app',
-      bundler: 'webpack',
-    },
-    specPattern: 'src/**/*.cy.{js,jsx,ts,tsx}',
   }
-});
+};
