@@ -110,7 +110,7 @@ describe('Cart page tests', () => {
             cartPage.clickCheckoutNotLoggedIn();
         });
 
-        it.only('PS_082: Kiểm tra click nút "Tiến hành thanh toán" khi đã đăng nhập', () => {
+        it('PS_082: Kiểm tra click nút "Tiến hành thanh toán" khi đã đăng nhập', () => {
             loginPage.clickLoginMenu();
             cy.fixture('users').then((users) => {
                 loginPage.login(users.cartUser.email, users.cartUser.password);

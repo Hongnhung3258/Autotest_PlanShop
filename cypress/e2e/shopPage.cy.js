@@ -12,7 +12,7 @@ describe('Shop Page Tests', () => {
             shopPage.addProductToCart();
         });
 
-        it.only('PS_084: Kiểm tra thêm sản phẩm có lựa chọn vào giỏ hàng', () => {
+        it('PS_084: Kiểm tra thêm sản phẩm có lựa chọn vào giỏ hàng', () => {
             shopPage.addSelectedProductToCart();
         });
 

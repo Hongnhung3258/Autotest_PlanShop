@@ -9,7 +9,7 @@ describe('Product Details Tests', () => {
         cy.visitShopPage();
     });
 
-    it.only('PS_113: Kiểm tra hiển thị thông tin sản phẩm không có lựa chọn', () => {
+    it('PS_113: Kiểm tra hiển thị thông tin sản phẩm không có lựa chọn', () => {
         productDetail.verifyProductWithoutVariations();
     });
 
@@ -38,8 +38,9 @@ describe('Product Details Tests', () => {
         loginPage.clickLoginMenu();
         cy.fixture('users').then((users) => {
             loginPage.login(users.checkoutUser.email, users.checkoutUser.password);
+            productDetail.verifyWriteReview();
         });
         
-        productDetail.verifyWriteReview();
+        
     });
 });

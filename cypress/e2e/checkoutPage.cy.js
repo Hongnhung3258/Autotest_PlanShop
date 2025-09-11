@@ -21,7 +21,7 @@ describe('Checkout Page Tests', () => {
         cy.clearLocalStorage();
     })
 
-    it.only('PS_0102: Kiểm tra bố cục màn hình "Thanh toán"', () => {
+    it('PS_0102: Kiểm tra bố cục màn hình "Thanh toán"', () => {
         checkoutPage.verifyCheckoutPage();
     });
     

@@ -94,7 +94,7 @@ describe('Register Functionality Tests', () => {
     });
   });
 
-  it.only('PS_036: Kiểm tra click vào "Chính sách bảo mật"', () => {
+  it('PS_036: Kiểm tra click vào "Chính sách bảo mật"', () => {
     registerPage.openPrivacyPolicy();
   });
 

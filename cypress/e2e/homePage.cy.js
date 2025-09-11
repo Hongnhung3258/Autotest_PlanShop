@@ -141,7 +141,7 @@ describe('Home page tests', () => {
       cy.visitShopPage();
     });
 
-    it.only('PS_059: Kiểm tra hover vào giỏ hàng khi chưa có sản phẩm nào', () => {
+    it('PS_059: Kiểm tra hover vào giỏ hàng khi chưa có sản phẩm nào', () => {
       cartMenu.verifyCartIsEmpty();
       cartMenu.verifyEmptyCart();
     });

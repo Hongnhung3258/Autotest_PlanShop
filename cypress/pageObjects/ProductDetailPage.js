@@ -115,7 +115,7 @@ class ProductDetailPage {
         cy.get(TAB_REVIEWS_PANEL_SEL).should('not.have.css', 'display', 'none');
         
         cy.get(`${STAR_RATING_SEL}5`).click();
-        cy.get(COMMENT_TEXTAREA_SEL).type('Sản phẩm này rất đẹp thích hợp để đeo lên tay chậu giúp chậu nổi bật hơn');
+        cy.get(COMMENT_TEXTAREA_SEL).type('Đây là sản phẩm đẹp mà tôi rất thích!');
         cy.get(SUBMIT_REVIEW_SEL).click();
         
         cy.get(MESSENGA_COMMENT_SEL).should('contain.text', 'Đánh giá của bạn đang chờ phê duyệt');

@@ -1,10 +1,10 @@
 {
   "newUser": {
-    "email": "newu123@gmail.com",
-    "firstName": "usernew",
-    "lastName": "nhunfi",
-    "password": "password123", 
-    "confirmPassword": "password123"
+    "email": "usernew123@gmail.com",
+    "firstName": "Hoang",
+    "lastName": "Anh",
+    "password": "PĐsktidkg'85@#", 
+    "confirmPassword": "PĐsktidkg'85@#"
   },
   "invalidEmailUser": {
     "email": "linh.pththgmail.com",

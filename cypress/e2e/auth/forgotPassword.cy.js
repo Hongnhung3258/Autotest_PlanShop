@@ -26,7 +26,7 @@ describe('Forgot Password Functionality Tests', () => {
     });
   });
 
-  it.only('PS_040: Kiểm tra nhập Username/Email không hợp lệ/chưa đăng ký', () => {
+  it('PS_040: Kiểm tra nhập Username/Email không hợp lệ/chưa đăng ký', () => {
     cy.fixture('forgot').then((forgot) => {
       forgotPasswordPage.resetPassword(forgot.nonRegisteredEmail.email);
       forgotPasswordPage.checkNoticeError('Tên người dùng hoặc e-mail không hợp lệ.');

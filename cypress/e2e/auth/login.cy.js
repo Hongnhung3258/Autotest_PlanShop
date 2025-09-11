@@ -93,7 +93,7 @@ describe('Login Functionality Tests', () => {
     loginPage.togglePasswordVisibility();
   });
 
-  it.only('PS_017: Kiểm tra paste nội dung vào Password', () => {
+  it('PS_017: Kiểm tra paste nội dung vào Password', () => {
     loginPage.pasteIntoFieldPassword('password123');
     loginPage.checkPasswordMasked();
   });
