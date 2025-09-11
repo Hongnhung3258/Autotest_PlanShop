@@ -1,20 +1,49 @@
 {
   "name": "testda",
   "version": "1.0.0",
-  "description": "",
+  "description": "Cypress E2E Testing for PlanShop",
   "main": "index.js",
   "scripts": {
     "open": "cypress open",
-    "test": "cypress run --browser chrome --headed"
+    "test": "cypress run --browser chrome --headed",
+    "test:headless": "cypress run --browser chrome",
+    "test:firefox": "cypress run --browser firefox",
+    "test:edge": "cypress run --browser edge",
+    "test:chrome": "cypress run --browser chrome",
+    "test:all": "cypress run",
+    "test:auth": "cypress run --spec 'cypress/e2e/auth/*.cy.js'",
+    "test:cart": "cypress run --spec 'cypress/e2e/cartPage.cy.js'",
+    "test:checkout": "cypress run --spec 'cypress/e2e/checkoutPage.cy.js'",
+    "test:shop": "cypress run --spec 'cypress/e2e/shopPage.cy.js'",
+    "test:home": "cypress run --spec 'cypress/e2e/homePage.cy.js'",
+    "test:product": "cypress run --spec 'cypress/e2e/productDetailPage.cy.js'",
+    "test:ci": "cypress run --browser chrome --record --key $CYPRESS_RECORD_KEY",
+    "test:parallel": "cypress run --browser chrome --record --key $CYPRESS_RECORD_KEY --parallel",
+    "test:report": "cypress run --reporter mochawesome --reporter-options 'reportDir=cypress/reports,overwrite=false,html=true,json=true'",
+    "report:merge": "mochawesome-merge cypress/reports/*.json > cypress/reports/merged-report.json",
+    "report:generate": "marge cypress/reports/merged-report.json --reportDir cypress/reports --inline",
+    "report:clean": "rm -rf cypress/reports cypress/videos cypress/screenshots",
+    "lint": "echo 'Lint script not configured yet'",
+    "cy:verify": "cypress verify",
+    "cy:info": "cypress info",
+    "cy:version": "cypress version"
   },
-  "keywords": [],
+  "keywords": ["cypress", "e2e", "testing", "automation"],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "cypress": "^14.5.3"
+    "cypress": "^14.5.3",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "junit2json": "^3.1.4"
   },
   "dependencies": {
     "cypress-real-events": "^1.14.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
   }
 }
