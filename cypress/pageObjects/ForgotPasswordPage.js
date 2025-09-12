@@ -4,6 +4,7 @@ const FORGOT_PASSWORD_LINK = 'a.xoo-el-lostpw-tgr';
 const POPUP_SEL = '.xoo-el-srcont';
 const MESSAGE = '.xoo-el-form-txt';
 const ERROR_MESSAGE = '.xoo-el-notice .xoo-el-notice-error';
+const SUCCESS_MESSAGE = '.xoo-el-notice .xoo-el-notice-success';
 
 class ForgotPasswordPage {
   clickForgotPassword() {
@@ -29,7 +30,7 @@ class ForgotPasswordPage {
   }
   
   pwrecovery() {
-    cy.get(ERROR_MESSAGE, { timeout: 10000 }).should('be.visible');
+    cy.get(SUCCESS_MESSAGE, { timeout: 10000 }).should('be.visible');
   }
 
   resetPassword(email) {

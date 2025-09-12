@@ -73,7 +73,7 @@ class ProductDetailPage {
         this.formProductDetail();
         cy.get(VARIATIONS_SEL).should('be.visible');
         cy.get(RESET_VARIATIONS_SEL).should('not.be.visible');
-        cy.get(ADD_TO_CART_SEL).scrollIntoView().should('have.class', 'wc-variation-selection-needed');
+        cy.get(ADD_TO_CART_SEL).should('have.class', 'wc-variation-selection-needed');
     }
 
     verifyRemoveProductVariations() {
@@ -106,7 +106,7 @@ class ProductDetailPage {
         cy.get(REVIEW_FORM_SEL).should('be.visible');
         cy.get(RATING_STARS_SEL).should('be.visible');
         cy.get(COMMENT_TEXTAREA_SEL).should('be.visible');
-        cy.get(SUBMIT_REVIEW_SEL).should('be.visible').contais('Gửi đi');
+        cy.get(SUBMIT_REVIEW_SEL).should('be.visible').contains('Gửi đi');
     }
 
     verifyWriteReview() {

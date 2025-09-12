@@ -281,15 +281,20 @@ class ShopPage {
     }
 
     goToPreviousPage() {
-        cy.get(PAGINATION_NAV_SEL).should('be.visible');
-        cy.get(CURRENT_PAGE_SEL).invoke('text').then((currentPage) => {
-            const currentPageNum = parseInt(currentPage.trim());
-            cy.get(PREV_PAGE_SEL).click();
-            cy.url().should('include', `/page/${currentPageNum - 1}`);
-            cy.get(CURRENT_PAGE_SEL).should('contain.text', (currentPageNum - 1).toString())
-              .and('have.css', 'background-color', 'rgb(84, 180, 53)');
-        });
-    }
+    cy.get(PAGINATION_NAV_SEL).should('be.visible');
+    cy.get(CURRENT_PAGE_SEL).invoke('text').then((currentPage) => {
+        const currentPageNum = parseInt(currentPage.trim());
+        const previousPageNum = currentPageNum - 1;
+        cy.get(PREV_PAGE_SEL).click();
+        if (previousPageNum === 1) {
+            cy.url().should('include', '/shop').and('not.include', '/page/');
+        } else {
+            cy.url().should('include', `/page/${previousPageNum}`);
+        }
+        cy.get(CURRENT_PAGE_SEL).should('contain.text', previousPageNum.toString())
+          .and('have.css', 'background-color', 'rgb(84, 180, 53)');
+    });
+}
 }
 
 export default ShopPage;

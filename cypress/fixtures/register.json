@@ -3,8 +3,8 @@
     "email": "usernew123@gmail.com",
     "firstName": "Hoang",
     "lastName": "Anh",
-    "password": "PĐsktidkg'85@#", 
-    "confirmPassword": "PĐsktidkg'85@#"
+    "password": "12345678", 
+    "confirmPassword": "12345678"
   },
   "invalidEmailUser": {
     "email": "linh.pththgmail.com",
