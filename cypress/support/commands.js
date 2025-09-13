@@ -18,7 +18,6 @@ Cypress.Commands.add('visitCheckoutPage', () => {
   cy.visit('/checkout');
 });
 
-
 Cypress.Commands.add('closePopup', () => {
   cy.get('body').then(($body) => {
     const popup = $body.find('.xoo-el-inmodal');
@@ -104,11 +103,14 @@ Cypress.Commands.add('selectByIndex', (selector, indexToSelect) => {
   cy.get('body').then(($body) => {
     if ($body.find(`${selector}.select2-hidden-accessible`).length > 0) {
       const containerId = selector.replace('#', '#select2-') + '-container';
+      
       cy.get(containerId).click();
+      
       cy.get('.select2-results__option')
         .should('be.visible')
         .eq(indexToSelect)
         .click();
+        
     } else {
       cy.get(selector).should('be.visible').then(($select) => {
         const $options = $select.find('option');
@@ -121,4 +123,3 @@ Cypress.Commands.add('selectByIndex', (selector, indexToSelect) => {
     }
   });
 });
-
