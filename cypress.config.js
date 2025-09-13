@@ -1,5 +1,5 @@
 module.exports = {
-  projectId: "573x12", // Your Cypress Dashboard Project ID
+  projectId: "573x12",
   e2e: {
     baseUrl: 'http://planshop.com/',
     specPattern: 'cypress/e2e/**/*.cy.js',
@@ -8,43 +8,36 @@ module.exports = {
     videosFolder: 'cypress/videos',
     
     video: true,
-    videoCompression: 32, // Optimize video size for CI/CD
+    videoCompression: 32,
     screenshotOnRunFailure: true,
     trashAssetsBeforeRuns: true,
     
     viewportWidth: 1920,
     viewportHeight: 1080,
     
-    // Timeout settings
     defaultCommandTimeout: 6000,
     requestTimeout: 10000,
     responseTimeout: 30000,
     pageLoadTimeout: 30000,
     
-    // Test settings for CI
     watchForFileChanges: false,
     chromeWebSecurity: false,
     
-    // Retry settings for CI stability
     retries: {
-      runMode: 2, // Retry failed tests in CI
-      openMode: 0  // No retries in interactive mode
+      runMode: 2, 
+      openMode: 0  
     },
     
-    // Environment variables
     env: {
-      // Custom timeouts
       SHORT_TIMEOUT: 3000,
       MEDIUM_TIMEOUT: 10000,
       LONG_TIMEOUT: 30000,
       
-      // Feature flags
       RECORD_VIDEO: true,
       TAKE_SCREENSHOTS: true
     },
     
     setupNodeEvents(on, config) {
-      // Task definitions
       on('task', {
         log(message) {
           console.log(message);
@@ -57,32 +50,52 @@ module.exports = {
         }
       });
 
-      // Screenshot event handler
       on('after:screenshot', (details) => {
         console.log(`Screenshot saved: ${details.path}`);
         return null;
       });
 
-      // Video event handler  
+      on('task', {
+        log(message) {
+          console.log(message);
+          return null;
+        },
+        
+        logTable(data) {
+          console.table(data);
+          return null;
+        },
+        
+        failed(message) {
+          console.log('Test Failed:', message);
+          return null;
+        }
+      });
+
+      on('after:run', (results) => {
+        if (results.totalFailed > 0) {
+          console.log(`Total Failed Tests: ${results.totalFailed}`);
+          console.log(`Screenshots saved in: cypress/screenshots/`);
+        }
+        return null;
+      });
+
       on('after:spec', (spec, results) => {
         if (results && results.video) {
           console.log(`Video saved: ${results.video}`);
         }
         
-        // Log test results summary
         const { stats } = results;
         console.log(`Test Results for ${spec.name}:`);
-        console.log(`   Passed: ${stats.passes}`);
-        console.log(`   Failed: ${stats.failures}`);
-        console.log(`   Pending: ${stats.pending}`);
-        console.log(`   Duration: ${stats.duration}ms`);
-        
+        console.log(`  Passed: ${stats.passes}`);
+        console.log(`  Failed: ${stats.failures}`);
+        console.log(`  Pending: ${stats.pending}`);
+        console.log(`  Duration: ${stats.duration}ms`);
+
         return null;
       });
 
-      // Browser launch options for CI
       on('before:browser:launch', (browser, launchOptions) => {
-        // Chrome/Chromium options
         if (browser.family === 'chromium' && browser.name !== 'electron') {
           launchOptions.args.push('--disable-dev-shm-usage');
           launchOptions.args.push('--no-sandbox');
@@ -90,7 +103,6 @@ module.exports = {
           launchOptions.args.push('--disable-web-security');
           launchOptions.args.push('--allow-running-insecure-content');
           
-          // Headless mode optimizations for CI
           if (process.env.CI) {
             launchOptions.args.push('--headless');
             launchOptions.args.push('--disable-background-timer-throttling');
@@ -102,13 +114,11 @@ module.exports = {
         return launchOptions;
       });
 
-      // CI-specific optimizations
       if (process.env.CI) {
         config.video = process.env.CYPRESS_video !== 'false';
         config.screenshotOnRunFailure = true;
         config.watchForFileChanges = false;
         
-        // Reduce video quality in CI to save space
         config.videoCompression = 15;
       }
 
