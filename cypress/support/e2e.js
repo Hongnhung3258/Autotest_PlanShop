@@ -6,7 +6,7 @@ Cypress.Screenshot.defaults({
   capture: 'viewport', 
   scale: true,
   disableTimersAndAnimations: false, 
-  blackout: ['.sensitive-data'], 
+  blackout: ['.sensitive-data'],
   overwrite: true
 });
 
@@ -14,12 +14,8 @@ Cypress.on('uncaught:exception', (err, runnable) => {
   const timestamp = Date.now();
   const testTitle = runnable.title?.replace(/[^a-zA-Z0-9]/g, '_') || 'uncaught_exception';
   
-  cy.screenshot(`FAILED_uncaught_${testTitle}_${timestamp}`, {
-    capture: 'viewport',
-    overwrite: true
-  });
-  
   console.error('Uncaught Exception:', err.message);
+  console.log(`📸 Would capture screenshot: FAILED_uncaught_${testTitle}_${timestamp}`);
   
   return false;
 });
@@ -29,19 +25,13 @@ Cypress.on('fail', (error) => {
   const currentTest = Cypress.currentTest;
   const testTitle = currentTest?.title?.replace(/[^a-zA-Z0-9]/g, '_') || 'unknown_test';
   
-  cy.screenshot(`FAILED_${testTitle}_${timestamp}`, {
-    capture: 'viewport',
-    overwrite: true,
-    onAfterScreenshot: (details) => {
-      console.log(`Failure screenshot saved: ${details.path}`);
-    }
-  });
-  
   console.error('Test Failed:', {
     test: currentTest?.title,
     error: error.message,
     stack: error.stack
   });
+  
+  console.log(`📸 Failure detected: FAILED_${testTitle}_${timestamp}`);
   
   throw error; 
 });
@@ -58,44 +48,22 @@ beforeEach(() => {
 });
 
 afterEach(function() {
+  // FIX: Only take screenshots using built-in Cypress functionality
   if (this.currentTest.state === 'failed') {
     const timestamp = Date.now();
     const testTitle = this.currentTest.title.replace(/[^a-zA-Z0-9]/g, '_');
     
-    cy.screenshot(`FINAL_FAILED_${testTitle}_${timestamp}`, {
-      capture: 'viewport',
-      overwrite: true,
-      onAfterScreenshot: (details) => {
-        console.log(`Final failure screenshot: ${details.path}`);
-        
-        // Log thêm thông tin debugging
-        cy.window().then((win) => {
-          if (win.errorCount > 0) {
-            console.log(`JavaScript errors detected: ${win.errorCount}`);
-          }
-        });
+    console.log(`Test "${this.currentTest.title}" FAILED`);
+    console.log(` Screenshots automatically saved by Cypress in: cypress/screenshots/`);
+    
+    // Log additional debugging info without taking manual screenshots
+    cy.window().then((win) => {
+      if (win.errorCount > 0) {
+        console.log(` JavaScript errors detected: ${win.errorCount}`);
       }
     });
     
-    // Log failure summary
-    console.log(`Test "${this.currentTest.title}" FAILED`);
-    console.log(`Screenshots saved in: cypress/screenshots/`);
-    
   } else if (this.currentTest.state === 'passed') {
-    // KHÔNG chụp screenshot khi test pass
-    console.log(`Test "${this.currentTest.title}" PASSED`);
+    console.log(` Test "${this.currentTest.title}" PASSED`);
   }
-});
-
-// Command timeout handler - chụp screenshot khi command timeout
-Cypress.on('command:failed', (err, runnable) => {
-  const timestamp = Date.now();
-  const testTitle = runnable.title?.replace(/[^a-zA-Z0-9]/g, '_') || 'command_failed';
-  
-  cy.screenshot(`FAILED_command_timeout_${testTitle}_${timestamp}`, {
-    capture: 'viewport',
-    overwrite: true
-  });
-  
-  console.error('Command Failed:', err.message);
 });

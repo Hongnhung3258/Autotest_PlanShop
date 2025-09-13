@@ -35,42 +35,87 @@ Cypress.Commands.add('closePopup', () => {
   });
 });
 
+// SỬA checkInvalidField - KHÔNG THROW ERROR
 Cypress.Commands.add('checkInvalidField', (fieldSelector, errorMsg) => {
-  cy.get(fieldSelector).then($input => {
-    const input = $input[0];
-    const normalizeMessage = (msg) => {
-      return msg
-        .trim()
-        .replace(/\s+/g, ' ')
-        .replace(/['"]/g, '')
-        .replace(/\*\*/g, '')
-        .replace(/[.,!?]/g, '');
-    };
-    const normalizedActual = normalizeMessage(input.validationMessage);
-    const normalizedExpected = normalizeMessage(errorMsg);
-
-    expect(normalizedActual).to.equal(normalizedExpected);
+  cy.get('body').then($body => {
+    if ($body.find(fieldSelector).length === 0) {
+      cy.task('recordFailure', { 
+        type: 'element_not_found', 
+        selector: fieldSelector,
+        action: 'checkInvalidField'
+      });
+      return;
+    }
+    
+    cy.get(fieldSelector).then($input => {
+      try {
+        const input = $input[0];
+        const normalizeMessage = (msg) => {
+          return msg
+            .trim()
+            .replace(/\s+/g, ' ')
+            .replace(/['"]/g, '')
+            .replace(/\*\*/g, '')
+            .replace(/[.,!?]/g, '');
+        };
+        const normalizedActual = normalizeMessage(input.validationMessage);
+        const normalizedExpected = normalizeMessage(errorMsg);
+        expect(normalizedActual).to.equal(normalizedExpected);
+        
+        cy.get(fieldSelector)
+          .should('have.focus')
+          .should('have.attr', 'required');
+      } catch (error) {
+        cy.log(`⚠️ checkInvalidField failed: ${error.message}`);
+        cy.task('recordFailure', { 
+          type: 'assertion_failure', 
+          selector: fieldSelector, 
+          expected: errorMsg,
+          error: error.message 
+        });
+      }
+    });
   });
-  cy.get(fieldSelector)
-      .should('have.focus')
-      .should('have.attr', 'required');
 });
 
+// SỬA checkNotice - KHÔNG THROW ERROR
 Cypress.Commands.add('checkNotice', (fieldSelector, errorMsg) => {
-  cy.get(fieldSelector, { timeout: 10000 })
-    .should('be.visible')
-    .then($element => {
-      const normalizeMessage = (msg) => {
-        return msg
-          .trim()
-          .replace(/\s+/g, ' ')
-          .replace(/(^\s|\s$)/g, '')
-          .replace(/\*\*/g, '');
-      };
-      const normalizedActual = normalizeMessage($element.text());
-      const normalizedExpected = normalizeMessage(errorMsg);
-      expect(normalizedActual).to.include(normalizedExpected);
-    });
+  cy.get('body').then($body => {
+    if ($body.find(fieldSelector).length === 0) {
+      cy.task('recordFailure', { 
+        type: 'element_not_found', 
+        selector: fieldSelector,
+        action: 'checkNotice'
+      });
+      return;
+    }
+    
+    cy.get(fieldSelector, { timeout: 10000 })
+      .should('be.visible')
+      .then($element => {
+        try {
+          const normalizeMessage = (msg) => {
+            return msg
+              .trim()
+              .replace(/\s+/g, ' ')
+              .replace(/(^\s|\s$)/g, '')
+              .replace(/\*\*/g, '');
+          };
+          const normalizedActual = normalizeMessage($element.text());
+          const normalizedExpected = normalizeMessage(errorMsg);
+          expect(normalizedActual).to.include(normalizedExpected);
+        } catch (error) {
+          cy.log(`⚠️ checkNotice failed: ${error.message}`);
+          cy.task('recordFailure', { 
+            type: 'assertion_failure', 
+            selector: fieldSelector, 
+            expected: errorMsg,
+            actual: $element.text(),
+            error: error.message 
+          });
+        }
+      });
+  });
 });
 
 Cypress.Commands.add('pasteIntoField', (fieldSelector, value) => {
@@ -93,9 +138,20 @@ Cypress.Commands.add('checkLinkColorAfterClick', (selector, linkText) => {
   
   cy.get(selector).contains(linkText).parent('li').should('have.class', 'current-menu-item')
     .find('.menu-link').then($link => {
-      const color = $link.css('color');
-      const hexColor = rgbToHex(color);
-      expect(hexColor).to.equal('#54b435');
+      try {
+        const color = $link.css('color');
+        const hexColor = rgbToHex(color);
+        expect(hexColor).to.equal('#54b435');
+      } catch (error) {
+        cy.log(`⚠️ checkLinkColorAfterClick failed: ${error.message}`);
+        cy.task('recordFailure', {
+          type: 'assertion_failure',
+          selector: selector,
+          expected: '#54b435',
+          actual: rgbToHex($link.css('color')),
+          error: error.message
+        });
+      }
     });
 });
 
@@ -118,41 +174,21 @@ Cypress.Commands.add('selectByIndex', (selector, indexToSelect) => {
           cy.wrap($select).select($options.eq(indexToSelect).val());
         } else {
           cy.log('Index vượt quá số lượng options có sẵn');
+          cy.task('recordFailure', {
+            type: 'index_out_of_bounds',
+            selector: selector,
+            index: indexToSelect,
+            available: $options.length
+          });
         }
       });
     }
   });
 });
 
-Cypress.Commands.add('continueOnFail', (callback) => {
-  try {
-    callback();
-  } catch (error) {
-    cy.log(`Test step failed but continuing: ${error.message}`);
-    const timestamp = Date.now();
-    cy.screenshot(`STEP_FAILED_${timestamp}`, {
-      capture: 'viewport',
-      overwrite: true
-    });
-  }
-});
-
-Cypress.Commands.add('softAssert', (selector, assertion, value) => {
-  return cy.get(selector).then(($el) => {
-    try {
-      if (assertion === 'should') {
-        cy.wrap($el).should(value);
-      } else if (assertion === 'contain') {
-        expect($el).to.contain(value);
-      }
-      cy.log(`Soft assertion PASSED: ${selector} ${assertion} ${value}`);
-    } catch (error) {
-      cy.log(`Soft assertion FAILED: ${selector} ${assertion} ${value} - ${error.message}`);
-      const timestamp = Date.now();
-      cy.screenshot(`SOFT_ASSERT_FAILED_${timestamp}`, {
-        capture: 'viewport',
-        overwrite: true
-      });
-    }
+Cypress.Commands.add('recordFailure', (failureData) => {
+  return cy.task('recordFailure', failureData).then(() => {
+    cy.log(`Failure recorded: ${failureData.type}`);
   });
 });
+

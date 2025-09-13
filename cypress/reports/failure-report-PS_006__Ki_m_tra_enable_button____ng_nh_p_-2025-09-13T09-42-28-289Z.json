@@ -1,0 +1,33 @@
+{
+  "testTitle": "PS_006: Kiểm tra enable button \"Đăng nhập\"",
+  "duration": 10130,
+  "error": "Timed out retrying after 6000ms: expected '<button.button.btn.xoo-el-action-btn.xoo-el-login-btn>' to have CSS property 'background-color' with the value 'rgb(0, 0, 0)', but the value was 'rgb(55, 146, 55)'",
+  "totalSteps": 296,
+  "jsErrors": 0,
+  "consoleErrors": [],
+  "actionLog": [
+    {
+      "step": 1,
+      "description": "Starting test: PS_006: Kiểm tra enable button \"Đăng nhập\"",
+      "timestamp": "2025-09-13T09:42:09.725Z",
+      "url": "http://planshop.com/__cypress/iframes/cypress%5Ce2e%5Cauth%5Clogin.cy.js?browserFamily=chromium"
+    },
+    {
+      "step": 295,
+      "description": "Test failed - capturing detailed information",
+      "timestamp": "2025-09-13T09:42:20.152Z",
+      "url": "http://planshop.com/__cypress/iframes/cypress%5Ce2e%5Cauth%5Clogin.cy.js?browserFamily=chromium"
+    }
+  ],
+  "pageState": {
+    "url": "http://planshop.com/",
+    "title": "Plant Shop – Cây xanh cho mọi nhà",
+    "activeElement": "BODY",
+    "visibleModals": 4,
+    "forms": 4,
+    "errors": 0,
+    "inputs": 19,
+    "buttons": 7
+  },
+  "finalUrl": "http://planshop.com/"
+}
