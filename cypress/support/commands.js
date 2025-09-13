@@ -122,39 +122,3 @@ Cypress.Commands.add('selectByIndex', (selector, indexToSelect) => {
   });
 });
 
-Cypress.Commands.add('screenshotOnError', (testName, errorContext) => {
-  const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-  const screenshotName = `FAILED_${testName}_${errorContext}_${timestamp}`;
-  
-  cy.screenshot(screenshotName, {
-    capture: 'viewport',
-    overwrite: true,
-    onAfterScreenshot: (details) => {
-      cy.task('log', `Error screenshot saved: ${details.path}`);
-    }
-  });
-});
-
-Cypress.Commands.add('assertWithScreenshot', (assertion, testContext) => {
-  try {
-    assertion();
-  } catch (error) {
-    cy.screenshotOnError(Cypress.currentTest.title, testContext);
-    throw error;
-  }
-});
-
-const originalShould = Cypress.Commands._commands.should.fn;
-Cypress.Commands.overwrite('should', (originalFn, subject, ...args) => {
-  try {
-    return originalFn(subject, ...args);
-  } catch (error) {
-    const timestamp = Date.now();
-    const testTitle = Cypress.currentTest?.title?.replace(/[^a-zA-Z0-9]/g, '_') || 'unknown_test';
-    cy.screenshot(`FAILED_should_${testTitle}_${timestamp}`, {
-      capture: 'viewport',
-      overwrite: true
-    });
-    throw error;
-  }
-});
