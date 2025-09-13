@@ -70,12 +70,13 @@ class CheckoutPage {
             cy.get(BILLING_STATE_SEL).should('be.visible');
             cy.get(BILLING_CITY_SEL).should('be.visible');
             cy.get(BILLING_ADDRESS_SEL).should('be.visible').contains('Địa chỉ');
-            cy.get(SHIP_TO_DIFFERENT_CHECKBOX_SEL).should('be.visible')
-              .and('have.attr', 'type', 'checkbox')
-              .and('be.checked');
-            cy.get(SHIP_TO_DIFFERENT_TITLE_SEL).contains('Giao hàng đến một địa chỉ khác?');
-            cy.get(ORDER_NOTES_SEL).should('be.visible');
-        }); 
+        });
+        cy.get(SHIP_TO_DIFFERENT_CHECKBOX_SEL).should('be.visible')
+          .and('have.attr', 'type', 'checkbox')
+          .and('be.checked');
+        cy.get(SHIP_TO_DIFFERENT_TITLE_SEL).contains('Giao hàng đến một địa chỉ khác?');
+        cy.get(ORDER_NOTES_SEL).should('be.visible');
+         
     }
 
     verifyOrderReviewLayout() {

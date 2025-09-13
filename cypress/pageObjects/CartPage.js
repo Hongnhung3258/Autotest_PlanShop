@@ -99,7 +99,7 @@ class CartPage {
       const qty = Number($body.find(QUANTITY_INPUT_SEL).first().val());
       let initialTotalAmount, newTotalAmount;
       cy.get(CART_TOTALS_TABLE_SEL).within(() => {
-        cy.get(CART_SUBTOTAL_SEL).invoke('text').then((initialTotal) => {
+        cy.get(SUBTOTAL_SEL).invoke('text').then((initialTotal) => {
           initialTotalAmount = parseInt(initialTotal.replace(/\./g, ''));
         });
       });
@@ -116,7 +116,7 @@ class CartPage {
           .and('contain.text', 'Giỏ hàng đã được cập nhật');
       }
       cy.get(CART_TOTALS_TABLE_SEL).within(() => {
-        cy.get(CART_SUBTOTAL_SEL).invoke('text').should((newTotal) => {
+        cy.get(SUBTOTAL_SEL).invoke('text').should((newTotal) => {
           newTotalAmount = parseInt(newTotal.replace(/\./g, ''));
           expect(newTotalAmount).to.be.lessThan(initialTotalAmount);
         });
@@ -142,7 +142,7 @@ class CartPage {
   removeProductMultipleItems() {
     let initialTotalAmount, newTotalAmount;
     cy.get(CART_TOTALS_TABLE_SEL).within(() => {
-      cy.get(CART_SUBTOTAL_SEL).invoke('text').then((initialTotal) => {
+      cy.get(SUBTOTAL_SEL).invoke('text').then((initialTotal) => {
         initialTotalAmount = parseInt(initialTotal.replace(/\./g, ''));
       });
     });
@@ -152,7 +152,7 @@ class CartPage {
       cy.get(CART_ITEM_SEL).should('have.length', initialCount - 1);
     });
     cy.get(CART_TOTALS_TABLE_SEL).within(() => {
-      cy.get(CART_SUBTOTAL_SEL).invoke('text').should((newTotal) => {
+      cy.get(SUBTOTAL_SEL).invoke('text').should((newTotal) => {
         newTotalAmount = parseInt(newTotal.replace(/\./g, ''));
         expect(newTotalAmount).to.be.lessThan(initialTotalAmount);
       });

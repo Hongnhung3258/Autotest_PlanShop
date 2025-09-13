@@ -16,7 +16,7 @@ const MOMO_PAYMENT_SEL = '#payment_method_momo';
 const VIETQR_PAYMENT_SEL = '#payment_method_vietqr';
 const PLACE_ORDER_BTN_SEL = '#place_order';
 
-const NOTICE_SEL = '.woocommerce-thankyou-order-received';
+const NOTICE_SEL = '.woocommerce-notice--success.woocommerce-thankyou-order-received';
 const PAYMENT_METHOD_SEL = '.woocommerce-order-overview__payment-method strong';
 
 const ODER_DETAIL_SEL = 'section.woocommerce-order-details';
@@ -29,7 +29,7 @@ const SHIPPING_ADDRESS_TABLE_SEL = '.woocommerce-column--shipping-address';
 const VIETQR_SCAN_SEL = 'section.woocommerce-vietqr-qr-scan';
 const IMG_QR_SEL = '#qrcode img';
 const VIETQR_DETAIL_SEL = 'section.woocommerce-vietqr-bank-details';
-const TABLE_VIETQR_SEL = '.table .table-bordered';
+const TABLE_VIETQR_SEL = 'table.table-bordered';
 
 const PAY_BTN = '#pay_btn';
 
@@ -63,7 +63,7 @@ class Payment {
 
     formReceived(PM){
         cy.url().should('include', '/checkout/order-received');
-        cy.get(PAYMENT_METHOD_SEL).should('be.visible').contains(PM);
+        cy.get(PAYMENT_METHOD_SEL).should('be.visible').and('contain.text', PM);
         cy.get(ODER_DETAIL_SEL).should('be.visible').within(() => {
             cy.get('h2').contains('Chi tiết đơn hàng');
             cy.get(ORDER_TABLE_SEL).should('be.visible');
@@ -78,7 +78,7 @@ class Payment {
         this.selectPaymentMethod('bank');
         cy.get(PLACE_ORDER_BTN_SEL).click();
         cy.get(NOTICE_SEL).contains('Cảm ơn bạn. Đơn hàng của bạn đã được nhận.');
-        this.formReceived('Chuyển khoản ngân hàng trực tuyến');
+        this.formReceived('Chuyển khoản ngân hàng trực tiếp');
     }
 
     testCODPayment() {

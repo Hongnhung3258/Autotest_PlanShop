@@ -34,7 +34,7 @@ const PAGE_NUMBER_LINK_SEL = 'a.page-numbers:not(.prev):not(.next)';
 
 class ShopPage {
     addProductToCart() {
-        cy.get(DATA_PRODUCTS1_SEL).scrollIntoView().click();
+        cy.get(DATA_PRODUCTS1_SEL).click();
         cy.get(DATA_PRODUCTS1_SEL).should('have.class', 'added');
         cy.get(CART_COUNT_SEL).invoke('attr', 'data-cart-total').then((count) => {
             expect(parseInt(count)).to.be.greaterThan(0);
@@ -42,7 +42,7 @@ class ShopPage {
     }
 
     addProductToCart2() {
-        cy.get(DATA_PRODUCTS_SEL).scrollIntoView().click();
+        cy.get(DATA_PRODUCTS_SEL).click();
         cy.get(DATA_PRODUCTS_SEL).should('have.class', 'added');
         cy.get(CART_COUNT_SEL).invoke('attr', 'data-cart-total').then((count) => {
             expect(parseInt(count)).to.be.greaterThan(0);
@@ -51,7 +51,7 @@ class ShopPage {
     }
 
     addMultipleProductsToCart() {
-        cy.get(DATA_PRODUCTS1_SEL).scrollIntoView().click();
+        cy.get(DATA_PRODUCTS1_SEL).click();
         cy.get(DATA_PRODUCTS1_SEL).should('have.class', 'added');
         cy.get(DATA_PRODUCTS2_SEL).scrollIntoView().click();
         cy.get(DATA_PRODUCTS2_SEL).should('have.class', 'added');
@@ -61,7 +61,7 @@ class ShopPage {
     }
 
     addSelectedProductToCart() {
-        cy.get(DATA_PRODUCTS3_SEL).scrollIntoView().click();
+        cy.get(DATA_PRODUCTS3_SEL).click();
         cy.url().should('include', '/product/');
         
         cy.get(PRODUCT_TITLE_SEL).invoke('text').then((name) => {

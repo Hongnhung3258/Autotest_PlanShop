@@ -9,6 +9,7 @@ const PRIVACY_POLICY_LINK = '.xoo-aff-required.xoo-aff-checkbox_single a';
 const REGISTER_BTN_SEL =  '.xoo-el-register-btn';
 const POPUP_SEL = '.xoo-el-srcont';
 const ERROR_MESSENGER = '.xoo-el-notice .xoo-el-notice-error';
+const SUCCESS_MESSENGER = '.xoo-el-notice .xoo-el-notice-success';
 const TAB_SIGN_UP_SEL = '.xoo-el-tabs [data-tab="register"]';
 
 class RegisterPage {
@@ -83,7 +84,7 @@ class RegisterPage {
   }
 
   registerSuccess(errorMsg) {
-    cy.checkNotice('.xoo-el-notice .xoo-el-notice-success', errorMsg);
+    cy.checkNotice(SUCCESS_MESSENGER, errorMsg);
     cy.url({ timeout: 10000 }).should('include', '/my-account');
   }
 

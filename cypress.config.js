@@ -1,22 +1,18 @@
 module.exports = {
   projectId: "573x12", // Your Cypress Dashboard Project ID
   e2e: {
-    // Base configuration
     baseUrl: 'http://planshop.com/',
     specPattern: 'cypress/e2e/**/*.cy.js',
     
-    // Asset folders
     screenshotsFolder: 'cypress/screenshots',
     videosFolder: 'cypress/videos',
     
-    // Video and screenshot settings
     video: true,
     videoCompression: 32, // Optimize video size for CI/CD
     screenshotOnRunFailure: true,
     trashAssetsBeforeRuns: true,
     
-    // Viewport settings
-    viewportWidth: 1600,
+    viewportWidth: 1920,
     viewportHeight: 1080,
     
     // Timeout settings

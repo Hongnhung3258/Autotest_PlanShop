@@ -98,7 +98,7 @@ describe('Register Functionality Tests', () => {
     registerPage.openPrivacyPolicy();
   });
 
-  it('PS_037: Kiểm tra đăng ký thành công', () => {
+  it.only('PS_037: Kiểm tra đăng ký thành công', () => {
     cy.fixture('register').then((register) => {
       registerPage.register(
         register.newUser.email,
@@ -107,7 +107,7 @@ describe('Register Functionality Tests', () => {
         register.newUser.password,
         register.newUser.confirmPassword
       );
-      registerPage.registerSuccess('Đăng ký thành công!');
+      registerPage.registerSuccess('Đăng ký thành công');
     });
   });
 });

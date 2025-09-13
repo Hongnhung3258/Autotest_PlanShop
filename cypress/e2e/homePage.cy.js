@@ -170,9 +170,9 @@ describe('Home page tests', () => {
       loginPage.clickLoginMenu();
       cy.fixture('users').then((users) => {
         loginPage.login(users.validCustomer.email, users.validCustomer.password);
+        shopPage.addProductToCart();
+        cartMenu.clickCheckout();
       });
-      shopPage.addProductToCart();
-      cartMenu.clickCheckout();
     });
 
     it('PS_065: Xóa sản phẩm trong giỏ hàng có một sản phẩm', () => {
