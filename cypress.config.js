@@ -1,5 +1,5 @@
 module.exports = {
-  projectId: "573x12",
+  projectId: "xnn6up",
   e2e: {
     baseUrl: 'http://planshop.com/',
     specPattern: 'cypress/e2e/**/*.cy.js',
@@ -49,29 +49,22 @@ module.exports = {
         logTable(data) {
           console.table(data);
           return null;
+        },
+        
+        failed(message) {
+          console.log('Test Failed:', message);
+          return null;
+        },
+        
+        recordFailure(failureData) {
+          console.log('Failure Recorded:', failureData);
+          return null;
         }
       });
 
       on('after:screenshot', (details) => {
         console.log(`Screenshot saved: ${details.path}`);
         return null;
-      });
-
-      on('task', {
-        log(message) {
-          console.log(message);
-          return null;
-        },
-        
-        logTable(data) {
-          console.table(data);
-          return null;
-        },
-        
-        failed(message) {
-          console.log('Test Failed:', message);
-          return null;
-        }
       });
 
       on('after:run', (results) => {
