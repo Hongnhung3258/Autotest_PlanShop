@@ -8,7 +8,7 @@ module.exports = {
     videosFolder: 'cypress/videos',
     
     video: true,
-    videoCompression: 32,
+    videoCompression: 32, 
     screenshotOnRunFailure: true,
     trashAssetsBeforeRuns: true,
     
@@ -23,9 +23,11 @@ module.exports = {
     watchForFileChanges: false,
     chromeWebSecurity: false,
     
+    experimentalRunAllSpecs: true,
+    
     retries: {
-      runMode: 2, 
-      openMode: 0  
+      runMode: 0, 
+      openMode: 0
     },
     
     env: {
@@ -87,11 +89,11 @@ module.exports = {
         
         const { stats } = results;
         console.log(`Test Results for ${spec.name}:`);
-        console.log(`  Passed: ${stats.passes}`);
-        console.log(`  Failed: ${stats.failures}`);
-        console.log(`  Pending: ${stats.pending}`);
-        console.log(`  Duration: ${stats.duration}ms`);
-
+        console.log(`   Passed: ${stats.passes}`);
+        console.log(`   Failed: ${stats.failures}`);
+        console.log(`   Pending: ${stats.pending}`);
+        console.log(`   Duration: ${stats.duration}ms`);
+        
         return null;
       });
 

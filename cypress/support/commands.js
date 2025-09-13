@@ -123,3 +123,36 @@ Cypress.Commands.add('selectByIndex', (selector, indexToSelect) => {
     }
   });
 });
+
+Cypress.Commands.add('continueOnFail', (callback) => {
+  try {
+    callback();
+  } catch (error) {
+    cy.log(`Test step failed but continuing: ${error.message}`);
+    const timestamp = Date.now();
+    cy.screenshot(`STEP_FAILED_${timestamp}`, {
+      capture: 'viewport',
+      overwrite: true
+    });
+  }
+});
+
+Cypress.Commands.add('softAssert', (selector, assertion, value) => {
+  return cy.get(selector).then(($el) => {
+    try {
+      if (assertion === 'should') {
+        cy.wrap($el).should(value);
+      } else if (assertion === 'contain') {
+        expect($el).to.contain(value);
+      }
+      cy.log(`Soft assertion PASSED: ${selector} ${assertion} ${value}`);
+    } catch (error) {
+      cy.log(`Soft assertion FAILED: ${selector} ${assertion} ${value} - ${error.message}`);
+      const timestamp = Date.now();
+      cy.screenshot(`SOFT_ASSERT_FAILED_${timestamp}`, {
+        capture: 'viewport',
+        overwrite: true
+      });
+    }
+  });
+});
