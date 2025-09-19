@@ -48,7 +48,6 @@ beforeEach(() => {
 });
 
 afterEach(function() {
-  // FIX: Only take screenshots using built-in Cypress functionality
   if (this.currentTest.state === 'failed') {
     const timestamp = Date.now();
     const testTitle = this.currentTest.title.replace(/[^a-zA-Z0-9]/g, '_');
@@ -56,7 +55,6 @@ afterEach(function() {
     console.log(`Test "${this.currentTest.title}" FAILED`);
     console.log(` Screenshots automatically saved by Cypress in: cypress/screenshots/`);
     
-    // Log additional debugging info without taking manual screenshots
     cy.window().then((win) => {
       if (win.errorCount > 0) {
         console.log(` JavaScript errors detected: ${win.errorCount}`);

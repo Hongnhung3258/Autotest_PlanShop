@@ -1,16 +1,16 @@
 import LoginPage from '../../pageObjects/LoginPage';
+import AccountMenu from '../../pageObjects/AccountMenu';
+import ShopPage from '../../pageObjects/ShopPage';
 
 describe('Login Functionality Tests', () => {
   const USERNAME_TXT_BX_SEL = 'input[name="xoo-el-username"]';
   const loginPage = new LoginPage();
+  const accountMenu = new AccountMenu();
+  const shopPage = new ShopPage();
 
   beforeEach(() => {
     cy.visitPage();
     loginPage.clickLoginMenu();
-  });
-
-  afterEach(() => {
-    cy.closePopup();
   });
 
   it('PS_001: Kiểm tra hiển thị màn Đăng nhập', () => {
@@ -24,15 +24,18 @@ describe('Login Functionality Tests', () => {
   it('PS_003: Đăng nhập với user là khách hàng (đã có tài khoản)', () => {
     cy.fixture('users').then((users) => {
       loginPage.login(users.validCustomer.email, users.validCustomer.password);
-      loginPage.checkLoginSuccess('customer');
+      loginPage. checkCustomerLoginIntegration('customer');
     });
   });
 
   it('PS_004: Đăng nhập với user là admin', () => {
     cy.fixture('users').then((users) => {
       loginPage.login(users.validAdmin.email, users.validAdmin.password);
-      loginPage.checkLoginSuccess('admin');
-    });
+      loginPage.checkAdminLoginIntegration('admin');
+      loginPage.verifyAdminToolbar();
+      accountMenu.verifyUsernameMenu();
+      loginPage.verifyAdminCanAccessProductEdit(); 
+    });   
   });
 
   it('PS_005: Kiểm tra giao diện bố cục', () => {

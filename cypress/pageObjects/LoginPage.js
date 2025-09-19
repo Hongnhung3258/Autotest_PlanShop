@@ -7,6 +7,9 @@ const FORGOT_PASSWORD_LINK_SEL =  '.xoo-el-lostpw-tgr';
 const LOGIN_BTN_SEL =  '.xoo-el-login-btn';
 const LOGIN_HEADER_SEL = '#menu-item-1194'; 
 const POPUP_SEL = '.xoo-el-form-container.xoo-el-form-popup';
+const ADMIN_TOOLBAR_SEL = '#wpadminbar';
+const USERNAME_MENU_SEL = '#wp-admin-bar-my-account .ab-item';
+const ADMIN_PRODUCT_SEL = '#wp-admin-bar-new-product';
 class LoginPage {
   getForgotPasswordSelector() {
     return 'div[data-section="lostpw"]';
@@ -32,13 +35,35 @@ class LoginPage {
     cy.get(LOGIN_BTN_SEL).click();
   }
 
-  checkLoginSuccess(role) {
+  checkCustomerLoginIntegration(role) {
     if (role === 'customer') {
       cy.url().should('include', '/shop');
-    } else if (role === 'admin') {
-      cy.url().should('include', '/shop');
-      cy.get('#wpadminbar').should('be.visible');
+      cy.get(LOGIN_HEADER_SEL).should('not.exist');
+      cy.get(USERNAME_MENU_SEL).should('be.visible');
     }
+  }
+
+  checkAdminLoginIntegration(role) {
+    if (role === 'admin') {
+      cy.url().should('include', '/shop');
+      cy.get(ADMIN_TOOLBAR_SEL).should('be.visible');
+      cy.get(USERNAME_MENU_SEL).should('be.visible');
+    }
+  }
+
+  verifyAdminCanAccessProductEdit() {
+    cy.get(ADMIN_TOOLBAR_SEL).contains('Tạo mới').realHover({timeout: 50});
+    cy.get(ADMIN_PRODUCT_SEL).should('be.visible').click();
+    cy.url().should('include', '/wp-admin/post-new.php?post_type=product');
+  }
+
+  verifyAdminToolbar() {
+    cy.get(ADMIN_TOOLBAR_SEL).should('be.visible');
+    cy.get(ADMIN_TOOLBAR_SEL).within(() => {
+      cy.contains('Plant Shop').should('be.visible');
+      cy.contains('Tạo mới').should('be.visible');
+      cy.contains('Sửa với Elementor').should('be.visible');
+    });
   }
 
   checkLoginLayout() {
