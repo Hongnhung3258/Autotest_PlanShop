@@ -1,5 +1,15 @@
 name: Cypress E2E Tests
 
+env:
+  BASE_URL: ${{ secrets.BASE_URL || 'http://planshop.com/' }}
+  CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID || 'xnn6up' }}
+  CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 on:
   push:
     branches: [ main, develop ]
@@ -14,19 +24,25 @@ on:
         required: false
         default: 'all'
         type: choice
-        options: [all, login, register, cart, checkout, shop, home]
+        options:
+        - all
+        - login
+        - register
+        - forgotPassword
+        - cart
+        - checkout
+        - home
+        - shop
+        - productDetail
       browser:
         description: 'Browser to run tests on'
         required: false
         default: 'chrome'
         type: choice
-        options: [chrome, firefox, edge]
-
-# BIẾN MÔI TRƯỜNG TOÀN CỤC
-env:
-  BASE_URL: ${{ secrets.BASE_URL || 'http://planshop.com' }}
-  CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY || '2b147359-7547-4b1f-b3e5-4293401bcd27' }}
-  CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID || 'xnn6up' }}
+        options:
+        - chrome
+        - firefox
+        - edge
 
 jobs:
   cypress-tests:
@@ -35,6 +51,7 @@ jobs:
       fail-fast: false
       matrix:
         browser: [chrome]
+        containers: [1, 2] 
     
     steps:
     - name: Checkout code
@@ -43,158 +60,77 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '18'
+        node-version: '20'
         cache: 'npm'
 
     - name: Install dependencies
       run: npm ci
 
-    - name: Run Cypress tests
-      uses: cypress-io/github-action@v6
-      continue-on-error: true
-      with:
-        browser: ${{ matrix.browser }}
-        record: true
-        spec: |
-          ${{ 
-            github.event.inputs.test_suite == 'login' && 'cypress/e2e/auth/login.cy.js' ||
-            github.event.inputs.test_suite == 'register' && 'cypress/e2e/auth/register.cy.js' ||
-            github.event.inputs.test_suite == 'cart' && 'cypress/e2e/cartPage.cy.js' ||
-            github.event.inputs.test_suite == 'checkout' && 'cypress/e2e/checkoutPage.cy.js' ||
-            github.event.inputs.test_suite == 'shop' && 'cypress/e2e/shopPage.cy.js' ||
-            github.event.inputs.test_suite == 'home' && 'cypress/e2e/homePage.cy.js' ||
-            github.event.inputs.test_suite == 'productdetail' && 'cypress/e2e/productDetail.cy.js' ||
-            'cypress/e2e/**/*.cy.js'
-          }}
-      env:
-        CYPRESS_RECORD_KEY: ${{ env.CYPRESS_RECORD_KEY }}
-        CYPRESS_PROJECT_ID: ${{ env.CYPRESS_PROJECT_ID }}
-        CYPRESS_baseUrl: ${{ env.BASE_URL }}
-
-    # ===== HTML REPORTS =====
-    
-    - name: Merge mochawesome reports
-      if: always()
+    - name: Check application availability
       run: |
-        npx mochawesome-merge cypress/reports/*.json > cypress/reports/merged-report.json
-        npx marge cypress/reports/merged-report.json --reportDir cypress/reports --inline --reportFilename index.html
-      continue-on-error: true
+        echo "Checking if application is ready at ${{ env.BASE_URL }}"
+        curl -f ${{ env.BASE_URL }} || echo "Application check completed"
 
-    # Upload HTML Reports
-    - name: Upload HTML Reports
-      uses: actions/upload-artifact@v4
-      if: always()
-      with:
-        name: cypress-html-reports-${{ github.run_number }}
-        path: |
-          cypress/reports/*.html
-          cypress/reports/*.json
-          cypress/reports/assets/
-        retention-days: 30
-        if-no-files-found: ignore
+    - name: Run Cypress tests
+      run: npm run test:ci
+      env:
+        CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+        CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
+        CYPRESS_baseUrl: ${{ secrets.BASE_URL }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    # Upload screenshots
-    - name: Upload screenshots
+    - name: Upload screenshots on failure
       uses: actions/upload-artifact@v4
-      if: always()
+      if: failure()
       with:
-        name: cypress-screenshots-${{ github.run_number }}
+        name: cypress-screenshots-${{ matrix.browser }}-${{ github.run_number }}
         path: cypress/screenshots
         retention-days: 7
-        if-no-files-found: ignore
 
-    # Upload videos
     - name: Upload videos
       uses: actions/upload-artifact@v4
       if: always()
       with:
-        name: cypress-videos-${{ github.run_number }}
+        name: cypress-videos-${{ matrix.browser }}-${{ github.run_number }}
         path: cypress/videos
         retention-days: 7
-        if-no-files-found: ignore
 
-  # ===== THÊM JOB MỚI: DEPLOY HTML REPORTS TO GITHUB PAGES =====
+    - name: Upload HTML test reports
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: html-reports-${{ matrix.browser }}-${{ github.run_number }}
+        path: cypress/reports
+        retention-days: 30
+
   deploy-reports:
     runs-on: ubuntu-latest
     needs: [cypress-tests]
-    if: always() && github.ref == 'refs/heads/main'  # Chỉ deploy từ main branch
-    
-    # Permissions for GitHub Pages
-    permissions:
-      pages: write
-      id-token: write
-      contents: read
-    
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    if: always() && github.ref == 'refs/heads/main'
     
     steps:
-    - name: Checkout
+    - name: Checkout code
       uses: actions/checkout@v4
-      
-    - name: Download HTML reports
+
+    - name: Download all test reports
       uses: actions/download-artifact@v4
       with:
-        name: cypress-html-reports-${{ github.run_number }}
-        path: ./reports
+        pattern: html-reports-*
+        path: test-reports
+        merge-multiple: true
 
-    - name: Create index page
-      run: |
-        mkdir -p ./public
-        cp -r ./reports/* ./public/
-        
-        # Tạo index.html listing nếu không có
-        if [ ! -f ./public/index.html ]; then
-          cat > ./public/index.html << 'EOF'
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <title>Cypress Test Reports</title>
-            <style>
-                body { font-family: Arial, sans-serif; margin: 40px; }
-                .header { background: #f8f9fa; padding: 20px; border-radius: 5px; }
-                .report-list { margin-top: 30px; }
-                .report-item { margin: 10px 0; padding: 15px; background: #fff; border: 1px solid #ddd; border-radius: 5px; }
-                .report-item a { text-decoration: none; color: #007bff; font-weight: bold; }
-                .report-item .meta { color: #666; font-size: 0.9em; margin-top: 5px; }
-            </style>
-        </head>
-        <body>
-            <div class="header">
-                <h1>🧪 Cypress Test Reports</h1>
-                <p>Latest test results from GitHub Actions</p>
-                <p><strong>Run:</strong> #${{ github.run_number }} | <strong>Branch:</strong> ${{ github.ref_name }} | <strong>Time:</strong> $(date)</p>
-            </div>
-            
-            <div class="report-list">
-                <div class="report-item">
-                    <a href="./index.html">📊 Main Report</a>
-                    <div class="meta">Complete test results with screenshots and details</div>
-                </div>
-            </div>
-            
-            <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; color: #666;">
-                <p>Generated by GitHub Actions | <a href="https://github.com/${{ github.repository }}">View Repository</a></p>
-            </footer>
-        </body>
-        </html>
-        EOF
-        fi
-
-    - name: Setup Pages
+    - name: Setup GitHub Pages
       uses: actions/configure-pages@v4
 
     - name: Upload to GitHub Pages
       uses: actions/upload-pages-artifact@v3
       with:
-        path: ./public
+        path: test-reports
 
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4
 
-  # Job summary với link đến HTML reports
   test-summary:
     runs-on: ubuntu-latest
     needs: [cypress-tests, deploy-reports]
@@ -205,17 +141,9 @@ jobs:
       run: |
         echo "# Test Results Summary" >> $GITHUB_STEP_SUMMARY
         echo "" >> $GITHUB_STEP_SUMMARY
-        echo "## Quick Links" >> $GITHUB_STEP_SUMMARY
-        echo "- **HTML Reports**: [View Online](${{ needs.deploy-reports.outputs.page_url || 'Processing...' }})" >> $GITHUB_STEP_SUMMARY
-        echo "- **Cypress Cloud**: [View Reports](https://cloud.cypress.io/projects/xnn6up)" >> $GITHUB_STEP_SUMMARY
-        echo "- **Artifacts**: Available in this workflow run" >> $GITHUB_STEP_SUMMARY
-        echo "" >> $GITHUB_STEP_SUMMARY
-        echo "## Details" >> $GITHUB_STEP_SUMMARY
+        echo "## Test Execution Details" >> $GITHUB_STEP_SUMMARY
         echo "- **Trigger**: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
         echo "- **Branch**: ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
-        echo "- **Run Number**: #${{ github.run_number }}" >> $GITHUB_STEP_SUMMARY
-        echo "" >> $GITHUB_STEP_SUMMARY
-        echo "## Available Reports" >> $GITHUB_STEP_SUMMARY
-        echo "1. **HTML Report** - Detailed results with screenshots" >> $GITHUB_STEP_SUMMARY
-        echo "2. **Cypress Cloud** - Real-time dashboard and analytics" >> $GITHUB_STEP_SUMMARY
-        echo "3. **Artifacts** - Raw screenshots and videos" >> $GITHUB_STEP_SUMMARY
+        echo "- **Run ID**: ${{ github.run_id }}" >> $GITHUB_STEP_SUMMARY
+        echo "- **Base URL**: ${{ env.BASE_URL }}" >> $GITHUB_STEP_SUMMARY
+        echo "- **Reports**: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}" >> $GITHUB_STEP_SUMMARY
