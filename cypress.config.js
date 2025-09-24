@@ -3,7 +3,7 @@ module.exports = {
   projectId: "xnn6up",
 
   e2e: {
-    baseUrl: 'http://planshop.com/', // URL gốc của ứng dụng web cần test
+    baseUrl:  process.env.CYPRESS_baseUrl || process.env.BASE_URL || 'http://planshop.local/', // URL gốc của ứng dụng web cần test
     specPattern: 'cypress/e2e/**/*.cy.js', // Pattern để tìm các file test (tất cả file .cy.js trong thư mục e2e)
     screenshotsFolder: 'cypress/screenshots',  // Thư mục lưu ảnh chụp màn hình
     videosFolder: 'cypress/videos',            // Thư mục lưu video recording
@@ -36,7 +36,7 @@ module.exports = {
     },
     
     retries: {
-      runMode: 2,    // Thử lại 3 lần khi chạy headless (CI/CD)
+      runMode: 2,    // Thử lại 2 lần khi chạy headless (CI/CD)
       openMode: 0    // Không thử lại khi chạy với giao diện (development)
     },
     
