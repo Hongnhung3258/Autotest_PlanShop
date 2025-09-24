@@ -1,7 +1,7 @@
 name: Cypress E2E Tests
 
 env:
-  BASE_URL: ${{ secrets.BASE_URL || 'http://planshop.com/' }}
+  BASE_URL: ${{ secrets.BASE_URL || 'http://planshop.local/' }}
   CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID || 'xnn6up' }}
   CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
@@ -50,8 +50,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        browser: [chrome]
-        containers: [1, 2] 
+        browser: [chrome, firefox]
     
     steps:
     - name: Checkout code
@@ -70,20 +69,27 @@ jobs:
       run: |
         echo "Checking if application is ready at ${{ env.BASE_URL }}"
         curl -f ${{ env.BASE_URL }} || echo "Application check completed"
-    
-    - name: Start app
-      run: npm start &
       
-    - name: Wait for app
-      run: npx wait-on http://planshop.com/
 
+    - name: Start server
+      run: npm run start &   
+
+    - name: Wait for server
+      run: npx wait-on http://localhost:10005
 
     - name: Run Cypress tests
-      run: npm run test:ci
+      uses: cypress-io/github-action@v6
+      with:
+        browser: ${{ matrix.browser }}
+        record: true
+        parallel: true
+        group: 'E2E Tests - ${{ matrix.browser }}'
+        spec: |
+          cypress/e2e/**/*.cy.js
       env:
         CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
         CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
-        CYPRESS_baseUrl: ${{ secrets.BASE_URL }}
+        CYPRESS_baseUrl: http://localhost:10005   # ⚠️ ép dùng localhost trong CI
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Upload screenshots on failure
