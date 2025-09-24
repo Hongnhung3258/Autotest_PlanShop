@@ -70,6 +70,13 @@ jobs:
       run: |
         echo "Checking if application is ready at ${{ env.BASE_URL }}"
         curl -f ${{ env.BASE_URL }} || echo "Application check completed"
+    
+    - name: Start app
+      run: npm start &
+      
+    - name: Wait for app
+      run: npx wait-on http://planshop.com/
+
 
     - name: Run Cypress tests
       run: npm run test:ci
