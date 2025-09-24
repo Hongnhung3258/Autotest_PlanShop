@@ -1,0 +1,2 @@
+<?php
+return ['project-id-version'=>'Payment Gateway for MTN MoMo on WooCommerce Free','report-msgid-bugs-to'=>'','pot-creation-date'=>'2025-09-08 11:04+0000','po-revision-date'=>'2025-09-08 11:04+0000','last-translator'=>'Hồng Nhung','language-team'=>'Tiếng Việt','language'=>'vi','plural-forms'=>'nplurals=1; plural=0;','mime-version'=>'1.0','content-type'=>'text/plain; charset=UTF-8','content-transfer-encoding'=>'8bit','x-generator'=>'Loco https://localise.biz/','x-loco-version'=>'2.8.0; wp-6.8.2; php-8.2.27','x-domain'=>'wc-mtn-momo-payment-gateway','messages'=>[]];

@@ -1,0 +1,29 @@
+2025-09-01T08:56:56+00:00 NOTICE Start search for tạp dề CONTEXT: {"_legacy":true}
+2025-09-01T08:56:56+00:00 NOTICE Execution time 0 0.0788691 CONTEXT: {"_legacy":true}
+2025-09-01T08:56:56+00:00 NOTICE Tokens Array
+(
+    [0] => tạp
+    [1] => dề
+)
+ CONTEXT: {"_legacy":true}
+2025-09-01T08:56:56+00:00 NOTICE Execution time 1 0.1913565 CONTEXT: {"_legacy":true}
+2025-09-01T08:56:56+00:00 NOTICE Execution time 0.1939613 CONTEXT: {"_legacy":true}
+2025-09-01T09:15:04+00:00 NOTICE Start search for cây CONTEXT: {"_legacy":true}
+2025-09-01T09:15:04+00:00 NOTICE Execution time 0 0.0040714 CONTEXT: {"_legacy":true}
+2025-09-01T09:15:04+00:00 NOTICE Tokens Array
+(
+    [0] => cây
+)
+ CONTEXT: {"_legacy":true}
+2025-09-01T09:15:04+00:00 NOTICE Execution time 1 0.1094525 CONTEXT: {"_legacy":true}
+2025-09-01T09:15:04+00:00 NOTICE Execution time 0.1215046 CONTEXT: {"_legacy":true}
+2025-09-01T10:01:15+00:00 NOTICE Start search for cây cọ CONTEXT: {"_legacy":true}
+2025-09-01T10:01:16+00:00 NOTICE Execution time 0 0.1866493 CONTEXT: {"_legacy":true}
+2025-09-01T10:01:16+00:00 NOTICE Tokens Array
+(
+    [0] => cây
+    [1] => cọ
+)
+ CONTEXT: {"_legacy":true}
+2025-09-01T10:01:16+00:00 NOTICE Execution time 1 0.3327016 CONTEXT: {"_legacy":true}
+2025-09-01T10:01:16+00:00 NOTICE Execution time 0.352852 CONTEXT: {"_legacy":true}

@@ -1,0 +1,8 @@
+# Sử dụng image WordPress chính thức
+FROM wordpress:latest
+
+# Sao chép toàn bộ mã nguồn WordPress từ app/public vào container
+COPY app/public/ /var/www/html/
+
+# Cấu hình quyền sở hữu cho thư mục
+RUN chown -R www-data:www-data /var/www/html

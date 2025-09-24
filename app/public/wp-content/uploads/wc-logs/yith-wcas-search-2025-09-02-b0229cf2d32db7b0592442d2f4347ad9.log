@@ -1,0 +1,353 @@
+2025-09-02T20:55:13+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T20:55:13+00:00 NOTICE Execution time 0 0.1080345 CONTEXT: {"_legacy":true}
+2025-09-02T20:55:13+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T20:55:14+00:00 NOTICE Execution time 1 0.332396 CONTEXT: {"_legacy":true}
+2025-09-02T20:55:14+00:00 NOTICE Execution time 0.3386102 CONTEXT: {"_legacy":true}
+2025-09-02T20:55:55+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T20:55:55+00:00 NOTICE Execution time 0 0.0048141 CONTEXT: {"_legacy":true}
+2025-09-02T20:55:55+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T20:55:55+00:00 NOTICE Execution time 1 0.0283205 CONTEXT: {"_legacy":true}
+2025-09-02T20:55:55+00:00 NOTICE Execution time 0.0345072 CONTEXT: {"_legacy":true}
+2025-09-02T20:56:18+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T20:56:18+00:00 NOTICE Execution time 0 0.003192 CONTEXT: {"_legacy":true}
+2025-09-02T20:56:18+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T20:56:18+00:00 NOTICE Execution time 1 0.0256017 CONTEXT: {"_legacy":true}
+2025-09-02T20:56:18+00:00 NOTICE Execution time 0.0308667 CONTEXT: {"_legacy":true}
+2025-09-02T20:57:12+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T20:57:12+00:00 NOTICE Execution time 0 0.0039136 CONTEXT: {"_legacy":true}
+2025-09-02T20:57:12+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T20:57:12+00:00 NOTICE Execution time 1 0.0287037 CONTEXT: {"_legacy":true}
+2025-09-02T20:57:12+00:00 NOTICE Execution time 0.0364264 CONTEXT: {"_legacy":true}
+2025-09-02T20:58:15+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T20:58:15+00:00 NOTICE Execution time 0 0.0105464 CONTEXT: {"_legacy":true}
+2025-09-02T20:58:15+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T20:58:15+00:00 NOTICE Execution time 1 0.052567 CONTEXT: {"_legacy":true}
+2025-09-02T20:58:15+00:00 NOTICE Execution time 0.0614925 CONTEXT: {"_legacy":true}
+2025-09-02T20:58:36+00:00 NOTICE Start search for cây CONTEXT: {"_legacy":true}
+2025-09-02T20:58:36+00:00 NOTICE Execution time 0 0.0048199 CONTEXT: {"_legacy":true}
+2025-09-02T20:58:36+00:00 NOTICE Tokens Array
+(
+    [0] => cây
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T20:58:36+00:00 NOTICE Execution time 1 0.2298316 CONTEXT: {"_legacy":true}
+2025-09-02T20:58:36+00:00 NOTICE Execution time 0.2684377 CONTEXT: {"_legacy":true}
+2025-09-02T20:58:40+00:00 NOTICE Start search for làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T20:58:40+00:00 NOTICE Execution time 0 0.0051032 CONTEXT: {"_legacy":true}
+2025-09-02T20:58:40+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T20:58:40+00:00 NOTICE Execution time 1 0.0195665 CONTEXT: {"_legacy":true}
+2025-09-02T20:58:40+00:00 NOTICE Execution time 0.0251934 CONTEXT: {"_legacy":true}
+2025-09-02T21:00:58+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T21:00:59+00:00 NOTICE Execution time 0 0.0037729 CONTEXT: {"_legacy":true}
+2025-09-02T21:00:59+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T21:00:59+00:00 NOTICE Execution time 1 0.0354977 CONTEXT: {"_legacy":true}
+2025-09-02T21:00:59+00:00 NOTICE Execution time 0.0483258 CONTEXT: {"_legacy":true}
+2025-09-02T21:01:26+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T21:01:26+00:00 NOTICE Execution time 0 0.0081102 CONTEXT: {"_legacy":true}
+2025-09-02T21:01:26+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T21:01:26+00:00 NOTICE Execution time 1 0.0339778 CONTEXT: {"_legacy":true}
+2025-09-02T21:01:26+00:00 NOTICE Execution time 0.0404819 CONTEXT: {"_legacy":true}
+2025-09-02T21:03:25+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T21:03:25+00:00 NOTICE Execution time 0 0.0056056 CONTEXT: {"_legacy":true}
+2025-09-02T21:03:25+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T21:03:25+00:00 NOTICE Execution time 1 0.0332696 CONTEXT: {"_legacy":true}
+2025-09-02T21:03:25+00:00 NOTICE Execution time 0.0408365 CONTEXT: {"_legacy":true}
+2025-09-02T21:04:01+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T21:04:01+00:00 NOTICE Execution time 0 0.0047509 CONTEXT: {"_legacy":true}
+2025-09-02T21:04:01+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T21:04:01+00:00 NOTICE Execution time 1 0.0376068 CONTEXT: {"_legacy":true}
+2025-09-02T21:04:01+00:00 NOTICE Execution time 0.0461036 CONTEXT: {"_legacy":true}
+2025-09-02T21:05:25+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T21:05:25+00:00 NOTICE Execution time 0 0.006475 CONTEXT: {"_legacy":true}
+2025-09-02T21:05:25+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T21:05:25+00:00 NOTICE Execution time 1 0.0418541 CONTEXT: {"_legacy":true}
+2025-09-02T21:05:25+00:00 NOTICE Execution time 0.0488397 CONTEXT: {"_legacy":true}
+2025-09-02T21:06:19+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T21:06:19+00:00 NOTICE Execution time 0 0.0061754 CONTEXT: {"_legacy":true}
+2025-09-02T21:06:19+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T21:06:19+00:00 NOTICE Execution time 1 0.0259545 CONTEXT: {"_legacy":true}
+2025-09-02T21:06:19+00:00 NOTICE Execution time 0.0343075 CONTEXT: {"_legacy":true}
+2025-09-02T21:06:44+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T21:06:44+00:00 NOTICE Execution time 0 0.0028485 CONTEXT: {"_legacy":true}
+2025-09-02T21:06:44+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T21:06:44+00:00 NOTICE Execution time 1 0.0295566 CONTEXT: {"_legacy":true}
+2025-09-02T21:06:45+00:00 NOTICE Execution time 0.0386497 CONTEXT: {"_legacy":true}
+2025-09-02T21:07:45+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T21:07:45+00:00 NOTICE Execution time 0 0.0081355 CONTEXT: {"_legacy":true}
+2025-09-02T21:07:45+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T21:07:46+00:00 NOTICE Execution time 1 0.0342221 CONTEXT: {"_legacy":true}
+2025-09-02T21:07:46+00:00 NOTICE Execution time 0.0435157 CONTEXT: {"_legacy":true}
+2025-09-02T21:09:36+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T21:09:36+00:00 NOTICE Execution time 0 0.0045622 CONTEXT: {"_legacy":true}
+2025-09-02T21:09:36+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T21:09:36+00:00 NOTICE Execution time 1 0.029276 CONTEXT: {"_legacy":true}
+2025-09-02T21:09:36+00:00 NOTICE Execution time 0.0410239 CONTEXT: {"_legacy":true}
+2025-09-02T21:10:25+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T21:10:25+00:00 NOTICE Execution time 0 0.0102297 CONTEXT: {"_legacy":true}
+2025-09-02T21:10:25+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T21:10:25+00:00 NOTICE Execution time 1 0.0357339 CONTEXT: {"_legacy":true}
+2025-09-02T21:10:25+00:00 NOTICE Execution time 0.0421184 CONTEXT: {"_legacy":true}
+2025-09-02T21:11:58+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T21:11:58+00:00 NOTICE Execution time 0 0.0081221 CONTEXT: {"_legacy":true}
+2025-09-02T21:11:58+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T21:11:58+00:00 NOTICE Execution time 1 0.0372348 CONTEXT: {"_legacy":true}
+2025-09-02T21:11:58+00:00 NOTICE Execution time 0.0440026 CONTEXT: {"_legacy":true}
+2025-09-02T21:20:10+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T21:20:10+00:00 NOTICE Execution time 0 0.005877 CONTEXT: {"_legacy":true}
+2025-09-02T21:20:10+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T21:20:10+00:00 NOTICE Execution time 1 0.035868 CONTEXT: {"_legacy":true}
+2025-09-02T21:20:10+00:00 NOTICE Execution time 0.0449705 CONTEXT: {"_legacy":true}
+2025-09-02T21:34:23+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T21:34:23+00:00 NOTICE Execution time 0 0.0091022 CONTEXT: {"_legacy":true}
+2025-09-02T21:34:23+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T21:34:23+00:00 NOTICE Execution time 1 0.0529021 CONTEXT: {"_legacy":true}
+2025-09-02T21:34:23+00:00 NOTICE Execution time 0.0625075 CONTEXT: {"_legacy":true}
+2025-09-02T21:34:51+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T21:34:51+00:00 NOTICE Execution time 0 0.0050288 CONTEXT: {"_legacy":true}
+2025-09-02T21:34:51+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T21:34:51+00:00 NOTICE Execution time 1 0.0409703 CONTEXT: {"_legacy":true}
+2025-09-02T21:34:51+00:00 NOTICE Execution time 0.0505982 CONTEXT: {"_legacy":true}
+2025-09-02T21:36:15+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T21:36:15+00:00 NOTICE Execution time 0 0.0063405 CONTEXT: {"_legacy":true}
+2025-09-02T21:36:15+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T21:36:15+00:00 NOTICE Execution time 1 0.0287598 CONTEXT: {"_legacy":true}
+2025-09-02T21:36:15+00:00 NOTICE Execution time 0.0361473 CONTEXT: {"_legacy":true}
+2025-09-02T21:37:16+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T21:37:16+00:00 NOTICE Execution time 0 0.0031017 CONTEXT: {"_legacy":true}
+2025-09-02T21:37:16+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T21:37:16+00:00 NOTICE Execution time 1 0.0276198 CONTEXT: {"_legacy":true}
+2025-09-02T21:37:16+00:00 NOTICE Execution time 0.0327673 CONTEXT: {"_legacy":true}
+2025-09-02T21:38:05+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T21:38:05+00:00 NOTICE Execution time 0 0.0024715 CONTEXT: {"_legacy":true}
+2025-09-02T21:38:05+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T21:38:05+00:00 NOTICE Execution time 1 0.0301232 CONTEXT: {"_legacy":true}
+2025-09-02T21:38:05+00:00 NOTICE Execution time 0.0348907 CONTEXT: {"_legacy":true}
+2025-09-02T21:39:35+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T21:39:35+00:00 NOTICE Execution time 0 0.0025824 CONTEXT: {"_legacy":true}
+2025-09-02T21:39:35+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T21:39:35+00:00 NOTICE Execution time 1 0.0272948 CONTEXT: {"_legacy":true}
+2025-09-02T21:39:35+00:00 NOTICE Execution time 0.0313304 CONTEXT: {"_legacy":true}
+2025-09-02T21:52:56+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T21:52:56+00:00 NOTICE Execution time 0 0.2403158 CONTEXT: {"_legacy":true}
+2025-09-02T21:52:56+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T21:52:56+00:00 NOTICE Execution time 1 0.2786595 CONTEXT: {"_legacy":true}
+2025-09-02T21:52:56+00:00 NOTICE Execution time 0.287261 CONTEXT: {"_legacy":true}
+2025-09-02T21:57:49+00:00 NOTICE Start search for làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T21:57:49+00:00 NOTICE Execution time 0 0.0033449 CONTEXT: {"_legacy":true}
+2025-09-02T21:57:49+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T21:57:49+00:00 NOTICE Execution time 1 0.0197677 CONTEXT: {"_legacy":true}
+2025-09-02T21:57:49+00:00 NOTICE Execution time 0.0244227 CONTEXT: {"_legacy":true}
+2025-09-02T22:14:18+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T22:14:18+00:00 NOTICE Execution time 0 0.0050072 CONTEXT: {"_legacy":true}
+2025-09-02T22:14:18+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T22:14:18+00:00 NOTICE Execution time 1 0.0328949 CONTEXT: {"_legacy":true}
+2025-09-02T22:14:18+00:00 NOTICE Execution time 0.0365669 CONTEXT: {"_legacy":true}
+2025-09-02T22:15:25+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T22:15:25+00:00 NOTICE Execution time 0 0.0051063 CONTEXT: {"_legacy":true}
+2025-09-02T22:15:25+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T22:15:25+00:00 NOTICE Execution time 1 0.0318691 CONTEXT: {"_legacy":true}
+2025-09-02T22:15:25+00:00 NOTICE Execution time 0.039421 CONTEXT: {"_legacy":true}
+2025-09-02T22:20:06+00:00 NOTICE Start search for Tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-02T22:20:06+00:00 NOTICE Execution time 0 0.0082296 CONTEXT: {"_legacy":true}
+2025-09-02T22:20:06+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-02T22:20:06+00:00 NOTICE Execution time 1 0.0408057 CONTEXT: {"_legacy":true}
+2025-09-02T22:20:06+00:00 NOTICE Execution time 0.0456952 CONTEXT: {"_legacy":true}

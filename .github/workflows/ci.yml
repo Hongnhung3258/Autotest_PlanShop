@@ -1,7 +1,11 @@
-name: Cypress E2E Tests
+ame: CI - Cypress Tests
 
 env:
+<<<<<<< HEAD
   BASE_URL: ${{ secrets.BASE_URL || 'http://planshop.local/' }}
+=======
+  BASE_URL: ${{ secrets.BASE_URL || 'http://localhost' }}
+>>>>>>> 27495d9c (Add MySQL and import local.sql for Docker)
   CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID || 'xnn6up' }}
   CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
@@ -45,7 +49,7 @@ on:
         - edge
 
 jobs:
-  cypress-tests:
+  cypress-run:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -65,11 +69,48 @@ jobs:
     - name: Install dependencies
       run: npm ci
 
+    - name: Create Docker network
+      run: docker network create wordpress-network
+
+    - name: Start MySQL container
+      run: |
+        docker run -d --name mysql \
+          --network wordpress-network \
+          -e MYSQL_ROOT_PASSWORD=somewordpress \
+          -e MYSQL_DATABASE=wordpress \
+          -e MYSQL_USER=wordpress \
+          -e MYSQL_PASSWORD=wordpress \
+          mysql:5.7
+        # Chờ MySQL sẵn sàng
+        sleep 30
+
+    - name: Import local.sql into MySQL
+      run: |
+        docker cp app/sql/local.sql mysql:/tmp/local.sql
+        docker exec mysql mysql -u root -psomewordpress wordpress < /tmp/local.sql
+
+    - name: Build and Start WordPress Docker
+      run: |
+        # Build image từ Dockerfile
+        docker build -t my-wordpress-image .
+        # Chạy container WordPress, liên kết với MySQL qua mạng
+        docker run -d -p 80:80 --name wordpress \
+          --network wordpress-network \
+          -e WORDPRESS_DB_HOST=mysql \
+          -e WORDPRESS_DB_USER=wordpress \
+          -e WORDPRESS_DB_PASSWORD=wordpress \
+          -e WORDPRESS_DB_NAME=wordpress \
+          my-wordpress-image
+        # Chờ WordPress khởi động
+        sleep 30
+      env:
+        BASE_URL: 'http://localhost'
+
     - name: Check application availability
       run: |
-        echo "Checking if application is ready at ${{ env.BASE_URL }}"
-        curl -f ${{ env.BASE_URL }} || echo "Application may not be available, but continuing with tests"
-
+        echo "Checking if WordPress is ready at http://localhost"
+        curl -f http://localhost || exit 1
+        
     - name: Run Cypress tests
       uses: cypress-io/github-action@v6
       with:

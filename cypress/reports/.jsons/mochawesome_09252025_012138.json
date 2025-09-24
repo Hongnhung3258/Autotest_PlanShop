@@ -1,0 +1,206 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-09-24T18:20:40.640Z",
+    "end": "2025-09-24T18:21:38.591Z",
+    "duration": 57951,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8d9f553d-ad64-4490-97f9-4d36ee726b84",
+      "title": "",
+      "fullFile": "cypress\\e2e\\productDetailPage.cy.js",
+      "file": "cypress\\e2e\\productDetailPage.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5e55585a-28ae-45a0-b210-2f4e850248c6",
+          "title": "Product Details Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "PS_113: Kiểm tra hiển thị thông tin sản phẩm không có lựa chọn",
+              "fullTitle": "Product Details Tests PS_113: Kiểm tra hiển thị thông tin sản phẩm không có lựa chọn",
+              "timedOut": null,
+              "duration": 7929,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\productDetailPage.cy.js\"\n}",
+              "code": "productDetail.verifyProductWithoutVariations();",
+              "err": {},
+              "uuid": "fd17f3bf-9ca1-4524-9c76-3ef7b6482651",
+              "parentUUID": "5e55585a-28ae-45a0-b210-2f4e850248c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "PS_114: Kiểm tra hiển thị thông tin sản phẩm có lựa chọn",
+              "fullTitle": "Product Details Tests PS_114: Kiểm tra hiển thị thông tin sản phẩm có lựa chọn",
+              "timedOut": null,
+              "duration": 6818,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\productDetailPage.cy.js\"\n}",
+              "code": "productDetail.verifyProductWithVariations();",
+              "err": {},
+              "uuid": "717c68f2-abf6-4376-9c23-ffd78797bafc",
+              "parentUUID": "5e55585a-28ae-45a0-b210-2f4e850248c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "PS_115: Kiểm tra xóa lựa chọn sản phẩm",
+              "fullTitle": "Product Details Tests PS_115: Kiểm tra xóa lựa chọn sản phẩm",
+              "timedOut": null,
+              "duration": 7125,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\productDetailPage.cy.js\"\n}",
+              "code": "productDetail.verifyRemoveProductVariations();",
+              "err": {},
+              "uuid": "c5562ad5-b852-495b-8188-754742fbb55f",
+              "parentUUID": "5e55585a-28ae-45a0-b210-2f4e850248c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "PS_116: Kiểm tra click tab đánh giá khi chưa đăng nhập",
+              "fullTitle": "Product Details Tests PS_116: Kiểm tra click tab đánh giá khi chưa đăng nhập",
+              "timedOut": null,
+              "duration": 6121,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\productDetailPage.cy.js\"\n}",
+              "code": "productDetail.verifyReviewTabNotLoggedIn();",
+              "err": {},
+              "uuid": "217bfb71-0d4f-495b-bf6e-e357b871dacb",
+              "parentUUID": "5e55585a-28ae-45a0-b210-2f4e850248c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "PS_117: Kiểm tra Click các tab Mô tả / Thông tin bổ sung / Đánh giá",
+              "fullTitle": "Product Details Tests PS_117: Kiểm tra Click các tab Mô tả / Thông tin bổ sung / Đánh giá",
+              "timedOut": null,
+              "duration": 11502,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\productDetailPage.cy.js\"\n}",
+              "code": "loginPage.clickLoginMenu();\ncy.fixture('users').then(users => {\n  loginPage.login(users.cartUser.email, users.cartUser.password);\n  productDetail.verifyAllTabsWhenLoggedIn();\n});",
+              "err": {},
+              "uuid": "4737074d-e3e9-46f7-851c-75063fbacd44",
+              "parentUUID": "5e55585a-28ae-45a0-b210-2f4e850248c6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "PS_118: Kiểm tra viết đánh giá",
+              "fullTitle": "Product Details Tests PS_118: Kiểm tra viết đánh giá",
+              "timedOut": null,
+              "duration": 16873,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\productDetailPage.cy.js\"\n}",
+              "code": "loginPage.clickLoginMenu();\ncy.fixture('users').then(users => {\n  loginPage.login(users.checkoutUser.email, users.checkoutUser.password);\n  productDetail.verifyWriteReview();\n});",
+              "err": {},
+              "uuid": "343a990e-c45a-40dc-b986-108bdb8b3b8b",
+              "parentUUID": "5e55585a-28ae-45a0-b210-2f4e850248c6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fd17f3bf-9ca1-4524-9c76-3ef7b6482651",
+            "717c68f2-abf6-4376-9c23-ffd78797bafc",
+            "c5562ad5-b852-495b-8188-754742fbb55f",
+            "217bfb71-0d4f-495b-bf6e-e357b871dacb",
+            "4737074d-e3e9-46f7-851c-75063fbacd44",
+            "343a990e-c45a-40dc-b986-108bdb8b3b8b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 56368,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "reportTitle": "PlanShop E2E Test Results",
+        "reportPageTitle": "Cypress Test Report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

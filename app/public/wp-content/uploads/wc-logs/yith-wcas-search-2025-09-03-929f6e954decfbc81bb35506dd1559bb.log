@@ -1,0 +1,231 @@
+2025-09-03T01:43:39+00:00 NOTICE Start search for sạc CONTEXT: {"_legacy":true}
+2025-09-03T01:43:39+00:00 NOTICE Execution time 0 0.1568512 CONTEXT: {"_legacy":true}
+2025-09-03T01:43:39+00:00 NOTICE Tokens Array
+(
+    [0] => sạc
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T01:43:39+00:00 NOTICE Execution time 1 0.1765795 CONTEXT: {"_legacy":true}
+2025-09-03T01:43:39+00:00 NOTICE Execution time 0.2638127 CONTEXT: {"_legacy":true}
+2025-09-03T01:43:51+00:00 NOTICE Start search for sạc dự phòng CONTEXT: {"_legacy":true}
+2025-09-03T01:43:51+00:00 NOTICE Execution time 0 0.0086775 CONTEXT: {"_legacy":true}
+2025-09-03T01:43:51+00:00 NOTICE Tokens Array
+(
+    [0] => phòng
+    [1] => sạc
+    [2] => dự
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T01:43:51+00:00 NOTICE Execution time 1 0.0453285 CONTEXT: {"_legacy":true}
+2025-09-03T01:43:51+00:00 NOTICE Execution time 0.0518456 CONTEXT: {"_legacy":true}
+2025-09-03T01:44:00+00:00 NOTICE Start search for sạc CONTEXT: {"_legacy":true}
+2025-09-03T01:44:00+00:00 NOTICE Execution time 0 0.0079873 CONTEXT: {"_legacy":true}
+2025-09-03T01:44:00+00:00 NOTICE Tokens Array
+(
+    [0] => sạc
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T01:44:00+00:00 NOTICE Execution time 1 0.0185648 CONTEXT: {"_legacy":true}
+2025-09-03T01:44:00+00:00 NOTICE Execution time 0.0641503 CONTEXT: {"_legacy":true}
+2025-09-03T01:44:19+00:00 NOTICE Start search for sticker CONTEXT: {"_legacy":true}
+2025-09-03T01:44:19+00:00 NOTICE Execution time 0 0.0074012 CONTEXT: {"_legacy":true}
+2025-09-03T01:44:19+00:00 NOTICE Tokens Array
+(
+    [0] => sticker
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T01:44:19+00:00 NOTICE Execution time 1 0.0345342 CONTEXT: {"_legacy":true}
+2025-09-03T01:44:19+00:00 NOTICE Execution time 0.0476823 CONTEXT: {"_legacy":true}
+2025-09-03T01:47:20+00:00 NOTICE Start search for dây điện CONTEXT: {"_legacy":true}
+2025-09-03T01:47:20+00:00 NOTICE Execution time 0 0.010575 CONTEXT: {"_legacy":true}
+2025-09-03T01:47:20+00:00 NOTICE Tokens Array
+(
+    [0] => điện
+    [1] => dây
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T01:47:20+00:00 NOTICE Execution time 1 0.0268727 CONTEXT: {"_legacy":true}
+2025-09-03T01:47:20+00:00 NOTICE Execution time 0.0319675 CONTEXT: {"_legacy":true}
+2025-09-03T01:47:35+00:00 NOTICE Start search for màu CONTEXT: {"_legacy":true}
+2025-09-03T01:47:35+00:00 NOTICE Execution time 0 0.0089235 CONTEXT: {"_legacy":true}
+2025-09-03T01:47:35+00:00 NOTICE Tokens Array
+(
+    [0] => màu
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T01:47:35+00:00 NOTICE Execution time 1 0.0386294 CONTEXT: {"_legacy":true}
+2025-09-03T01:47:35+00:00 NOTICE Execution time 0.0551876 CONTEXT: {"_legacy":true}
+2025-09-03T01:47:36+00:00 NOTICE Start search for màu nước CONTEXT: {"_legacy":true}
+2025-09-03T01:47:36+00:00 NOTICE Execution time 0 0.0060079 CONTEXT: {"_legacy":true}
+2025-09-03T01:47:36+00:00 NOTICE Tokens Array
+(
+    [0] => nước
+    [1] => màu
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T01:47:36+00:00 NOTICE Execution time 1 0.0173171 CONTEXT: {"_legacy":true}
+2025-09-03T01:47:36+00:00 NOTICE Execution time 0.0203538 CONTEXT: {"_legacy":true}
+2025-09-03T01:47:49+00:00 NOTICE Start search for màu CONTEXT: {"_legacy":true}
+2025-09-03T01:47:49+00:00 NOTICE Execution time 0 0.0078133 CONTEXT: {"_legacy":true}
+2025-09-03T01:47:49+00:00 NOTICE Tokens Array
+(
+    [0] => màu
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T01:47:49+00:00 NOTICE Execution time 1 0.0371683 CONTEXT: {"_legacy":true}
+2025-09-03T01:47:49+00:00 NOTICE Execution time 0.0549018 CONTEXT: {"_legacy":true}
+2025-09-03T01:59:50+00:00 NOTICE Start search for cây CONTEXT: {"_legacy":true}
+2025-09-03T01:59:50+00:00 NOTICE Execution time 0 0.0087424 CONTEXT: {"_legacy":true}
+2025-09-03T01:59:50+00:00 NOTICE Tokens Array
+(
+    [0] => cây
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T01:59:50+00:00 NOTICE Execution time 1 0.3025004 CONTEXT: {"_legacy":true}
+2025-09-03T01:59:50+00:00 NOTICE Execution time 0.3513124 CONTEXT: {"_legacy":true}
+2025-09-03T02:00:10+00:00 NOTICE Start search for tạp dề làm vườn CONTEXT: {"_legacy":true}
+2025-09-03T02:00:10+00:00 NOTICE Execution time 0 0.007961 CONTEXT: {"_legacy":true}
+2025-09-03T02:00:10+00:00 NOTICE Tokens Array
+(
+    [0] => vườn
+    [1] => tạp
+    [2] => dề
+    [3] => làm
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T02:00:10+00:00 NOTICE Execution time 1 0.0777035 CONTEXT: {"_legacy":true}
+2025-09-03T02:00:10+00:00 NOTICE Execution time 0.0861374 CONTEXT: {"_legacy":true}
+2025-09-03T02:00:41+00:00 NOTICE Start search for  CONTEXT: {"_legacy":true}
+2025-09-03T02:00:41+00:00 NOTICE Execution time 0 0.0064005 CONTEXT: {"_legacy":true}
+2025-09-03T02:00:41+00:00 NOTICE Tokens Array
+(
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T02:00:41+00:00 NOTICE Execution time 1 0.0107641 CONTEXT: {"_legacy":true}
+2025-09-03T02:00:41+00:00 NOTICE Execution time 0.013072 CONTEXT: {"_legacy":true}
+2025-09-03T02:02:45+00:00 NOTICE Start search for màu CONTEXT: {"_legacy":true}
+2025-09-03T02:02:45+00:00 NOTICE Execution time 0 0.0072765 CONTEXT: {"_legacy":true}
+2025-09-03T02:02:45+00:00 NOTICE Tokens Array
+(
+    [0] => màu
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T02:02:45+00:00 NOTICE Execution time 1 0.0158345 CONTEXT: {"_legacy":true}
+2025-09-03T02:02:45+00:00 NOTICE Execution time 0.031658 CONTEXT: {"_legacy":true}
+2025-09-03T02:05:48+00:00 NOTICE Start search for màu CONTEXT: {"_legacy":true}
+2025-09-03T02:05:48+00:00 NOTICE Execution time 0 0.0100216 CONTEXT: {"_legacy":true}
+2025-09-03T02:05:48+00:00 NOTICE Tokens Array
+(
+    [0] => màu
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T02:05:48+00:00 NOTICE Execution time 1 0.0197598 CONTEXT: {"_legacy":true}
+2025-09-03T02:05:48+00:00 NOTICE Execution time 0.0355066 CONTEXT: {"_legacy":true}
+2025-09-03T02:06:12+00:00 NOTICE Start search for màu CONTEXT: {"_legacy":true}
+2025-09-03T02:06:12+00:00 NOTICE Execution time 0 0.0068959 CONTEXT: {"_legacy":true}
+2025-09-03T02:06:12+00:00 NOTICE Tokens Array
+(
+    [0] => màu
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T02:06:12+00:00 NOTICE Execution time 1 0.0338112 CONTEXT: {"_legacy":true}
+2025-09-03T02:06:12+00:00 NOTICE Execution time 0.0456284 CONTEXT: {"_legacy":true}
+2025-09-03T02:08:11+00:00 NOTICE Start search for màu CONTEXT: {"_legacy":true}
+2025-09-03T02:08:11+00:00 NOTICE Execution time 0 0.0062598 CONTEXT: {"_legacy":true}
+2025-09-03T02:08:11+00:00 NOTICE Tokens Array
+(
+    [0] => màu
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T02:08:11+00:00 NOTICE Execution time 1 0.0333223 CONTEXT: {"_legacy":true}
+2025-09-03T02:08:11+00:00 NOTICE Execution time 0.049389 CONTEXT: {"_legacy":true}
+2025-09-03T02:10:19+00:00 NOTICE Start search for màu CONTEXT: {"_legacy":true}
+2025-09-03T02:10:19+00:00 NOTICE Execution time 0 0.0067851 CONTEXT: {"_legacy":true}
+2025-09-03T02:10:19+00:00 NOTICE Tokens Array
+(
+    [0] => màu
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T02:10:19+00:00 NOTICE Execution time 1 0.0153116 CONTEXT: {"_legacy":true}
+2025-09-03T02:10:19+00:00 NOTICE Execution time 0.0284669 CONTEXT: {"_legacy":true}
+2025-09-03T02:13:15+00:00 NOTICE Start search for màu CONTEXT: {"_legacy":true}
+2025-09-03T02:13:15+00:00 NOTICE Execution time 0 0.007299 CONTEXT: {"_legacy":true}
+2025-09-03T02:13:15+00:00 NOTICE Tokens Array
+(
+    [0] => màu
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T02:13:15+00:00 NOTICE Execution time 1 0.0174642 CONTEXT: {"_legacy":true}
+2025-09-03T02:13:15+00:00 NOTICE Execution time 0.0314754 CONTEXT: {"_legacy":true}
+2025-09-03T02:14:17+00:00 NOTICE Start search for màu CONTEXT: {"_legacy":true}
+2025-09-03T02:14:17+00:00 NOTICE Execution time 0 0.0077942 CONTEXT: {"_legacy":true}
+2025-09-03T02:14:17+00:00 NOTICE Tokens Array
+(
+    [0] => màu
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T02:14:17+00:00 NOTICE Execution time 1 0.0276433 CONTEXT: {"_legacy":true}
+2025-09-03T02:14:17+00:00 NOTICE Execution time 0.0421537 CONTEXT: {"_legacy":true}
+2025-09-03T02:16:18+00:00 NOTICE Start search for màu CONTEXT: {"_legacy":true}
+2025-09-03T02:16:18+00:00 NOTICE Execution time 0 0.010827 CONTEXT: {"_legacy":true}
+2025-09-03T02:16:18+00:00 NOTICE Tokens Array
+(
+    [0] => màu
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T02:16:18+00:00 NOTICE Execution time 1 0.0203103 CONTEXT: {"_legacy":true}
+2025-09-03T02:16:18+00:00 NOTICE Execution time 0.0360348 CONTEXT: {"_legacy":true}
+2025-09-03T02:17:38+00:00 NOTICE Start search for màu CONTEXT: {"_legacy":true}
+2025-09-03T02:17:38+00:00 NOTICE Execution time 0 0.0067095 CONTEXT: {"_legacy":true}
+2025-09-03T02:17:38+00:00 NOTICE Tokens Array
+(
+    [0] => màu
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T02:17:38+00:00 NOTICE Execution time 1 0.0162554 CONTEXT: {"_legacy":true}
+2025-09-03T02:17:38+00:00 NOTICE Execution time 0.0506492 CONTEXT: {"_legacy":true}
+2025-09-03T02:18:04+00:00 NOTICE Start search for màu CONTEXT: {"_legacy":true}
+2025-09-03T02:18:04+00:00 NOTICE Execution time 0 0.0093722 CONTEXT: {"_legacy":true}
+2025-09-03T02:18:04+00:00 NOTICE Tokens Array
+(
+    [0] => màu
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T02:18:04+00:00 NOTICE Execution time 1 0.0171916 CONTEXT: {"_legacy":true}
+2025-09-03T02:18:04+00:00 NOTICE Execution time 0.0297328 CONTEXT: {"_legacy":true}
+2025-09-03T02:19:21+00:00 NOTICE Start search for màu CONTEXT: {"_legacy":true}
+2025-09-03T02:19:21+00:00 NOTICE Execution time 0 0.0076748 CONTEXT: {"_legacy":true}
+2025-09-03T02:19:21+00:00 NOTICE Tokens Array
+(
+    [0] => màu
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T02:19:21+00:00 NOTICE Execution time 1 0.0154424 CONTEXT: {"_legacy":true}
+2025-09-03T02:19:21+00:00 NOTICE Execution time 0.0327458 CONTEXT: {"_legacy":true}
+2025-09-03T02:20:04+00:00 NOTICE Start search for màu CONTEXT: {"_legacy":true}
+2025-09-03T02:20:04+00:00 NOTICE Execution time 0 0.0071625 CONTEXT: {"_legacy":true}
+2025-09-03T02:20:04+00:00 NOTICE Tokens Array
+(
+    [0] => màu
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T02:20:04+00:00 NOTICE Execution time 1 0.017587 CONTEXT: {"_legacy":true}
+2025-09-03T02:20:04+00:00 NOTICE Execution time 0.0312684 CONTEXT: {"_legacy":true}
+2025-09-03T02:22:16+00:00 NOTICE Start search for màu CONTEXT: {"_legacy":true}
+2025-09-03T02:22:16+00:00 NOTICE Execution time 0 0.008335 CONTEXT: {"_legacy":true}
+2025-09-03T02:22:16+00:00 NOTICE Tokens Array
+(
+    [0] => màu
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T02:22:16+00:00 NOTICE Execution time 1 0.0176428 CONTEXT: {"_legacy":true}
+2025-09-03T02:22:16+00:00 NOTICE Execution time 0.02916 CONTEXT: {"_legacy":true}
+2025-09-03T02:39:13+00:00 NOTICE Start search for màu CONTEXT: {"_legacy":true}
+2025-09-03T02:39:13+00:00 NOTICE Execution time 0 0.0298593 CONTEXT: {"_legacy":true}
+2025-09-03T02:39:13+00:00 NOTICE Tokens Array
+(
+    [0] => màu
+)
+ CONTEXT: {"_legacy":true}
+2025-09-03T02:39:13+00:00 NOTICE Execution time 1 0.0406073 CONTEXT: {"_legacy":true}
+2025-09-03T02:39:13+00:00 NOTICE Execution time 0.0627382 CONTEXT: {"_legacy":true}

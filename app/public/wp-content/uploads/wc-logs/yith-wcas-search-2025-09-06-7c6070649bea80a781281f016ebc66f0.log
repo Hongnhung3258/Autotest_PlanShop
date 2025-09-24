@@ -1,0 +1,9 @@
+2025-09-06T03:44:41+00:00 NOTICE Start search for cây CONTEXT: {"_legacy":true}
+2025-09-06T03:44:41+00:00 NOTICE Execution time 0 0.0441401 CONTEXT: {"_legacy":true}
+2025-09-06T03:44:41+00:00 NOTICE Tokens Array
+(
+    [0] => cây
+)
+ CONTEXT: {"_legacy":true}
+2025-09-06T03:44:41+00:00 NOTICE Execution time 1 0.3897446 CONTEXT: {"_legacy":true}
+2025-09-06T03:44:41+00:00 NOTICE Execution time 0.4189814 CONTEXT: {"_legacy":true}

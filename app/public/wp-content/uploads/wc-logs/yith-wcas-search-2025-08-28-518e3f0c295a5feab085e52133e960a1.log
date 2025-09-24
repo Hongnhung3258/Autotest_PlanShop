@@ -1,0 +1,18 @@
+2025-08-28T22:07:44+00:00 NOTICE Start search for cây CONTEXT: {"_legacy":true}
+2025-08-28T22:07:44+00:00 NOTICE Execution time 0 0.1789802 CONTEXT: {"_legacy":true}
+2025-08-28T22:07:44+00:00 NOTICE Tokens Array
+(
+    [0] => cây
+)
+ CONTEXT: {"_legacy":true}
+2025-08-28T22:07:45+00:00 NOTICE Execution time 1 0.4623932 CONTEXT: {"_legacy":true}
+2025-08-28T22:07:45+00:00 NOTICE Execution time 0.4815694 CONTEXT: {"_legacy":true}
+2025-08-28T22:10:07+00:00 NOTICE Start search for sfkjjds CONTEXT: {"_legacy":true}
+2025-08-28T22:10:07+00:00 NOTICE Execution time 0 0.0082243 CONTEXT: {"_legacy":true}
+2025-08-28T22:10:07+00:00 NOTICE Tokens Array
+(
+    [0] => sfkjjds
+)
+ CONTEXT: {"_legacy":true}
+2025-08-28T22:10:07+00:00 NOTICE Execution time 1 0.013258 CONTEXT: {"_legacy":true}
+2025-08-28T22:10:07+00:00 NOTICE Execution time 0.0172098 CONTEXT: {"_legacy":true}

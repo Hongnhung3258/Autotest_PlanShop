@@ -1,0 +1,10 @@
+2025-09-10T09:08:35+00:00 NOTICE Start search for cây cọ CONTEXT: {"_legacy":true}
+2025-09-10T09:08:35+00:00 NOTICE Execution time 0 0.155046 CONTEXT: {"_legacy":true}
+2025-09-10T09:08:35+00:00 NOTICE Tokens Array
+(
+    [0] => cây
+    [1] => cọ
+)
+ CONTEXT: {"_legacy":true}
+2025-09-10T09:08:35+00:00 NOTICE Execution time 1 0.4110396 CONTEXT: {"_legacy":true}
+2025-09-10T09:08:35+00:00 NOTICE Execution time 0.4377761 CONTEXT: {"_legacy":true}
