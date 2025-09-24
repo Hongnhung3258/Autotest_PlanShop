@@ -1,125 +1,144 @@
-// ProductDetailPage.js
-const DATA_PRODUCTS1_SEL = '.post-1338 .astra-shop-thumbnail-wrap';  // Sản phẩm không có lựa chọn
-const DATA_PRODUCTS2_SEL = '.post-1322 .astra-shop-thumbnail-wrap';  // Sản phẩm có lựa chọn
+import BasePage from './BasePage';
 
-// Product detail selectors
-const PRODUCT_TITLE_SEL = '.product_title';
-const PRODUCT_PRICE_SEL = '.price';
-const PRODUCT_DESCRIPTION_SEL = '.woocommerce-product-details__short-description';
-const STOCK_SEL ='.ast-stock-detail';
-const QUANTITY_INPUT_SEL = 'input[name="quantity"]';
-const QUANTITY_PLUS_BTN_SEL = '#plus_qty-0';
-const QUANTITY_MINUS_BTN_SEL = '#minus_qty-0';
-const ADD_TO_CART_SEL ='button[type="submit"]';
-
-const CATEGORY_SEL ='span.posted_in';
-const TAG_SEL = 'span.tagged_as';
-const PAYMENT_METHOD_SEL = '.ast-single-product-payments';
-const VARIATIONS_SEL = '.variations';
-const VARIATION_SELECT_SEL = '.variations select';
-const RESET_VARIATIONS_SEL = '.reset_variations';
-
-// Tabs selectors
-const TAB_DESCRIPTION_SEL = '#tab-title-description';
-const TAB_DESCRIPTION_PANEL_SEL = '#tab-description';
-const TAB_ADDITIONAL_INFO_SEL = '#tab-title-additional_information';
-const TAB_ADDITIONAL_INFO_PANEL_SEL = '#tab-additional_information';
-const TAB_REVIEWS_SEL = '#tab-title-reviews';
-const TAB_REVIEWS_PANEL_SEL = '#tab-reviews';
-
-const SIMILAR_PRODUCT_SEL = 'section.related.products';
-// Review selectors
-const MUST_LOGIN_SEL = '.must-log-in';
-const REVIEW_FORM_SEL = '#review_form_wrapper';
-const RATING_STARS_SEL = '.stars';
-const COMMENT_TEXTAREA_SEL = '#comment';
-const SUBMIT_REVIEW_SEL = '#submit';
-const STAR_RATING_SEL = '.star-';
-const MESSENGA_COMMENT_SEL = '.meta em';
-
-// Wishlist selectors
-const ADD_TO_WISHLIST = '.yith-add-to-wishlist-button-block--initialized';
-const REMOVE_FROM_WISHLIST_SEL = '.yith-wcwl-add-to-wishlist-button--anchor';
-
-class ProductDetailPage {
-
-    formProductDetail(){
-        cy.get(PRODUCT_TITLE_SEL).should('be.visible');
-        cy.get(PRODUCT_PRICE_SEL).should('be.visible');
-        cy.get(QUANTITY_MINUS_BTN_SEL).should('be.visible');
-        cy.get(QUANTITY_INPUT_SEL).should('be.visible').and('have.value', '1');
-        cy.get(QUANTITY_PLUS_BTN_SEL).should('be.visible');
-        cy.get(PRODUCT_DESCRIPTION_SEL).should('be.visible');
-        cy.get(CATEGORY_SEL).should('be.visible').contains('Danh mục:');
-        cy.get(TAG_SEL).should('be.visible').contains('Thẻ:');
-        cy.get(PAYMENT_METHOD_SEL).should('be.visible');
-
-        cy.get(TAB_DESCRIPTION_SEL).scrollIntoView().should('be.visible');
-        cy.get(TAB_ADDITIONAL_INFO_SEL).should('be.visible');
-        cy.get(TAB_REVIEWS_SEL).should('be.visible');
-        cy.get(TAB_DESCRIPTION_PANEL_SEL).scrollIntoView().should('be.visible').and('not.have.css', 'display', 'none');
-        cy.get(SIMILAR_PRODUCT_SEL).scrollIntoView().should('be.visible');
-    }
+class ProductDetailPage extends BasePage {
+  constructor() {
+    super();
     
-    verifyProductWithoutVariations() {
-        cy.get(DATA_PRODUCTS1_SEL).click();
-        this.formProductDetail();
-        cy.get(STOCK_SEL).should('be.visible').contains('Trạng thái');
-        cy.get(ADD_TO_CART_SEL).should('be.visible').contains('Thêm vào giỏ hàng');
-    }
+    // Product navigation selectors
+    this.product1Selector = '.post-1338 .astra-shop-thumbnail-wrap';
+    this.product2Selector = '.post-1322 .astra-shop-thumbnail-wrap';
+    
+    // Product detail selectors
+    this.productTitleSelector = '.product_title';
+    this.productPriceSelector = '.price';
+    this.productDescriptionSelector = '.woocommerce-product-details__short-description';
+    this.stockSelector = '.ast-stock-detail';
+    this.categorySelector = 'span.posted_in';
+    this.tagSelector = 'span.tagged_as';
+    this.paymentMethodSelector = '.ast-single-product-payments';
+    
+    // Quantity control selectors
+    this.quantityInputSelector = 'input[name="quantity"]';
+    this.quantityPlusButtonSelector = '#plus_qty-0';
+    this.quantityMinusButtonSelector = '#minus_qty-0';
+    this.addToCartButtonSelector = 'button[type="submit"]';
+    
+    // Variation selectors
+    this.variationsSelector = '.variations';
+    this.variationSelectSelector = '.variations select';
+    this.resetVariationsSelector = '.reset_variations';
+    
+    // Tab selectors
+    this.tabDescriptionSelector = '#tab-title-description';
+    this.tabDescriptionPanelSelector = '#tab-description';
+    this.tabAdditionalInfoSelector = '#tab-title-additional_information';
+    this.tabAdditionalInfoPanelSelector = '#tab-additional_information';
+    this.tabReviewsSelector = '#tab-title-reviews';
+    this.tabReviewsPanelSelector = '#tab-reviews';
+    
+    // Review form selectors
+    this.mustLoginSelector = '.must-log-in';
+    this.reviewFormSelector = '#review_form_wrapper';
+    this.ratingStarsSelector = '.stars';
+    this.commentTextareaSelector = '#comment';
+    this.submitReviewSelector = '#submit';
+    this.starRatingSelector = '.star-';
+    this.messageCommentSelector = '.meta em';
+    
+    // Related product selectors
+    this.similarProductSelector = 'section.related.products';
+    
+    // Wishlist selectors
+    this.addToWishlistSelector = '.yith-add-to-wishlist-button-block--initialized';
+    this.removeFromWishlistSelector = '.yith-wcwl-add-to-wishlist-button--anchor';
+  }
 
-    verifyProductWithVariations() {
-        cy.get(DATA_PRODUCTS2_SEL).click();
-        this.formProductDetail();
-        cy.get(VARIATIONS_SEL).should('be.visible');
-        cy.get(RESET_VARIATIONS_SEL).should('not.be.visible');
-        cy.get(ADD_TO_CART_SEL).should('have.class', 'wc-variation-selection-needed');
-    }
+  formProductDetail() {
+    this.verifyElementVisible(this.productTitleSelector);
+    this.verifyElementVisible(this.productPriceSelector);
+    this.verifyElementVisible(this.quantityMinusButtonSelector);
+    this.verifyElementVisible(this.quantityInputSelector);
+    cy.get(this.quantityInputSelector).should('have.value', '1');
+    this.verifyElementVisible(this.quantityPlusButtonSelector);
+    this.verifyElementVisible(this.productDescriptionSelector);
+    this.verifyElementContainsText(this.categorySelector, 'Danh mục:');
+    this.verifyElementContainsText(this.tagSelector, 'Thẻ:');
+    this.verifyElementVisible(this.paymentMethodSelector);
 
-    verifyRemoveProductVariations() {
-        cy.get(DATA_PRODUCTS2_SEL).click();
-        cy.get(VARIATIONS_SEL).should('be.visible');
-        cy.selectByIndex(VARIATION_SELECT_SEL, 1)
-        cy.get(RESET_VARIATIONS_SEL).should('be.visible');
-        cy.get(STOCK_SEL).should('be.visible').contains('Trạng thái');
-        cy.get(ADD_TO_CART_SEL).should('not.have.class', 'wc-variation-selection-needed');
-        cy.get(RESET_VARIATIONS_SEL).click();
-        cy.get(ADD_TO_CART_SEL).should('have.class', 'wc-variation-selection-needed');
-    }
+    this.scrollIntoView(this.tabDescriptionSelector);
+    this.verifyElementVisible(this.tabDescriptionSelector);
+    this.verifyElementVisible(this.tabAdditionalInfoSelector);
+    this.verifyElementVisible(this.tabReviewsSelector);
+    
+    this.scrollIntoView(this.tabDescriptionPanelSelector);
+    this.verifyElementVisible(this.tabDescriptionPanelSelector);
+    cy.get(this.tabDescriptionPanelSelector).should('not.have.css', 'display', 'none');
+    
+    this.scrollIntoView(this.similarProductSelector);
+    this.verifyElementVisible(this.similarProductSelector);
+  }
 
-    verifyReviewTabNotLoggedIn() {
-        cy.get(DATA_PRODUCTS1_SEL).click();
-        cy.get(TAB_REVIEWS_SEL).scrollIntoView().click();
-        cy.get(TAB_REVIEWS_PANEL_SEL).should('be.visible');
-        cy.get(MUST_LOGIN_SEL).should('be.visible')
-            .and('contain.text', 'Bạn phải đăng nhập để gửi đánh giá');
-    }
+  verifyProductWithoutVariations() {
+    this.clickButton(this.product1Selector);
+    this.formProductDetail();
+    this.verifyElementContainsText(this.stockSelector, 'Trạng thái');
+    this.verifyElementContainsText(this.addToCartButtonSelector, 'Thêm vào giỏ hàng');
+  }
 
-    verifyAllTabsWhenLoggedIn() {
-        cy.get(DATA_PRODUCTS1_SEL).click();
-        cy.get(TAB_DESCRIPTION_PANEL_SEL).should('not.have.css', 'display', 'none');
-        
-        cy.get(TAB_ADDITIONAL_INFO_SEL).click();
-        cy.get(TAB_ADDITIONAL_INFO_PANEL_SEL).should('not.have.css', 'display', 'none');
-        cy.get(TAB_REVIEWS_SEL).click();
-        cy.get(TAB_REVIEWS_PANEL_SEL).should('not.have.css', 'display', 'none');
-        cy.get(REVIEW_FORM_SEL).should('be.visible');
-        cy.get(RATING_STARS_SEL).should('be.visible');
-        cy.get(COMMENT_TEXTAREA_SEL).should('be.visible');
-        cy.get(SUBMIT_REVIEW_SEL).should('be.visible').contains('Gửi đi');
-    }
+  verifyProductWithVariations() {
+    this.clickButton(this.product2Selector);
+    this.formProductDetail();
+    this.verifyElementVisible(this.variationsSelector);
+    cy.get(this.resetVariationsSelector).should('not.be.visible');
+    cy.get(this.addToCartButtonSelector).should('have.class', 'wc-variation-selection-needed');
+  }
 
-    verifyWriteReview() {
-        cy.get(DATA_PRODUCTS1_SEL).click();
-        cy.get(TAB_REVIEWS_SEL).click();
-        cy.get(TAB_REVIEWS_PANEL_SEL).should('not.have.css', 'display', 'none');
-        
-        cy.get(`${STAR_RATING_SEL}5`).click();
-        cy.get(COMMENT_TEXTAREA_SEL).type('Đây là sản phẩm đẹp mà tôi rất thích!');
-        cy.get(SUBMIT_REVIEW_SEL).click();
-        
-        cy.get(MESSENGA_COMMENT_SEL).should('contain.text', 'Đánh giá của bạn đang chờ phê duyệt');
-    }
+  verifyRemoveProductVariations() {
+    this.clickButton(this.product2Selector);
+    this.verifyElementVisible(this.variationsSelector);
+    cy.selectByIndex(this.variationSelectSelector, 1);
+    this.verifyElementVisible(this.resetVariationsSelector);
+    this.verifyElementContainsText(this.stockSelector, 'Trạng thái');
+    cy.get(this.addToCartButtonSelector).should('not.have.class', 'wc-variation-selection-needed');
+    
+    this.clickButton(this.resetVariationsSelector);
+    cy.get(this.addToCartButtonSelector).should('have.class', 'wc-variation-selection-needed');
+  }
+
+  verifyReviewTabNotLoggedIn() {
+    this.clickButton(this.product1Selector);
+    this.scrollIntoView(this.tabReviewsSelector);
+    this.clickButton(this.tabReviewsSelector);
+    this.verifyElementVisible(this.tabReviewsPanelSelector);
+    this.verifyElementContainsText(this.mustLoginSelector, 'Bạn phải đăng nhập để gửi đánh giá');
+  }
+
+  verifyAllTabsWhenLoggedIn() {
+    this.clickButton(this.product1Selector);
+    cy.get(this.tabDescriptionPanelSelector).should('not.have.css', 'display', 'none');
+    
+    this.clickButton(this.tabAdditionalInfoSelector);
+    cy.get(this.tabAdditionalInfoPanelSelector).should('not.have.css', 'display', 'none');
+    
+    this.clickButton(this.tabReviewsSelector);
+    cy.get(this.tabReviewsPanelSelector).should('not.have.css', 'display', 'none');
+    this.verifyElementVisible(this.reviewFormSelector);
+    this.verifyElementVisible(this.ratingStarsSelector);
+    this.verifyElementVisible(this.commentTextareaSelector);
+    this.verifyElementContains(this.submitReviewSelector, 'Gửi đi');
+  }
+
+  verifyWriteReview() {
+    this.clickButton(this.product1Selector);
+    this.clickButton(this.tabReviewsSelector);
+    cy.get(this.tabReviewsPanelSelector).should('not.have.css', 'display', 'none');
+    
+    this.clickButton(`${this.starRatingSelector}5`);
+    this.clearAndType(this.commentTextareaSelector, 'Đây là sản phẩm đẹp mà tôi rất thích!');
+    this.clickButton(this.submitReviewSelector);
+    
+    this.verifyElementContainsText(this.messageCommentSelector, 'Đánh giá của bạn đang chờ phê duyệt');
+  }
 }
 
 export default ProductDetailPage;

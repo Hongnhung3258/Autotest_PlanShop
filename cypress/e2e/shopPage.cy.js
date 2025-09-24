@@ -31,19 +31,19 @@ describe('Shop Page Tests', () => {
         });
 
         it('PS_088: Điều hướng khi click "Cây trồng trong chậu"', () => {
-            shopPage.navigateToPottedPlants();
+            shopPage.navigateToCategory('pottedPlants');
         });
 
         it('PS_089: Điều hướng khi click "Cây trồng trong không khí"', () => {
-            shopPage.navigateToAirPlants();
+            shopPage.navigateToCategory('airPlants');
         });
 
         it('PS_090: Điều hướng khi click "Chậu trồng cây"', () => {
-            shopPage.navigateToPotsAndPlanters();
+            shopPage.navigateToCategory('potsAndPlanters');
         });
 
         it('PS_091: Điều hướng khi click "Dụng cụ chăm sóc"', () => {
-            shopPage.navigateToCareTools();
+            shopPage.navigateToCategory('careTools');
         });
     });
     

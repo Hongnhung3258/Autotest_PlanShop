@@ -1,7 +1,7 @@
 import MenuNav from '../pageObjects/MenuNav';
 import SearchMenu from '../pageObjects/SearchMenu';
 import LoginPage from '../pageObjects/LoginPage';
-import AccountMenu from '../pageObjects/accountMenu';
+import AccountMenu from '../pageObjects/AccountMenu';
 import CartMenu from "../pageObjects/CartMenu";
 import ShopPage from '../pageObjects/ShopPage';
 

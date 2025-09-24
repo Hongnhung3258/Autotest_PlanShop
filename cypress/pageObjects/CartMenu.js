@@ -1,112 +1,110 @@
-const CART_ICON_SEL = '.ast-site-header-cart';
-const CART_COUNT_SEL = '.astra-icon[data-cart-total]';
-const DROPDOWN_SEL = '.widget_shopping_cart';
-const BTN_SEL = '.woocommerce-mini-cart__buttons a';
+import BasePage from './BasePage';
 
-// Empty cart selectors
-const EMPTY_CART_MESSAGE_SEL = '.ast-mini-cart-message p';
-
-// Cart with products selectors
-const PRODUCTS_LIST_SEL = '.woocommerce-mini-cart';
-const PRODUCT_NAME_SEL = '.mini_cart_item a:not(.remove)';
-const PRODUCT_IMAGE_SEL = '.mini_cart_item img';
-const PRODUCT_QUANTITY_SEL = '.quantity';
-const REMOVE_ITEM_BTN_SEL = '.remove_from_cart_button';
-const CART_TOTAL_SEL = '.woocommerce-mini-cart__total';
-const TOTAL_SEL = '.widget_shopping_cart_content > p > span';
-
-class CartMenu {
+class CartMenu extends BasePage {
+  constructor() {
+    super();
+    this.cartIconSelector = '.ast-site-header-cart';
+    this.cartCountSelector = '.astra-icon[data-cart-total]';
+    this.dropdownSelector = '.widget_shopping_cart';
+    this.emptyCartMessageSelector = '.ast-mini-cart-message p';
+    this.continueShoppingButtonSelector = '.woocommerce-mini-cart__buttons a';
+    this.productsListSelector = '.woocommerce-mini-cart';
+    this.productNameSelector = '.mini_cart_item a:not(.remove)';
+    this.productImageSelector = '.mini_cart_item img';
+    this.productQuantitySelector = '.quantity';
+    this.removeItemButtonSelector = '.remove_from_cart_button';
+    this.cartTotalSelector = '.woocommerce-mini-cart__total';
+    this.totalPriceSelector = '.widget_shopping_cart_content > p > span';
+  }
 
   hoverCartIcon() {
-    cy.get(CART_ICON_SEL).should('be.visible').realHover({ timeout: 500 });
-    cy.get(DROPDOWN_SEL).should('be.visible');
+    this.verifyElementVisible(this.cartIconSelector);
+    this.hoverElement(this.cartIconSelector, 500);
+    this.verifyElementVisible(this.dropdownSelector);
   }
 
   verifyCartIsEmpty() {
-    cy.get(CART_COUNT_SEL).should('have.attr', 'data-cart-total', '0');
+    cy.get(this.cartCountSelector).should('have.attr', 'data-cart-total', '0');
   }
 
   verifyEmptyCart() {
     this.hoverCartIcon();
-    cy.get(EMPTY_CART_MESSAGE_SEL)
-      .should('be.visible')
-      .and('contain.text', 'Không có sản phẩm trong giỏ hàng');
-    cy.get(BTN_SEL)
-      .should('be.visible')
-      .and('contain.text', 'Tiếp tục mua sắm');
+    this.verifyElementContainsText(this.emptyCartMessageSelector, 'Không có sản phẩm trong giỏ hàng');
+    this.verifyElementContainsText(this.continueShoppingButtonSelector, 'Tiếp tục mua sắm');
   }
 
   clickContinueShopping() {
     this.hoverCartIcon();
-    cy.get(BTN_SEL).contains('Tiếp tục mua sắm').click();
-    cy.url().should('include', '/shop');
+    cy.get(this.continueShoppingButtonSelector).contains('Tiếp tục mua sắm').click();
+    this.verifyCurrentUrl('/shop');
   }
-
 
   verifyCartWithProducts() {
     this.hoverCartIcon();
-    cy.get(PRODUCTS_LIST_SEL).should('be.visible');
-    cy.get(PRODUCTS_LIST_SEL).should('have.length.at.least', 1);
-    cy.get(PRODUCTS_LIST_SEL).first().within(() => {
-      cy.get(PRODUCT_NAME_SEL).should('be.visible'); // Tên sản phẩm
-      cy.get(PRODUCT_IMAGE_SEL).should('be.visible'); // Hình ảnh sản phẩm
-      cy.get(PRODUCT_QUANTITY_SEL).should('be.visible'); // Số lượng & giá
-      cy.get(REMOVE_ITEM_BTN_SEL).should('be.visible'); // Nút X (xóa)
+    this.verifyElementVisible(this.productsListSelector);
+    cy.get(this.productsListSelector).should('have.length.at.least', 1);
+    
+    cy.get(this.productsListSelector).first().within(() => {
+      cy.get(this.productNameSelector).should('be.visible');
+      cy.get(this.productImageSelector).should('be.visible');
+      cy.get(this.productQuantitySelector).should('be.visible');
+      cy.get(this.removeItemButtonSelector).should('be.visible');
     });
-    cy.get(CART_TOTAL_SEL).should('be.visible').and('contain.text', 'Tổng số phụ');
-    cy.get(BTN_SEL).should('be.visible').and('contain.text', 'Xem giỏ hàng');
-    cy.get(BTN_SEL).should('be.visible').and('contain.text', 'Thanh toán');
+    
+    this.verifyElementContainsText(this.cartTotalSelector, 'Tổng số phụ');
+    this.verifyElementContainsText(this.continueShoppingButtonSelector, 'Xem giỏ hàng');
+    this.verifyElementContainsText(this.continueShoppingButtonSelector, 'Thanh toán');
   }
 
   clickViewCart() {
     this.hoverCartIcon();
-    cy.get(BTN_SEL).contains('Xem giỏ hàng').click();
-    cy.url().should('include', '/cart');
+    cy.get(this.continueShoppingButtonSelector).contains('Xem giỏ hàng').click();
+    this.verifyCurrentUrl('/cart');
   }
 
   clickCheckoutNotLogIn() {
     this.hoverCartIcon();
-    cy.get(BTN_SEL).contains('Thanh toán').click();
-    cy.url().should('include', '/my-account');
+    cy.get(this.continueShoppingButtonSelector).contains('Thanh toán').click();
+    this.verifyCurrentUrl('/my-account');
   }
 
   clickCheckout() {
     this.hoverCartIcon();
-    cy.get(BTN_SEL).contains('Thanh toán').click();
-    cy.url().should('include', '/checkout');
+    cy.get(this.continueShoppingButtonSelector).contains('Thanh toán').click();
+    this.verifyCurrentUrl('/checkout');
   }
 
   removeCart1Item() {
     this.hoverCartIcon();
-    cy.get(REMOVE_ITEM_BTN_SEL).first().click();
-    cy.get(CART_COUNT_SEL).should('have.attr', 'data-cart-total', '0');
+    this.clickFirstButton(this.removeItemButtonSelector);
+    cy.get(this.cartCountSelector).should('have.attr', 'data-cart-total', '0');
 
-    cy.get(CART_COUNT_SEL).invoke('attr', 'data-cart-total').then((newCount) => {
+    this.getCartCount().then((newCount) => {
       const updatedCount = parseInt(newCount);
       expect(updatedCount).to.equal(0);
       this.hoverCartIcon();
-      cy.get(EMPTY_CART_MESSAGE_SEL).should('be.visible');
+      this.verifyElementVisible(this.emptyCartMessageSelector);
     });
   }
 
   removeCartMultiItem() {
     this.hoverCartIcon();
-    cy.get(CART_COUNT_SEL).invoke('attr', 'data-cart-total').then((currentCount) => {
+    this.getCartCount().then((currentCount) => {
       const initialCount = parseInt(currentCount);
 
-      cy.get(PRODUCT_QUANTITY_SEL).first().invoke('text').then((qtyText) => {
+      cy.get(this.productQuantitySelector).first().invoke('text').then((qtyText) => {
         const productQty = parseInt(qtyText.match(/^\d+/)[0]);
         const expectedCount = initialCount - productQty;
 
-        cy.get(TOTAL_SEL).invoke('text').then((initialTotalText) => {
-          const initialTotal = parseInt(initialTotalText.replace(/\./g, ""));
-          cy.get(REMOVE_ITEM_BTN_SEL).first().click();
-          cy.get(CART_COUNT_SEL).first().should('have.attr', 'data-cart-total', expectedCount.toString());
+        cy.get(this.totalPriceSelector).invoke('text').then((initialTotalText) => {
+          const initialTotal = this.extractPrice(initialTotalText);
+          this.clickFirstButton(this.removeItemButtonSelector);
+          cy.get(this.cartCountSelector).first().should('have.attr', 'data-cart-total', expectedCount.toString());
 
           if (expectedCount > 0) {
             this.hoverCartIcon();
-            cy.get(TOTAL_SEL).should('be.visible').invoke('text').then((newTotalText) => {
-              const newTotal = parseInt(newTotalText.replace(/\./g, ""));
+            cy.get(this.totalPriceSelector).should('be.visible').invoke('text').then((newTotalText) => {
+              const newTotal = this.extractPrice(newTotalText);
               expect(newTotal).to.be.lessThan(initialTotal);
             });
           }
@@ -114,7 +112,6 @@ class CartMenu {
       });
     });
   }
-
 }
 
 export default CartMenu;

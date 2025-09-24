@@ -1,300 +1,327 @@
-// ShopPage.js - Updated implementation
-const CART_COUNT_SEL = '.astra-icon[data-cart-total]';
-const DATA_PRODUCTS1_SEL = '.astra-shop-summary-wrap [data-product_id="1342"]';
-const DATA_PRODUCTS2_SEL = '.astra-shop-summary-wrap [data-product_id="844"]';
-const DATA_PRODUCTS3_SEL = '.astra-shop-summary-wrap [data-product_id="1322"]';
-const DATA_PRODUCTS4_SEL = '.astra-shop-summary-wrap [data-product_id="1501"]';
-const DATA_PRODUCTS5_SEL = '.astra-shop-summary-wrap [data-product_id="1505"]';
-const VIEW_PRODUCT_SEL = '.astra-shop-thumbnail-wrap a';
-const DATA_PRODUCTS_SEL = '.astra-shop-summary-wrap [data-product_id="1338"]';
-// Product detail page selectors
-const PRODUCT_TITLE_SEL = 'h1.product_title.entry-title';
-const VARIATION_SELECT_SEL = '.variations select';
-const ADD_TO_CART_VARIATION_BTN_SEL = '.woocommerce-variation-add-to-cart button[type="submit"]';
-const SUCCESS_MESSAGE_SEL = '.woocommerce-notices-wrapper .woocommerce-message';
-const VIEW_CART_BTN_SEL = '.woocommerce-message .button.wc-forward';
+import BasePage from './BasePage';
 
-// Navigation selectors
-const POTTED_PLANTS_NAV_SEL = '#menu-item-1004';
-const AIR_PLANTS_NAV_SEL = '#menu-item-1006';
-const POTS_PLANTERS_NAV_SEL = '#menu-item-1007';
-const CARE_TOOLS_NAV_SEL = '#menu-item-1005';
-const SHOP_MENU_SEL = '#menu-item-22';
-// Filter selectors
-const SORT_SELECT_SEL = '.woocommerce-ordering select[name="orderby"]';
-const PRICE_SEL = '.price .woocommerce-Price-amount';
-const ITEM_PRODUCT_SEL = '.products.columns-3 li'
+class ShopPage extends BasePage {
+  constructor() {
+    super();
+    // Product selectors - specific product IDs
+    this.product1Selector = '.astra-shop-summary-wrap [data-product_id="1342"]';
+    this.product2Selector = '.astra-shop-summary-wrap [data-product_id="844"]';
+    this.product3Selector = '.astra-shop-summary-wrap [data-product_id="1322"]';
+    this.product4Selector = '.astra-shop-summary-wrap [data-product_id="1501"]';
+    this.product5Selector = '.astra-shop-summary-wrap [data-product_id="1505"]';
+    this.productGeneralSelector = '.astra-shop-summary-wrap [data-product_id="1338"]';
+    this.viewProductSelector = '.astra-shop-thumbnail-wrap a';
+    
+    // Product detail page selectors
+    this.productTitleSelector = 'h1.product_title.entry-title';
+    this.variationSelectSelector = '.variations select';
+    this.addToCartVariationButtonSelector = '.woocommerce-variation-add-to-cart button[type="submit"]';
+    this.successMessageSelector = '.woocommerce-notices-wrapper .woocommerce-message';
+    this.viewCartButtonSelector = '.woocommerce-message .button.wc-forward';
+    
+    // Navigation menu selectors
+    this.shopMenuSelector = '#menu-item-22';
+    this.pottedPlantsNavSelector = '#menu-item-1004';
+    this.airPlantsNavSelector = '#menu-item-1006';
+    this.potsAndPlantersNavSelector = '#menu-item-1007';
+    this.careToolsNavSelector = '#menu-item-1005';
+    
+    // Filter and sorting selectors
+    this.sortSelectSelector = '.woocommerce-ordering select[name="orderby"]';
+    this.priceSelector = '.price .woocommerce-Price-amount';
+    this.itemProductSelector = '.products.columns-3 li';
+    
+    // Pagination selectors
+    this.paginationNavSelector = '.woocommerce-pagination';
+    this.pageNumbersSelector = '.page-numbers';
+    this.currentPageSelector = '.page-numbers.current';
+    this.nextPageSelector = '.next.page-numbers';
+    this.previousPageSelector = '.prev.page-numbers';
+    this.pageNumberLinkSelector = 'a.page-numbers:not(.prev):not(.next)';
+    
+    // Cart selector
+    this.cartCountSelector = '.astra-icon[data-cart-total]';
+  }
 
-const PAGINATION_NAV_SEL = '.woocommerce-pagination';
-const PAGE_NUMBERS_SEL = '.page-numbers';
-const CURRENT_PAGE_SEL = '.page-numbers.current';
-const NEXT_PAGE_SEL = '.next.page-numbers';
-const PREV_PAGE_SEL = '.prev.page-numbers';
-const PAGE_NUMBER_LINK_SEL = 'a.page-numbers:not(.prev):not(.next)';
+  addProductToCart() {
+    this.clickButton(this.product1Selector);
+    cy.get(this.product1Selector).should('have.class', 'added');
+    this.verifyCartCountGreaterThan(0);
+  }
 
-class ShopPage {
-    addProductToCart() {
-        cy.get(DATA_PRODUCTS1_SEL).click();
-        cy.get(DATA_PRODUCTS1_SEL).should('have.class', 'added');
-        cy.get(CART_COUNT_SEL).invoke('attr', 'data-cart-total').then((count) => {
-            expect(parseInt(count)).to.be.greaterThan(0);
-        });
-    }
+  addProductToCart2() {
+    this.clickButton(this.productGeneralSelector);
+    cy.get(this.productGeneralSelector).should('have.class', 'added');
+    this.verifyCartCountGreaterThan(0);
+  }
 
-    addProductToCart2() {
-        cy.get(DATA_PRODUCTS_SEL).click();
-        cy.get(DATA_PRODUCTS_SEL).should('have.class', 'added');
-        cy.get(CART_COUNT_SEL).invoke('attr', 'data-cart-total').then((count) => {
-            expect(parseInt(count)).to.be.greaterThan(0);
+  addMultipleProductsToCart() {
+    this.clickButton(this.product1Selector);
+    cy.get(this.product1Selector).should('have.class', 'added');
+    
+    this.clickButton(this.product2Selector);
+    cy.get(this.product2Selector).should('have.class', 'added');
+    this.verifyCartCountGreaterThan(0);
+  }
+
+  addSelectedProductToCart() {
+    this.clickButton(this.product3Selector);
+    this.verifyCurrentUrl('/product/');
+    
+    cy.get(this.productTitleSelector).invoke('text').then((name) => {
+      const nameProduct = this.normalizeText(name);
+      
+      cy.selectByIndex(this.variationSelectSelector, 1);
+      
+      cy.get(this.addToCartVariationButtonSelector)
+        .should('not.have.class', 'disabled')
+        .and('not.have.class', 'wc-variation-selection-needed');
+      
+      this.clickButton(this.addToCartVariationButtonSelector);
+      
+      cy.get(this.successMessageSelector).should('be.visible').then(($el) => {
+        const text = $el.text().replace(/\s+/g, ' ').replace(/[“”]/g, '"').trim();
+        expect(text).to.include(`"${nameProduct}" đã được thêm vào giỏ hàng. Xem giỏ hàng`);
         
-        });
-    }
-
-    addMultipleProductsToCart() {
-        cy.get(DATA_PRODUCTS1_SEL).click();
-        cy.get(DATA_PRODUCTS1_SEL).should('have.class', 'added');
-        cy.get(DATA_PRODUCTS2_SEL).scrollIntoView().click();
-        cy.get(DATA_PRODUCTS2_SEL).should('have.class', 'added');
-        cy.get(CART_COUNT_SEL).invoke('attr', 'data-cart-total').then((count) => {
-            expect(parseInt(count)).to.be.greaterThan(0);
-        });
-    }
-
-    addSelectedProductToCart() {
-        cy.get(DATA_PRODUCTS3_SEL).click();
-        cy.url().should('include', '/product/');
-        
-        cy.get(PRODUCT_TITLE_SEL).invoke('text').then((name) => {
-            const nameProduct = name.replace(/\s+/g, ' ').replace(/(^\s|\s$)/g, '');
-            
-            cy.selectByIndex(VARIATION_SELECT_SEL,1);
-                            
-            cy.get(ADD_TO_CART_VARIATION_BTN_SEL)
-            .should('not.have.class', 'disabled')
-            .and('not.have.class', 'wc-variation-selection-needed');
-            cy.get(ADD_TO_CART_VARIATION_BTN_SEL).click();
-            
-            cy.get(SUCCESS_MESSAGE_SEL).should('be.visible').then(($el) => {
-                const text = $el.text().replace(/\s+/g, ' ').trim();
-                expect(text).to.include(`“${nameProduct}” đã được thêm vào giỏ hàng. Xem giỏ hàng`);
-                cy.get(VIEW_CART_BTN_SEL)
-                .should('be.visible')
-                .and('have.text', 'Xem giỏ hàng');
-            });
-            cy.get(CART_COUNT_SEL).invoke('attr', 'data-cart-total').then((count) => {
-            expect(parseInt(count)).to.be.greaterThan(0);
-        });
-        });
-    }
-
-    addProductSoldOut() {
-        cy.get(DATA_PRODUCTS4_SEL).scrollIntoView()
-          .should('contain.text', 'Đọc tiếp')
-          .and('not.have.class', 'add_to_cart_button')
-          .and('have.class', 'product_type_simple');
-        cy.get(DATA_PRODUCTS4_SEL).click();
-        cy.url().should('include', '/product/');
-    }
-
-    addSelectedProductSoldOut() {
-        cy.get(DATA_PRODUCTS5_SEL).scrollIntoView().click();
-        cy.url().should('include', '/product/');
-        
-        cy.get(ADD_TO_CART_VARIATION_BTN_SEL)
-          .should('have.class', 'disabled')
-          .and('have.class', 'wc-variation-selection-needed')
-          .and('contain.text', 'Thêm vào giỏ hàng');
-        
-        cy.get('body').then(($body) => {
-            if ($body.find(VARIATION_SELECT_SEL).length > 0) {
-                cy.get(VARIATION_SELECT_SEL).select(1);
-                cy.get(ADD_TO_CART_VARIATION_BTN_SEL).should('have.class', 'disabled');
-            }
-        });
-    }
-
-    viewProduct(){
-        cy.get(VIEW_PRODUCT_SEL).first().click();
-        cy.url().should('include', '/product');
-    }
-
-    navigateToPottedPlants() {
-        cy.get(SHOP_MENU_SEL).realHover({timeout: 150});
-        cy.get(POTTED_PLANTS_NAV_SEL).click();
-        cy.url().should('include', '/product-category/all-potted-plants');
-        cy.get('h1').should('contain.text', 'Cây trồng trong chậu');
-    }
-
-    navigateToAirPlants() {
-        cy.get(SHOP_MENU_SEL).realHover({timeout: 150});
-        cy.get(AIR_PLANTS_NAV_SEL).click();
-        cy.url().should('include', '/product-category/air-plants');
-        cy.get('h1').should('contain.text', 'Cây trồng trong không khí');
-    }
-
-    navigateToPotsAndPlanters() {
-        cy.get(SHOP_MENU_SEL).realHover({timeout: 150});
-        cy.get(POTS_PLANTERS_NAV_SEL).click();
-        cy.url().should('include', '/product-category/pots-planters');
-        cy.get('h1').should('contain.text', 'Chậu trồng cây');
-    }
-
-    navigateToCareTools() {
-        cy.get(SHOP_MENU_SEL).realHover({timeout: 150});
-        cy.get(CARE_TOOLS_NAV_SEL).click();
-        cy.url().should('include', '/product-category/care-tools');
-        cy.get('h1').should('contain.text', 'Dụng cụ chăm sóc');
-    }
-
-    sortByPopularity() {
-    cy.url().then((currentUrl) => {
-        if (currentUrl.includes('/shop') && !currentUrl.includes('orderby=')) {
-            cy.selectByIndex(SORT_SELECT_SEL,0);
-            cy.url().should('include', '/');
-        } else {
-        cy.selectVariationByIndex(SORT_SELECT_SEL, 0);
-        cy.url().should('include', 'orderby=popularity');
-        }
+        this.verifyElementVisible(this.viewCartButtonSelector);
+        cy.get(this.viewCartButtonSelector).should('have.text', 'Xem giỏ hàng');
+      });
+      
+      this.verifyCartCountGreaterThan(0);
     });
-    }
+  }
 
-    sortByRating() {
-        cy.selectByIndex(SORT_SELECT_SEL,1);
-        cy.url().should('include', 'orderby=rating');
-    }
+  addProductSoldOut() {
+    this.scrollIntoView(this.product4Selector);
+    cy.get(this.product4Selector)
+      .should('contain.text', 'Đọc tiếp')
+      .and('not.have.class', 'add_to_cart_button')
+      .and('have.class', 'product_type_simple');
+    this.clickButton(this.product4Selector);
+    this.verifyCurrentUrl('/product/');
+  }
 
-    sortByNewest() {
-        cy.selectByIndex(SORT_SELECT_SEL,2);
-        cy.url().should('include', 'orderby=date');
-    }
-
-    sortByPriceLowToHigh() {
-        cy.selectByIndex(SORT_SELECT_SEL,3);
-        cy.url().should('include', 'orderby=price');
-        cy.get(ITEM_PRODUCT_SEL).then(($products) => {
-            const productPrices = [];
-            $products.each((index, product) => {
-                const $priceElements = Cypress.$(product).find(PRICE_SEL);
-                let maxPrice = 0;
-                
-                $priceElements.each((priceIndex, priceElement) => {
-                    const priceText = Cypress.$(priceElement).text();
-                    const price = parseInt(priceText.replace(/[^\d]/g, ''));
-                    if (price > maxPrice) {
-                        maxPrice = price;
-                    }
-                });
-                
-                if (maxPrice > 0) {
-                    productPrices.push(maxPrice);
-                }
-            });
-            
-            for (let i = 1; i < Math.min(4, productPrices.length); i++) {
-                expect(productPrices[i]).to.be.at.least(productPrices[i-1]);
-            }
-        });
-    }
-
-    sortByPriceHighToLow() {
-        cy.selectByIndex(SORT_SELECT_SEL, 4);
-        cy.url().should('include', 'orderby=price-desc');
-        cy.get(ITEM_PRODUCT_SEL).then(($products) => {
-            const productPrices = [];
-            $products.each((index, product) => {
-                const $priceElements = Cypress.$(product).find(PRICE_SEL);
-                let maxPrice = 0;
-                
-                $priceElements.each((priceIndex, priceElement) => {
-                    const priceText = Cypress.$(priceElement).text();
-                    const price = parseInt(priceText.replace(/[^\d]/g, ''));
-                    if (price > maxPrice) {
-                        maxPrice = price;
-                    }
-                });
-                
-                if (maxPrice > 0) {
-                    productPrices.push(maxPrice);
-                }
-            });
-            
-            for (let i = 1; i < Math.min(4, productPrices.length); i++) {
-                expect(productPrices[i]).to.be.at.most(productPrices[i-1]);
-            }
-        });
-    }
-
-    checkPaginationDisplay() {
-        cy.get(PAGINATION_NAV_SEL).should('be.visible').scrollIntoView();
-        cy.get(PAGE_NUMBERS_SEL).should('have.length.at.least', 2);
-        cy.get(PAGE_NUMBER_LINK_SEL).then(($pages) => {
-            const pageCount = $pages.length;
-            expect(pageCount).to.be.at.least(2);
-        });
-        cy.get(CURRENT_PAGE_SEL).should('be.visible').and('have.css', 'background-color', 'rgb(84, 180, 53)');
-    }
-           
-
-    checkFirstPagePagination() {
-        cy.get(PAGINATION_NAV_SEL).should('be.visible').scrollIntoView();
-        cy.get(CURRENT_PAGE_SEL).should('be.visible')
-            .and('have.css', 'background-color', 'rgb(84, 180, 53)');
-        cy.get(PREV_PAGE_SEL).should('not.exist'); 
-        cy.get(NEXT_PAGE_SEL).should('be.visible'); 
-    }
-
-    checkLastPagePagination() {
-        cy.get(PAGINATION_NAV_SEL).should('be.visible').scrollIntoView();
-        cy.get(PAGE_NUMBER_LINK_SEL).last().click();
-        cy.get(CURRENT_PAGE_SEL).should('be.visible')
-            .and('have.css', 'background-color', 'rgb(84, 180, 53)');
-        cy.get(NEXT_PAGE_SEL).should('not.exist');
-        cy.get(PREV_PAGE_SEL).should('be.visible');
-    }
-
-    clickMiddlePage() {
-        cy.get(PAGE_NUMBER_LINK_SEL).then(($pages) => {
-            const middlePageIndex = 1; 
-            const $targetPage = $pages.eq(middlePageIndex);
-            cy.wrap($targetPage).invoke('text').then((pageText) => {
-                const targetPageNum = parseInt(pageText.trim());
-                cy.wrap($targetPage).click();
-                cy.url().should('include', `/page/${targetPageNum}`);
-                cy.get(PREV_PAGE_SEL).should('be.visible');
-                cy.get(NEXT_PAGE_SEL).should('be.visible');
-                cy.get(CURRENT_PAGE_SEL).should('be.visible')
-                    .and('have.css', 'background-color', 'rgb(84, 180, 53)')
-                    .and('contain.text', targetPageNum.toString());
-            });
-        });
-    }
-
-    goToNextPage() {
-        cy.get(PAGINATION_NAV_SEL).should('be.visible');
-        cy.get(CURRENT_PAGE_SEL).invoke('text').then((currentPage) => {
-            const currentPageNum = parseInt(currentPage.trim())
-            cy.get(NEXT_PAGE_SEL).click();
-            cy.url().should('include', `/page/${currentPageNum + 1}`);
-            cy.get(CURRENT_PAGE_SEL).should('contain.text', (currentPageNum + 1).toString())
-              .and('have.css', 'background-color', 'rgb(84, 180, 53)');
-        });
-    }
-
-    goToPreviousPage() {
-    cy.get(PAGINATION_NAV_SEL).should('be.visible');
-    cy.get(CURRENT_PAGE_SEL).invoke('text').then((currentPage) => {
-        const currentPageNum = parseInt(currentPage.trim());
-        const previousPageNum = currentPageNum - 1;
-        cy.get(PREV_PAGE_SEL).click();
-        if (previousPageNum === 1) {
-            cy.url().should('include', '/shop').and('not.include', '/page/');
-        } else {
-            cy.url().should('include', `/page/${previousPageNum}`);
-        }
-        cy.get(CURRENT_PAGE_SEL).should('contain.text', previousPageNum.toString())
-          .and('have.css', 'background-color', 'rgb(84, 180, 53)');
+  addSelectedProductSoldOut() {
+    this.scrollIntoView(this.product5Selector);
+    this.clickButton(this.product5Selector);
+    this.verifyCurrentUrl('/product/');
+    
+    cy.get(this.addToCartVariationButtonSelector)
+      .should('have.class', 'disabled')
+      .and('have.class', 'wc-variation-selection-needed')
+      .and('contain.text', 'Thêm vào giỏ hàng');
+    
+    this.ifElementExists(this.variationSelectSelector, () => {
+      cy.get(this.variationSelectSelector).select(1);
+      cy.get(this.addToCartVariationButtonSelector).should('have.class', 'disabled');
     });
+  }
+
+  viewProduct() {
+    this.clickFirstButton(this.viewProductSelector);
+    this.verifyCurrentUrl('/product');
+  }
+
+  navigateToCategory(category) {
+    const config = {
+        pottedPlants: {
+        selector: this.pottedPlantsNavSelector,
+        url: '/product-category/all-potted-plants',
+        heading: 'Cây trồng trong chậu'
+        },
+        airPlants: {
+        selector: this.airPlantsNavSelector,
+        url: '/product-category/air-plants',
+        heading: 'Cây trồng trong không khí'
+        },
+        potsAndPlanters: {
+        selector: this.potsAndPlantersNavSelector,
+        url: '/product-category/pots-planters',
+        heading: 'Chậu trồng cây'
+        },
+        careTools: {
+        selector: this.careToolsNavSelector,
+        url: '/product-category/care-tools',
+        heading: 'Dụng cụ chăm sóc'
+        }
+    };
+
+    const { selector, url, heading } = config[category];
+
+    this.hoverElement(this.shopMenuSelector, 150);
+    this.clickButton(selector);
+    this.verifyCurrentUrl(url);
+    this.verifyElementContainsText('h1', heading);
 }
+
+
+  sortByPopularity() {
+    cy.url().then((currentUrl) => {
+      if (currentUrl.includes('/shop') && !currentUrl.includes('orderby=')) {
+        cy.selectByIndex(this.sortSelectSelector, 0);
+        this.verifyCurrentUrl('/');
+      } else {
+        cy.selectByIndex(this.sortSelectSelector, 0);
+        this.verifyCurrentUrl('orderby=popularity');
+      }
+    });
+  }
+
+  sortByRating() {
+    cy.selectByIndex(this.sortSelectSelector, 1);
+    this.verifyCurrentUrl('orderby=rating');
+  }
+
+  sortByNewest() {
+    cy.selectByIndex(this.sortSelectSelector, 2);
+    this.verifyCurrentUrl('orderby=date');
+  }
+
+  sortByPriceLowToHigh() {
+    cy.selectByIndex(this.sortSelectSelector, 3);
+    this.verifyCurrentUrl('orderby=price');
+    
+    cy.get(this.itemProductSelector).then(($products) => {
+      const productPrices = [];
+      $products.each((index, product) => {
+        const $priceElements = Cypress.$(product).find(this.priceSelector);
+        let maxPrice = 0;
+        
+        $priceElements.each((priceIndex, priceElement) => {
+          const priceText = Cypress.$(priceElement).text();
+          const price = this.extractPrice(priceText);
+          if (price > maxPrice) {
+            maxPrice = price;
+          }
+        });
+        
+        if (maxPrice > 0) {
+          productPrices.push(maxPrice);
+        }
+      });
+      
+      for (let i = 1; i < Math.min(4, productPrices.length); i++) {
+        expect(productPrices[i]).to.be.at.least(productPrices[i-1]);
+      }
+    });
+  }
+
+  sortByPriceHighToLow() {
+    cy.selectByIndex(this.sortSelectSelector, 4);
+    this.verifyCurrentUrl('orderby=price-desc');
+    
+    cy.get(this.itemProductSelector).then(($products) => {
+      const productPrices = [];
+      $products.each((index, product) => {
+        const $priceElements = Cypress.$(product).find(this.priceSelector);
+        let maxPrice = 0;
+        
+        $priceElements.each((priceIndex, priceElement) => {
+          const priceText = Cypress.$(priceElement).text();
+          const price = this.extractPrice(priceText);
+          if (price > maxPrice) {
+            maxPrice = price;
+          }
+        });
+        
+        if (maxPrice > 0) {
+          productPrices.push(maxPrice);
+        }
+      });
+      
+      for (let i = 1; i < Math.min(4, productPrices.length); i++) {
+        expect(productPrices[i]).to.be.at.most(productPrices[i-1]);
+      }
+    });
+  }
+
+  checkPaginationDisplay() {
+    this.scrollIntoView(this.paginationNavSelector);
+    this.verifyElementVisible(this.paginationNavSelector);
+    cy.get(this.pageNumbersSelector).should('have.length.at.least', 2);
+    
+    cy.get(this.pageNumberLinkSelector).then(($pages) => {
+      const pageCount = $pages.length;
+      expect(pageCount).to.be.at.least(2);
+    });
+    
+    cy.get(this.currentPageSelector)
+      .should('be.visible')
+      .and('have.css', 'background-color', 'rgb(84, 180, 53)');
+  }
+
+  checkFirstPagePagination() {
+    this.scrollIntoView(this.paginationNavSelector);
+    this.verifyElementVisible(this.paginationNavSelector);
+    cy.get(this.currentPageSelector)
+      .should('be.visible')
+      .and('have.css', 'background-color', 'rgb(84, 180, 53)');
+    cy.get(this.previousPageSelector).should('not.exist');
+    this.verifyElementVisible(this.nextPageSelector);
+  }
+
+  checkLastPagePagination() {
+    this.scrollIntoView(this.paginationNavSelector);
+    this.verifyElementVisible(this.paginationNavSelector);
+    this.clickButton(this.pageNumberLinkSelector + ':last');
+    cy.get(this.currentPageSelector)
+      .should('be.visible')
+      .and('have.css', 'background-color', 'rgb(84, 180, 53)');
+    cy.get(this.nextPageSelector).should('not.exist');
+    this.verifyElementVisible(this.previousPageSelector);
+  }
+
+  clickMiddlePage() {
+    cy.get(this.pageNumberLinkSelector).then(($pages) => {
+      const middlePageIndex = 1;
+      const $targetPage = $pages.eq(middlePageIndex);
+      
+      cy.wrap($targetPage).invoke('text').then((pageText) => {
+        const targetPageNum = parseInt(pageText.trim());
+        cy.wrap($targetPage).click();
+        this.verifyCurrentUrl(`/page/${targetPageNum}`);
+        
+        this.verifyElementVisible(this.previousPageSelector);
+        this.verifyElementVisible(this.nextPageSelector);
+        cy.get(this.currentPageSelector)
+          .should('be.visible')
+          .and('have.css', 'background-color', 'rgb(84, 180, 53)')
+          .and('contain.text', targetPageNum.toString());
+      });
+    });
+  }
+
+  goToNextPage() {
+    this.verifyElementVisible(this.paginationNavSelector);
+    cy.get(this.currentPageSelector).invoke('text').then((currentPage) => {
+      const currentPageNum = parseInt(currentPage.trim());
+      this.clickButton(this.nextPageSelector);
+      this.verifyCurrentUrl(`/page/${currentPageNum + 1}`);
+      cy.get(this.currentPageSelector)
+        .should('contain.text', (currentPageNum + 1).toString())
+        .and('have.css', 'background-color', 'rgb(84, 180, 53)');
+    });
+  }
+
+  goToPreviousPage() {
+    this.verifyElementVisible(this.paginationNavSelector);
+    cy.get(this.currentPageSelector).invoke('text').then((currentPage) => {
+      const currentPageNum = parseInt(currentPage.trim());
+      const previousPageNum = currentPageNum - 1;
+      
+      this.clickButton(this.previousPageSelector);
+      
+      if (previousPageNum === 1) {
+        cy.url().should('include', '/shop').and('not.include', '/page/');
+      } else {
+        this.verifyCurrentUrl(`/page/${previousPageNum}`);
+      }
+      
+      cy.get(this.currentPageSelector)
+        .should('contain.text', previousPageNum.toString())
+        .and('have.css', 'background-color', 'rgb(84, 180, 53)');
+    });
+  }
 }
 
 export default ShopPage;

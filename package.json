@@ -19,7 +19,9 @@
     "test:product": "cypress run --spec 'cypress/e2e/productDetailPage.cy.js'",
     "test:ci": "cypress run --browser chrome --record --key 2b147359-7547-4b1f-b3e5-4293401bcd27",
     "test:parallel": "cypress run --browser chrome --record --key 2b147359-7547-4b1f-b3e5-4293401bcd27 --parallel",
-    "test:dashboard": "cypress run --record --key 2b147359-7547-4b1f-b3e5-4293401bcd27",
+    "test:continue": "cypress run --browser chrome --continue-on-error",
+    "test:no-exit": "cypress run --browser chrome || exit 0",
+    "test:all-continue": "cypress run || true",
     "test:report": "cypress run --reporter mochawesome --reporter-options 'reportDir=cypress/reports,overwrite=false,html=true,json=true'",
     "report:merge": "mochawesome-merge cypress/reports/*.json > cypress/reports/merged-report.json",
     "report:generate": "marge cypress/reports/merged-report.json --reportDir cypress/reports --inline",
@@ -35,6 +37,7 @@
   "type": "commonjs",
   "devDependencies": {
     "cypress": "^14.5.3",
+    "cypress-mochawesome-reporter": "^3.8.2",
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.3.0",
     "mochawesome-report-generator": "^6.2.0",

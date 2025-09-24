@@ -1,36 +1,46 @@
-const USERNAME_MENU_SEL = '#menu-item-1171';
-const USER_SUBMENU_SEL = '#menu-item-1171 ul';
-const MY_ACCOUNT_SEL = '#menu-item-1196';
-const LOGOUT_MENU_SEL = '#menu-item-1175';
+import BasePage from './BasePage.js';
 
-class AccountMenu {
+class AccountMenu extends BasePage {
+  constructor() {
+    super();
+    this.loginMenuSelector = '#menu-item-1194';
+    this.usernameMenuSelector = '#menu-item-1171';
+    this.userSubmenuSelector = '#menu-item-1171 ul';
+    this.myAccountSelector = '#menu-item-1196';
+    this.logoutMenuSelector = '#menu-item-1175';
+    this.accountHeadingSelector = 'h2';
+    this.myAccountText = 'Tài khoản của tôi';
+    this.logoutText = 'Đăng xuất';
+    this.accountPageHeadingText = 'Tài khoản của bạn';
+    this.homeUrl = 'http://planshop.com/';
+    this.myAccountPath = '/my-account';
+  }
 
   verifyUsernameMenu() {
-    cy.get(USERNAME_MENU_SEL).realHover({timeout: 150});
-    cy.get(USER_SUBMENU_SEL).should('be.visible')
-    cy.get(MY_ACCOUNT_SEL).should('be.visible').and('contain.text', 'Tài khoản của tôi');
-    cy.get(LOGOUT_MENU_SEL).should('be.visible').and('contain.text', 'Đăng xuất');
+    this.hoverElement(this.usernameMenuSelector);
+    this.verifyElementVisible(this.userSubmenuSelector);
+    this.verifyElementContainsText(this.myAccountSelector, this.myAccountText);
+    this.verifyElementContainsText(this.logoutMenuSelector, this.logoutText);
   }
 
   clickMyAccountMenu() {
-    cy.get(USERNAME_MENU_SEL).realHover({timeout: 150});
-    cy.get(USER_SUBMENU_SEL).should('be.visible')
-    cy.get(MY_ACCOUNT_SEL).click();
-    cy.url().should('include', '/my-account');
-    cy.get('h2')
-      .should('be.visible')
-      .and('contain.text', 'Tài khoản của bạn');
+    this.hoverElement(this.usernameMenuSelector);
+    this.verifyElementVisible(this.userSubmenuSelector);
+    this.clickButton(this.myAccountSelector);
+    this.verifyCurrentUrl(this.myAccountPath);
+    this.verifyElementContainsText(this.accountHeadingSelector, this.accountPageHeadingText);
   }
 
   clickLogoutMenu() {
-    cy.get(USERNAME_MENU_SEL).realHover({timeout: 150});
-    cy.get(USER_SUBMENU_SEL).should('be.visible')
-    cy.get(LOGOUT_MENU_SEL).click();
+    this.hoverElement(this.usernameMenuSelector);
+    this.verifyElementVisible(this.userSubmenuSelector);
+    this.clickButton(this.logoutMenuSelector);
   }
 
   verifyLogoutSuccess() {
-    cy.url().should('eq', 'http://planshop.com/');
-    cy.get(USERNAME_MENU_SEL).should('not.exist');
+    cy.url().should('eq', this.homeUrl);
+    cy.get(this.usernameMenuSelector).should('not.exist');
+    this.verifyElementContainsText(this.loginMenuSelector, 'Đăng nhập');
   }
 }
 

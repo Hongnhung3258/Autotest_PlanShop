@@ -24,14 +24,14 @@ describe('Login Functionality Tests', () => {
   it('PS_003: Đăng nhập với user là khách hàng (đã có tài khoản)', () => {
     cy.fixture('users').then((users) => {
       loginPage.login(users.validCustomer.email, users.validCustomer.password);
-      loginPage. checkCustomerLoginIntegration('customer');
+      loginPage.checkLoginIntegration('customer');
     });
   });
 
   it('PS_004: Đăng nhập với user là admin', () => {
     cy.fixture('users').then((users) => {
       loginPage.login(users.validAdmin.email, users.validAdmin.password);
-      loginPage.checkAdminLoginIntegration('admin');
+      loginPage.checkLoginIntegration('admin');
       loginPage.verifyAdminToolbar();
       accountMenu.verifyUsernameMenu();
       loginPage.verifyAdminCanAccessProductEdit(); 
@@ -132,7 +132,7 @@ describe('Login Functionality Tests', () => {
   it('PS_022: Kiểm tra nhập đúng username/email và password', () => {
     cy.fixture('users').then((users) => {
       loginPage.login(users.validCustomer.email, users.validCustomer.password);
-      loginPage.checkLoginSuccess('customer');
+      loginPage.checkLoginIntegration('customer');
     });
   });
 

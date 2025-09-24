@@ -35,87 +35,44 @@ Cypress.Commands.add('closePopup', () => {
   });
 });
 
-// SỬA checkInvalidField - KHÔNG THROW ERROR
 Cypress.Commands.add('checkInvalidField', (fieldSelector, errorMsg) => {
-  cy.get('body').then($body => {
-    if ($body.find(fieldSelector).length === 0) {
-      cy.task('recordFailure', { 
-        type: 'element_not_found', 
-        selector: fieldSelector,
-        action: 'checkInvalidField'
-      });
-      return;
-    }
+  cy.get(fieldSelector).should('exist').then($input => {
+    const input = $input[0];
+    const normalizeMessage = (msg) => {
+      return msg
+        .trim()
+        .replace(/\s+/g, ' ')
+        .replace(/['"]/g, '')
+        .replace(/\*\*/g, '')
+        .replace(/[.,!?]/g, '');
+    };
+    const normalizedActual = normalizeMessage(input.validationMessage);
+    const normalizedExpected = normalizeMessage(errorMsg);
     
-    cy.get(fieldSelector).then($input => {
-      try {
-        const input = $input[0];
-        const normalizeMessage = (msg) => {
-          return msg
-            .trim()
-            .replace(/\s+/g, ' ')
-            .replace(/['"]/g, '')
-            .replace(/\*\*/g, '')
-            .replace(/[.,!?]/g, '');
-        };
-        const normalizedActual = normalizeMessage(input.validationMessage);
-        const normalizedExpected = normalizeMessage(errorMsg);
-        expect(normalizedActual).to.equal(normalizedExpected);
-        
-        cy.get(fieldSelector)
-          .should('have.focus')
-          .should('have.attr', 'required');
-      } catch (error) {
-        cy.log(`⚠️ checkInvalidField failed: ${error.message}`);
-        cy.task('recordFailure', { 
-          type: 'assertion_failure', 
-          selector: fieldSelector, 
-          expected: errorMsg,
-          error: error.message 
-        });
-      }
-    });
+    expect(normalizedActual).to.equal(normalizedExpected);
+    
+    cy.get(fieldSelector)
+      .should('have.focus')
+      .should('have.attr', 'required');
   });
 });
 
-// SỬA checkNotice - KHÔNG THROW ERROR
 Cypress.Commands.add('checkNotice', (fieldSelector, errorMsg) => {
-  cy.get('body').then($body => {
-    if ($body.find(fieldSelector).length === 0) {
-      cy.task('recordFailure', { 
-        type: 'element_not_found', 
-        selector: fieldSelector,
-        action: 'checkNotice'
-      });
-      return;
-    }
-    
-    cy.get(fieldSelector, { timeout: 10000 })
-      .should('be.visible')
-      .then($element => {
-        try {
-          const normalizeMessage = (msg) => {
-            return msg
-              .trim()
-              .replace(/\s+/g, ' ')
-              .replace(/(^\s|\s$)/g, '')
-              .replace(/\*\*/g, '');
-          };
-          const normalizedActual = normalizeMessage($element.text());
-          const normalizedExpected = normalizeMessage(errorMsg);
-          expect(normalizedActual).to.include(normalizedExpected);
-        } catch (error) {
-          cy.log(`⚠️ checkNotice failed: ${error.message}`);
-          cy.task('recordFailure', { 
-            type: 'assertion_failure', 
-            selector: fieldSelector, 
-            expected: errorMsg,
-            actual: $element.text(),
-            error: error.message 
-          });
-        }
-      });
-  });
+  cy.get(fieldSelector, { timeout: 10000 })
+    .should('be.visible')
+    .should('exist')
+    .then($element => {
+      const normalizeMessage = (msg) => {
+        return msg
+          .trim()
+          .replace(/\s+/g, ' ')
+          .replace(/(^\s|\s$)/g, '')
+          .replace(/\*\*/g, '');
+      };
+      const normalizedActual = normalizeMessage($element.text());
+      const normalizedExpected = normalizeMessage(errorMsg);
+      expect(normalizedActual).to.include(normalizedExpected);
+    });
 });
 
 Cypress.Commands.add('pasteIntoField', (fieldSelector, value) => {
@@ -138,20 +95,9 @@ Cypress.Commands.add('checkLinkColorAfterClick', (selector, linkText) => {
   
   cy.get(selector).contains(linkText).parent('li').should('have.class', 'current-menu-item')
     .find('.menu-link').then($link => {
-      try {
-        const color = $link.css('color');
-        const hexColor = rgbToHex(color);
-        expect(hexColor).to.equal('#54b435');
-      } catch (error) {
-        cy.log(`⚠️ checkLinkColorAfterClick failed: ${error.message}`);
-        cy.task('recordFailure', {
-          type: 'assertion_failure',
-          selector: selector,
-          expected: '#54b435',
-          actual: rgbToHex($link.css('color')),
-          error: error.message
-        });
-      }
+      const color = $link.css('color');
+      const hexColor = rgbToHex(color);
+      expect(hexColor).to.equal('#54b435');
     });
 });
 
@@ -173,22 +119,9 @@ Cypress.Commands.add('selectByIndex', (selector, indexToSelect) => {
         if (indexToSelect < $options.length) {
           cy.wrap($select).select($options.eq(indexToSelect).val());
         } else {
-          cy.log('Index vượt quá số lượng options có sẵn');
-          cy.task('recordFailure', {
-            type: 'index_out_of_bounds',
-            selector: selector,
-            index: indexToSelect,
-            available: $options.length
-          });
+          throw new Error(`Index ${indexToSelect} is out of bounds. Available options: ${$options.length}`);
         }
       });
     }
   });
 });
-
-Cypress.Commands.add('recordFailure', (failureData) => {
-  return cy.task('recordFailure', failureData).then(() => {
-    cy.log(`Failure recorded: ${failureData.type}`);
-  });
-});
-

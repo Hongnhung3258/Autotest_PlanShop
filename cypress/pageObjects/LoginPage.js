@@ -1,65 +1,69 @@
-const USERNAME_TXT_BX_SEL =  'input[name="xoo-el-username"]';
-const PASSWORD_TXT_BX_SEL =  'input[name="xoo-el-password"]';
-const SHOW_PASSWORD_BTN_SEL =  '.xoo-aff-pwtog-show';
-const HIDE_PASSWORD_BTN_SEL =  '.xoo-aff-pwtog-hide';
-const REMEMBER_ME_CHK_BOX_SEL =  'input[name="xoo-el-rememberme"]';
-const FORGOT_PASSWORD_LINK_SEL =  '.xoo-el-lostpw-tgr';
-const LOGIN_BTN_SEL =  '.xoo-el-login-btn';
-const LOGIN_HEADER_SEL = '#menu-item-1194'; 
-const POPUP_SEL = '.xoo-el-form-container.xoo-el-form-popup';
-const ADMIN_TOOLBAR_SEL = '#wpadminbar';
-const USERNAME_MENU_SEL = '#wp-admin-bar-my-account .ab-item';
-const ADMIN_PRODUCT_SEL = '#wp-admin-bar-new-product';
-class LoginPage {
-  getForgotPasswordSelector() {
-    return 'div[data-section="lostpw"]';
-  }
+import BasePage from './BasePage';
 
-  clickLoginMenu(){
-    cy.get(LOGIN_HEADER_SEL).click();
-    cy.get(POPUP_SEL).should('be.visible');
+class LoginPage extends BasePage {
+  constructor() {
+    super();
+    this.loginHeaderSelector = '#menu-item-1194';
+    this.loginPopupSelector = '.xoo-el-form-container.xoo-el-form-popup';
+    this.headerTabSelector = '.xoo-el-header li';
+    this.usernameInputSelector = 'input[name="xoo-el-username"]';
+    this.passwordInputSelector = 'input[name="xoo-el-password"]';
+    this.loginButtonSelector = '.xoo-el-login-btn';
+    this.rememberMeCheckboxSelector = 'input[name="xoo-el-rememberme"]';
+    this.textRememberMeSelector = 'label.xoo-el-form-label span';
+    this.forgotPasswordLinkSelector = '.xoo-el-lostpw-tgr';
+    this.showPasswordButtonSelector = '.xoo-aff-pwtog-show';
+    this.hidePasswordButtonSelector = '.xoo-aff-pwtog-hide';
+    this.adminToolbarSelector = '#wpadminbar';
+    this.adminUsernameMenuSelector = '#menu-item-1171';
+    this.adminNewSelector = '#wp-admin-bar-new-content';
+    this.adminNewProductSelector = '#wp-admin-bar-new-product';
+    this.errorMessageSelector = '.xoo-el-notice .xoo-el-notice-error';
+    this.successMessageSelector = '.xoo-el-notice .xoo-el-notice-success';
+  }
+  
+  getForgotPasswordSelector() { return 'div[data-section="lostpw"]'; }
+
+  clickLoginMenu() {
+    this.clickButton(this.loginHeaderSelector);
+    this.verifyElementVisible(this.loginPopupSelector);
   }
 
   checkLoginPopup() {
-    cy.get(POPUP_SEL).should('be.visible');
+    this.verifyElementVisible(this.loginPopupSelector);
   }
 
   checkMenuHighlight() {
-    cy.get(LOGIN_HEADER_SEL).should('have.class', 'current-menu-item');
+    cy.get(this.loginHeaderSelector).should('have.class', 'current-menu-item');
   }
 
   login(email, password) {
-    cy.get(POPUP_SEL).should('be.visible');
-    if (email) cy.get(USERNAME_TXT_BX_SEL).type(email);
-    if (password) cy.get(PASSWORD_TXT_BX_SEL).type(password);
-    cy.get(LOGIN_BTN_SEL).click();
+    this.verifyElementVisible(this.loginPopupSelector);
+    this.clearAndType(this.usernameInputSelector, email);
+    this.clearAndType(this.passwordInputSelector, password);
+    this.clickButton(this.loginButtonSelector);
   }
 
-  checkCustomerLoginIntegration(role) {
+  checkLoginIntegration(role) {
     if (role === 'customer') {
-      cy.url().should('include', '/shop');
-      cy.get(LOGIN_HEADER_SEL).should('not.exist');
-      cy.get(USERNAME_MENU_SEL).should('be.visible');
-    }
-  }
-
-  checkAdminLoginIntegration(role) {
-    if (role === 'admin') {
-      cy.url().should('include', '/shop');
-      cy.get(ADMIN_TOOLBAR_SEL).should('be.visible');
-      cy.get(USERNAME_MENU_SEL).should('be.visible');
+      this.verifyCurrentUrl('/shop');
+      cy.get(this.loginHeaderSelector).should('not.exist');
+      this.verifyElementVisible(this.adminUsernameMenuSelector);
+    } else if (role === 'admin') {
+      this.verifyCurrentUrl('/shop');
+      this.verifyElementVisible(this.adminToolbarSelector);
+      this.verifyElementVisible(this.adminUsernameMenuSelector);
     }
   }
 
   verifyAdminCanAccessProductEdit() {
-    cy.get(ADMIN_TOOLBAR_SEL).contains('Tạo mới').realHover({timeout: 50});
-    cy.get(ADMIN_PRODUCT_SEL).should('be.visible').click();
-    cy.url().should('include', '/wp-admin/post-new.php?post_type=product');
+    this.hoverElement(this.adminNewSelector, 50);
+    this.verifyElementVisible(this.adminNewProductSelector);
   }
 
   verifyAdminToolbar() {
-    cy.get(ADMIN_TOOLBAR_SEL).should('be.visible');
-    cy.get(ADMIN_TOOLBAR_SEL).within(() => {
+    this.verifyElementVisible(this.adminToolbarSelector);
+    cy.get(this.adminToolbarSelector).within(() => {
       cy.contains('Plant Shop').should('be.visible');
       cy.contains('Tạo mới').should('be.visible');
       cy.contains('Sửa với Elementor').should('be.visible');
@@ -67,117 +71,113 @@ class LoginPage {
   }
 
   checkLoginLayout() {
-    cy.get(POPUP_SEL).should('be.visible');
-    cy.get('.xoo-el-header li').contains('Đăng nhập tài khoản').should('be.visible');
-    cy.get(USERNAME_TXT_BX_SEL).should('be.visible');
-    cy.get(PASSWORD_TXT_BX_SEL).should('be.visible');
-    cy.get('.xoo-aff-pw-toggle').should('be.visible');
-    cy.get(REMEMBER_ME_CHK_BOX_SEL).should('be.visible');
-    cy.get(REMEMBER_ME_CHK_BOX_SEL)
-      .should('be.visible')
-      .and('have.attr', 'type', 'checkbox')
+    this.verifyElementVisible(this.loginPopupSelector);
+    this.verifyElementContainsText(this.headerTabSelector, 'Đăng nhập tài khoản');
+    this.verifyElementVisible(this.usernameInputSelector);
+    this.verifyElementVisible(this.passwordInputSelector);
+    this.verifyElementVisible('.xoo-aff-pw-toggle');
+    this.verifyElementVisible(this.rememberMeCheckboxSelector);
+    
+    cy.get(this.rememberMeCheckboxSelector)
+      .should('have.attr', 'type', 'checkbox')
       .and('have.attr', 'value', 'forever');
-    cy.get('label.xoo-el-form-label span')
-      .should('be.visible')
-      .and('contain.text', 'Nhớ mật khẩu');
-    cy.get(FORGOT_PASSWORD_LINK_SEL)
-      .should('be.visible')
-      .and('contain.text', 'Quên mật khẩu?')
-      .and('have.attr', 'href', '#');
-    cy.get(LOGIN_BTN_SEL).should('be.visible');
+    
+    this.verifyElementContainsText(this.textRememberMeSelector, 'Nhớ mật khẩu');
+    this.verifyElementContainsText(this.forgotPasswordLinkSelector, 'Quên mật khẩu?');
+    this.verifyElementVisible(this.loginButtonSelector);
   }
 
   hoverLoginButton() {
-    cy.get(POPUP_SEL).should('be.visible');
-    cy.get(LOGIN_BTN_SEL).realHover({timeout:150});
-    cy.get(LOGIN_BTN_SEL).should('have.css', 'background-color', 'rgb(0, 0, 0)');
+    this.verifyElementVisible(this.loginPopupSelector);
+    this.hoverElement(this.loginButtonSelector, 150);
+    cy.get(this.loginButtonSelector).should('have.css', 'background-color', 'rgb(0, 0, 0)');
   }
 
   hoverForgotPassword() {
-    cy.get(POPUP_SEL).should('be.visible');
-    cy.get(REMEMBER_ME_CHK_BOX_SEL).realHover({timeout: 150});
-    cy.get(FORGOT_PASSWORD_LINK_SEL).should('have.css', 'color', 'rgb(55,146,55');
+    this.verifyElementVisible(this.loginPopupSelector);
+    this.hoverElement(this.rememberMeCheckboxSelector, 150);
+    cy.get(this.forgotPasswordLinkSelector).should('have.css', 'color', 'rgb(55,146,55');
   }
 
   checkUsernameDefault() {
-    cy.get(POPUP_SEL).should('be.visible');
-    cy.get(USERNAME_TXT_BX_SEL).should('have.value', '');
-    cy.get(USERNAME_TXT_BX_SEL).should('have.attr', 'placeholder', 'Username / Email');
+    this.verifyElementVisible(this.loginPopupSelector);
+    cy.get(this.usernameInputSelector).should('have.value', '');
+    cy.get(this.usernameInputSelector).should('have.attr', 'placeholder', 'Username / Email');
   }
 
-  checkInvalidFieldUsername(errorMsg){
-    cy.checkInvalidField(USERNAME_TXT_BX_SEL, errorMsg);
+  checkInvalidFieldUsername(errorMsg) {
+    cy.checkInvalidField(this.usernameInputSelector, errorMsg);
   }
 
   checkPasswordDefault() {
-    cy.get(POPUP_SEL).should('be.visible');
-    cy.get(PASSWORD_TXT_BX_SEL).should('have.value', '');
-    cy.get(PASSWORD_TXT_BX_SEL).should('have.attr', 'placeholder', 'Password');
+    this.verifyElementVisible(this.loginPopupSelector);
+    cy.get(this.passwordInputSelector).should('have.value', '');
+    cy.get(this.passwordInputSelector).should('have.attr', 'placeholder', 'Password');
     cy.get('.xoo-aff-pwtog-show .fa-eye').should('be.visible');
   }
 
-  checkInvalidFieldPassword(errorMsg){
-    cy.checkInvalidField(PASSWORD_TXT_BX_SEL, errorMsg);
+  checkInvalidFieldPassword(errorMsg) {
+    cy.checkInvalidField(this.passwordInputSelector, errorMsg);
   }
 
   checkPasswordMasked() {
-    cy.get(POPUP_SEL).should('be.visible');
-    cy.get(PASSWORD_TXT_BX_SEL).should('have.attr', 'type', 'password');
+    this.verifyElementVisible(this.loginPopupSelector);
+    cy.get(this.passwordInputSelector).should('have.attr', 'type', 'password');
     cy.task('log', 'Password field is masked.');
   }
 
   togglePasswordVisibility() {
-    cy.get(POPUP_SEL).should('be.visible');
-    cy.get(PASSWORD_TXT_BX_SEL).clear().type('TestPassword123');
+    this.verifyElementVisible(this.loginPopupSelector);
+    this.clearAndType(this.passwordInputSelector, 'TestPassword123');
     cy.get('.xoo-el-password_cont').within(() => {
-      cy.get(SHOW_PASSWORD_BTN_SEL).click({ force: true });
-      cy.get(PASSWORD_TXT_BX_SEL).should('have.attr', 'type', 'text');
+      cy.get(this.showPasswordButtonSelector).click({ force: true });
+      cy.get(this.passwordInputSelector).should('have.attr', 'type', 'text');
       cy.task('log', 'Password shown');
     });
+    
     cy.get('.xoo-el-password_cont').within(() => {
-      cy.get(HIDE_PASSWORD_BTN_SEL).click({ force: true });
-      cy.get(PASSWORD_TXT_BX_SEL).should('have.attr', 'type', 'password');
+      cy.get(this.hidePasswordButtonSelector).click({ force: true });
+      cy.get(this.passwordInputSelector).should('have.attr', 'type', 'password');
       cy.task('log', 'Password hidden');
     });
   }
 
   pasteIntoFieldUsername(value) {
-    cy.get(POPUP_SEL).should('be.visible');
-    cy.pasteIntoField(USERNAME_TXT_BX_SEL, value);
+    this.verifyElementVisible(this.loginPopupSelector);
+    cy.pasteIntoField(this.usernameInputSelector, value);
   }
 
   pasteIntoFieldPassword(value) {
-    cy.get(POPUP_SEL).should('be.visible');
-    cy.pasteIntoField(PASSWORD_TXT_BX_SEL, value);
+    this.verifyElementVisible(this.loginPopupSelector);
+    cy.pasteIntoField(this.passwordInputSelector, value);
   }
 
-  checkNoticeError(errorMsg){
-    cy.checkNotice('.xoo-el-notice .xoo-el-notice-error', errorMsg);
+  checkNoticeError(errorMsg) {
+    cy.checkNotice(this.errorMessageSelector, errorMsg);
   }
 
-  checkNoticeSucc(errorMsg){
-    cy.checkNotice('.xoo-el-notice .xoo-el-notice-success', errorMsg);
+  checkNoticeSucc(errorMsg) {
+    cy.checkNotice(this.successMessageSelector, errorMsg);
   }
 
   checkRememberMe() {
-    cy.get(POPUP_SEL).should('be.visible');
-    cy.get(REMEMBER_ME_CHK_BOX_SEL).check();
-    cy.get(REMEMBER_ME_CHK_BOX_SEL).should('be.checked');
-    
+    this.verifyElementVisible(this.loginPopupSelector);
+    this.checkCheckbox(this.rememberMeCheckboxSelector);
+    cy.get(this.rememberMeCheckboxSelector).should('be.checked');
   }
 
   checkNoRememberMe() {
-    cy.get(POPUP_SEL).should('be.visible');
-    cy.get(REMEMBER_ME_CHK_BOX_SEL).should('not.be.checked');
+    this.verifyElementVisible(this.loginPopupSelector);
+    cy.get(this.rememberMeCheckboxSelector).should('not.be.checked');
   }
 
   clickForgotPassword() {
-    cy.get(POPUP_SEL).should('be.visible');
-    cy.get(FORGOT_PASSWORD_LINK_SEL).contains('Quên mật khẩu?').click();
+    this.verifyElementVisible(this.loginPopupSelector);
+    cy.get(this.forgotPasswordLinkSelector).contains('Quên mật khẩu?').click();
   }
 
   checkForgotPasswordPage() {
-    cy.get(this.getForgotPasswordSelector()).should('be.visible');
+    this.verifyElementVisible(this.getForgotPasswordSelector());
   }
 }
 

@@ -29,9 +29,8 @@ describe('Product Details Tests', () => {
         loginPage.clickLoginMenu();
         cy.fixture('users').then((users) => {
             loginPage.login(users.cartUser.email, users.cartUser.password);
+            productDetail.verifyAllTabsWhenLoggedIn();
         });
-        
-        productDetail.verifyAllTabsWhenLoggedIn();
     });
 
     it('PS_118: Kiểm tra viết đánh giá', () => {

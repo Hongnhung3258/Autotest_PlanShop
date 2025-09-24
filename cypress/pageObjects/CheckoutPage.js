@@ -1,169 +1,193 @@
-const VALIDATION_ERROR_SEL = '.woocommerce-error, .woocommerce-invalid';
-const CHECKOUT_PAGE_SEL = '#post-217';
-const CUSTOMER_DETAILS_SEL = '#customer_details';
-const ENTER_COUPON_LINK_SEL = '.woocommerce-form-coupon-toggle a';
-const COUPON_FORM_SEL = '.woocommerce-form-coupon-toggle';
+import BasePage from './BasePage';
 
-// Customer details
-const BILLING_SEL = '.woocommerce-billing-fields';
-const BILLING_NAME_SEL = '#billing_last_name_field';
-const BILLING_PHONE_SEL = '#billing_phone_field';
-const BILLING_EMAIL_SEL = '#billing_email_field';
-const BILLING_STATE_SEL = '#billing_state';
-const BILLING_CITY_SEL = '#billing_city';
-const BILLING_ADDRESS_SEL = '#billing_address_1_field';
-const ORDER_NOTES_SEL = '#order_comments';
+class CheckoutPage extends BasePage {
+    constructor() {
+        super();
+        
+        // Page selectors
+        this.checkoutPageSelector = '#post-217';
+        this.validationErrorSelector = '.woocommerce-error, .woocommerce-invalid';
+        this.customerDetailsSelector = '#customer_details';
+        this.orderReviewSelector = '#order_review';
+        this.couponFormSelector = '.woocommerce-form-coupon-toggle';
+        this.enterCouponLinkSelector = '.woocommerce-form-coupon-toggle a';
+        
+        // Billing information selectors
+        this.billingSelector = '.woocommerce-billing-fields';
+        this.billingNameFieldSelector = '#billing_last_name_field';
+        this.billingPhoneFieldSelector = '#billing_phone_field';
+        this.billingEmailFieldSelector = '#billing_email_field';
+        this.billingStateSelector = '#billing_state';
+        this.billingCitySelector = '#billing_city';
+        this.billingAddressFieldSelector = '#billing_address_1_field';
+        this.orderNotesSelector = '#order_comments';
+        
+        // Input selectors
+        this.inputNameSelector = '#billing_last_name';
+        this.inputPhoneSelector = '#billing_phone';
+        this.inputEmailSelector = '#billing_email';
+        this.inputAddressSelector = '#billing_address_1';
+        
+        // Shipping selectors
+        this.shipToDifferentCheckboxSelector = '#ship-to-different-address-checkbox';
+        this.shipToDifferentTitleSelector = '#ship-to-different-address';
+        this.shippingAddressFieldsSelector = '.shipping_address';
+        this.shippingNameFieldSelector = '#shipping_last_name_field';
+        this.shippingPhoneFieldSelector = '#shipping_phone_field';
+        this.shippingStateSelector = '#shipping_state';
+        this.shippingCitySelector = '#shipping_city';
+        this.shippingAddressFieldSelector = '#shipping_address_1_field';
+        
+        // Order review selectors
+        this.orderReviewTitleSelector = '#order_review_heading';
+        this.orderTableSelector = '.woocommerce-checkout-review-order-table';
+        this.productRowsSelector = '.cart_item';
+        this.subtotalRowSelector = '.cart-subtotal';
+        this.shippingCostRowSelector = '.woocommerce-shipping-totals';
+        this.totalSelector = '.order-total';
+        
+        // Payment selectors
+        this.paymentSectionSelector = '#payment';
+        this.bankTransferSelector = '#payment_method_bacs';
+        this.codPaymentSelector = '#payment_method_cod';
+        this.momoPaymentSelector = '#payment_method_momo';
+        this.vietqrPaymentSelector = '#payment_method_vietqr';
+        
+        // Terms and order selectors
+        this.termsCheckboxSelector = '#terms';
+        this.termsTextSelector = '.woocommerce-terms-and-conditions-checkbox-text';
+        this.privacyPolicyLinkSelector = '.woocommerce-privacy-policy-link';
+        this.placeOrderBtnSelector = '#place_order';
+    }
 
-const INPUT_NAME_SEL = '#billing_last_name';
-const INPUT_PHONE_SEL = '#billing_phone';
-const INPUT_EMAIL_SEL = '#billing_email';
-const INPUT_ADDRESS_SEL = '#billing_address_1';
-
-// Shipping information selectors
-const SHIP_TO_DIFFERENT_CHECKBOX_SEL = '#ship-to-different-address-checkbox';
-const SHIP_TO_DIFFERENT_TITLE_SEL = '#ship-to-different-address';
-const SHIPPING_ADDRESS_FIELDS_SEL = '.shipping_address';
-const SHIPPING_NAME_SEL = '#shipping_last_name_field';
-const SHIPPING_PHONE_SEL = '#shipping_phone_field';
-const SHIPPING_STATE_SEL = '#shipping_state';
-const SHIPPING_CITY_SEL = '#shipping_city';
-const SHIPPING_ADDRESS_SEL = '#shipping_address_1_field';
-
-// Order review section selectors
-const ORDER_REVIEW_SEL = '#order_review';
-const ORDER_REVIEW_TITLE_SEL = '#order_review_heading';
-const ORDER_TABLE_SEL = '.woocommerce-checkout-review-order-table';
-const PRODUCT_ROWS_SEL = '.cart_item';
-const SUBTOTAL_ROW_SEL = '.cart-subtotal';
-const SHIPPING_COST_ROW_SEL = '.woocommerce-shipping-totals';
-const TOTAL_SEL = '.order-total';
-
-const PAYMENT_SECTION_SEL = '#payment';
-const BANK_TRANSFER_SEL = '#payment_method_bacs';
-const COD_PAYMENT_SEL = '#payment_method_cod';
-const MOMO_PAYMENT_SEL = '#payment_method_momo';
-const VIETQR_PAYMENT_SEL = '#payment_method_vietqr';
-
-const TERMS_CHECKBOX_SEL = '#terms';
-const TERMS_TEXT_SEL = '.woocommerce-terms-and-conditions-checkbox-text';
-const PRIVACY_POLICY_LINK_SEL = '.woocommerce-privacy-policy-link';
-const PLACE_ORDER_BTN_SEL = '#place_order';
-
-
-class CheckoutPage {
     verifyCheckoutPage() {
-        cy.url().should('include', '/checkout');
-        cy.get(CHECKOUT_PAGE_SEL).should('be.visible');
-        cy.get('h1').contains('Thanh toán');
-        cy.get(COUPON_FORM_SEL).should('be.visible').contains('Bạn có mã ưu đãi?');
-        cy.get(ENTER_COUPON_LINK_SEL).should('be.visible').contains('Ấn vào đây để nhập mã');
-        cy.get(CUSTOMER_DETAILS_SEL).should('be.visible');
-        cy.get(ORDER_REVIEW_SEL).should('be.visible');
+        this.verifyCurrentUrl('/checkout');
+        this.verifyElementVisible(this.checkoutPageSelector);
+        this.verifyElementContainsText('h1', 'Thanh toán');
+        this.verifyElementContainsText(this.couponFormSelector, 'Bạn có mã ưu đãi?');
+        this.verifyElementContainsText(this.enterCouponLinkSelector, 'Ấn vào đây để nhập mã');
+        this.verifyElementVisible(this.customerDetailsSelector);
+        this.verifyElementVisible(this.orderReviewSelector);
     }
 
     verifyBillingInformationLayout() {
-        cy.get(BILLING_SEL).should('be.visible').within(() => {
-            cy.get('h3').contains('Thông tin thanh toán');
-            cy.get(BILLING_NAME_SEL).should('be.visible').contains('Họ và tên');
-            cy.get(BILLING_PHONE_SEL).should('be.visible').contains('Số điện thoại');
-            cy.get(BILLING_EMAIL_SEL).should('be.visible').contains('Địa chỉ email');
-            cy.get(BILLING_STATE_SEL).should('be.visible');
-            cy.get(BILLING_CITY_SEL).should('be.visible');
-            cy.get(BILLING_ADDRESS_SEL).should('be.visible').contains('Địa chỉ');
+        this.verifyElementVisible(this.billingSelector);
+        
+        cy.get(this.billingSelector).within(() => {
+        this.verifyElementContainsText('h3', 'Thông tin thanh toán');
+        this.verifyElementContainsText(this.billingNameFieldSelector, 'Họ và tên');
+        this.verifyElementContainsText(this.billingPhoneFieldSelector, 'Số điện thoại');
+        this.verifyElementContainsText(this.billingEmailFieldSelector, 'Địa chỉ email');
+        this.verifyElementVisible(this.billingStateSelector);
+        this.verifyElementVisible(this.billingCitySelector);
+        this.verifyElementContainsText(this.billingAddressFieldSelector, 'Địa chỉ');
         });
-        cy.get(SHIP_TO_DIFFERENT_CHECKBOX_SEL).should('be.visible')
-          .and('have.attr', 'type', 'checkbox')
-          .and('be.checked');
-        cy.get(SHIP_TO_DIFFERENT_TITLE_SEL).contains('Giao hàng đến một địa chỉ khác?');
-        cy.get(ORDER_NOTES_SEL).should('be.visible');
-         
+        
+        cy.get(this.shipToDifferentCheckboxSelector)
+        .should('be.visible')
+        .and('have.attr', 'type', 'checkbox')
+        .and('be.checked');
+        
+        this.verifyElementContainsText(this.shipToDifferentTitleSelector, 'Giao hàng đến một địa chỉ khác?');
+        this.verifyElementVisible(this.orderNotesSelector);
     }
 
     verifyOrderReviewLayout() {
-        cy.get(ORDER_REVIEW_TITLE_SEL).should('contain.text', 'Đơn hàng của bạn');
-        cy.get(ORDER_REVIEW_SEL).should('be.visible').within(() => {
-            cy.get(ORDER_TABLE_SEL).should('be.visible').within(() => {
-                cy.get('thead th').should('contain.text', 'Sản phẩm');
-                cy.get('thead th').should('contain.text', 'Tạm tính');
-                cy.get(PRODUCT_ROWS_SEL).should('have.length.at.least', 1);
-                cy.get(SUBTOTAL_ROW_SEL).should('be.visible').contains('Tạm tính');
-                cy.get(SHIPPING_COST_ROW_SEL).should('be.visible').contains('Vận chuyển');
-                cy.get(TOTAL_SEL).should('be.visible').contains('Tổng');
-            });
+        this.verifyElementContainsText(this.orderReviewTitleSelector, 'Đơn hàng của bạn');
+        this.verifyElementVisible(this.orderReviewSelector);
+        
+        cy.get(this.orderReviewSelector).within(() => {
+        this.verifyElementVisible(this.orderTableSelector);
+        
+        cy.get(this.orderTableSelector).within(() => {
+            this.verifyElementContainsText('thead th', 'Sản phẩm');
+            this.verifyElementContainsText('thead th', 'Tạm tính');
+            cy.get(this.productRowsSelector).should('have.length.at.least', 1);
+            this.verifyElementContainsText(this.subtotalRowSelector, 'Tạm tính');
+            this.verifyElementContainsText(this.shippingCostRowSelector, 'Vận chuyển');
+            this.verifyElementContainsText(this.totalSelector, 'Tổng');
+        });
+        
+        this.verifyElementVisible(this.paymentSectionSelector);
+        
+        cy.get(this.paymentSectionSelector).within(() => {
+            this.verifyElementVisible(this.bankTransferSelector);
+            this.verifyElementVisible(this.codPaymentSelector);
+            this.verifyElementVisible(this.momoPaymentSelector);
+            this.verifyElementVisible(this.vietqrPaymentSelector);
+        });
+
+        this.verifyElementVisible(this.privacyPolicyLinkSelector);
+        
+        cy.get(this.termsCheckboxSelector)
+            .should('have.attr', 'type', 'checkbox')
+            .and('not.be.checked');
             
-            cy.get(PAYMENT_SECTION_SEL).should('be.visible').within(() => {
-                cy.get(BANK_TRANSFER_SEL).should('be.visible');
-                cy.get(COD_PAYMENT_SEL).should('be.visible');
-                cy.get(MOMO_PAYMENT_SEL).should('be.visible');
-                cy.get(VIETQR_PAYMENT_SEL).should('be.visible');
-            });
-
-            cy.get(PRIVACY_POLICY_LINK_SEL).should('be.visible');
-            cy.get(TERMS_CHECKBOX_SEL).should('have.attr', 'type', 'checkbox')
-              .and('not.be.checked');
-            cy.get(TERMS_TEXT_SEL).contains('Tôi đã đọc và đồng ý với trang web [điều khoản]');
-            cy.get(PLACE_ORDER_BTN_SEL).should('be.visible');
+        this.verifyElementContainsText(this.termsTextSelector, 'Tôi đã đọc và đồng ý với trang web [điều khoản]');
+        this.verifyElementVisible(this.placeOrderBtnSelector);
         });
-    }
-
-    verifyRequiredFieldValidation() {
-        cy.get(SHIP_TO_DIFFERENT_CHECKBOX_SEL).uncheck();
-        cy.get(INPUT_NAME_SEL).clear().scrollIntoView();
-        cy.get(INPUT_PHONE_SEL).clear().scrollIntoView();
-        cy.get(INPUT_EMAIL_SEL).clear().scrollIntoView();
-        cy.get(INPUT_ADDRESS_SEL).clear().scrollIntoView();
-        cy.get(TERMS_CHECKBOX_SEL).check();
-        this.placeOrder();
-
-        cy.get(VALIDATION_ERROR_SEL).should('be.visible');
-
-        cy.get(BILLING_NAME_SEL).should('have.class', 'woocommerce-invalid-required-field');
-        cy.get(BILLING_PHONE_SEL).should('have.class', 'woocommerce-invalid-required-field');
-        cy.get(BILLING_EMAIL_SEL).should('have.class', 'woocommerce-invalid-required-field');
-        cy.get(BILLING_ADDRESS_SEL).should('have.class', 'woocommerce-invalid-required-field');
-        
-    }
-
-    verifyTermsAndConditionsRequired() {
-        cy.get(SHIP_TO_DIFFERENT_CHECKBOX_SEL).uncheck();
-        cy.get(INPUT_NAME_SEL).clear().type('Nhungyanho');
-        cy.get(INPUT_PHONE_SEL).clear().type('0386849310');
-        cy.selectByIndex(BILLING_CITY_SEL, 12);
-        cy.get(INPUT_ADDRESS_SEL).clear().type('Số 32, ngõ 14, Ngô Quyền');
-        this.placeOrder();
-        cy.get(VALIDATION_ERROR_SEL).should('contain.text', 'Vui lòng đọc và đồng ý điều khoản và điều kiện để tiếp tục đặt hàng.');
-    }
-
-    verifyShipToDifferentAddress() {
-        cy.get(SHIP_TO_DIFFERENT_CHECKBOX_SEL).should('be.checked');
-        cy.get(SHIPPING_ADDRESS_FIELDS_SEL).should('be.visible');
-        
-        cy.get(SHIPPING_ADDRESS_FIELDS_SEL).within(() => {
-            cy.get(SHIPPING_NAME_SEL).should('be.visible').contains('Tên đầy đủ của người nhận');
-            cy.get(SHIPPING_PHONE_SEL).should('be.visible').contains('Số điện thoại người nhận');
-            cy.get(SHIPPING_STATE_SEL).should('be.visible')
-            cy.get(SHIPPING_CITY_SEL).should('be.visible');
-            cy.get(SHIPPING_ADDRESS_SEL).should('be.visible').contains('Địa chỉ');
-        });
-        cy.get(SHIP_TO_DIFFERENT_CHECKBOX_SEL).uncheck();
-        cy.get(SHIPPING_ADDRESS_FIELDS_SEL).should('not.be.visible');
-        cy.get(SHIP_TO_DIFFERENT_CHECKBOX_SEL).check();
-        cy.get(SHIPPING_ADDRESS_FIELDS_SEL).should('be.visible');
-    }
-
-    verifyPrivacyPolicyLink() {
-        cy.get(PRIVACY_POLICY_LINK_SEL).scrollIntoView();
-        cy.get(PRIVACY_POLICY_LINK_SEL)
-            .should('be.visible')
-            .and('contain.text', 'chính sách riêng tư')
-            .and('have.attr', 'target', '_blank');
-        cy.get(PRIVACY_POLICY_LINK_SEL).invoke('removeAttr', 'target').click();
-        cy.url().should('include', '/privacy-policy/');
-        cy.get('h2').contains('Chính sách bảo mật');
     }
 
     placeOrder() {
-        cy.get(PLACE_ORDER_BTN_SEL).click();
+        this.clickButton(this.placeOrderBtnSelector);
+    }
+
+    verifyRequiredFieldValidation() {
+        this.uncheckCheckbox(this.shipToDifferentCheckboxSelector);
+        cy.get(this.inputNameSelector).clear();
+        cy.get(this.inputPhoneSelector).clear();
+        cy.get(this.inputEmailSelector).clear();
+        cy.get(this.inputAddressSelector).clear();
+        this.checkCheckbox(this.termsCheckboxSelector);
+
+        this.verifyElementVisible(this.validationErrorSelector);
+
+        cy.get(this.billingNameFieldSelector).should('have.class', 'woocommerce-invalid-required-field');
+        cy.get(this.billingPhoneFieldSelector).should('have.class', 'woocommerce-invalid-required-field');
+        cy.get(this.billingEmailFieldSelector).should('have.class', 'woocommerce-invalid-required-field');
+        cy.get(this.billingAddressFieldSelector).should('have.class', 'woocommerce-invalid-required-field');
+    }
+
+    verifyTermsAndConditionsRequired() {
+        this.uncheckCheckbox(this.shipToDifferentCheckboxSelector);
+        this.clearAndType(this.inputNameSelector, 'Nhungyanho');
+        this.clearAndType(this.inputPhoneSelector, '0386849310');
+        cy.selectByIndex(this.billingCitySelector, 12);
+        this.clearAndType(this.inputAddressSelector, 'Số 32, ngõ 14, Ngô Quyền');
+        this.placeOrder();
+        
+        this.verifyElementContainsText(this.validationErrorSelector, 'Vui lòng đọc và đồng ý điều khoản và điều kiện để tiếp tục đặt hàng.');
+    }
+
+    verifyShipToDifferentAddress() {
+        cy.get(this.shipToDifferentCheckboxSelector).should('be.checked');
+        this.verifyElementVisible(this.shippingAddressFieldsSelector);
+        
+        cy.get(this.shippingAddressFieldsSelector).within(() => {
+        this.verifyElementContainsText(this.shippingNameFieldSelector, 'Tên đầy đủ của người nhận');
+        this.verifyElementContainsText(this.shippingPhoneFieldSelector, 'Số điện thoại người nhận');
+        this.verifyElementVisible(this.shippingStateSelector);
+        this.verifyElementVisible(this.shippingCitySelector);
+        this.verifyElementContainsText(this.shippingAddressFieldSelector, 'Địa chỉ');
+        });
+        
+        this.uncheckCheckbox(this.shipToDifferentCheckboxSelector);
+        cy.get(this.shippingAddressFieldsSelector).should('not.be.visible');
+        this.checkCheckbox(this.shipToDifferentCheckboxSelector);
+        this.verifyElementVisible(this.shippingAddressFieldsSelector);
+    }
+
+    verifyPrivacyPolicyLink() {
+        this.scrollIntoView(this.privacyPolicyLinkSelector);
+        
+        cy.get(this.privacyPolicyLinkSelector)
+        .should('be.visible')
+        .and('contain.text', 'chính sách riêng tư')
+        .and('have.attr', 'target', '_blank');
+        
+        cy.get(this.privacyPolicyLinkSelector).invoke('removeAttr', 'target').click();
+        this.verifyCurrentUrl('/privacy-policy/');
+        this.verifyElementContainsText('h2', 'Chính sách bảo mật');
     }
 }
 

@@ -1,44 +1,48 @@
-const USERNAME_TXT_BX_SEL =  'input[name="user_login"]';
-const FORGOT_PASSWORD_BTN_SEL =  '.xoo-el-lostpw-btn';
-const FORGOT_PASSWORD_LINK = 'a.xoo-el-lostpw-tgr';
-const POPUP_SEL = '.xoo-el-srcont';
-const MESSAGE = '.xoo-el-form-txt';
-const ERROR_MESSAGE = '.xoo-el-notice .xoo-el-notice-error';
-const SUCCESS_MESSAGE = '.xoo-el-notice .xoo-el-notice-success';
+import BasePage from './BasePage';
 
-class ForgotPasswordPage {
+class ForgotPasswordPage extends BasePage {
+  constructor() {
+    super();
+    
+    this.usernameInputSelector = 'input[name="user_login"]';
+    this.forgotPasswordButtonSelector = '.xoo-el-lostpw-btn';
+    this.forgotPasswordLinkSelector = 'a.xoo-el-lostpw-tgr';
+    this.popupSelector = '.xoo-el-srcont';
+    this.instructionMessageSelector = '.xoo-el-form-txt';
+    this.errorMessageSelector = '.xoo-el-notice .xoo-el-notice-error';
+    this.successMessageSelector = '.xoo-el-notice .xoo-el-notice-success';
+  }
+
   clickForgotPassword() {
-    cy.get(FORGOT_PASSWORD_LINK).click();
-    cy.get(POPUP_SEL).should('be.visible');
+    this.clickButton(this.forgotPasswordLinkSelector);
+    this.verifyElementVisible(this.popupSelector);
   }
 
   checkForgotPasswordLayout() {
-    cy.get(MESSAGE).should('be.visible')
-      .contains('Quên mật khẩu? Vui lòng nhập tên người dùng hoặc địa chỉ email của bạn');
-    cy.get(USERNAME_TXT_BX_SEL).should('be.visible');
-    cy.get(FORGOT_PASSWORD_BTN_SEL)
-      .should('be.visible')
-      .contains('Liên kết đặt lại email');
+    this.verifyElementVisible(this.instructionMessageSelector);
+    this.verifyElementContainsText(
+      this.instructionMessageSelector, 
+      'Quên mật khẩu? Vui lòng nhập tên người dùng hoặc địa chỉ email của bạn'
+    );
+    this.verifyElementVisible(this.usernameInputSelector);
+    this.verifyElementVisible(this.forgotPasswordButtonSelector);
+    this.verifyElementContainsText(this.forgotPasswordButtonSelector, 'Liên kết đặt lại email');
   }
 
   checkInvalidFieldEmail(errorMsg) {
-    cy.checkInvalidField(USERNAME_TXT_BX_SEL, errorMsg);
+    cy.checkInvalidField(this.usernameInputSelector, errorMsg);
   }
 
   checkNoticeError(errorMsg) {
-    cy.checkNotice(ERROR_MESSAGE, errorMsg);
+    cy.checkNotice(this.errorMessageSelector, errorMsg);
   }
-  
-  pwrecovery() {
-    cy.get(SUCCESS_MESSAGE, { timeout: 10000 }).should('be.visible');
-  }
-
   resetPassword(email) {
-    if (email) cy.get(USERNAME_TXT_BX_SEL).clear().type(email);
-    cy.get(FORGOT_PASSWORD_BTN_SEL).click();
+    this.clearAndType(this.usernameInputSelector, email);
+    this.clickButton(this.forgotPasswordButtonSelector);
   }
-
-  
+  pwrecovery() {
+    this.verifyElementVisible(this.successMessageSelector);
+  }
   
 }
 
