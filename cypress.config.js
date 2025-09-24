@@ -3,7 +3,7 @@ module.exports = {
 
   e2e: {
     // Dynamic baseUrl - ưu tiên environment variables
-    baseUrl: process.env.CYPRESS_baseUrl || process.env.BASE_URL || 'http://planshop.com/',
+    baseUrl: process.env.CYPRESS_baseUrl || process.env.BASE_URL || 'http://planshop.local/',
     specPattern: 'cypress/e2e/**/*.cy.js',
     screenshotsFolder: 'cypress/screenshots',
     videosFolder: 'cypress/videos',
