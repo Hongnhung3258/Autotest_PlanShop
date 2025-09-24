@@ -36,7 +36,7 @@ module.exports = {
     },
     
     retries: {
-      runMode: 3,    // Thử lại 3 lần khi chạy headless (CI/CD)
+      runMode: 2,    // Thử lại 3 lần khi chạy headless (CI/CD)
       openMode: 0    // Không thử lại khi chạy với giao diện (development)
     },
     
