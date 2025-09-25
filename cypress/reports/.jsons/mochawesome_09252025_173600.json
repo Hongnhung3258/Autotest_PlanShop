@@ -1,0 +1,211 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 5,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-09-25T10:26:23.369Z",
+    "end": "2025-09-25T10:36:00.510Z",
+    "duration": 577141,
+    "testsRegistered": 6,
+    "passPercent": 83.33333333333334,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0bfff3ba-c1be-4805-a1eb-d8a723a32291",
+      "title": "",
+      "fullFile": "cypress\\e2e\\productDetailPage.cy.js",
+      "file": "cypress\\e2e\\productDetailPage.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "04513a99-184f-4ac5-8198-27a52f5c2628",
+          "title": "Product Details Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "PS_113: Kiểm tra hiển thị thông tin sản phẩm không có lựa chọn",
+              "fullTitle": "Product Details Tests PS_113: Kiểm tra hiển thị thông tin sản phẩm không có lựa chọn",
+              "timedOut": null,
+              "duration": 45172,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\productDetailPage.cy.js\"\n}",
+              "code": "productDetail.verifyProductWithoutVariations();",
+              "err": {},
+              "uuid": "5e2abdb1-e96e-4e9f-9f65-5be560056aad",
+              "parentUUID": "04513a99-184f-4ac5-8198-27a52f5c2628",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "PS_114: Kiểm tra hiển thị thông tin sản phẩm có lựa chọn",
+              "fullTitle": "Product Details Tests PS_114: Kiểm tra hiển thị thông tin sản phẩm có lựa chọn",
+              "timedOut": null,
+              "duration": 50282,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\productDetailPage.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\productDetailPage.cy.js\\\\Product Details Tests -- PS_114 Kiểm tra hiển thị thông tin sản phẩm có lựa chọn (failed).png\"\n      ],\n      [\n        \"\\\\productDetailPage.cy.js\\\\Product Details Tests -- PS_114 Kiểm tra hiển thị thông tin sản phẩm có lựa chọn (failed) (attempt 2).png\"\n      ],\n      [\n        \"\\\\productDetailPage.cy.js\\\\Product Details Tests -- PS_114 Kiểm tra hiển thị thông tin sản phẩm có lựa chọn (failed) (attempt 3).png\"\n      ]\n    ]\n  }\n]",
+              "code": "productDetail.verifyProductWithVariations();",
+              "err": {
+                "message": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (http://planshop.com/__cypress/runner/cypress_runner.js:134082:64)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:134398:16)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://planshop.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://planshop.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (http://planshop.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (http://planshop.com/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (http://planshop.com/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (http://planshop.com/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at ProductDetailPage.verifyElementVisible (webpack://testda/./cypress/pageObjects/BasePage.js:7:7)\n    at ProductDetailPage.formProductDetail (webpack://testda/./cypress/pageObjects/ProductDetailPage.js:57:9)\n    at ProductDetailPage.verifyProductWithVariations (webpack://testda/./cypress/pageObjects/ProductDetailPage.js:90:9)\n    at Context.eval (webpack://testda/./cypress/e2e/productDetailPage.cy.js:17:22)",
+                "diff": null
+              },
+              "uuid": "1d299f37-999b-4332-ad84-53eef4145f5f",
+              "parentUUID": "04513a99-184f-4ac5-8198-27a52f5c2628",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "PS_115: Kiểm tra xóa lựa chọn sản phẩm",
+              "fullTitle": "Product Details Tests PS_115: Kiểm tra xóa lựa chọn sản phẩm",
+              "timedOut": null,
+              "duration": 50038,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n    \"value\": \"cypress\\\\e2e\\\\productDetailPage.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\productDetailPage.cy.js\\\\Product Details Tests -- PS_115 Kiểm tra xóa lựa chọn sản phẩm (failed).png\"\n      ],\n      []\n    ]\n  }\n]",
+              "code": "productDetail.verifyRemoveProductVariations();",
+              "err": {},
+              "uuid": "e62c80dd-89a9-4a1a-912e-8bb5d89f42d1",
+              "parentUUID": "04513a99-184f-4ac5-8198-27a52f5c2628",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "PS_116: Kiểm tra click tab đánh giá khi chưa đăng nhập",
+              "fullTitle": "Product Details Tests PS_116: Kiểm tra click tab đánh giá khi chưa đăng nhập",
+              "timedOut": null,
+              "duration": 50156,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\productDetailPage.cy.js\"\n}",
+              "code": "productDetail.verifyReviewTabNotLoggedIn();",
+              "err": {},
+              "uuid": "ee190ed1-eb98-4ba6-a4a7-8d79ba842baf",
+              "parentUUID": "04513a99-184f-4ac5-8198-27a52f5c2628",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "PS_117: Kiểm tra Click các tab Mô tả / Thông tin bổ sung / Đánh giá",
+              "fullTitle": "Product Details Tests PS_117: Kiểm tra Click các tab Mô tả / Thông tin bổ sung / Đánh giá",
+              "timedOut": null,
+              "duration": 55415,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n    \"value\": \"cypress\\\\e2e\\\\productDetailPage.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\productDetailPage.cy.js\\\\Product Details Tests -- PS_117 Kiểm tra Click các tab Mô tả  Thông tin bổ sung  Đánh giá (failed).png\"\n      ],\n      []\n    ]\n  }\n]",
+              "code": "loginPage.clickLoginMenu();\ncy.fixture('users').then(users => {\n  loginPage.login(users.cartUser.email, users.cartUser.password);\n  productDetail.verifyAllTabsWhenLoggedIn();\n});",
+              "err": {},
+              "uuid": "4bf55dce-2bb2-4976-8984-276d104059b9",
+              "parentUUID": "04513a99-184f-4ac5-8198-27a52f5c2628",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "PS_118: Kiểm tra viết đánh giá",
+              "fullTitle": "Product Details Tests PS_118: Kiểm tra viết đánh giá",
+              "timedOut": null,
+              "duration": 40023,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n    \"value\": \"cypress\\\\e2e\\\\productDetailPage.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\productDetailPage.cy.js\\\\Product Details Tests -- PS_118 Kiểm tra viết đánh giá (failed).png\"\n      ],\n      [\n        \"\\\\productDetailPage.cy.js\\\\Product Details Tests -- PS_118 Kiểm tra viết đánh giá (failed) (attempt 2).png\"\n      ],\n      []\n    ]\n  }\n]",
+              "code": "loginPage.clickLoginMenu();\ncy.fixture('users').then(users => {\n  loginPage.login(users.checkoutUser.email, users.checkoutUser.password);\n  productDetail.verifyWriteReview();\n});",
+              "err": {},
+              "uuid": "b09678d7-abb1-4d00-be2f-5ddd5e5defdb",
+              "parentUUID": "04513a99-184f-4ac5-8198-27a52f5c2628",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5e2abdb1-e96e-4e9f-9f65-5be560056aad",
+            "e62c80dd-89a9-4a1a-912e-8bb5d89f42d1",
+            "ee190ed1-eb98-4ba6-a4a7-8d79ba842baf",
+            "4bf55dce-2bb2-4976-8984-276d104059b9",
+            "b09678d7-abb1-4d00-be2f-5ddd5e5defdb"
+          ],
+          "failures": [
+            "1d299f37-999b-4332-ad84-53eef4145f5f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 291086,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "reportTitle": "PlanShop E2E Test Results",
+        "reportPageTitle": "Cypress Test Report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

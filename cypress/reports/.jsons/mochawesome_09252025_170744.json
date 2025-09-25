@@ -1,0 +1,483 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 16,
+    "passes": 5,
+    "pending": 0,
+    "failures": 11,
+    "start": "2025-09-25T09:26:10.535Z",
+    "end": "2025-09-25T10:07:44.331Z",
+    "duration": 2493796,
+    "testsRegistered": 16,
+    "passPercent": 31.25,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7bcfb055-7889-4d59-bbeb-e53d3a7ea021",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cartPage.cy.js",
+      "file": "cypress\\e2e\\cartPage.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e15a5f66-13a5-4f92-a887-07b30e250e87",
+          "title": "Cart page tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "PS_067: Kiểm tra click vào giỏ hàng khi chưa có sản phẩm nào",
+              "fullTitle": "Cart page tests PS_067: Kiểm tra click vào giỏ hàng khi chưa có sản phẩm nào",
+              "timedOut": null,
+              "duration": 70281,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\cartPage.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- PS_067 Kiểm tra click vào giỏ hàng khi chưa có sản phẩm nào (failed).png\"\n      ],\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- PS_067 Kiểm tra click vào giỏ hàng khi chưa có sản phẩm nào (failed) (attempt 2).png\"\n      ],\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- PS_067 Kiểm tra click vào giỏ hàng khi chưa có sản phẩm nào (failed) (attempt 3).png\"\n      ]\n    ]\n  }\n]",
+              "code": "cy.visitCartPage();\ncartPage.verifyEmptyCartDisplay();",
+              "err": {
+                "message": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (http://planshop.com/__cypress/runner/cypress_runner.js:134082:64)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:135076:16)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://planshop.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://planshop.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (http://planshop.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (http://planshop.com/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (http://planshop.com/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (http://planshop.com/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://testda/./cypress/support/commands.js:6:5)\n    at wrapped (http://planshop.com/__cypress/runner/cypress_runner.js:141524:43)",
+                "diff": null
+              },
+              "uuid": "86716100-06e9-43e6-a4ca-ce4ef4650f14",
+              "parentUUID": "e15a5f66-13a5-4f92-a887-07b30e250e87",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "PS_068: Kiểm tra click button \"Quay trở lại cửa hàng\"",
+              "fullTitle": "Cart page tests PS_068: Kiểm tra click button \"Quay trở lại cửa hàng\"",
+              "timedOut": null,
+              "duration": 52020,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\cartPage.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- PS_068 Kiểm tra click button Quay trở lại cửa hàng (failed).png\"\n      ],\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- PS_068 Kiểm tra click button Quay trở lại cửa hàng (failed) (attempt 2).png\"\n      ],\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- PS_068 Kiểm tra click button Quay trở lại cửa hàng (failed) (attempt 3).png\"\n      ]\n    ]\n  }\n]",
+              "code": "cy.visitCartPage();\ncartPage.clickReturnToShop();",
+              "err": {
+                "message": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (http://planshop.com/__cypress/runner/cypress_runner.js:134082:64)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:135076:16)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://planshop.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://planshop.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (http://planshop.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (http://planshop.com/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (http://planshop.com/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (http://planshop.com/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://testda/./cypress/support/commands.js:6:5)\n    at wrapped (http://planshop.com/__cypress/runner/cypress_runner.js:141524:43)",
+                "diff": null
+              },
+              "uuid": "08d1fa0f-c823-4f64-be42-952f004ead63",
+              "parentUUID": "e15a5f66-13a5-4f92-a887-07b30e250e87",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [
+            {
+              "uuid": "b0ff513f-386a-4ab2-8b18-352a176c5229",
+              "title": "Shopping cart table tests",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "PS_069: Kiểm tra hiển thị mặc định giỏ hàng có sản phẩm",
+                  "fullTitle": "Cart page tests Shopping cart table tests PS_069: Kiểm tra hiển thị mặc định giỏ hàng có sản phẩm",
+                  "timedOut": null,
+                  "duration": 62344,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\cartPage.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Shopping cart table tests -- PS_069 Kiểm tra hiển thị mặc định giỏ hàng có sản phẩm (failed).png\"\n      ],\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Shopping cart table tests -- PS_069 Kiểm tra hiển thị mặc định giỏ hàng có sản phẩm (failed) (attempt 2).png\"\n      ],\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Shopping cart table tests -- PS_069 Kiểm tra hiển thị mặc định giỏ hàng có sản phẩm (failed) (attempt 3).png\"\n      ]\n    ]\n  }\n]",
+                  "code": "shopPage.addMultipleProductsToCart();\ncy.visitCartPage();\ncartPage.verifyCartWithProductsDisplay();",
+                  "err": {
+                    "message": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                    "estack": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (http://planshop.com/__cypress/runner/cypress_runner.js:134082:64)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:135076:16)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://planshop.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://planshop.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (http://planshop.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (http://planshop.com/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (http://planshop.com/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (http://planshop.com/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://testda/./cypress/pageObjects/BasePage.js:46:6)\n    at getRet (http://planshop.com/__cypress/runner/cypress_runner.js:120949:20)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (http://planshop.com/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (http://planshop.com/__cypress/runner/cypress_runner.js:120960:66)\n    at Context.then (http://planshop.com/__cypress/runner/cypress_runner.js:121211:21)\n    at wrapped (http://planshop.com/__cypress/runner/cypress_runner.js:141532:19)",
+                    "diff": null
+                  },
+                  "uuid": "5acb8f02-6af4-4fb7-985f-767769c306f3",
+                  "parentUUID": "b0ff513f-386a-4ab2-8b18-352a176c5229",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "PS_070: Kiểm tra click nút \"+\"",
+                  "fullTitle": "Cart page tests Shopping cart table tests PS_070: Kiểm tra click nút \"+\"",
+                  "timedOut": null,
+                  "duration": 61454,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n    \"value\": \"cypress\\\\e2e\\\\cartPage.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Shopping cart table tests -- PS_070 Kiểm tra click nút + (failed).png\"\n      ],\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Shopping cart table tests -- PS_070 Kiểm tra click nút + (failed) (attempt 2).png\"\n      ],\n      []\n    ]\n  }\n]",
+                  "code": "shopPage.addProductToCart();\ncy.visitCartPage();\ncartPage.clickPlusButton();",
+                  "err": {},
+                  "uuid": "55c243d8-60f3-4f4e-a226-7cf3b58267ce",
+                  "parentUUID": "b0ff513f-386a-4ab2-8b18-352a176c5229",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "PS_071: Kiểm tra click nút \"-\" khi giỏ hàng có 1 sản phẩm",
+                  "fullTitle": "Cart page tests Shopping cart table tests PS_071: Kiểm tra click nút \"-\" khi giỏ hàng có 1 sản phẩm",
+                  "timedOut": null,
+                  "duration": 44269,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\cartPage.cy.js\"\n}",
+                  "code": "shopPage.addProductToCart();\ncy.visitCartPage();\ncartPage.clickMinusButtonSingleProduct();",
+                  "err": {},
+                  "uuid": "266dcd22-3a9b-4471-a220-702d26a8ab15",
+                  "parentUUID": "b0ff513f-386a-4ab2-8b18-352a176c5229",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "PS_072: Kiểm tra click nút \"-\" khi giỏ hàng có nhiều sản phẩm hoặc sản phẩm có số lượng sản phẩm >1",
+                  "fullTitle": "Cart page tests Shopping cart table tests PS_072: Kiểm tra click nút \"-\" khi giỏ hàng có nhiều sản phẩm hoặc sản phẩm có số lượng sản phẩm >1",
+                  "timedOut": null,
+                  "duration": 59193,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\cartPage.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Shopping cart table tests -- PS_072 Kiểm tra click nút - khi giỏ hàng có nhiều sản phẩm hoặc sản phẩm có số lượng sản phẩm 1 (failed).png\"\n      ],\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Shopping cart table tests -- PS_072 Kiểm tra click nút - khi giỏ hàng có nhiều sản phẩm hoặc sản phẩm có số lượng sản phẩm 1 (failed) (attempt 2).png\"\n      ],\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Shopping cart table tests -- PS_072 Kiểm tra click nút - khi giỏ hàng có nhiều sản phẩm hoặc sản phẩm có số lượng sản phẩm 1 (failed) (attempt 3).png\"\n      ]\n    ]\n  }\n]",
+                  "code": "shopPage.addMultipleProductsToCart();\ncy.visitCartPage();\ncartPage.clickMinusButtonMultipleProducts();",
+                  "err": {
+                    "message": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                    "estack": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (http://planshop.com/__cypress/runner/cypress_runner.js:134082:64)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:135076:16)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://planshop.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://planshop.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (http://planshop.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (http://planshop.com/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (http://planshop.com/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (http://planshop.com/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://testda/./cypress/pageObjects/BasePage.js:46:6)\n    at getRet (http://planshop.com/__cypress/runner/cypress_runner.js:120949:20)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (http://planshop.com/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (http://planshop.com/__cypress/runner/cypress_runner.js:120960:66)\n    at Context.then (http://planshop.com/__cypress/runner/cypress_runner.js:121211:21)\n    at wrapped (http://planshop.com/__cypress/runner/cypress_runner.js:141532:19)",
+                    "diff": null
+                  },
+                  "uuid": "510d062e-3a7e-443b-8f02-cf8236ea218c",
+                  "parentUUID": "b0ff513f-386a-4ab2-8b18-352a176c5229",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "PS_073: Xóa sản phẩm khi giỏ hàng có 1 sản phẩm",
+                  "fullTitle": "Cart page tests Shopping cart table tests PS_073: Xóa sản phẩm khi giỏ hàng có 1 sản phẩm",
+                  "timedOut": null,
+                  "duration": 56147,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\cartPage.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Shopping cart table tests -- PS_073 Xóa sản phẩm khi giỏ hàng có 1 sản phẩm (failed).png\"\n      ],\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Shopping cart table tests -- PS_073 Xóa sản phẩm khi giỏ hàng có 1 sản phẩm (failed) (attempt 2).png\"\n      ],\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Shopping cart table tests -- PS_073 Xóa sản phẩm khi giỏ hàng có 1 sản phẩm (failed) (attempt 3).png\"\n      ]\n    ]\n  }\n]",
+                  "code": "shopPage.addProductToCart();\ncy.visitCartPage();\ncartPage.removeProductSingleItem();",
+                  "err": {
+                    "message": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                    "estack": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (http://planshop.com/__cypress/runner/cypress_runner.js:134082:64)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:135076:16)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://planshop.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://planshop.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (http://planshop.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (http://planshop.com/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (http://planshop.com/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (http://planshop.com/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://testda/./cypress/pageObjects/BasePage.js:46:6)\n    at getRet (http://planshop.com/__cypress/runner/cypress_runner.js:120949:20)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (http://planshop.com/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (http://planshop.com/__cypress/runner/cypress_runner.js:120960:66)\n    at Context.then (http://planshop.com/__cypress/runner/cypress_runner.js:121211:21)\n    at wrapped (http://planshop.com/__cypress/runner/cypress_runner.js:141532:19)",
+                    "diff": null
+                  },
+                  "uuid": "20a3d8f0-d41d-4469-9d76-1acea1a8a57e",
+                  "parentUUID": "b0ff513f-386a-4ab2-8b18-352a176c5229",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "PS_074: Xóa sản phẩm khi giỏ hàng có nhiều sản phẩm",
+                  "fullTitle": "Cart page tests Shopping cart table tests PS_074: Xóa sản phẩm khi giỏ hàng có nhiều sản phẩm",
+                  "timedOut": null,
+                  "duration": 60052,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\cartPage.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Shopping cart table tests -- PS_074 Xóa sản phẩm khi giỏ hàng có nhiều sản phẩm (failed).png\"\n      ],\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Shopping cart table tests -- PS_074 Xóa sản phẩm khi giỏ hàng có nhiều sản phẩm (failed) (attempt 2).png\"\n      ],\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Shopping cart table tests -- PS_074 Xóa sản phẩm khi giỏ hàng có nhiều sản phẩm (failed) (attempt 3).png\"\n      ]\n    ]\n  }\n]",
+                  "code": "shopPage.addMultipleProductsToCart();\ncy.visitCartPage();\ncartPage.removeProductMultipleItems();",
+                  "err": {
+                    "message": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                    "estack": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (http://planshop.com/__cypress/runner/cypress_runner.js:134082:64)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:135076:16)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://planshop.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://planshop.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (http://planshop.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (http://planshop.com/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (http://planshop.com/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (http://planshop.com/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://testda/./cypress/pageObjects/BasePage.js:46:6)\n    at getRet (http://planshop.com/__cypress/runner/cypress_runner.js:120949:20)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (http://planshop.com/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (http://planshop.com/__cypress/runner/cypress_runner.js:120960:66)\n    at Context.then (http://planshop.com/__cypress/runner/cypress_runner.js:121211:21)\n    at wrapped (http://planshop.com/__cypress/runner/cypress_runner.js:141532:19)",
+                    "diff": null
+                  },
+                  "uuid": "f87643ee-5cab-4ca4-ba7b-5633c1292590",
+                  "parentUUID": "b0ff513f-386a-4ab2-8b18-352a176c5229",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "PS_075: Kiểm tra click nút \"Khôi phục?\"",
+                  "fullTitle": "Cart page tests Shopping cart table tests PS_075: Kiểm tra click nút \"Khôi phục?\"",
+                  "timedOut": null,
+                  "duration": 66670,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\cartPage.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Shopping cart table tests -- PS_075 Kiểm tra click nút Khôi phục (failed).png\"\n      ],\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Shopping cart table tests -- PS_075 Kiểm tra click nút Khôi phục (failed) (attempt 2).png\"\n      ],\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Shopping cart table tests -- PS_075 Kiểm tra click nút Khôi phục (failed) (attempt 3).png\"\n      ]\n    ]\n  }\n]",
+                  "code": "shopPage.addMultipleProductsToCart();\ncy.visitCartPage();\ncartPage.clickUndoLink();",
+                  "err": {
+                    "message": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                    "estack": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (http://planshop.com/__cypress/runner/cypress_runner.js:134082:64)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:135076:16)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://planshop.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://planshop.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (http://planshop.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (http://planshop.com/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (http://planshop.com/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (http://planshop.com/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://testda/./cypress/pageObjects/BasePage.js:46:6)\n    at getRet (http://planshop.com/__cypress/runner/cypress_runner.js:120949:20)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (http://planshop.com/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (http://planshop.com/__cypress/runner/cypress_runner.js:120960:66)\n    at Context.then (http://planshop.com/__cypress/runner/cypress_runner.js:121211:21)\n    at wrapped (http://planshop.com/__cypress/runner/cypress_runner.js:141532:19)",
+                    "diff": null
+                  },
+                  "uuid": "d164a513-9128-4672-bfe0-dcdc309c1d17",
+                  "parentUUID": "b0ff513f-386a-4ab2-8b18-352a176c5229",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "PS_076: Kiểm tra không nhập mã giảm giá",
+                  "fullTitle": "Cart page tests Shopping cart table tests PS_076: Kiểm tra không nhập mã giảm giá",
+                  "timedOut": null,
+                  "duration": 62886,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\cartPage.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Shopping cart table tests -- PS_076 Kiểm tra không nhập mã giảm giá (failed).png\"\n      ],\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Shopping cart table tests -- PS_076 Kiểm tra không nhập mã giảm giá (failed) (attempt 2).png\"\n      ],\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Shopping cart table tests -- PS_076 Kiểm tra không nhập mã giảm giá (failed) (attempt 3).png\"\n      ]\n    ]\n  }\n]",
+                  "code": "shopPage.addProductToCart();\ncy.visitCartPage();\ncy.fixture('coupon').then(coupon => {\n  cartPage.applyEmptyCoupon(coupon.emptyCoupon.coupon);\n});",
+                  "err": {
+                    "message": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                    "estack": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (http://planshop.com/__cypress/runner/cypress_runner.js:134082:64)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:135076:16)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://planshop.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://planshop.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (http://planshop.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (http://planshop.com/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (http://planshop.com/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (http://planshop.com/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://testda/./cypress/pageObjects/BasePage.js:46:6)\n    at getRet (http://planshop.com/__cypress/runner/cypress_runner.js:120949:20)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (http://planshop.com/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (http://planshop.com/__cypress/runner/cypress_runner.js:120960:66)\n    at Context.then (http://planshop.com/__cypress/runner/cypress_runner.js:121211:21)\n    at wrapped (http://planshop.com/__cypress/runner/cypress_runner.js:141532:19)",
+                    "diff": null
+                  },
+                  "uuid": "62382f9b-ff2d-4748-baa6-c51f6ccbf2ac",
+                  "parentUUID": "b0ff513f-386a-4ab2-8b18-352a176c5229",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "PS_077: Kiểm tra nhập đúng mã giảm giá",
+                  "fullTitle": "Cart page tests Shopping cart table tests PS_077: Kiểm tra nhập đúng mã giảm giá",
+                  "timedOut": null,
+                  "duration": 57623,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\cartPage.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Shopping cart table tests -- PS_077 Kiểm tra nhập đúng mã giảm giá (failed).png\"\n      ],\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Shopping cart table tests -- PS_077 Kiểm tra nhập đúng mã giảm giá (failed) (attempt 2).png\"\n      ],\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Shopping cart table tests -- PS_077 Kiểm tra nhập đúng mã giảm giá (failed) (attempt 3).png\"\n      ]\n    ]\n  }\n]",
+                  "code": "shopPage.addProductToCart();\ncy.visitCartPage();\ncy.fixture('coupon').then(coupon => {\n  cartPage.applyValidCoupon(coupon.validCoupon.coupon);\n});",
+                  "err": {
+                    "message": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                    "estack": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (http://planshop.com/__cypress/runner/cypress_runner.js:134082:64)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:135076:16)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://planshop.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://planshop.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (http://planshop.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (http://planshop.com/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (http://planshop.com/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (http://planshop.com/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://testda/./cypress/pageObjects/BasePage.js:46:6)\n    at getRet (http://planshop.com/__cypress/runner/cypress_runner.js:120949:20)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (http://planshop.com/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (http://planshop.com/__cypress/runner/cypress_runner.js:120960:66)\n    at Context.then (http://planshop.com/__cypress/runner/cypress_runner.js:121211:21)\n    at wrapped (http://planshop.com/__cypress/runner/cypress_runner.js:141532:19)",
+                    "diff": null
+                  },
+                  "uuid": "b5b24989-70dc-4db4-9d1e-365f12478a65",
+                  "parentUUID": "b0ff513f-386a-4ab2-8b18-352a176c5229",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "PS_078: Kiểm tra nhập sai mã giảm giá",
+                  "fullTitle": "Cart page tests Shopping cart table tests PS_078: Kiểm tra nhập sai mã giảm giá",
+                  "timedOut": null,
+                  "duration": 52592,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n    \"value\": \"cypress\\\\e2e\\\\cartPage.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Shopping cart table tests -- PS_078 Kiểm tra nhập sai mã giảm giá (failed).png\"\n      ],\n      []\n    ]\n  }\n]",
+                  "code": "shopPage.addProductToCart();\ncy.visitCartPage();\ncy.fixture('coupon').then(coupon => {\n  cartPage.applyInvalidCoupon(coupon.invalidCoupon.coupon);\n});",
+                  "err": {},
+                  "uuid": "61651c9c-7f77-4940-a554-14361773f491",
+                  "parentUUID": "b0ff513f-386a-4ab2-8b18-352a176c5229",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "55c243d8-60f3-4f4e-a226-7cf3b58267ce",
+                "266dcd22-3a9b-4471-a220-702d26a8ab15",
+                "61651c9c-7f77-4940-a554-14361773f491"
+              ],
+              "failures": [
+                "5acb8f02-6af4-4fb7-985f-767769c306f3",
+                "510d062e-3a7e-443b-8f02-cf8236ea218c",
+                "20a3d8f0-d41d-4469-9d76-1acea1a8a57e",
+                "f87643ee-5cab-4ca4-ba7b-5633c1292590",
+                "d164a513-9128-4672-bfe0-dcdc309c1d17",
+                "62382f9b-ff2d-4748-baa6-c51f6ccbf2ac",
+                "b5b24989-70dc-4db4-9d1e-365f12478a65"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 583230,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "e211fbaa-4ac3-4349-81b3-9a9a97a30dbb",
+              "title": "Total cart tests",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "PS_079: Kiểm tra hiển thị phần tổng cộng giỏ hàng",
+                  "fullTitle": "Cart page tests Total cart tests PS_079: Kiểm tra hiển thị phần tổng cộng giỏ hàng",
+                  "timedOut": null,
+                  "duration": 52718,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n    \"value\": \"cypress\\\\e2e\\\\cartPage.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Total cart tests -- PS_079 Kiểm tra hiển thị phần tổng cộng giỏ hàng (failed).png\"\n      ],\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Total cart tests -- PS_079 Kiểm tra hiển thị phần tổng cộng giỏ hàng (failed) (attempt 2).png\"\n      ],\n      []\n    ]\n  }\n]",
+                  "code": "shopPage.addMultipleProductsToCart();\ncy.visitCartPage();\ncartPage.verifyCartTotalsSection();",
+                  "err": {},
+                  "uuid": "d16a6c84-59ff-42bb-8d84-6ab00f40e422",
+                  "parentUUID": "e211fbaa-4ac3-4349-81b3-9a9a97a30dbb",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "PS_080: Kiểm tra click nút \"Đổi địa chỉ\"",
+                  "fullTitle": "Cart page tests Total cart tests PS_080: Kiểm tra click nút \"Đổi địa chỉ\"",
+                  "timedOut": null,
+                  "duration": 55909,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n    \"value\": \"cypress\\\\e2e\\\\cartPage.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Total cart tests -- PS_080 Kiểm tra click nút Đổi địa chỉ (failed).png\"\n      ],\n      []\n    ]\n  }\n]",
+                  "code": "shopPage.addProductToCart();\ncy.visitCartPage();\ncartPage.clickChangeAddress();",
+                  "err": {},
+                  "uuid": "448d807a-c3ee-4f63-9156-f93c8a560381",
+                  "parentUUID": "e211fbaa-4ac3-4349-81b3-9a9a97a30dbb",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "PS_081: Kiểm tra click nút \"Tiến hành thanh toán\" khi chưa đăng nhập",
+                  "fullTitle": "Cart page tests Total cart tests PS_081: Kiểm tra click nút \"Tiến hành thanh toán\" khi chưa đăng nhập",
+                  "timedOut": null,
+                  "duration": 55068,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\cartPage.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Total cart tests -- PS_081 Kiểm tra click nút Tiến hành thanh toán khi chưa đăng nhập (failed).png\"\n      ],\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Total cart tests -- PS_081 Kiểm tra click nút Tiến hành thanh toán khi chưa đăng nhập (failed) (attempt 2).png\"\n      ],\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Total cart tests -- PS_081 Kiểm tra click nút Tiến hành thanh toán khi chưa đăng nhập (failed) (attempt 3).png\"\n      ]\n    ]\n  }\n]",
+                  "code": "shopPage.addProductToCart();\ncy.visitCartPage();\ncartPage.clickCheckoutNotLoggedIn();",
+                  "err": {
+                    "message": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                    "estack": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (http://planshop.com/__cypress/runner/cypress_runner.js:134082:64)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:135076:16)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://planshop.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://planshop.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (http://planshop.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (http://planshop.com/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (http://planshop.com/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (http://planshop.com/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://testda/./cypress/pageObjects/BasePage.js:46:6)\n    at getRet (http://planshop.com/__cypress/runner/cypress_runner.js:120949:20)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (http://planshop.com/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (http://planshop.com/__cypress/runner/cypress_runner.js:120960:66)\n    at Context.then (http://planshop.com/__cypress/runner/cypress_runner.js:121211:21)\n    at wrapped (http://planshop.com/__cypress/runner/cypress_runner.js:141532:19)",
+                    "diff": null
+                  },
+                  "uuid": "802ef591-d64d-466e-8108-d358c000ebdc",
+                  "parentUUID": "e211fbaa-4ac3-4349-81b3-9a9a97a30dbb",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "PS_082: Kiểm tra click nút \"Tiến hành thanh toán\" khi đã đăng nhập",
+                  "fullTitle": "Cart page tests Total cart tests PS_082: Kiểm tra click nút \"Tiến hành thanh toán\" khi đã đăng nhập",
+                  "timedOut": null,
+                  "duration": 66373,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\cartPage.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Total cart tests -- PS_082 Kiểm tra click nút Tiến hành thanh toán khi đã đăng nhập (failed).png\"\n      ],\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Total cart tests -- PS_082 Kiểm tra click nút Tiến hành thanh toán khi đã đăng nhập (failed) (attempt 2).png\"\n      ],\n      [\n        \"\\\\cartPage.cy.js\\\\Cart page tests -- Total cart tests -- PS_082 Kiểm tra click nút Tiến hành thanh toán khi đã đăng nhập (failed) (attempt 3).png\"\n      ]\n    ]\n  }\n]",
+                  "code": "shopPage.addProductToCart();\nloginPage.clickLoginMenu();\ncy.fixture('users').then(users => {\n  loginPage.login(users.cartUser.email, users.cartUser.password);\n  cy.visitCartPage();\n  cartPage.clickCheckoutLoggedIn();\n});",
+                  "err": {
+                    "message": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                    "estack": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (http://planshop.com/__cypress/runner/cypress_runner.js:134082:64)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:135076:16)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://planshop.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://planshop.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (http://planshop.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (http://planshop.com/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (http://planshop.com/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (http://planshop.com/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2256:14)",
+                    "diff": null
+                  },
+                  "uuid": "373542fb-036f-4a48-a43f-ba97cac7c7e9",
+                  "parentUUID": "e211fbaa-4ac3-4349-81b3-9a9a97a30dbb",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "d16a6c84-59ff-42bb-8d84-6ab00f40e422",
+                "448d807a-c3ee-4f63-9156-f93c8a560381"
+              ],
+              "failures": [
+                "802ef591-d64d-466e-8108-d358c000ebdc",
+                "373542fb-036f-4a48-a43f-ba97cac7c7e9"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 230068,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [
+            "86716100-06e9-43e6-a4ca-ce4ef4650f14",
+            "08d1fa0f-c823-4f64-be42-952f004ead63"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 122301,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "reportTitle": "PlanShop E2E Test Results",
+        "reportPageTitle": "Cypress Test Report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

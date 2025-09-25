@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-09-25T10:56:00.596Z",
+    "end": "2025-09-25T10:57:26.811Z",
+    "duration": 86215,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d629bdcc-4081-4767-b3e0-1087bd09de20",
+      "title": "",
+      "fullFile": "cypress\\e2e\\auth\\register.cy.js",
+      "file": "cypress\\e2e\\auth\\register.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "96679b8a-c736-4ebc-a55f-8de5a131aea1",
+          "title": "Register Functionality Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "PS_037: Kiểm tra đăng ký thành công",
+              "fullTitle": "Register Functionality Tests PS_037: Kiểm tra đăng ký thành công",
+              "timedOut": null,
+              "duration": 85781,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\auth\\\\register.cy.js\"\n}",
+              "code": "cy.fixture('register').then(register => {\n  registerPage.register(register.newUser.email, register.newUser.firstName, register.newUser.lastName, register.newUser.password, register.newUser.confirmPassword);\n  registerPage.registerSuccess('Đăng ký thành công');\n});",
+              "err": {},
+              "uuid": "2da91519-2d7b-4faf-8d7b-4071110027e6",
+              "parentUUID": "96679b8a-c736-4ebc-a55f-8de5a131aea1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2da91519-2d7b-4faf-8d7b-4071110027e6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 85781,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "reportTitle": "PlanShop E2E Test Results",
+        "reportPageTitle": "Cypress Test Report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

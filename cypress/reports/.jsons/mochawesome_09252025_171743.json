@@ -1,0 +1,331 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2025-09-25T10:12:30.043Z",
+    "end": "2025-09-25T10:17:43.182Z",
+    "duration": 313139,
+    "testsRegistered": 11,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 9,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "ddea7230-a5ed-4282-b85b-af4e386266e1",
+      "title": "",
+      "fullFile": "cypress\\e2e\\checkoutPage.cy.js",
+      "file": "cypress\\e2e\\checkoutPage.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "906f2c6c-b7fc-4f5a-9037-4c7a5e295092",
+          "title": "Checkout Page Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "PS_0102: Kiểm tra bố cục màn hình \"Thanh toán\"",
+              "fullTitle": "Checkout Page Tests PS_0102: Kiểm tra bố cục màn hình \"Thanh toán\"",
+              "timedOut": null,
+              "duration": 45314,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\checkoutPage.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\checkoutPage.cy.js\\\\Checkout Page Tests -- PS_0102 Kiểm tra bố cục màn hình Thanh toán (failed).png\"\n      ],\n      [\n        \"\\\\checkoutPage.cy.js\\\\Checkout Page Tests -- PS_0102 Kiểm tra bố cục màn hình Thanh toán (failed) (attempt 2).png\"\n      ],\n      [\n        \"\\\\checkoutPage.cy.js\\\\Checkout Page Tests -- PS_0102 Kiểm tra bố cục màn hình Thanh toán -- before each hook (failed) (attempt 3).png\"\n      ]\n    ]\n  }\n]",
+              "code": "checkoutPage.verifyCheckoutPage();",
+              "err": {
+                "message": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Checkout Page Tests`",
+                "estack": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Checkout Page Tests`\n    at timedOutWaitingForPageLoad (http://planshop.com/__cypress/runner/cypress_runner.js:134082:64)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:135076:16)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://planshop.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://planshop.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (http://planshop.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (http://planshop.com/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (http://planshop.com/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (http://planshop.com/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://testda/./cypress/support/commands.js:2:5)\n    at wrapped (http://planshop.com/__cypress/runner/cypress_runner.js:141524:43)",
+                "diff": null
+              },
+              "uuid": "e4780b17-cc7a-426a-98e0-61988fc063d8",
+              "parentUUID": "906f2c6c-b7fc-4f5a-9037-4c7a5e295092",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "PS_103: Kiểm tra màn hình bố cục \"Thông tin thanh toán\"",
+              "fullTitle": "Checkout Page Tests PS_103: Kiểm tra màn hình bố cục \"Thông tin thanh toán\"",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "checkoutPage.verifyBillingInformationLayout();",
+              "err": {},
+              "uuid": "09b22ecc-0995-4d3f-ac18-2a1f892651c9",
+              "parentUUID": "906f2c6c-b7fc-4f5a-9037-4c7a5e295092",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "PS_104: Kiểm tra màn hình bố cục \"Đơn hàng của bạn\"",
+              "fullTitle": "Checkout Page Tests PS_104: Kiểm tra màn hình bố cục \"Đơn hàng của bạn\"",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "checkoutPage.verifyOrderReviewLayout();",
+              "err": {},
+              "uuid": "dba32c22-fafe-4df5-bdcb-3ecc09cc572a",
+              "parentUUID": "906f2c6c-b7fc-4f5a-9037-4c7a5e295092",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "PS_105: Kiểm tra hiển thị nhập trường bắt buộc",
+              "fullTitle": "Checkout Page Tests PS_105: Kiểm tra hiển thị nhập trường bắt buộc",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "checkoutPage.verifyRequiredFieldValidation();",
+              "err": {},
+              "uuid": "a1fdf642-f1fc-4bec-8385-60b0604e8777",
+              "parentUUID": "906f2c6c-b7fc-4f5a-9037-4c7a5e295092",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "PS_106: Kiểm tra khi không tick vào \"Tôi đã đọc và đồng ý với trang web [điều khoản]\"",
+              "fullTitle": "Checkout Page Tests PS_106: Kiểm tra khi không tick vào \"Tôi đã đọc và đồng ý với trang web [điều khoản]\"",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "checkoutPage.verifyTermsAndConditionsRequired();",
+              "err": {},
+              "uuid": "0ac83d54-84f3-4b3f-821a-7cf448579438",
+              "parentUUID": "906f2c6c-b7fc-4f5a-9037-4c7a5e295092",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "PS_107: Kiểm tra tick vào \"Giao hàng đến một địa chỉ khác\"",
+              "fullTitle": "Checkout Page Tests PS_107: Kiểm tra tick vào \"Giao hàng đến một địa chỉ khác\"",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "checkoutPage.verifyShipToDifferentAddress();",
+              "err": {},
+              "uuid": "03331ef0-1bc5-4086-9122-3b6e03fe944a",
+              "parentUUID": "906f2c6c-b7fc-4f5a-9037-4c7a5e295092",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "PS_108: Kiểm tra click vào [chính sách riêng tư]",
+              "fullTitle": "Checkout Page Tests PS_108: Kiểm tra click vào [chính sách riêng tư]",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "checkoutPage.verifyPrivacyPolicyLink();",
+              "err": {},
+              "uuid": "ec7f8f83-f01a-4448-836b-b8cda5839d0b",
+              "parentUUID": "906f2c6c-b7fc-4f5a-9037-4c7a5e295092",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "e4780b17-cc7a-426a-98e0-61988fc063d8"
+          ],
+          "pending": [],
+          "skipped": [
+            "09b22ecc-0995-4d3f-ac18-2a1f892651c9",
+            "dba32c22-fafe-4df5-bdcb-3ecc09cc572a",
+            "a1fdf642-f1fc-4bec-8385-60b0604e8777",
+            "0ac83d54-84f3-4b3f-821a-7cf448579438",
+            "03331ef0-1bc5-4086-9122-3b6e03fe944a",
+            "ec7f8f83-f01a-4448-836b-b8cda5839d0b"
+          ],
+          "duration": 45314,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "43871994-caea-409b-90e4-9de38009d9b8",
+          "title": "Payment Method Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "PS_109: Kiểm tra thanh toán với phương thức \"Chuyển khoản ngân hàng trực tiếp\"",
+              "fullTitle": "Payment Method Tests PS_109: Kiểm tra thanh toán với phương thức \"Chuyển khoản ngân hàng trực tiếp\"",
+              "timedOut": null,
+              "duration": 52751,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\checkoutPage.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\checkoutPage.cy.js\\\\Payment Method Tests -- PS_109 Kiểm tra thanh toán với phương thức Chuyển khoản ngân hàng trực tiếp (failed).png\"\n      ],\n      [\n        \"\\\\checkoutPage.cy.js\\\\Payment Method Tests -- PS_109 Kiểm tra thanh toán với phương thức Chuyển khoản ngân hàng trực tiếp (failed) (attempt 2).png\"\n      ],\n      [\n        \"\\\\checkoutPage.cy.js\\\\Payment Method Tests -- PS_109 Kiểm tra thanh toán với phương thức Chuyển khoản ngân hàng trực tiếp -- before each hook (failed) (attempt 3).png\"\n      ]\n    ]\n  }\n]",
+              "code": "payment.testBankTransferPayment();",
+              "err": {
+                "message": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Payment Method Tests`",
+                "estack": "CypressError: Timed out after waiting `45000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `45000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `Exercise\\testDA\\cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Payment Method Tests`\n    at timedOutWaitingForPageLoad (http://planshop.com/__cypress/runner/cypress_runner.js:134082:64)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:135076:16)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (http://planshop.com/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (http://planshop.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (http://planshop.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (http://planshop.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (http://planshop.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (http://planshop.com/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (http://planshop.com/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (http://planshop.com/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (http://planshop.com/__cypress/runner/cypress_runner.js:2256:14)",
+                "diff": null
+              },
+              "uuid": "ee6651f7-a06c-4da9-b32e-f152767e3994",
+              "parentUUID": "43871994-caea-409b-90e4-9de38009d9b8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "PS_110: Kiểm tra thanh toán với phương thức \"Thanh toán khi nhận hàng\"",
+              "fullTitle": "Payment Method Tests PS_110: Kiểm tra thanh toán với phương thức \"Thanh toán khi nhận hàng\"",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "payment.testCODPayment();",
+              "err": {},
+              "uuid": "94387c79-c97e-42b4-afc3-c66597990c7c",
+              "parentUUID": "43871994-caea-409b-90e4-9de38009d9b8",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "PS_111: Kiểm tra thanh toán với phương thức \"Thanh toán qua MoMo\"",
+              "fullTitle": "Payment Method Tests PS_111: Kiểm tra thanh toán với phương thức \"Thanh toán qua MoMo\"",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "payment.testMoMoPayment();",
+              "err": {},
+              "uuid": "73b1ec50-4f7b-4a42-ab20-b08e36418df1",
+              "parentUUID": "43871994-caea-409b-90e4-9de38009d9b8",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "PS_112: Kiểm tra thanh toán với phương thức \"Chuyển khoản ngân hàng (Quét QR)\"",
+              "fullTitle": "Payment Method Tests PS_112: Kiểm tra thanh toán với phương thức \"Chuyển khoản ngân hàng (Quét QR)\"",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "payment.testVietQRPayment();",
+              "err": {},
+              "uuid": "ea264abb-f06f-47ae-9baa-5eed6c46fd0a",
+              "parentUUID": "43871994-caea-409b-90e4-9de38009d9b8",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "ee6651f7-a06c-4da9-b32e-f152767e3994"
+          ],
+          "pending": [],
+          "skipped": [
+            "94387c79-c97e-42b4-afc3-c66597990c7c",
+            "73b1ec50-4f7b-4a42-ab20-b08e36418df1",
+            "ea264abb-f06f-47ae-9baa-5eed6c46fd0a"
+          ],
+          "duration": 52751,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "reportTitle": "PlanShop E2E Test Results",
+        "reportPageTitle": "Cypress Test Report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}
