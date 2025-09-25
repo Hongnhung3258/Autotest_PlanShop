@@ -3,11 +3,7 @@ module.exports = {
 
   e2e: {
     // Dynamic baseUrl - ưu tiên environment variables
-<<<<<<< HEAD
-    baseUrl: process.env.CYPRESS_baseUrl || process.env.BASE_URL || 'https://planshop-staging.com/',
-=======
-    baseUrl: process.env.CYPRESS_baseUrl || process.env.BASE_URL || 'http://planshop.local/',
->>>>>>> 27495d9c (Add MySQL and import local.sql for Docker)
+    baseUrl: process.env.CYPRESS_baseUrl || process.env.BASE_URL || 'https://planshop.com',
     specPattern: 'cypress/e2e/**/*.cy.js',
     screenshotsFolder: 'cypress/screenshots',
     videosFolder: 'cypress/videos',

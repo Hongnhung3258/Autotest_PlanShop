@@ -12,8 +12,6 @@ class AccountMenu extends BasePage {
     this.myAccountText = 'Tài khoản của tôi';
     this.logoutText = 'Đăng xuất';
     this.accountPageHeadingText = 'Tài khoản của bạn';
-    this.homeUrl = 'http://planshop.com/';
-    this.myAccountPath = '/my-account';
   }
 
   verifyUsernameMenu() {
@@ -27,7 +25,7 @@ class AccountMenu extends BasePage {
     this.hoverElement(this.usernameMenuSelector);
     this.verifyElementVisible(this.userSubmenuSelector);
     this.clickButton(this.myAccountSelector);
-    this.verifyCurrentUrl(this.myAccountPath);
+    this.verifyCurrentUrl('/my-account');
     this.verifyElementContainsText(this.accountHeadingSelector, this.accountPageHeadingText);
   }
 
@@ -38,7 +36,7 @@ class AccountMenu extends BasePage {
   }
 
   verifyLogoutSuccess() {
-    cy.url().should('eq', this.homeUrl);
+    cy.url().should('eq', 'https://planshop.com/');
     cy.get(this.usernameMenuSelector).should('not.exist');
     this.verifyElementContainsText(this.loginMenuSelector, 'Đăng nhập');
   }

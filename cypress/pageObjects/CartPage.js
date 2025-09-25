@@ -222,13 +222,11 @@ class CartPage extends BasePage {
   }
 
   verifyCartTotalsSection() {
-    this.verifyElementVisible(this.cartTotalsTableSelector);
-    
-    cy.get(this.cartTotalsTableSelector).within(() => {
+    cy.get(this.cartTotalsTableSelector).should('be.visible').within(() => {
       cy.contains('Tổng cộng giỏ hàng').should('be.visible');
-      verifyElementVisible(this.subtotalSelector);
-      verifyElementVisible(this.shippingCostSelector);
-      verifyElementVisible(this.orderTotalSelector);
+      this.verifyElementVisible(this.subtotalSelector);
+      this.verifyElementVisible(this.shippingCostSelector);
+      this.verifyElementVisible(this.orderTotalSelector);
     });
   }
 
